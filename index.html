@@ -1,11 +1,98 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>This is only for demo for testing</title>
-</head>
-<body>
-<h1>For testing <h1>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coach Finder</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">      
+    <link href="css/main.css" rel="stylesheet" />         
+  </head>
+  <body>
+        <header>
+            <div id="left">
+                <div  class="logoMenu">
+                    <i id="hamburIcon" class="bi bi-list" title="Hide main menu"></i>
+                    <img src="https://static.canva.com/web/images/12487a1e0770d29351bd4ce4f87ec8fe.svg" alt="" role="presentation">
+                </div>
+                <ul id="headerUl">
+                    <li class="menuItem">Design spotlight<i class="bi bi-chevron-down arows"></i></li>
+                    <li class="menuItem">Business<i class="bi bi-chevron-down arows"></i></li>
+                    <li class="menuItem">Education<i class="bi bi-chevron-down arows"></i></li>
+                    <li class="menuItem">Plans and pricing<i class="bi bi-chevron-down arows"></i></li>
+                    <li class="menuItem">Learn<i class="bi bi-chevron-down arows"></i></li>
+                    <li class="menuItem" id="moreMenu">...</li>
+                </ul>
+                <div id="hiddenMenu">
+                    
+                </div>
+            </div>
+            <div id="right">
+                <div id="searchSection">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.928 1.048c.013-.064.13-.064.144 0 .115.543.38 1.51.875 2.005.495.496 1.462.76 2.006.875.063.013.063.13 0 .144-.544.115-1.51.38-2.006.875-.496.495-.76 1.462-.875 2.005-.013.064-.13.064-.144 0-.115-.543-.38-1.51-.875-2.005-.495-.496-1.462-.76-2.006-.875-.063-.013-.063-.13 0-.144.544-.115 1.51-.38 2.006-.875.496-.495.76-1.462.875-2.005ZM13.067 4.046c-.012-.061-.122-.061-.134 0-.133.67-.477 2.044-1.16 2.727-.683.683-2.057 1.027-2.727 1.16-.061.012-.061.122 0 .134.67.133 2.044.477 2.727 1.16.683.683 1.027 2.057 1.16 2.727.012.061.122.061.134 0 .133-.67.477-2.044 1.16-2.727.683-.683 2.057-1.027 2.727-1.16.061-.012.061-.122 0-.134-.67-.133-2.044-.477-2.727-1.16-.683-.683-1.027-2.057-1.16-2.727Z" fill="currentColor"></path><path d="M2 11.5a7.5 7.5 0 0 0 12.202 5.843l4.156 4.157a1 1 0 1 0 1.415-1.414l-4.193-4.193A7.46 7.46 0 0 0 16.984 12h-1.505A6 6 0 1 1 9 5.52V4.017A7.5 7.5 0 0 0 2 11.5Z" fill="currentColor"></path></svg>
+                    <input type="search" name="search" id="" placeholder="Use 5+ words to describe your design">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M4.93 17.5c.18.53.43 1.03.72 1.5H4c-1.07 0-2-.89-2-1.99V9.55A2.5 2.5 0 0 1 4.43 7h3l.9-1.78A2.4 2.4 0 0 1 10.42 4h3.18c.85 0 1.63.46 2.1 1.26L16.56 7h3c1.4 0 2.44.86 2.44 2.25v7.76A2 2 0 0 1 20 19h-1.65c.3-.47.54-.97.72-1.5H20c.23 0 .5-.2.5-.49V9.25c0-.49-.32-.75-.93-.75H16.1a.75.75 0 0 1-.67-.41l-1.06-2.12a.91.91 0 0 0-.78-.47h-3.18a.9.9 0 0 0-.76.43L8.57 8.1a.75.75 0 0 1-.67.41H4.43c-.5 0-.93.46-.93 1.05v7.46c0 .25.25.49.5.49h.93zm7.07 2a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9zm0 1.5a6 6 0 1 1 0-12 6 6 0 0 1 0 12z"></path></svg>
+                </div>
+                <span title="Download the app">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M20 5.5H4a.5.5 0 0 0-.5.5v7.444h17V6a.5.5 0 0 0-.5-.5ZM3.5 16v-1.139h17V16a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.5-.5ZM22 16V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h4v1.583H5.708a.708.708 0 0 0 0 1.417h12.584a.708.708 0 1 0 0-1.417H16V18h4a2 2 0 0 0 2-2Zm-7.5 2h-5v1.583h5V18Z" fill="currentColor"></path></svg>
+                </span>
+                <span title="Settings">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M9 17.77c.37.19.75.34 1.15.46l.71 2.2c.73.1 1.47.1 2.2 0l.7-2.17c.47-.13.9-.31 1.31-.53l2.09 1.03c.58-.44 1.1-.96 1.55-1.53l-1.02-2.08c.25-.46.45-.95.6-1.47l2.16-.78c.08-.73.07-1.46-.05-2.18l-2.2-.7a6.47 6.47 0 0 0-.58-1.3l1-2.05c-.46-.57-1-1.09-1.59-1.52L15 6.23a6.46 6.46 0 0 0-1.15-.46l-.71-2.2c-.73-.1-1.47-.1-2.2 0l-.7 2.17c-.47.13-.9.31-1.31.53L6.84 5.24c-.58.44-1.1.96-1.55 1.53l1.02 2.08c-.25.46-.45.95-.6 1.47l-2.16.78c-.08.73-.07 1.46.05 2.18l2.2.7c.15.46.35.89.58 1.3l-1 2.05c.46.57 1 1.09 1.59 1.52L9 17.77zm-.02 1.71-2.1 1.11a9.94 9.94 0 0 1-3.24-3.1l1.1-2.27-2.44-.78a9.95 9.95 0 0 1-.1-4.45l2.55-.92-1.2-2.43a9.95 9.95 0 0 1 3.17-3.13l2.3 1.13.77-2.4a9.94 9.94 0 0 1 4.5.02l.73 2.26 2.1-1.11a9.94 9.94 0 0 1 3.24 3.1l-1.1 2.27 2.44.78c.36 1.43.4 2.95.1 4.45l-2.55.92 1.2 2.43a9.95 9.95 0 0 1-3.17 3.13l-2.3-1.13-.77 2.4a9.94 9.94 0 0 1-4.5-.02l-.73-2.26zM12 14.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm0 1.5a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"></path></svg>
+                </span>
+                <span title="Notifications">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path class="evJ6XQ" fill="currentColor" d="M13.5 19H15a3 3 0 0 1-6 0h1.5a1.5 1.5 0 0 0 3 0z"></path><path class="x9EzJQ" fill="currentColor" fill-rule="evenodd" d="M20.04 17.5h.21a.75.75 0 1 1 0 1.5H3.75a.75.75 0 1 1 0-1.5h.21c1-1.15 1.82-2.7 1.82-5.97v-1.3a6.22 6.22 0 0 1 4.87-6.08 1.5 1.5 0 1 1 2.7 0 6.22 6.22 0 0 1 4.87 6.07v1.3c0 3.27.83 4.82 1.82 5.98zm-1.87 0c-.99-1.52-1.45-3.3-1.45-5.97v-1.3a4.72 4.72 0 0 0-9.44 0v1.3c0 2.67-.46 4.45-1.45 5.97h12.34z"></path></svg>
+                </span>
+                <button id="createDesign" type="button">Create a design</button>
+                <span class="profilePicture" title="User Name">M</span>
+            </div>
+        </header>
+        <main>
+            <aside id="asideMenu">
+                <div id="asideProfile">
+                    <span class="profilePicture">M</span>
+                    <div id="personalInfo">
+                        <span id="personal">Personal</span>
+                        <span id="personalDetail">Free <i class="yAVqVg"> • </i> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.899 11.045C16.162 10.132 17 8.657 17 7c0-2.736-2.264-5-5-5S7 4.264 7 7c0 1.684.862 3.184 2.159 4.093C6.185 12.353 4.074 15.458 4 19.06c0 .418.193.732.482.941 2.313 1.255 4.819 1.986 7.518 1.986s5.301-.732 7.518-1.986c.289-.209.482-.523.482-.941 0-3.651-2.094-6.788-5.101-8.015ZM8.5 7c0-1.897 1.603-3.5 3.5-3.5s3.5 1.603 3.5 3.5c0 1.859-1.541 3.425-3.387 3.488l-.017-.001c-.048 0-.095.007-.143.008C10.077 10.468 8.5 8.881 8.5 7ZM12 20.487c-2.198 0-4.38-.552-6.492-1.64.192-3.752 3.026-6.769 6.444-6.852.017 0 .032.005.048.005.039 0 .075-.011.114-.012 3.459.011 6.283 3.066 6.383 6.862A13.784 13.784 0 0 1 12 20.487Z" fill="currentColor"></path></svg>1</span>
+                    </div>
+                </div>
+                <div class="proBtn">
+                    <button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="gold" d="M7.51 4.87C7.01 6.27 6.45 6.95 5.94 7c-.57.07-1.07-.18-1.54-.8a.54.54 0 0 0-.1-.1 1 1 0 1 0-.8.4l.01.12.82 3.24A1.5 1.5 0 0 0 5.78 11h4.44a1.5 1.5 0 0 0 1.45-1.14l.82-3.24a.54.54 0 0 0 .01-.12 1 1 0 1 0-.8-.4.54.54 0 0 0-.1.09c-.49.62-1 .87-1.54.81-.5-.05-1.04-.74-1.57-2.13a1 1 0 1 0-.98 0zM11 11.75a.5.5 0 1 1 0 1H5a.5.5 0 1 1 0-1h6z"></path></svg>Try Canva Pro</button>
+                </div>
+                <ul class="asideUl">
+                    <li class="asideList"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11.03 3.327a1.599 1.599 0 0 1 1.94 0l7.384 5.61c.407.31.646.795.646 1.31v9.117c0 .903-.723 1.636-1.615 1.636h-3.762a1.626 1.626 0 0 1-1.615-1.636V15.88A2.015 2.015 0 0 0 12 13.847a2.015 2.015 0 0 0-2.008 2.034v3.483c0 .903-.723 1.636-1.615 1.636H4.615A1.626 1.626 0 0 1 3 19.364v-9.117c0-.515.24-1 .646-1.31l7.385-5.61Zm.908 1.195-7.384 5.61a.144.144 0 0 0-.054.115v9.117c0 .08.056.136.115.136h3.762c.06 0 .115-.057.115-.136V15.88c0-1.953 1.562-3.534 3.508-3.534s3.508 1.581 3.508 3.534v3.483c0 .08.056.136.115.136h3.762c.059 0 .115-.057.115-.136v-9.117a.144.144 0 0 0-.054-.115l-7.384-5.61a.099.099 0 0 0-.124 0Z" fill="currentColor"></path></svg><span class="asideListSpan">Home</span></li>
+                    <li class="asideList"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.6 5.613C7.91 5.466 6.98 4.874 6.484 3.7c-.179-.423-.304-.917-.384-1.5 0-.1-.1-.2-.2-.2s-.2.1-.2.2c-.08.583-.205 1.077-.384 1.5C4.821 4.874 3.891 5.466 2.2 5.613c-.1 0-.2.1-.2.2s.1.2.2.2c2.1.4 3.2 1.187 3.5 3.387 0 .1.1.2.2.2s.2-.1.2-.2c.3-2.2 1.4-2.987 3.5-3.387.1 0 .2-.1.2-.2s-.1-.2-.2-.2Z" fill="url(#_1924317027__a)"></path><path d="M19.469 11.865c-4-.8-5.726-2.73-6.526-6.629a.493.493 0 0 0-.474-.371.493.493 0 0 0-.475.376c.007-.015-.009.006 0 0-.8 4-2.625 5.824-6.525 6.624a.5.5 0 0 0 0 1c4 .8 5.717 2.687 6.517 6.587a.493.493 0 0 0 .483.413.493.493 0 0 0 .477-.387c.006-.008-.005.01 0 0 .8-4 2.623-5.813 6.523-6.613a.5.5 0 0 0 0-1Z" fill="url(#_1924317027__b)"></path><path d="M21.465 5.8c0-.084-.061-.14-.144-.156l-.056-.013c-1.168-.305-1.876-1.024-2.073-2.108a.153.153 0 0 0-.153-.153v.004c-.084 0-.14.062-.156.144l-.013.056c-.305 1.168-1.024 1.876-2.108 2.073a.153.153 0 0 0-.153.153h.004c0 .084.062.14.145.156l.055.013c1.168.305 1.876 1.024 2.073 2.108 0 .084.069.153.153.153v-.004c.084 0 .14-.062.156-.145l.014-.055c.304-1.168 1.023-1.876 2.107-2.073a.15.15 0 0 0 .15-.153Z" fill="url(#_1924317027__c)"></path><path d="M7.919 18.715c-1-.3-1.582-.782-1.782-1.782a.218.218 0 1 0-.436 0c-.3 1-.782 1.582-1.782 1.782a.218.218 0 0 0 0 .436c1 .3 1.582.782 1.782 1.782a.218.218 0 0 0 .436 0c.3-1 .782-1.582 1.782-1.782a.218.218 0 0 0 0-.436Z" fill="url(#_1924317027__d)"></path><defs><linearGradient id="_1924317027__a" x1="-7.733" y1="11.576" x2="11.416" y2="31.039" gradientUnits="userSpaceOnUse"><stop stop-color="#03A5AB"></stop><stop offset="1" stop-color="#8B3DFF"></stop></linearGradient><linearGradient id="_1924317027__b" x1="-7.733" y1="11.576" x2="11.416" y2="31.039" gradientUnits="userSpaceOnUse"><stop stop-color="#03A5AB"></stop><stop offset="1" stop-color="#8B3DFF"></stop></linearGradient><linearGradient id="_1924317027__c" x1="-7.733" y1="11.576" x2="11.416" y2="31.039" gradientUnits="userSpaceOnUse"><stop stop-color="#03A5AB"></stop><stop offset="1" stop-color="#8B3DFF"></stop></linearGradient><linearGradient id="_1924317027__d" x1="-7.733" y1="11.576" x2="11.416" y2="31.039" gradientUnits="userSpaceOnUse"><stop stop-color="#03A5AB"></stop><stop offset="1" stop-color="#8B3DFF"></stop></linearGradient></defs></svg><span class="asideListSpan">Magic Studio</span></li>
+                    <li class="asideList"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 2h6.559a2 2 0 0 1 1.897 1.368L14.5 5h7c1.105 0 2 .831 2 1.857v9.286c0 1.026-.895 1.857-2 1.857h-1v1.143c0 1.026-.895 1.857-2 1.857h-16c-1.105 0-2-.831-2-1.857V9.857c0-.142.017-.28.05-.413A2.007 2.007 0 0 1 .5 9V7a2 2 0 0 1 2-2h1V4a2 2 0 0 1 2-2Zm0 3H5V4a.5.5 0 0 1 .5-.5h6.559a.5.5 0 0 1 .474.342L13 5.5l.266 1H21.5c.3 0 .5.186.5.357v9.286c0 .171-.2.357-.5.357h-1V9.857c0-1.026-.895-1.857-2-1.857h-7l-.544-1.632A2 2 0 0 0 9.058 5H5.5Zm2.4 1.5H2.5A.5.5 0 0 0 2 7v1.059A2.15 2.15 0 0 1 2.5 8h7.419l-.386-1.158a.5.5 0 0 0-.475-.342H7.9Zm-5.4 3c-.3 0-.5.186-.5.357v9.286c0 .171.2.357.5.357h16c.3 0 .5-.186.5-.357V9.857c0-.171-.2-.357-.5-.357h-16Z" fill="currentColor"></path></svg><span class="asideListSpan">Projects</span></li>
+                    <li class="asideList asideListLeftRight"><div class="divList"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M25.333 4H6.667A2.667 2.667 0 0 0 4 6.667v18.666A2.667 2.667 0 0 0 6.667 28h18.666A2.667 2.667 0 0 0 28 25.333V6.667A2.667 2.667 0 0 0 25.333 4ZM6 6.667C6 6.298 6.298 6 6.667 6h10.666v20H6.667A.667.667 0 0 1 6 25.333V6.667Zm13.333 6.666V6h6c.369 0 .667.298.667.667v6.666h-6.667Zm0 2V26h6a.667.667 0 0 0 .667-.667v-10h-6.667Z" fill="currentColor"></path></svg><span class="asideListSpan">Templates</span></div><svg class="svgArrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m8.55 5.78 5.96 5.97c.1.1.1.25 0 .35l-5.87 5.87a.75.75 0 0 0 1.06 1.06l5.87-5.87c.69-.68.69-1.79 0-2.47L9.61 4.72a.75.75 0 0 0-1.06 1.06z"></path></svg></li>
+                    <li class="asideList asideListLeftRight"><div class="divList"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.22 3.435 9.532 6.53 5.41 8.03l6.847-5.745a2 2 0 0 1 2.817.246L16.5 4.23a2.99 2.99 0 0 0-1.14.18l-.511.186-.923-1.1a.5.5 0 0 0-.704-.061Zm-1.276 4.878H7.56l8.143-2.964a2 2 0 0 1 2.563 1.195l.644 1.769h-1.597l-.457-1.256a.5.5 0 0 0-.64-.298l-4.27 1.554Zm-6.752 1h14a1.992 1.992 0 0 1 1.492.668c.316.354.508.82.508 1.332v8a2 2 0 0 1-2 2h-14a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2Zm14.822-.886.009.002-.014-.015.005.013ZM4.75 11.3a.5.5 0 0 1 .5-.5H19.2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5H5.25a.5.5 0 0 1-.5-.5v-8Zm6.446 4.326c-.033.905-.768 1.544-1.782 1.544-1.185 0-1.914-.795-1.914-2.086C7.5 13.792 8.227 13 9.414 13c.995 0 1.749.664 1.779 1.56h-.968a.791.791 0 0 0-.811-.721c-.551 0-.889.471-.889 1.242 0 .773.338 1.25.891 1.25.434 0 .757-.28.815-.704h.965ZM13.688 13c1.19 0 1.946.798 1.946 2.084 0 1.288-.756 2.086-1.946 2.086-1.196 0-1.952-.798-1.952-2.086 0-1.286.765-2.084 1.952-2.084Zm0 .834c-.557 0-.927.488-.927 1.25 0 .764.365 1.253.927 1.253.556 0 .924-.489.924-1.253 0-.762-.37-1.25-.924-1.25Zm2.792 3.23a.702.702 0 1 0 0-1.405.702.702 0 0 0 0 1.404Z" fill="currentColor"></path></svg><span class="asideListSpan">Brand</span><svg id="goldenHat" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><circle r="8" cx="8" cy="8" fill="gold" /><path fill="white" d="M7.51 4.87C7.01 6.27 6.45 6.95 5.94 7c-.57.07-1.07-.18-1.54-.8a.54.54 0 0 0-.1-.1 1 1 0 1 0-.8.4l.01.12.82 3.24A1.5 1.5 0 0 0 5.78 11h4.44a1.5 1.5 0 0 0 1.45-1.14l.82-3.24a.54.54 0 0 0 .01-.12 1 1 0 1 0-.8-.4.54.54 0 0 0-.1.09c-.49.62-1 .87-1.54.81-.5-.05-1.04-.74-1.57-2.13a1 1 0 1 0-.98 0zM11 11.75a.5.5 0 1 1 0 1H5a.5.5 0 1 1 0-1h6z"></path></svg></div><svg class="svgArrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m8.55 5.78 5.96 5.97c.1.1.1.25 0 .35l-5.87 5.87a.75.75 0 0 0 1.06 1.06l5.87-5.87c.69-.68.69-1.79 0-2.47L9.61 4.72a.75.75 0 0 0-1.06 1.06z"></path></svg></li>
+                    <li class="asideList asideListLeftRight"><div class="divList"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M5 4h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm0 6h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1zm6-6h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm0 6h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1zm6-6h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm0 6h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1zM5 16h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1zm6 0h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1zm6 0h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1z"></path></svg><span class="asideListSpan">Apps</span></div><svg class="svgArrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m8.55 5.78 5.96 5.97c.1.1.1.25 0 .35l-5.87 5.87a.75.75 0 0 0 1.06 1.06l5.87-5.87c.69-.68.69-1.79 0-2.47L9.61 4.72a.75.75 0 0 0-1.06 1.06z"></path></svg></li>
+                </ul>
+                <ul class="asideUl asideBottom">
+                    <li class="asideList asideListDevider"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4 18.5a.5.5 0 0 1-.5-.5V5a.5.5 0 0 1 .5-.5h6.5c.275 0 .5.225.5.5v13.5H4Zm8.5 1.497V20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6.5c1.102 0 2 .895 2 2v3.997h2L20 9c1.105 0 2 .892 2 2v7l-1.5-.001V11c0-.278-.222-.5-.5-.5l-3.126-.001-4.374-.002v8l7.5.003a.5.5 0 0 0 .5-.5H22a2 2 0 0 1-2 2l-7.5-.003ZM5 7.497h4.5v-1.5H5v1.5Zm0 3h4.5v-1.5H5v1.5Zm4.5 3H5v-1.5h4.5v1.5Zm-4.5 3h4.5v-1.5H5v1.5Zm11-3h-2v-1.5h2v1.5Zm0 3h-2v-1.5h2v1.5Zm3-3h-2v-1.5h2v1.5Zm0 3h-2v-1.5h2v1.5Z" fill="currentColor"></path></svg><span class="asideListSpan">Create a team</span></li>
+                    <!-- <li class="asideListDevider"></li> -->
+                    <li class="asideList"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5a3 3 0 0 1 3-3h2a3 3 0 0 1 3 3h4.25a.75.75 0 1 1 0 1.5H19V18a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V6.5H3.75a.75.75 0 0 1 0-1.5H8zM6.5 6.5V18c0 .83.67 1.5 1.5 1.5h8c.83 0 1.5-.67 1.5-1.5V6.5h-11zm3-1.5h5c0-.83-.67-1.5-1.5-1.5h-2c-.83 0-1.5.67-1.5 1.5zm-.25 4h1.5v8h-1.5V9zm4 0h1.5v8h-1.5V9z"></path></svg><span class="asideListSpan">Trash</span></li>
+                </ul>
+            </aside>
+            <section>
+                
+            </section>
+        </main>
+  </body>
+  <script>
+    let hamburIcon = document.getElementById('hamburIcon');
+let asideMenu = document.getElementById("asideMenu");
+let menuItem = document.getElementsByClassName("menuItem")
+let headerUl = document.querySelector("#headerUl"); 
+let moreMenu = document.getElementById("moreMenu")
+let menuClicked = false;
+
+hamburIcon.addEventListener("click", () => {
+    menuClicked = !menuClicked;
+
+    if (!menuClicked) {
+        asideMenu.style.display = "none";
+    } else {
+        asideMenu.style.display = "flex";
+    }
+})
+
+  </script>
 </html>
