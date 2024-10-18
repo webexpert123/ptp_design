@@ -9593,9 +9593,12 @@ section#hero .container {
 #why-section .container .row .why-block-grid .box-item .box-header .box-icon svg {
   width: 65px;
 }
+#why-section .container .row .why-block-grid .box-item ul {
+  min-height: 90px;
+}
 #why-section .container .row .why-block-grid .box-item ul li {
-  padding-left: 42px;
-  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-bottom: 5px;
   display: inline-block;
 }
 #why-section .container .row .why-block-grid .box-item ul li p {
@@ -9670,7 +9673,7 @@ section#coach-tab-section .tab-coach-main .coach-main .coach-grid .coach-content
 }
 section#coach-tab-section .tab-coach-main .coach-main .coach-grid .coach-content .coach-feature ul li i {
   margin-right: 5px;
-  color: var(--sub-heading-color);
+  color: var(--secondary-color);
 }
 section#coach-tab-section .tab-coach-main .coach-main .coach-grid .coach-content .coach-feature ul li:first-child {
   padding: 0;
@@ -9832,4 +9835,12 @@ footer section#footer .social-widget ul li a {
 }
 footer section#footer .social-widget ul li a i {
   font-size: 35px;
+}
+footer .copyright-area {
+  background-color: var(--primary-color);
+}
+footer .copyright-area p {
+  margin-bottom: 0;
+  padding: 30px 0px;
+  font-size: 14px;
 }

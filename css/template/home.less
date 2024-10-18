@@ -278,17 +278,18 @@ section#hero .container {
                                     }
                                 }
                             }
-                            & svg{
+                             svg{
                                 width: 65px;
                             }
                         }
                     }
-                    & ul {
-                        & li {
-                            padding-left: 42px;
-                            padding-bottom: 10px;
+                    ul {
+                        min-height: 90px;
+                        li {
+                            padding-left: 30px;
+                            padding-bottom: 5px;
                             display: inline-block;
-                            & p{
+                            p{
                                 position: relative;
                                     &:before {
                                         content: '';
@@ -382,7 +383,7 @@ section#coach-tab-section{
                                         color: var(--sub-heading-color);
                                         i {
                                             margin-right: 5px;
-                                            color: var(--sub-heading-color);
+                                            color: var(--secondary-color);
                                         }
                                         &:first-child{
                                             padding:0;
@@ -597,6 +598,14 @@ footer {
                     }
                 }
             }
+        }
+    }
+    .copyright-area {
+        background-color: var(--primary-color);
+        p {
+            margin-bottom: 0;
+            padding: 30px 0px;
+            font-size: 14px;
         }
     }
 }
