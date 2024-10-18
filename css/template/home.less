@@ -11,7 +11,7 @@
 }
 
 .hero-wrapper {
-    background: url(../assets/images/banner_right.png) no-repeat center right, url(../assets/images/banner_left.png) no-repeat center left;
+    background: url(../assets/images/banner_right.png) no-repeat top right, url(../assets/images/banner_left.png) no-repeat center left;
     position: relative;
     overflow: hidden;
     background-color: var(--body-accent-color);
@@ -293,174 +293,291 @@ section#hero .container {
         }
     }
 }
-/*--------------------------------------------------------------
-# Center CTA Section Start
---------------------------------------------------------------*/
-#center-cta {
-    background: var(--aceent5-color);
-    padding: 3rem 0rem;
-    position: relative;
-    overflow: hidden;
-        &:after {
-            content: 'PTP';
-            font-size: 23vw;
-            position: absolute;
-            right: 0;
-            top: -43%;
-            font-weight: 900;
-            color: var(--aceent7-color);
-            opacity: 0.2;
-        }
-        & .container{
-            .center-cta-inner{
-                position: relative;
-                z-index: 1;
-                & .cta-content {
-                    max-width: 70%;
-                    p {
-                        font-size: 20px;
-                    }
-                }
-            }
-        }
-}
 
 /*--------------------------------------------------------------
 # Our Coach Section Start
 --------------------------------------------------------------*/
 
-#our-coach {
-    background-color: var(--secondary-color);
-     & .container {
-        & .section-title{
-            h2 {
-                font-weight: 800;
-                color: var(--light-font-color);
-                span{
-                    color: var(--aceent0-color);
-                }
-            }
-            p {
-                color: var(--light-font-color);
-            }
-        }
-        & .row {
-            & .coach-grid {
-                background: var(--primary-color);
-                overflow: hidden;
-                border-radius: 20px;
-                & .coach-img{
-                    overflow: hidden;
-                    img {
-                        object-fit: cover;
-                        width: 100%;
-                        height: 280px;
-                        transition: 0.3s all ease;
-                        &:hover {
-                            scale: 1.1;
-                            transition: 0.3s all ease-in-out;
-                        }                    
+
+
+/*--------------------------------------------------------------
+# Top Profile Coaches Section Start
+--------------------------------------------------------------*/
+section#coach-tab-section{
+    background-color: var(--aceent5-color);
+    & .tab-coach-main {
+        & .coaches-filter {
+            li {
+                display: inline-block;
+                &.active {
+                    a{
+                        background: var(--secondary-color);
+                        color: var(--primary-color);
+                        border-color:var(--secondary-color) ;
                     }
                 }
-                & .coach-content{
-                    padding: 20px;
-                    .coach-footer{
-                        .coach-id{
-                            gap:10px;
-                            .coach-thumb{
-                                width: 50px;
-                                height: 50px;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                font-size: 18px;
-                                font-weight: 900;
-                                background: var(--aceent0-color);
-                                border-radius: 50%;
-                                color: var(--primary-color);
+                a {
+                        padding: 0.3rem 0.8rem;
+                        background: var(--primary-color);
+                        border-radius: 25px;
+                        border: 1px solid var(--aceent4-color);
+                        margin-right: 5px;
+                        transition: 0.3s all ease-in-out;
+                    &:hover {
+                        color: var(--primary-color);
+                        background: var(--secondary-color);
+                        text-decoration: none;
+                        border-color:var(--secondary-color) ;
+                        transition: 0.3s all ease-in-out;
+                   } 
+                }
+                }
+            }
+                & .coach-main {
+                    & .coach-grid{
+                        border: 1px solid var(--aceent4-color);
+                        padding: 18px;
+                        border-radius: 15px;
+                        background-color: var(--primary-color);
+                        margin-bottom: 30px;
+                        & .coach-image{
+                                min-height: 192px;
+                            img {
+                                border-radius: 15px;
+                                height: 100%;
+                                object-fit: cover;
                             }
-                            span {
-                                p {
-                                    strong {
-                                        color: var(--secondary-color);
+                        }
+                    & .coach-content {
+                            h4 {
+                                margin-bottom: 0;
+                            }
+                            & .rating-block {
+                                span {
+                                    i {
+                                        color: var(--aceent0-color);
                                     }
-                                    margin-bottom: 0;
-                                    font-size: 13px;
-                                    color: var(--sub-heading-color);
+                                }
+                            }
+                            & .coach-feature{
+                                ul {
+                                    li {
+                                        display: inline-block;
+                                        padding:5px;
+                                        color: var(--sub-heading-color);
+                                        i {
+                                            margin-right: 5px;
+                                            color: var(--sub-heading-color);
+                                        }
+                                        &:first-child{
+                                            padding:0;
+                                        }
+                                    }
+                                }
+                            }
+                        a {
+                            font-weight: 600;
+                        }
+                    }
+                    & .coach-footer {
+                        & .coach-footer-inner {
+                            padding-top: 15px;
+                            border-top: 1px solid var(--aceent3-color);
+                            margin-top: 10px;
+                            h5 {
+                                margin-bottom: 0;
+                                span {
+                                    color: var(--aceent0-color);
+                                }
+                            }
+                            button {
+                                i {
+                                    font-size: 26px;
+                                    line-height: 0;
+                                    position: relative;
+                                    top: 5px;                                
+                                }
+                                &:last-child:hover {
+                                    background-color: var(--aceent0-color);
+                                    border-color: var(--aceent0-color);
+                                    i {
+                                        color: var(--primary-color);
+                                    }
                                 }
                             }
                         }
-                    a {
-                        font-size: 13px;
-                        &:hover {
-                            color: var(--secondary-color);
                         }
-                      }
+                    }
+                    & .view-more {
+                        button {
+                            background-color: var(--aceent0-color);
+                            border-color: var(--aceent0-color);
+                            color: var(--primary-color);
+                        }
+                    }
+                }
+    }
+}
+
+/*--------------------------------------------------------------
+# Our Coach find Section Start
+--------------------------------------------------------------*/
+section#coach-find-area {
+    & .coach-find-main {
+        & .coach-find-content {
+            & .coach-find-box {
+                & .coach-find-item{
+                    padding: 30px 15px;
+                    background: var(--aceent5-color);
+                    border-radius: 15px;
+                    margin-bottom: 30px;
+                    cursor: pointer;
+                    transition: 0.3s all ease-in-out;
+                    &:hover {
+                        background: var(--aceent4-color);
+                        transition: 0.3s all ease-in-out;
+                    }
+                    h5 {
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                    span {
+                        font-size: 13px;
+                        i{
+                            margin-right: 5px;
+                            color: var(--aceent0-color);
+                        }
+                    }
+                    div {
+                        justify-content: space-between;
                     }
                 }
             }
         }
-     }
+    }
 }
 
-#step-section {
-    & .container{
-        & .step-main {
-            & .row {
-               & .col-md-4 {
-                position: relative;
-                    &:first-child{
-                        position: inherit;
-                        background: transparent;
+/*--------------------------------------------------------------
+# Secure Section Start
+--------------------------------------------------------------*/
+#steps-area {
+    & .steps-main {
+        & .steps-content {
+            & .steps-content-inner {
+                padding: 40px;
+                border-radius: 25px;
+                background: var(--secondary-color);
+                h1 {
+                    font-weight: 600;
+                    color: var(--primary-color);
+                    span {
+                        color: var(--aceent0-color);
                     }
-                    &:after {
-                        content: '';
-                        background: url(../assets/images/divider.png) no-repeat center center;
-                        width: 103px;
-                        height: 20px;
-                        position: absolute;
-                        transform: translate(-50%, -50%);
-                        top: 30%;
+                }
+                & .step-list {
+                    ul {
+                        li {
+                            margin-bottom: 30px;
+                    & .step-item {
+                        background: #222;
+                        padding: 20px;
+                        border-radius: 20px;
+                    i{
+                        font-size: 28px;
+                        position: relative;
+                        top: 10px;
+                        margin-right: 20px;
+                        color:var(--primary-color);
                     }
-                    & .step-box {
-                        display: flex;
-                        justify-content: center;
-                        flex-wrap: wrap;
-                        padding: 30px;
-                        & .step-count{
-                            width: 150px;
-                            height: 150px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            background: #e5e5e5;
-                            border-radius: 50%;
-                            transition: 0.3s all ease-in-out;
-                            h2{
-                                font-size: 94px;
-                                margin-bottom: 0;
-                            }
+                    & .s-list-content {
+                       
+                        h2 {
+                            font-weight: 500;
+                            font-size: 32px;
+                            color: var(--primary-color);
                         }
-                        & .step-content {
-                            width: 100%;
-                            h3{
-                                font-size: 30px;
-                                text-transform: uppercase;
-                                margin-top: 20px;
-                                margin-bottom: 20px;
-                            }
-                            p {
-                                color: var(--tertiary-color);
-                            }
+                        p {
+                            margin-bottom: 0;
+                            color: var(--primary-color);
                         }
                     }
-                    &:hover {
-                        .step-count{
-                            background: var(--secondary-color);
-                            transition: 0.3s all ease-in-out;
-                            h2{
-                                color: var(--aceent0-color);
-                            }
+                    }
+                }
+                }
+                }
+            }
+            & .steps-image {
+                height: 100%;
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+}
+
+/*--------------------------------------------------------------
+# footer Section Start
+--------------------------------------------------------------*/
+
+footer {
+    .footer-cta {
+        max-width: 980px;
+        margin: 0 auto;
+        background-color: var(--secondary-color);
+        border-radius: 25px;
+        overflow: hidden;
+        padding: 1.25rem;
+        position: relative;
+        top: 8rem;
+        & .cta-content {
+        h2{
+            color: var(--primary-color);
+        }
+        p {
+            color: var(--primary-color);
+        }
+        & .view-more {
+            button {
+                background-color: var(--aceent0-color);
+                border-color: var(--aceent0-color);
+                color: var(--primary-color);
+            }
+        }
+        }
+    }
+    section#footer {
+        background-color: var(--aceent5-color);
+        padding-top: 14rem;
+        & .about-widget {
+            padding-right: 50px;
+            img {
+                max-width: 195px;
+            }
+            p {
+                margin-top: 20px;
+            }
+        }
+        & .link-widget {
+            ul {
+                li {
+                    a {
+                        padding: 6px 0px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        & .social-widget {
+            ul {
+                li {
+                    display: inline-block;
+                    a {
+                        margin-right: 10px;
+                        i {
+                            font-size: 35px;
                         }
                     }
                 }
@@ -468,3 +585,6 @@ section#hero .container {
         }
     }
 }
+
+
+
