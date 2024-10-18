@@ -9795,7 +9795,7 @@ footer .footer-cta {
   background-color: var(--secondary-color);
   border-radius: 25px;
   overflow: hidden;
-  padding: 1.25rem;
+  padding: 0 1.25rem 0 1.25rem;
   position: relative;
   top: 8rem;
 }
@@ -9809,6 +9809,10 @@ footer .footer-cta .cta-content .view-more button {
   background-color: var(--aceent0-color);
   border-color: var(--aceent0-color);
   color: var(--primary-color);
+}
+footer .footer-cta img {
+  position: relative;
+  top: 20px;
 }
 footer section#footer {
   background-color: var(--aceent5-color);
