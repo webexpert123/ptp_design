@@ -73,7 +73,22 @@ section#hero .container {
 .hero .animated {
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
-
+.find-filter {
+    position: relative;
+    width: 350px;
+}
+.find-filter button{
+    position: absolute;
+    right: 0;
+}
+.find-filter input {
+    min-height: 53px;
+    padding: 10px 20px;
+    min-width: 350px;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid #ccc;
+}
 @keyframes up-down {
     0% {
         transform: translateY(10px);
