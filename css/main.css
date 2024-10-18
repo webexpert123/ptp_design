@@ -9130,6 +9130,11 @@ h2 {
   border: 2px solid var(--dark-border-color);
   color: var(--dark-font-color) !important;
 }
+.custom-button button.secondary:hover {
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: var(--light-font-color) !important;
+}
 @media (min-width: 1200px) {
   .container {
     max-width: 1400px;
