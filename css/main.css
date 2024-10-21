@@ -9177,17 +9177,11 @@ h2 {
   padding-bottom: 120px;
   position: relative;
   z-index: 1;
-}
-.breadcrumb-area .overlay-banner:after {
-  background: rgba(0, 0, 0, 0.3);
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
+  background: url(../assets/images/banner_right.png) no-repeat top right, url(../assets/images/banner_left.png) no-repeat center left;
+  background-color: #f7f7f7;
 }
 .breadcrumb-area .breadcrumbs h1 {
-  color: #ffffff;
+  color: var(--secondary-color);
   font-size: 48px;
   font-weight: 700;
   line-height: 50px;
