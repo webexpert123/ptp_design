@@ -144,3 +144,172 @@ h2 {
         max-width: 1400px;
     }
 }
+
+
+/*** 
+=============================================
+    Breadcrumb area style
+=============================================
+***/
+.breadcrumb-area {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 130px;
+    padding-bottom: 120px;
+    position: relative;
+    z-index: 1;
+}
+.breadcrumb-area .breadcrumbs {}
+.breadcrumb-area .breadcrumbs h1 {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 50px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+
+/*** 
+=============================================
+    Breadcrumb area style
+=============================================
+***/
+.breadcrumb-area {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 130px;
+    padding-bottom: 120px;
+    position: relative;
+    z-index: 1;
+    & .overlay-banner{
+        &:after{
+            background: rgb(0 0 0 / 30%);
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+        }
+    }
+    & .breadcrumbs {
+        h1 {
+            color: #ffffff;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 50px;
+            text-transform: capitalize;
+            text-align: center;
+        }
+    }
+}
+
+/*** 
+=============================================
+    Breadcrumb bottom area style
+=============================================
+***/
+
+.breadcrumb-bottom-area {
+    position: relative;
+    overflow: hidden;
+    padding: 18px 0 15px;
+    border-bottom: 1px solid var(--light-border);
+    border-top: 1px solid var(--light-border);
+    & .left {
+        ul {
+            li {
+                display: inline-block;
+                margin-right: 6px;
+                line-height: 20px;
+                font-size: 16px;
+                font-weight: 400;
+                font-family: 'Poppins', sans-serif;
+                &:last-child {
+                    margin-right: 0;
+                }
+                a{
+                    color: #404040;
+                    text-transform: capitalize;
+                    font-family: 'Poppins', sans-serif;
+                    transition: all 500ms ease;
+                    &:hover {
+                        color: var(--aceent0-color);
+                    }
+                }
+                &.active{
+                    color: var(--aceent0-color);    
+                }
+                i {
+                    font-size: 16px;
+                }
+
+            }
+        }
+    }
+    & .right {
+        span {
+            color: var(--secondary-color);
+            font-size: 16px;
+            font-weight: 400;
+            font-family: 'Open Sans', sans-serif;
+            text-transform: capitalize;
+            transition: all 500ms ease;
+            &:hover {
+                color: var(--aceent0-color);
+            }
+            i {
+                font-size: 16px;
+                display: inline-block;
+                padding-right: 6px;
+            }
+        }
+        a {
+            display: inline-block;
+        }
+    }
+}
+
+/*** 
+=============================================
+    pagination style css
+=============================================
+***/
+
+/* Post pagination styles */
+.post-pagination {
+    li {
+        display: inline-block;
+        margin: 0 3px;
+        &.active {
+            a {
+                background: var(--aceent0-color);
+                color: var(--primary-color);
+                border: 2px solid var(--aceent0-color);
+            }
+        }
+        &:hover {
+            a {
+                background: var(--aceent0-color);
+                color: var(--primary-color);
+                border: 2px solid var(--aceent0-color);
+            }
+        }
+        a {
+            background: var(--primary-color) none repeat scroll 0 0;
+            border: 2px solid var(--light-border);
+            color: var(--secondary-color);
+            display: block;
+            font-size: 18px;
+            font-weight: 600;
+            height: 55px;
+            padding: 14px 0;
+            transition: all 500ms ease 0s;
+            width: 55px;
+            border-radius: 50%;
+           
+        }
+    }
+}

@@ -1,4 +1,11 @@
 body {
+  &.home {
+    header {
+      & section.header-main {
+          position: fixed;
+      }
+    }
+  }
   header {
       section.header-main {
         width: 100%;
@@ -7,6 +14,7 @@ body {
         background: transparent;
         z-index: 5555;
         transition: .3s all ease-in-out;
+        position: relative;
         .fluid-container {
           padding: 0rem 2.5rem;
           .header-blocks {
