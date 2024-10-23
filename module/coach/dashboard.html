@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PTP-Dashboard</title>
+    <link rel="icon" type="image/png" href="./assets/images/logo.png">
+    <link href="../../css/module/module.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <!-- animation library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body class="module-template">
+    <!-- container open -->
+    <div class="container-fluid">
+
+        <nav class="navbar navbar-toggleable-sm navbar-light bg-faded fixed-top">
+            <a class="navbar-brand" href="javascript:;">
+                <img src="https://v4-alpha.getbootstrap.com/assets/brand/bootstrap-solid.svg" width="30" height="30"
+                    class="align-top" alt="">
+                Bootstrap 4
+            </a>
+            <button class="navbar-toggler navbar-toggler-right hidden-lg-up" type="button" data-toggle="collapse"
+                data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="javascript:;">middle1<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:;">middle2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:;">middle3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:;">middle4</a>
+                    </li>
+                </ul>
+
+                <form class="form-inline mt-2 mt-md-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+
+        <nav class="sidebar" data-toggle="pill">
+            <ul class="nav">
+                <li class="nav-profile">
+                    <div class="image">
+                        <a href="javascript:;"><img
+                                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/325053/profile/profile-80.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="info">
+                        Your Name
+                        <small>Frontend Developer</small>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="nav flex-column">
+                <li class="nav-header active">Navigation</li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="javascript:;"><i class="fa fa-bar-chart-o"></i>menu left 1<span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:;"><i class="fa fa-cogs"></i>menu left 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:;"><i class="fa fa-cloud-download"></i>menu left 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:;">
+                        <i class="fa fa-code"></i>
+                        menu left 4
+                    </a>
+                </li>
+
+                <li class="nav-item has-sub">
+                    <a class="nav-link" data-toggle="collapse" href="#sub1" aria-expanded="false" aria-controls="sub1">
+                        <i class="fa fa-align-left"></i>
+                        menu level 1
+                    </a>
+                    <ul class="sub collapse" id="sub1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:;">
+                                menu level 1.1
+                            </a>
+                        </li>
+                        <li class="nav-item has-sub">
+                            <a class="nav-link" data-toggle="collapse" href="#sub2" aria-expanded="false"
+                                aria-controls="sub2">
+                                menu level 1.2
+                            </a>
+                            <ul class="sub collapse" id="sub2">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="javascript:;">menu level 2.1</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="javascript:;">menu level 2.2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:;">menu level 1.3</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item has-sub">
+                    <a class="nav-link" data-toggle="collapse" href="#sub3" aria-expanded="false" aria-controls="sub3">
+                        <i class="fa fa-align-left"></i>
+                        menu level 1
+                    </a>
+                    <ul class="sub collapse" id="sub3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:;">
+                                menu level 1.1
+                            </a>
+                        </li>
+                        <li class="nav-item has-sub">
+                            <a class="nav-link" data-toggle="collapse" href="#sub4" aria-expanded="false"
+                                aria-controls="sub4">
+                                menu level 1.2
+                            </a>
+                            <ul class="sub collapse" id="sub4">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="javascript:;">menu level 2.1</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="javascript:;">menu level 2.2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:;">menu level 1.3</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="">
+                    <a class="sidebar-minify" href="javascript:;">
+                        <i class="fa fa-angle-double-left"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+
+        <!-- container close -->
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>
+
+</html>
