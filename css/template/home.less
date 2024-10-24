@@ -741,16 +741,321 @@ section#risk-block {
 
 /*** 
 =============================================
-    Blog page Design
+    Profile page Design
 =============================================
 ***/
 
-.blog-default-area {
-    padding-top: 80px;
-    padding-bottom: 80px;
+section#profile-layout {
+    & .profile-top {
+        background: #000;
+        padding: 30px;
+        border-radius: 25px;
+        & .profile-sidebar {
+            & .video-section {
+                video {
+                    width: 100%;
+                    border-radius: 20px;
+                }
+            }
+        }
+        & .profile-top-content {
+            padding-left: 5%;
+            color: var(--primary-color);
+            & .profiler-id {
+                & .d-flex {
+                    h2 {
+                        color: var(--primary-color);
+                    }
+                    span {
+                        &.price {
+                            color: var(--aceent0-color);
+                            font-size: 36px;
+                            font-weight: 800;
+                            line-height: 27px;
+                            text-align: center;
+                            span {
+                                color: var(--primary-color);
+                                font-weight: 400;
+                                line-height: 27px;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+            & .about-profiler {
+                background: #2b2b35;
+                padding: 20px 30px;
+                border-radius: 20px;
+                margin-top: 30px;
+                & .profiler-detail {
+                    & .pd-left {
+                        h4 {
+                            color: var(--primary-color);
+                        }
+                        ul {
+                            li {
+                                display: inline-block;
+                                margin-right: 10px;
+                                a {
+                                    display: flex;
+                                    align-items: center;
+                                    svg {
+                                        width: 20px;
+                                        margin-right: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .pd-right {
+                    }
+                    & .profile-meta {
+                        & .meta-category {
+                            margin-right: 20px;
+                            label {
+                                font-weight: 500;
+                                font-size: 12px;
+                                text-transform: uppercase;
+                                margin-right: 10px;
+                                span {
+                                    &.badge {
+                                        padding: 5px 10px;
+                                    }
+                                }
+                            }
+                        }
+                        & .meta-about {
+                            color: var(--primary-color);
+                            margin: 20px 0;
+                            & .custom-button {
+                                button {
+                                    background-color: var(--aceent0-color);
+                                    border-color: var(--aceent0-color);
+                                    color: var(--secondary-color);
+                                    margin-top: 40px;
+                                    width: 100%;
+                                }
+                            }
+                           
+                        }
+                    }
+                }
+            }
+                
+        }
+        & .profile-risk {
+            padding: 10px 20px;
+            margin-top: 30px;
+            border-top:1px solid var(--secondary-color);
+            border-bottom:1px solid var(--secondary-color);
+            svg {
+                height: 60px;
+                color: var(--primary-color);
+            }
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            p{
+                color: var(--primary-color);
+                margin-bottom: 0;
+            }
+        }
+    }
+    & .profile-bottom {
+        & .profile-tab-start {
+            padding: 50px 30px;
+            background: #000;
+            border-radius: 20px;
+            padding-top: 30px;
+            ul {
+                border: none;
+                li {
+                    button {
+                        color: var(--secondary-color);
+                        background: var(--aceent5-color);
+                        padding: 6px 20px;
+                        border-radius: 25px;
+                        border: none;
+                        margin-right: 10px;
+                        border: 1px solid var(--aceent3-color);
+                        &:hover {
+                            color: var(--secondary-color);
+                            background: var(--aceent0-color);
+                            border: 1px solid var(--aceent0-color);
+                        }
+                        &.active {
+                            color: var(--secondary-color);
+                            background: var(--aceent0-color);
+                            border: 1px solid var(--aceent0-color);
+                        }
+                    }
+                }
+            }
+            & .tabs-main {
+                & .review-section {
+                    & .review-inner {
+                        & .tab-inside {
+                            background: #2b2b35;
+                            padding: 30px;
+                            border-radius: 20px;
+                            margin-top: 30px;
+                            & .review-item {
+                                padding: 20px;
+                                background: #fff;
+                                border-radius: 15px;
+                                margin-bottom: 15px;
+                                &:last-child {
+                                    border: none;
+                                }
+                            & .review-img {
+                                img {
+                                    height: 150px;
+                                    object-fit: cover;
+                                    object-position: top;
+                                    border-radius: 50%;
+                                    width: 150px;
+                                }
+                            }
+                            h5 {
 
+                            }
+                            & .review-meta {
+                                span {
+                                    font-size: 14px;
+                                    color: var(--secondary-color);
+                                }
+                            }
+                            & .rating-strars {
+                                i {
+                                    color: var(--aceent0-color);
+                                }
+                            }
+                            & .review-content {
+                                p {
+                                    margin-bottom: 0;
+                                }
+                            }
+                            }
+                        }
+                        & .review-widget {
+                            background: #2b2b35;
+                            border-radius: 25px;
+                            padding: 25px;
+                            margin-top: 30px;
+                            color: var(--primary-color);
+                            & .rating-box {
+                                text-align: center;
+                                span {
+                                    &.large-font {
+                                        font-size: 60px;
+                                        display: inline-block;
+                                        width: 100%;
+                                        font-weight: 800;
+                                    }
+                                }
+                            & .rating-strars {
+                                i {
+                                    color: var(--aceent0-color);
+                                }
+                            }
+                            }
+                            & .custom-button {
+                                button {
+                                    background-color: var(--aceent0-color);
+                                    border-color: var(--aceent0-color);
+                                    color: var(--secondary-color);
+                                    margin-top: 40px;
+                                    width: 100%;
+                                }
+                            }
+                            & .progress-section {
+                                margin: 20px;
+                            }
+                        }
+                    }
+                }
+                & #location {
+                    & .tab-inside{
+                            background: #2b2b35;
+                            padding: 30px;
+                            border-radius: 20px;
+                            margin-top: 30px;
+                            & .location-map {
+                                border-radius: 20px;
+                                overflow: hidden;
+                            }
+                            & #location-slider {
+                                margin-top: 30px;
+                                & .location-item {
+                                    margin-right: 15px;
+                                    border: 2px solid var(--secondary-color);
+                                    border-radius: 15px;
+                                    padding: 15px;
+                                    background: var(--secondary-color);
+                                    min-height: 131px;
+                                    & .loc-top-content{
+                                        display: flex;
+                                        justify-content: space-between;
+                                        & .loc-title {
+                                            h4 {
+                                                font-size: 16px;
+                                                margin-bottom: 0;
+                                                color: var(--primary-color);
+                                            }
+                                            p {
+                                                font-size: 14px;
+                                                color:var(--primary-color);
+                                            }
+                                        }
+                                    }
+                                    & .loc-btm-content {
+                                        & .badge-dark {
+                                            background: var(--secondary-color);
+                                        }
+                                    }
+                                }
+                                & .owl-controls {
+                                    & .owl-buttons {
+                                        div {
+                                            width: 40px;
+                                            height: 40px;
+                                            border-radius: 50%;
+                                            background: var(--secondary-color);
+                                            opacity: 1;
+                                            &:hover {
+                                                background: var(--aceent0-color);
+                                            }
+                                            svg {
+                                                position: relative;
+                                                top: 5px;
+                                            }
+                                            &.owl-prev {
+                                                svg {
+                                                    right: 2px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                    }
+                }
+                & #available {
+                    & .tab-inside {
+                        background: #2b2b35;
+                        padding: 30px;
+                        border-radius: 20px;
+                        margin-top: 30px;
+                        & .calendar {
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
-
 
 
 
