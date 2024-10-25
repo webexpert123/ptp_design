@@ -893,6 +893,21 @@ section#profile-layout {
                 }
             }
             & .tabs-main {
+                & #gallery {
+                    & .tab-inside {
+                        background: #2b2b35;
+                        padding: 30px;
+                        border-radius: 20px;
+                        margin-top: 30px;
+                        & .gallery-block {
+                            & .card {
+                                border: none;
+                                border-radius: 20px;
+                                overflow: hidden;
+                            }
+                        }
+                    }
+                }
                 & .review-section {
                     & .review-inner {
                         & .tab-inside {
@@ -900,6 +915,11 @@ section#profile-layout {
                             padding: 30px;
                             border-radius: 20px;
                             margin-top: 30px;
+                            & .section-title {
+                                h2 {
+                                    color: var(--primary-color);
+                                }
+                                }
                             & .review-item {
                                 padding: 20px;
                                 background: #fff;
@@ -981,6 +1001,11 @@ section#profile-layout {
                             padding: 30px;
                             border-radius: 20px;
                             margin-top: 30px;
+                            & .section-title {
+                                h2 {
+                                    color: var(--primary-color);
+                                }
+                            }
                             & .location-map {
                                 border-radius: 20px;
                                 overflow: hidden;
@@ -1047,8 +1072,75 @@ section#profile-layout {
                         padding: 30px;
                         border-radius: 20px;
                         margin-top: 30px;
+                        & .section-title {
+                            h2 {
+                                color: var(--primary-color);
+                            }
+                        }
                         & .calendar {
                             
+                        }
+                    }
+                }
+                & #faq {
+                    & .tab-inside {
+                        background: #2b2b35;
+                        padding: 30px;
+                        border-radius: 20px;
+                        margin-top: 30px;
+                        & #faqs-main {
+                            & .section-title {
+                                h2 {
+                                    color: var(--primary-color);
+                                }
+                                }
+                                & .faq-block {
+                                    & .accordion {
+                                        & .card {
+                                            margin-bottom: 15px;
+                                            border: none;
+                                            background-color: transparent;
+                                            & .card-header {
+                                                padding: 5px 20px;
+                                                background-color: var(--secondary-color);
+                                                button {
+                                                    font-size: 18px;
+                                                    font-weight: 600;
+                                                    color: var(--primary-color);
+                                                    &:focus {
+                                                        box-shadow: none;
+                                                        outline: none;
+                                                    }
+                                                }
+                                            }
+                                            & .collapse {
+                                                & .card-body {
+                                                    background: #151526 !important;
+                                                    color: var(--primary-color);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                        }   
+                    }
+                }
+                & #policy {
+                    & .tab-inside {
+                        background: #2b2b35;
+                        padding: 30px;
+                        border-radius: 20px;
+                        margin-top: 30px;
+                        & .section-title {
+                            h2 {
+                                color: var(--primary-color);
+                                margin-bottom: 50px;
+                            }
+                        }
+                        & .policy-main {
+                            p {
+                                color: var(--primary-color);
+                            }
                         }
                     }
                 }
@@ -1057,6 +1149,206 @@ section#profile-layout {
     }
 }
 
+/*** 
+=============================================
+    Listing page Design
+=============================================
+***/
+
+.listing-page {
+    & .hero-inner-wrapper {
+        & #hero-inner {
+            & .bloc-inner-video {
+                height: 35vh;
+                width: 100%;
+                overflow: hidden;
+                position: relative;
+                & .video-overlay {
+                    &:after {
+                        position: absolute;
+                        content: '';
+                        width: 100%;
+                        height: 100%;
+                        background: linear-gradient(359deg, rgba(0, 0, 0, 0.7) -6%, transparent, rgba(0, 0, 0, 0.7));
+                    }
+                }
+                video {
+                    width: 100%;
+                }
+                & .content-video {
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                    top: 50%;
+                    left: 50%;
+                    h1 {
+                        font-size: 60px;
+                        font-weight: 800;
+                        line-height: 67px;
+                        color: var(--primary-color);
+                    }
+                }
+            }
+        }
+    }
+    & .listing-filter {
+        background: #000;
+        border-radius: 25px;
+        padding: 30px;
+        margin: 50px 0px 30px 0px;
+        & .filter-left {
+            & .filter-item {
+                gap: 15px;
+                row-gap: 15px;
+                label {
+                    margin-bottom: 0;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    color:var(--primary-color);
+                    font-size: 15px;
+                }
+                & .dropdown {
+                    button {
+                        border-radius: 25px;
+                        min-height: 45px;
+                        padding: 0 20px;
+                        background: #2b2b35;
+                        border: none;
+                    }
+                    & .dropdown-menu {
+                        background: #2b2b35;
+                        border-radius: 15px;
+                        a {
+                            color: var(--primary-color);
+                            &.dropdown-item {
+                                &:hover {
+                                    background: #000;
+                                    border-radius: 15px;
+                                }
+                            }
+                        }
+                        &.custom-dropdown {
+                            min-width: 350px;
+                        }
+                        & .time-box {
+                            padding: 20px 25px;
+                            & .form-group {
+                                margin-bottom: 0;
+                                select {
+                                    background: #000;
+                                    border: none;
+                                    color: var(--primary-color);
+                                    border-radius: 25px;
+                                    min-height: 45px;
+                                    padding: 0 15px;
+                                }
+                            }
+                            & .filter-check {
+                                a {
+                                    color: var(--primary-color);
+                                }
+                            }
+                        }
+                    }
+                }
+                & .multiple-filter {
+                    gap: 15px;
+                }
+                & .custom-button {
+                    button {
+                        &:first-child {
+                            background-color: var(--aceent0-color);
+                            border-color: var(--aceent0-color);
+                            color: var(--secondary-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .filter-right {
+        & .filter-button {
+            gap: 15px;
+            button {
+                background: transparent;
+                box-shadow: none;
+                border: none;
+                color: var(--primary-color);
+            }
+
+        }
+    }
+    & .listing-main {
+        background: #000;
+        border-radius: 25px;
+        padding: 30px;
+        margin: 50px 0px 30px 0px;
+        & .listing-inner {
+            & .listing-item {
+                margin-bottom: 30px;
+                & .card {
+                    border: none;
+                    border-radius: 20px;
+                    background: #2b2b35;
+                    overflow: hidden;
+                    & .card-header {
+                        height: 300px;
+                        overflow: hidden;
+                        img {
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: top;
+                        }
+                    }
+                    & .card-body {
+                        color: var(--primary-color);
+                        & .title-line {
+                            h5 {
+                                color: var(--primary-color);
+                            }
+                            span {
+                                    font-size: 14px;
+                                    font-weight: 300;
+                                strong {
+                                    font-weight: 500;
+                                }
+                                i {
+                                    color: var(--aceent0-color);
+                                }
+                            }
+                        }
+                        p {
+                            font-size: 14px;
+                            position: relative;
+                            left: -5px;
+                            font-weight: 300;
+                            strong {
+                                font-weight: 500;
+                            }
+                            svg {
+                                height: 18px;
+                                color: var(--aceent0-color);
+                            }
+                        }
+                        & .listing-btm {
+                            padding: 15px;
+                            background: #000000;
+                            border-radius: 15px;
+                            margin: 15px 0px;
+                        }
+                        & .custom-button {
+                            button {
+                                background-color: var(--aceent0-color);
+                                border-color: var(--aceent0-color);
+                                color: var(--secondary-color);
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 /*** 

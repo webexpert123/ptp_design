@@ -124,7 +124,10 @@
                         <div class="profile-tab-start">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item" role="presentation">
-                                  <button class="nav-link active" id="review-tab" data-toggle="tab" data-target="#review" type="button" role="tab" aria-controls="review" aria-selected="true">Review</button>
+                                    <button class="nav-link active" id="gallery-tab" data-toggle="tab" data-target="#gallery" type="button" role="tab" aria-controls="gallery" aria-selected="true">Gallery</button>
+                                  </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="review-tab" data-toggle="tab" data-target="#review" type="button" role="tab" aria-controls="review" aria-selected="false">Review</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                   <button class="nav-link" id="location-tab" data-toggle="tab" data-target="#location" type="button" role="tab" aria-controls="location" aria-selected="false">Where I Teach</button>
@@ -140,12 +143,51 @@
                                 </li>
                               </ul>
                               <div class="tab-content tabs-main" id="myTabContent">
-                                <div class="tab-pane fade show active" id="review" role="tabpanel" aria-labelledby="review-tab">
+                                <div class="tab-pane fade show active" id="gallery" role="tabpanel" aria-labelledby="gallery-tab">
+                                    <div class="tab-inside">
+                                       <div class="gallery-block">
+                                            <div class="card-columns">
+                                              <div class="card">
+                                                <img class="card-img-top" src="./assets/images/about/about-two.jpg" alt="Card image cap">
+                                              </div>
+                                              <div class="card">
+                                                <img class="card-img-top" src="./assets/images/about/about-one.jpg" alt="Card image cap">
+                                              </div>
+                                              <div class="card">
+                                                <img class="card-img-top" src="./assets/images/gallery/03.JPG" alt="Card image cap">
+                                              </div>
+                                              <div class="card">
+                                                <img class="card-img-top" src="./assets/images/gallery/04.JPG" alt="Card image cap">
+                                              </div>
+                                              <div class="card">
+                                                <img class="card-img-top" src="./assets/images/gallery/05.JPG" alt="Card image cap">
+                                              </div>
+                                              <div class="card">
+                                                <img class="card-img-top" src="./assets/images/gallery/01.JPG" alt="Card image cap">
+                                              </div>
+                                              <div class="card">
+                                                <video autoplay muted loop>
+                                                    <source src="https://ewvfbezbkbxmtghxhiij.supabase.co/storage/v1/object/public/media/568f8ae4-1a91-42ba-a408-63cec16eaa8c--2023-09-05T19:36:51.537Z.mp4" type="video/mp4">
+                                                </video>
+                                              </div>
+                                              <div class="card">
+                                                <img class="card-img-top" src="./assets/images/gallery/07.JPG" alt="Card image cap">
+                                              </div>
+                                            </div>
+
+
+                                       </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
                                     <div class="review-section">
                                         <div class="review-inner">
                                             <div class="row">
                                                 <div class="col-md-7 col-lg-8">
                                                     <div class="tab-inside">
+                                                        <div class="section-title mb-5">
+                                                            <h2>Reviews</h2>
+                                                        </div>
                                                         <!-- review item -->
                                                         <div class="review-item">
                                                             <div class="row">
@@ -289,6 +331,9 @@
                                 </div>
                                 <div class="tab-pane fade" id="location" role="tabpanel" aria-labelledby="location-tab">
                                     <div class="tab-inside">
+                                        <div class="section-title mb-5">
+                                            <h2>Where I teach</h2>
+                                        </div>
                                         <div class="location-map">
                                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24434.156332886923!2d-75.40395994617643!3d40.04708537873419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c694d91b6ed159%3A0x92cd6e0d0562ffa9!2sWayne%2C%20PA%2C%20USA!5e0!3m2!1sen!2sin!4v1729765333834!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                         </div>
@@ -451,13 +496,185 @@
                                 </div>
                                 <div class="tab-pane fade" id="available" role="tabpanel" aria-labelledby="available-tab">
                                     <div class="tab-inside">
+                                        <div class="section-title mb-5">
+                                            <h2>When I'm usually available</h2>
+                                        </div>
                                         <div class="calendar">
                                             <iframe src="https://calendar.google.com/calendar/embed?src=webexpert987%40gmail.com&ctz=Asia%2FKolkata" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="faq" role="tabpanel" aria-labelledby="faq-tab">...</div>
-                                <div class="tab-pane fade" id="policy" role="tabpanel" aria-labelledby="policy-tab">...</div>
+                                <div class="tab-pane fade" id="faq" role="tabpanel" aria-labelledby="faq-tab">
+                                    <div class="tab-inside">
+                                        <div id="faqs-main">
+                                            <div class="section-title mb-5">
+                                                <h2>Frequently Asked Questions</h2>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 col-lg-6">
+                                                    <div class="faq-block">
+                                                        <div class="accordion" id="accordionExample">
+                                                            <div class="card">
+                                                              <div class="card-header" id="headingOne">
+                                                                <h2 class="mb-0">
+                                                                  <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                                    What if I don't love my first lesson?
+                                                                  </button>
+                                                                </h2>
+                                                              </div>
+                                                              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                                                <div class="card-body">
+                                                                    Our risk free guarantee has you covered. If it's not a good fit or you just don't love your first lesson, we'll help find you another coach and give you an extra lesson for free. If things just don't work out, we'll provide a full refund.
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="card">
+                                                              <div class="card-header" id="headingTwo">
+                                                                <h2 class="mb-0">
+                                                                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                                    Can I have a trial lesson?
+                                                                  </button>
+                                                                </h2>
+                                                              </div>
+                                                              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                                                <div class="card-body">
+                                                                    While we do not offer a free trial lesson, every TeachMe.To purchase comes with a quality guarantee. If you don't love your experience for any reason, just let us know after your first lesson and we'll help you find a different coach or provide a full refund. Your choice.
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="card">
+                                                              <div class="card-header" id="headingThree">
+                                                                <h2 class="mb-0">
+                                                                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                                    How do I book and what does it cost?
+                                                                  </button>
+                                                                </h2>
+                                                              </div>
+                                                              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                                                <div class="card-body">
+                                                                    Booking a pickleball lesson is simple and convenient. You can choose one of the following methods:
+
+                                                                    Online
+                                                                    Simply tap the blue “Schedule now” button on the lower righthand side of the screen to begin the booking process online. We offer fast and convenient instant booking, backed by our 100% risk-free guarantee.
+                                                                    Phone
+                                                                    Text us at 650-900-3835 to speak directly with our staff, who can help you schedule your lesson and answer any questions you may have.
+                                                                    Lesson Costs
+                                                                    We offer competitive pricing for our lessons, with options to fit different budgets and needs. View pricing breakdown
+                                                                    Group Lessons
+                                                                    Pricing varies based on the number of participants. Each additional participant costs just 50% of the base lesson cost, creating group purchasing savings.
+                                                                    Payment Options
+                                                                    We accept various payment methods, including credit/debit cards, and online payment platforms. Payment can be made at the time of booking or before the start of the lesson.
+                                                                    By offering flexible booking options and transparent pricing, we aim to make it as easy as possible for you to start or continue your pickleball journey with us.
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="card">
+                                                                <div class="card-header" id="headingFour">
+                                                                  <h2 class="mb-0">
+                                                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                                        What happens after I book?
+                                                                    </button>
+                                                                  </h2>
+                                                                </div>
+                                                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                                                  <div class="card-body">
+                                                                    After you book you will gain access to the TeachMe.To App where you will immediately be connected with your coach as well as our world class support team. This is where you can chat with your coach, schedule and reschedule lessons, and keep track of your progress.
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                          </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 col-lg-6">
+                                                    <div class="faq-block">
+                                                        <div class="accordion" id="accordionExample2">
+                                                            <div class="card">
+                                                              <div class="card-header" id="headingfive">
+                                                                <h2 class="mb-0">
+                                                                  <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                                                                    What if I don't love my first lesson?
+                                                                  </button>
+                                                                </h2>
+                                                              </div>
+                                                              <div id="collapsefive" class="collapse" aria-labelledby="headingfive" data-parent="#accordionExample">
+                                                                <div class="card-body">
+                                                                    Our risk free guarantee has you covered. If it's not a good fit or you just don't love your first lesson, we'll help find you another coach and give you an extra lesson for free. If things just don't work out, we'll provide a full refund.
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="card">
+                                                              <div class="card-header" id="headingSix">
+                                                                <h2 class="mb-0">
+                                                                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+                                                                    Can I have a trial lesson?
+                                                                  </button>
+                                                                </h2>
+                                                              </div>
+                                                              <div id="collapsesix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                                                                <div class="card-body">
+                                                                    While we do not offer a free trial lesson, every TeachMe.To purchase comes with a quality guarantee. If you don't love your experience for any reason, just let us know after your first lesson and we'll help you find a different coach or provide a full refund. Your choice.
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="card">
+                                                              <div class="card-header" id="headingseven">
+                                                                <h2 class="mb-0">
+                                                                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                                                    How do I book and what does it cost?
+                                                                  </button>
+                                                                </h2>
+                                                              </div>
+                                                              <div id="collapseSeven" class="collapse" aria-labelledby="headingseven" data-parent="#accordionExample">
+                                                                <div class="card-body">
+                                                                    Booking a pickleball lesson is simple and convenient. You can choose one of the following methods:
+
+                                                                    Online
+                                                                    Simply tap the blue “Schedule now” button on the lower righthand side of the screen to begin the booking process online. We offer fast and convenient instant booking, backed by our 100% risk-free guarantee.
+                                                                    Phone
+                                                                    Text us at 650-900-3835 to speak directly with our staff, who can help you schedule your lesson and answer any questions you may have.
+                                                                    Lesson Costs
+                                                                    We offer competitive pricing for our lessons, with options to fit different budgets and needs. View pricing breakdown
+                                                                    Group Lessons
+                                                                    Pricing varies based on the number of participants. Each additional participant costs just 50% of the base lesson cost, creating group purchasing savings.
+                                                                    Payment Options
+                                                                    We accept various payment methods, including credit/debit cards, and online payment platforms. Payment can be made at the time of booking or before the start of the lesson.
+                                                                    By offering flexible booking options and transparent pricing, we aim to make it as easy as possible for you to start or continue your pickleball journey with us.
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="card">
+                                                                <div class="card-header" id="headingEight">
+                                                                  <h2 class="mb-0">
+                                                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                                                        What happens after I book?
+                                                                    </button>
+                                                                  </h2>
+                                                                </div>
+                                                                <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+                                                                  <div class="card-body">
+                                                                    After you book you will gain access to the TeachMe.To App where you will immediately be connected with your coach as well as our world class support team. This is where you can chat with your coach, schedule and reschedule lessons, and keep track of your progress.
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                          </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="policy" role="tabpanel" aria-labelledby="policy-tab">
+                                    <div class="tab-inside">
+                                        <div class="section-title mb-5">
+                                            <h2>Cancellation Policy</h2>
+                                        <div class="policy-main">
+                                            <p>We totally understand that life can be unpredictable and plans might change. That's why we've got your back with our flexible cancellation policy, designed to give you peace of mind when booking private sports lessons with our awesome local instructors!</p>
+                                            <p>If you need to cancel your lesson, no worries! You can get a full refund if you cancel within 24 hours of making your booking. We want to make the process as hassle-free as possible for you.</p>
+                                            <p>And if you simply want to reschedule your lesson, change the date and time, or adjust the number of students joining, we've got you covered there too. You can easily make these changes within 24 hours of booking, and up to 72 hours before your lesson starts.</p>
+                                            <p>Our goal is to make your experience smooth, enjoyable, and worry-free. So go ahead and book with confidence, knowing that we're here to accommodate your needs every step of the way!</p>
+                                        </div>
+                                    </div>
+                                </div>
                               </div>
                         </div>
                      </div>

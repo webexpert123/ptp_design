@@ -10255,11 +10255,25 @@ section#profile-layout .profile-bottom .profile-tab-start ul li button.active {
   background: var(--aceent0-color);
   border: 1px solid var(--aceent0-color);
 }
+section#profile-layout .profile-bottom .profile-tab-start .tabs-main #gallery .tab-inside {
+  background: #2b2b35;
+  padding: 30px;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+section#profile-layout .profile-bottom .profile-tab-start .tabs-main #gallery .tab-inside .gallery-block .card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+}
 section#profile-layout .profile-bottom .profile-tab-start .tabs-main .review-section .review-inner .tab-inside {
   background: #2b2b35;
   padding: 30px;
   border-radius: 20px;
   margin-top: 30px;
+}
+section#profile-layout .profile-bottom .profile-tab-start .tabs-main .review-section .review-inner .tab-inside .section-title h2 {
+  color: var(--primary-color);
 }
 section#profile-layout .profile-bottom .profile-tab-start .tabs-main .review-section .review-inner .tab-inside .review-item {
   padding: 20px;
@@ -10322,6 +10336,9 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #location .
   border-radius: 20px;
   margin-top: 30px;
 }
+section#profile-layout .profile-bottom .profile-tab-start .tabs-main #location .tab-inside .section-title h2 {
+  color: var(--primary-color);
+}
 section#profile-layout .profile-bottom .profile-tab-start .tabs-main #location .tab-inside .location-map {
   border-radius: 20px;
   overflow: hidden;
@@ -10375,6 +10392,222 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #available 
   padding: 30px;
   border-radius: 20px;
   margin-top: 30px;
+}
+section#profile-layout .profile-bottom .profile-tab-start .tabs-main #available .tab-inside .section-title h2 {
+  color: var(--primary-color);
+}
+section#profile-layout .profile-bottom .profile-tab-start .tabs-main #faq .tab-inside {
+  background: #2b2b35;
+  padding: 30px;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+section#profile-layout .profile-bottom .profile-tab-start .tabs-main #faq .tab-inside #faqs-main .section-title h2 {
+  color: var(--primary-color);
+}
+section#profile-layout .profile-bottom .profile-tab-start .tabs-main #faq .tab-inside #faqs-main .faq-block .accordion .card {
+  margin-bottom: 15px;
+  border: none;
+  background-color: transparent;
+}
+section#profile-layout .profile-bottom .profile-tab-start .tabs-main #faq .tab-inside #faqs-main .faq-block .accordion .card .card-header {
+  padding: 5px 20px;
+  background-color: var(--secondary-color);
+}
+section#profile-layout .profile-bottom .profile-tab-start .tabs-main #faq .tab-inside #faqs-main .faq-block .accordion .card .card-header button {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+section#profile-layout .profile-bottom .profile-tab-start .tabs-main #faq .tab-inside #faqs-main .faq-block .accordion .card .card-header button:focus {
+  box-shadow: none;
+  outline: none;
+}
+section#profile-layout .profile-bottom .profile-tab-start .tabs-main #faq .tab-inside #faqs-main .faq-block .accordion .card .collapse .card-body {
+  background: #151526 !important;
+  color: var(--primary-color);
+}
+section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .tab-inside {
+  background: #2b2b35;
+  padding: 30px;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .tab-inside .section-title h2 {
+  color: var(--primary-color);
+  margin-bottom: 50px;
+}
+section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .tab-inside .policy-main p {
+  color: var(--primary-color);
+}
+/*** 
+=============================================
+    Listing page Design
+=============================================
+***/
+.listing-page .hero-inner-wrapper #hero-inner .bloc-inner-video {
+  height: 35vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.listing-page .hero-inner-wrapper #hero-inner .bloc-inner-video .video-overlay:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(359deg, rgba(0, 0, 0, 0.7) -6%, transparent, rgba(0, 0, 0, 0.7));
+}
+.listing-page .hero-inner-wrapper #hero-inner .bloc-inner-video video {
+  width: 100%;
+}
+.listing-page .hero-inner-wrapper #hero-inner .bloc-inner-video .content-video {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.listing-page .hero-inner-wrapper #hero-inner .bloc-inner-video .content-video h1 {
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 67px;
+  color: var(--primary-color);
+}
+.listing-page .listing-filter {
+  background: #000;
+  border-radius: 25px;
+  padding: 30px;
+  margin: 50px 0px 30px 0px;
+}
+.listing-page .listing-filter .filter-left .filter-item {
+  gap: 15px;
+  row-gap: 15px;
+}
+.listing-page .listing-filter .filter-left .filter-item label {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--primary-color);
+  font-size: 15px;
+}
+.listing-page .listing-filter .filter-left .filter-item .dropdown button {
+  border-radius: 25px;
+  min-height: 45px;
+  padding: 0 20px;
+  background: #2b2b35;
+  border: none;
+}
+.listing-page .listing-filter .filter-left .filter-item .dropdown .dropdown-menu {
+  background: #2b2b35;
+  border-radius: 15px;
+}
+.listing-page .listing-filter .filter-left .filter-item .dropdown .dropdown-menu a {
+  color: var(--primary-color);
+}
+.listing-page .listing-filter .filter-left .filter-item .dropdown .dropdown-menu a.dropdown-item:hover {
+  background: #000;
+  border-radius: 15px;
+}
+.listing-page .listing-filter .filter-left .filter-item .dropdown .dropdown-menu.custom-dropdown {
+  min-width: 350px;
+}
+.listing-page .listing-filter .filter-left .filter-item .dropdown .dropdown-menu .time-box {
+  padding: 20px 25px;
+}
+.listing-page .listing-filter .filter-left .filter-item .dropdown .dropdown-menu .time-box .form-group {
+  margin-bottom: 0;
+}
+.listing-page .listing-filter .filter-left .filter-item .dropdown .dropdown-menu .time-box .form-group select {
+  background: #000;
+  border: none;
+  color: var(--primary-color);
+  border-radius: 25px;
+  min-height: 45px;
+  padding: 0 15px;
+}
+.listing-page .listing-filter .filter-left .filter-item .dropdown .dropdown-menu .time-box .filter-check a {
+  color: var(--primary-color);
+}
+.listing-page .listing-filter .filter-left .filter-item .multiple-filter {
+  gap: 15px;
+}
+.listing-page .listing-filter .filter-left .filter-item .custom-button button:first-child {
+  background-color: var(--aceent0-color);
+  border-color: var(--aceent0-color);
+  color: var(--secondary-color);
+}
+.listing-page .filter-right .filter-button {
+  gap: 15px;
+}
+.listing-page .filter-right .filter-button button {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  color: var(--primary-color);
+}
+.listing-page .listing-main {
+  background: #000;
+  border-radius: 25px;
+  padding: 30px;
+  margin: 50px 0px 30px 0px;
+}
+.listing-page .listing-main .listing-inner .listing-item {
+  margin-bottom: 30px;
+}
+.listing-page .listing-main .listing-inner .listing-item .card {
+  border: none;
+  border-radius: 20px;
+  background: #2b2b35;
+}
+.listing-page .listing-main .listing-inner .listing-item .card .card-header {
+  height: 300px;
+  overflow: hidden;
+}
+.listing-page .listing-main .listing-inner .listing-item .card .card-header img {
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.listing-page .listing-main .listing-inner .listing-item .card .card-body {
+  color: var(--primary-color);
+}
+.listing-page .listing-main .listing-inner .listing-item .card .card-body .title-line h5 {
+  color: var(--primary-color);
+}
+.listing-page .listing-main .listing-inner .listing-item .card .card-body .title-line span {
+  font-size: 14px;
+  font-weight: 300;
+}
+.listing-page .listing-main .listing-inner .listing-item .card .card-body .title-line span strong {
+  font-weight: 500;
+}
+.listing-page .listing-main .listing-inner .listing-item .card .card-body .title-line span i {
+  color: var(--aceent0-color);
+}
+.listing-page .listing-main .listing-inner .listing-item .card .card-body p {
+  font-size: 14px;
+  position: relative;
+  left: -5px;
+  font-weight: 300;
+}
+.listing-page .listing-main .listing-inner .listing-item .card .card-body p strong {
+  font-weight: 500;
+}
+.listing-page .listing-main .listing-inner .listing-item .card .card-body p svg {
+  height: 18px;
+  color: var(--aceent0-color);
+}
+.listing-page .listing-main .listing-inner .listing-item .card .card-body .listing-btm {
+  padding: 15px;
+  background: #000000;
+  border-radius: 15px;
+  margin: 15px 0px;
+}
+.listing-page .listing-main .listing-inner .listing-item .card .card-body .custom-button button {
+  background-color: var(--aceent0-color);
+  border-color: var(--aceent0-color);
+  color: var(--secondary-color);
+  width: 100%;
 }
 /*** 
 =============================================
