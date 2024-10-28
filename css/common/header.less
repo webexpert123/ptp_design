@@ -13,7 +13,7 @@ body {
         z-index: 5555;
         transition: .3s all ease-in-out;
         position: relative;
-        border-bottom: 1px solid #e5e5e5;
+        border-bottom: 1px solid #000;
         .container {
           .header-blocks {
             display: flex;
@@ -28,7 +28,7 @@ body {
                   padding: 0 10px;
                   font-size: 16px;
                   font-weight: 500;
-                  color: var(--dark-font-color);
+                  color: var(--light-font-color);
                   font-family: var(--heading-font);
                 }
               }
@@ -45,7 +45,7 @@ body {
                     cursor: pointer;
                     & span{
                       & svg {
-                        color: var(--dark-font-color);
+                        color: var(--light-font-color);
                     }
                   }
                 }
@@ -83,25 +83,28 @@ body {
                   position: relative;
                   overflow: hidden;
                   &.outliner{
-                    border: transparent;
-                    color: var(--dark-font-color);
+                    border: 2px solid var(--aceent0-color);
+                    color:var(--light-font-color);
+                    &:after{
+                      background: var(--aceent0-color);
+                  }
                   }
                   &.btn-round {
                     border-radius: 25px;
                   }
                   &.btn-outline {
-                    border: 2px solid var(--dark-border-color);
+                    border: 2px solid var(--light-border-color);
                   
                   }
                   &.btn-fill {
-                    background: var(--dark80-color);
-                    border-color: var(--dark80-color);
-                    color: var(--light-font-color);
+                    background: var(--aceent0-color);
+                    border-color: var(--aceent0-color);
+                    color: var(--dark-font-color);
                   }
                   &:hover{
-                    background: var(--primary-color);
-                    border-color: var(--primary-color);
-                    color: var(--dark-font-color);
+                    background: var(--secondary-color);
+                    border-color: var(--secondary-color);
+                    color: var(--light-font-color);
                   }
                   &:after {
                     content: '';
