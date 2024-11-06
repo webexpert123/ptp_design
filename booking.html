@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PTP-Players Teaching Players</title>
+    <link rel="icon" type="image/png" href="./assets/images/logo.png">
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <!-- animation library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!-- Header start -->
+    <header >
+        <section class="header-main navbar js-sticky-header w-100">
+            <div class="container">
+                <div class="header-blocks">
+                    <div class="brand">
+                        <img src="./assets/images/logo.png" alt="brand image" />
+                    </div>
+                    <div class="menu-block">
+                        <ul>
+                            <!-- <li id="hamburIcon"><span title="Hide main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                                </span></li> -->
+                            <li><a href="javascript:void(0);">Parents & Athlete</a></li>
+                            <li><a href="javascript:void(0);">Apply to Coach&nbsp;<img src="./assets/images/heart_outlined.svg" alt="heart Icon" /></a></li>
+                            <li><a href="javascript:void(0);">Our Difference</a></li>
+                            <li><a href="javascript:void(0);">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="action-block">
+                        <div class="auth-action">
+                            <button type="button" class="btn outliner btn-round" onclick="window.location.href='login.html'">Log In</button>
+                            <button type="button" class="btn btn-round btn-fill" onclick="window.location.href='register.html'">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- Header End -->
+    <main>
+        <div id="frontend-main">
+            <section class="booking-page">
+                <div class="container">
+                    <!-- <div class="custom-button back-btn d-flex align-items-center gap-2">
+                        <button type="button" class="btn btn-round btn-fill"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>&nbsp;Go Back</button>
+                    </div> -->
+                    <div class="row">
+                        <div class="col-md-7 col-lg-8">
+                            <div class="booking-wizard">
+                                    <!-- MultiStep Form -->
+                                <div class="booking-form-inner">
+                                    <form id="msform">
+                                        <!-- progressbar -->
+                                        <ul id="progressbar">
+                                            <li class="active">Confirm lesson <br>& Schedule</li>
+                                            <li>Select <br>your package</li>
+                                            <li>Personal Info / Payment<br> Method</li>
+                                        </ul>
+                                        <!-- fieldsets -->
+                                        <fieldset>
+                                            <div class="first-step">
+                                                <h4 class="fs-title">Confirm Lesson Details</h4>
+                                                <h3 class="fs-subtitle">Ensure everything is in place for your lesson—confirm the time, date, and any prerequisites or additional instructions. </h3>
+                                                <div class="lesson-item">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="lesson-detail">
+                                                                <label>PARTICIPANTS</label>
+                                                                <p class="mb-0">1 student</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="lesson-detail">
+                                                                <label>Length</label>
+                                                                <p class="mb-0">1 hour lessons</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="lesson-item mb-4">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="lesson-detail">
+                                                                <label>NEED EQUIPMENT?</label>
+                                                                <p class="mb-0">I need my coach to provide equipment for the lesson</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="lesson-quanity">
+                                                                <label class="switch">
+                                                                    <input type="checkbox">
+                                                                    <span class="slider round"></span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="first-lesson">
+                                                <h4 class="fs-title">Schedule your first lesson</h4>
+                                                <h3 class="fs-subtitle">Select a convenient time to begin your learning journey and get started with your first session.</h3>
+                                                <div id="booking-slider" class="row">
+                                                    <!-- location item -->
+                                                    <div class="col-md-3">
+                                                        <div class="location-item">
+                                                            <div class="loc-top-content">
+                                                                <div class="loc-title">
+                                                                    <h5>Thu, Nov 7</h5>
+                                                                    <p>7:00 AM</p>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- location item end-->
+                                                        <!-- location item -->
+                                                        <div class="col-md-3">
+                                                        <div class="location-item">
+                                                            <div class="loc-top-content">
+                                                                <div class="loc-title">
+                                                                    <h5>Thu, Nov 7</h5>
+                                                                    <p>7:30 AM</p>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- location item end-->
+                                                        <!-- location item -->
+                                                        <div class="col-md-3">
+                                                        <div class="location-item">
+                                                            <div class="loc-top-content">
+                                                                <div class="loc-title">
+                                                                    <h5>Thu, Nov 7</h5>
+                                                                    <p>8:00 AM</p>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- location item end-->
+                                                        <!-- location item -->
+                                                        <div class="col-md-3">
+                                                        <div class="location-item">
+                                                            <div class="loc-top-content">
+                                                                <div class="loc-title">
+                                                                    <h5>Thu, Nov 7</h5>
+                                                                    <p>8:30 AM</p>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- location item end-->
+                                                    </div>
+                                                    <div class="custom-button">
+                                                        <button type="button" name="next" class="btn btn-round btn-fill w-100 mt-4" value="Next">Not sure? No problem! Tap here to skip and schedule later.</button>
+                                                    </div>
+                                            </div>
+                                            <div class="navigation-buttons">
+                                                <input type="button" name="next" class="next action-button mt-5" value="Next"/>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset>
+                                            <div class="second-step">
+                                                <h4 class="fs-title">Pick your package</h4>
+                                                <h3 class="fs-subtitle">Choose the package that best suits your needs and goals to get started on your learning journey.</h3> 
+                                                <section class="pricing-section">
+                                                    <div class="container">
+                                                        <div class="outer-box">
+                                                            <div class="row">
+                                                                <!-- Pricing Block -->
+                                                                <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                                                                    <div class="inner-box">
+                                                                        <div class="icon-box">
+                                                                            <div class="icon-outer"><i class="fas fa-paper-plane"></i></div>
+                                                                        </div>
+                                                                        <div class="price-box">
+                                                                            <div class="title">Single lesson</div>
+                                                                            <h4 class="price">$155/Lesson</h4>
+                                                                        </div>
+                                                                        <div class="btn-box">
+                                                                            <a href="https://codepen.io/anupkumar92" class="theme-btn">SUBSCRIBE</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                            
+                                                                <!-- Pricing Block -->
+                                                                <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                                                                    <div class="inner-box">
+                                                                        <div class="icon-box">
+                                                                            <div class="icon-outer"><i class="fas fa-gem"></i></div>
+                                                                        </div>
+                                                                        <div class="price-box">
+                                                                            <div class="title">3 lesson Pack</div>
+                                                                            <h4 class="price">$101/Lesson</h4>
+                                                                        </div>
+                                                                        <div class="btn-box">
+                                                                            <a href="https://codepen.io/anupkumar92" class="theme-btn">SUBSCRIBE</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                            
+                                                                <!-- Pricing Block -->
+                                                                <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
+                                                                    <div class="inner-box">
+                                                                        <div class="icon-box">
+                                                                            <div class="icon-outer"><i class="fas fa-rocket"></i></div>
+                                                                        </div>
+                                                                        <div class="price-box">
+                                                                            <div class="title">10 lesson Pack</div>
+                                                                            <h4 class="price">$83/Lesson</h4>
+                                                                        </div>
+                                                                        <div class="btn-box">
+                                                                            <a href="https://codepen.io/anupkumar92" class="theme-btn">SUBSCRIBE</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                            <div class="navigation-buttons">
+                                                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                                                <input type="button" name="next" class="next action-button" value="Next"/>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset>
+                                            <div class="third-step">
+                                                <div class="third-first">
+                                                    <h4 class="fs-title">Personal Info</h4>
+                                                    <h3 class="fs-subtitle">Please provide your personal details to help us tailor your experience and stay in touch.</h3> 
+                                                    <div class="personal-info steps-forms">
+                                                        <form>
+                                                            <div class="row">
+                                                            <div class="form-group col-md-6">
+                                                              <label for="exampleInputEmail1">Full Name</label>
+                                                              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Full Name">
+                                                            </div>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="exampleInputEmail1">Email address</label>
+                                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                                            </div>
+                                                            <div class="form-group col-md-12">
+                                                              <label for="exampleInputPassword1">Phone Number</label>
+                                                              <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Enter Phone">
+                                                            </div>
+                                                            </div>
+                                                          </form>
+                                                    </div>
+                                                </div>
+                                                <div class="third-second">
+                                                    <h4 class="fs-title">Choose How to Pay</h4>
+                                                    <h3 class="fs-subtitle">Please provide your personal details to help us tailor your experience and stay in touch.</h3> 
+                                                    <form>
+                                                        <div class="row">
+                                                            <aside class="col-sm-12">
+                                                                <article class="card">
+                                                                <div class="card-body p-5">
+                                                                    <ul class="nav nav-pills rounded nav-fill mb-3" role="tablist">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link active" data-toggle="pill" href="#nav-tab-card">
+                                                                            <i class="fa fa-credit-card"></i> Credit Card</a></li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link" data-toggle="pill" href="#nav-tab-paypal">
+                                                                            <i class="fab fa-paypal"></i>  Paypal</a></li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link" data-toggle="pill" href="#nav-tab-bank">
+                                                                            <i class="fa fa-university"></i>  Bank Transfer</a></li>
+                                                                    </ul>
+                                                                
+                                                                <div class="tab-content">
+                                                                <div class="tab-pane fade show active" id="nav-tab-card">
+                                                                    <p class="alert alert-success">Some text success or error</p>
+                                                                    <form role="form">
+                                                                    <div class="form-group">
+                                                                        <label for="username">Full name (on the card)</label>
+                                                                        <input type="text" class="form-control" name="username" placeholder="" required="">
+                                                                    </div> <!-- form-group.// -->
+                                                                
+                                                                    <div class="form-group">
+                                                                        <label for="cardNumber">Card number</label>
+                                                                        <div class="input-group">
+                                                                            <input type="text" class="form-control" name="cardNumber" placeholder="">
+                                                                            <div class="input-group-append">
+                                                                                <span class="input-group-text text-muted">
+                                                                                    <i class="fab fa-cc-visa"></i>   <i class="fab fa-cc-amex"></i>   
+                                                                                    <i class="fab fa-cc-mastercard"></i> 
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div> <!-- form-group.// -->
+                                                                
+                                                                    <div class="row">
+                                                                        <div class="col-sm-8">
+                                                                            <div class="form-group">
+                                                                                <label><span class="hidden-xs">Expiration</span> </label>
+                                                                                <div class="input-group d-flex align-items-center">
+                                                                                    <input type="number" class="form-control" placeholder="MM" name="">
+                                                                                    <input type="number" class="form-control" placeholder="YY" name="">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="form-group">
+                                                                                <label data-toggle="tooltip" title="" data-original-title="3 digits code on back side of the card">CVV <i class="fa fa-question-circle"></i></label>
+                                                                                <input type="number" class="form-control" required="">
+                                                                            </div> <!-- form-group.// -->
+                                                                        </div>
+                                                                    </div> <!-- row.// -->
+                                                                    <div class="custom-button view-more d-flex align-items-center gap-2 mt-2">
+                                                                        <button type="button" class="btn btn-round btn-fill w-100">Pay Now!</button>
+                                                                    </div>
+                                                                    </form>
+                                                                </div> <!-- tab-pane.// -->
+                                                                
+                                                                </div> <!-- tab-content .// -->
+                                                                
+                                                                </div> <!-- card-body.// -->
+                                                                </article> <!-- card.// -->
+                                                                    </aside>
+                                                        </div>
+                                                      </form>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                    
+                                </div>
+                                <!-- /.MultiStep Form -->
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-lg-4">
+                            <div class="pricing-widget">
+                                <h4 class="mb-4">Pricing Information</h4>
+                                <div class="row price-details">
+                                    <div class="col-md-7 col-lg-6">
+                                        <p>4 weekly lessons</p>
+                                    </div>
+                                    <div class="col-md-5 col-lg-6 text-right">
+                                        <p>$300 / month</p>
+                                    </div>
+                                    <div class="col-md-7 col-lg-6">
+                                        <p>One-time introduction fee</p>
+                                    </div>
+                                    <div class="col-md-5 col-lg-6 text-right">
+                                        <p>$20</p>
+                                    </div>
+                                    <div class="col-md-7 col-lg-6">
+                                        <p>Taxes and fees</p>
+                                    </div>
+                                    <div class="col-md-5 col-lg-6 text-right">
+                                        <p>$15 / month</p>
+                                    </div>
+                                </div>
+                                <div class="seprator"></div>
+                                <div class="row">
+                                    <div class="col-md-7 col-lg-6 total-label">
+                                        <h5>Total (USD)</h5>
+                                    </div>
+                                    <div class="col-md-5 col-lg-6 total-price text-right">
+                                        <h5>$335 today</h5>
+                                        <span>then $315 / month after</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="risk-widget">
+                                <div class="profile-risk d-flex justify-content-between">
+                                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" height="40px" width="40px" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                                    <p>Try Christian risk free. If you don't love your first lesson with Christian, we'll switch you to another coach or give you a full refund. <a href="#"><strong>Learn more</strong></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer data-aos="fade-down" data-aos-duration="1500">
+            <div class="footer-cta">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <div class="cta-content">
+                            <h2>Shape Champions: Start Your Coaching Journey Today!</h2>
+                            <p>Extend your knowledge to athletes across the country and make a lasting impact on their performance and development!</p>
+                            <div class="custom-button view-more d-flex align-items-center gap-2 mt-2">
+                                <button type="button" class="btn btn-round btn-fill">View Plans</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="./assets/images/cta_img.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <section id="footer" class="section-spacing ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4">
+                            <div class="footer-widget about-widget">
+                                <img src="./assets/images/logo.png" class="img-fluid" alt="logo image" />
+                                <p>In today's soccer landscape, there's immense pressure to excel under team coaches, yet often, these coaches don't provide the essential skills needed for peak performance. </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2">
+                            <div class="footer-widget link-widget">
+                                <h4>Navigation</h4>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Athlete</a></li>
+                                    <li><a href="#">Coach</a></li>
+                                    <li><a href="#">Features</a></li>
+                                    <li><a href="#">Training Plans</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+                            <div class="footer-widget link-widget">
+                                <h4>Important Links</h4>
+                                <ul>
+                                    <li><a href="#">Sign Up</a></li>
+                                    <li><a href="#">Login</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Locations</a></li>
+                                    <li><a href="#">Partners</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+                            <div class="footer-widget social-widget">
+                                <h4>Social Media</h4>
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="copyright-area text-center">
+                <p>Copyright © 2024 PTP. All Rights Reserved</p>
+            </div>
+        </footer>
+    </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="./js/main.js"></script>
+<script>
+    
+
+    //jQuery time
+var current_fs, next_fs, previous_fs; //fieldsets
+var left, opacity, scale; //fieldset properties which we will animate
+var animating; //flag to prevent quick multi-click glitches
+
+// Handle Next button click
+$(".navigation-buttons .next").click(function(){
+    if(animating) return false;
+    animating = true;
+    
+    current_fs = $(this).parent().parent(); // Target parent fieldset
+    next_fs = $(this).parent().parent().next(); // Get next fieldset
+    
+    // Activate next step on progressbar using the index of next_fs
+    $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+    
+    // Show the next fieldset
+    next_fs.show(); 
+    
+    // Hide the current fieldset with animation
+    current_fs.animate({opacity: 0}, {
+        step: function(now, mx) {
+            // Scale down current_fs and move next_fs in from the right
+            scale = 1 - (1 - now) * 0.2;
+            left = (now * 50)+"%";
+            opacity = 1 - now;
+            current_fs.css({
+                'transform': 'scale('+scale+')',
+                'position': 'absolute'
+            });
+            next_fs.css({'left': left, 'opacity': opacity});
+        }, 
+        duration: 800, 
+        complete: function(){
+            current_fs.hide();
+            animating = false;
+        }, 
+        easing: 'easeInOutBack'
+    });
+});
+
+// Handle Previous button click
+$(".navigation-buttons .previous").click(function(){
+    if(animating) return false;
+    animating = true;
+    
+    current_fs = $(this).parent().parent(); // Target parent fieldset
+    previous_fs = $(this).parent().parent().prev(); // Get previous fieldset
+    
+    // De-activate current step on progressbar
+    $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+    
+    // Show the previous fieldset
+    previous_fs.show(); 
+    
+    // Hide the current fieldset with animation
+    current_fs.animate({opacity: 0}, {
+        step: function(now, mx) {
+            scale = 0.8 + (1 - now) * 0.2;
+            left = ((1-now) * 50)+"%";
+            opacity = 1 - now;
+            current_fs.css({'left': left});
+            previous_fs.css({'transform': 'scale('+scale+')', 'opacity': opacity});
+        }, 
+        duration: 800, 
+        complete: function(){
+            current_fs.hide();
+            animating = false;
+        }, 
+        easing: 'easeInOutBack'
+    });
+});
+
+// Prevent form submission on submit button click
+$(".submit").click(function(){
+    return false;
+});
+      </script>
+</html>

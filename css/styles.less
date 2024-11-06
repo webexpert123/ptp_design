@@ -185,8 +185,9 @@ h2 {
     padding-bottom: 120px;
     position: relative;
     z-index: 1;
-    background: url(../assets/images/banner_right.png) no-repeat top right, url(../assets/images/banner_left.png) no-repeat center left;
-    background-color: #f7f7f7;
+    background: url(../assets/images/blog-image/blog_header.jpg) no-repeat center center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
     & .overlay-banner{
         // &:after{
         //     background: rgb(0 0 0 / 30%);
@@ -199,7 +200,7 @@ h2 {
     }
     & .breadcrumbs {
         h1 {
-            color: var(--secondary-color);
+            color: var(--primary-color);
             font-size: 48px;
             font-weight: 700;
             line-height: 50px;
@@ -219,8 +220,8 @@ h2 {
     position: relative;
     overflow: hidden;
     padding: 18px 0 15px;
-    border-bottom: 1px solid var(--light-border);
-    border-top: 1px solid var(--light-border);
+    border-bottom: 1px solid var(--secondary-color);
+    border-top: 1px solid var(--secondary-color);
     & .left {
         ul {
             li {
@@ -234,7 +235,7 @@ h2 {
                     margin-right: 0;
                 }
                 a{
-                    color: #404040;
+                    color: var(--primary-color);
                     text-transform: capitalize;
                     font-family: 'Poppins', sans-serif;
                     transition: all 500ms ease;
@@ -247,6 +248,7 @@ h2 {
                 }
                 i {
                     font-size: 16px;
+                    color: var(--primary-color);
                 }
 
             }
@@ -271,6 +273,7 @@ h2 {
         }
         a {
             display: inline-block;
+            color: var(--primary-color);
         }
     }
 }

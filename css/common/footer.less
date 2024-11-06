@@ -6,7 +6,7 @@ footer {
     .footer-cta {
         max-width: 980px;
         margin: 0 auto;
-        background-color: var(--aceent0-color);
+        background-color: var(--primary-color);
         border-radius: 25px;
         overflow: hidden;
         padding: 0 1.25rem 0 1.25rem;
@@ -21,9 +21,14 @@ footer {
         }
         & .view-more {
             button {
-                background-color: var(--secondary-color);
-                border-color: var(--secondary-color);
-                color: var(--light-font-color);
+                background: var(--aceent0-color);
+                color: var(--dark-font-color);
+                border: 2px solid var(--aceent0-color);
+                &:hover {
+                    background-color: var(--secondary-color);
+                    border-color: var(--secondary-color);
+                    color: var(--light-font-color);
+                }
             }
         }
         }

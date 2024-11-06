@@ -121,370 +121,377 @@
                 </section>
             </div>
             <div class="container">
-                <div class="listing-filter row justify-content-between align-items-center">
-                    <div class="filter-left col-md-9 col-lg-8">
-                        <div class="d-flex align-items-center gap-2">
-                            <!-- filter-item -->
-                            <div class="filter-item d-flex align-items-center">
-                                <label>Sort</label>
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                                      Recommended
-                                    </button>
-                                    <div class="dropdown-menu">
-                                      <a class="dropdown-item" href="#">Recommended</a>
-                                      <a class="dropdown-item" href="#">Most Viewed</a>
-                                      <a class="dropdown-item" href="#">Best Price</a>
+                <div class="row">
+                    <div class="col-md-4 col-lg-3">
+                        <div class="listing-filter">
+                            <div class="filter-left">
+                                <div class="align-items-center gap-2">
+                                    <!-- filter-item -->
+                                    <div class="filter-item">
+                                        <label class="mb-3">Sort</label>
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                                            Recommended
+                                            </button>
+                                            <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Recommended</a>
+                                            <a class="dropdown-item" href="#">Most Viewed</a>
+                                            <a class="dropdown-item" href="#">Best Price</a>
+                                            </div>
+                                        </div>
                                     </div>
-                                  </div>
-                            </div>
-                            <!-- filter-item -->
-                             <!-- filter-item -->
-                            <div class="filter-item d-flex align-items-center">
-                                <label>Filter</label>
-                                <div class="multiple-filter d-flex align-items-center">
-                                    <div class="dropdown">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                                        Any Time
-                                        </button>
-                                        <div class="dropdown-menu custom-dropdown">
-                                            <div class="time-box">
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <div class="form-group">
-                                                        <select class="form-control" id="exampleFormControlSelect1">
-                                                          <option>06:00 AM</option>
-                                                          <option>06:30 AM</option>
-                                                          <option>07:00 AM</option>
-                                                          <option>07:30 AM</option>
-                                                          <option>08:00 AM</option>
-                                                        </select>
-                                                      </div>
-                                                      <label>to</label>
-                                                      <div class="form-group">
-                                                        <select class="form-control" id="exampleFormControlSelect1">
-                                                            <option>06:00 AM</option>
-                                                            <option>06:30 AM</option>
-                                                            <option>07:00 AM</option>
-                                                            <option>07:30 AM</option>
-                                                            <option>08:00 AM</option>
-                                                        </select>
-                                                      </div>
+                                    <!-- filter-item -->
+                                    <!-- filter-item -->
+                                    <div class="filter-item">
+                                        <label class="mb-3 mt-3">Filter</label>
+                                        <div class="multiple-filter">
+                                            <div class="dropdown">
+                                                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                                                Any Time
+                                                </button>
+                                                <div class="dropdown-menu custom-dropdown">
+                                                    <div class="time-box">
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <div class="form-group">
+                                                                <select class="form-control" id="exampleFormControlSelect1">
+                                                                <option>06:00 AM</option>
+                                                                <option>06:30 AM</option>
+                                                                <option>07:00 AM</option>
+                                                                <option>07:30 AM</option>
+                                                                <option>08:00 AM</option>
+                                                                </select>
+                                                            </div>
+                                                            <label>to</label>
+                                                            <div class="form-group">
+                                                                <select class="form-control" id="exampleFormControlSelect1">
+                                                                    <option>06:00 AM</option>
+                                                                    <option>06:30 AM</option>
+                                                                    <option>07:00 AM</option>
+                                                                    <option>07:30 AM</option>
+                                                                    <option>08:00 AM</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="filter-check mt-4">
+                                                            <div class="d-flex flex-wrap justify-content-between">
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                                    <label class="form-check-label" for="inlineCheckbox1">Sun</label>
+                                                                </div>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                                    <label class="form-check-label" for="inlineCheckbox1">Mon</label>
+                                                                </div>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                                    <label class="form-check-label" for="inlineCheckbox1">Tue</label>
+                                                                </div>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                                    <label class="form-check-label" for="inlineCheckbox1">Wed</label>
+                                                                </div>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                                    <label class="form-check-label" for="inlineCheckbox1">Thu</label>
+                                                                </div>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                                    <label class="form-check-label" for="inlineCheckbox1">Fri</label>
+                                                                </div>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                                    <label class="form-check-label" for="inlineCheckbox1">Sat</label>
+                                                                </div>
+                                                                <div class="form-check form-check-inline mt-3">
+                                                                <a href="javascript:void(0);">Clear All</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="filter-check mt-4">
-                                                    <div class="d-flex flex-wrap justify-content-between">
-                                                        <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                                            <label class="form-check-label" for="inlineCheckbox1">Sun</label>
-                                                        </div>
-                                                        <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                                            <label class="form-check-label" for="inlineCheckbox1">Mon</label>
-                                                        </div>
-                                                        <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                                            <label class="form-check-label" for="inlineCheckbox1">Tue</label>
-                                                        </div>
-                                                        <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                                            <label class="form-check-label" for="inlineCheckbox1">Wed</label>
-                                                        </div>
-                                                        <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                                            <label class="form-check-label" for="inlineCheckbox1">Thu</label>
-                                                        </div>
-                                                        <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                                            <label class="form-check-label" for="inlineCheckbox1">Fri</label>
-                                                        </div>
-                                                        <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                                            <label class="form-check-label" for="inlineCheckbox1">Sat</label>
-                                                        </div>
-                                                        <div class="form-check form-check-inline">
-                                                           <a href="javascript:void(0);">Clear All</a>
-                                                        </div>
+                                            </div>
+                                            <div class="dropdown">
+                                                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                                                Your Skill Lavel
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Beginner</a>
+                                                <a class="dropdown-item" href="#">Intermediate</a>
+                                                <a class="dropdown-item" href="#">Expert</a>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown">
+                                                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                                                Your Age
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Kid (12 or under)</a>
+                                                <a class="dropdown-item" href="#">Teenager (13 to 17 years old)</a>
+                                                <a class="dropdown-item" href="#">Adult (18 to 64 years old)</a>
+                                                <a class="dropdown-item" href="#">Senior (65 or older)</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- filter-item -->
+                                    <!-- filter-item -->
+                                    <div class="filter-item">
+                                        <div class="custom-button w-100 d-flex align-items-center gap-2">
+                                            <button type="button" class="btn btn-round btn-fill">Apply</button>
+                                            <button type="button" class="btn btn-round btn-fill">Reset</button>
+                                        </div>
+                                    </div>
+                                    <!-- filter-item -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-lg-9">
+                        <div class="listing-main">
+                            <div class="listing-inner">
+                                <div class="row">
+                                    <div class="col-md-4 col-lg-4">
+                                        <div class="listing-item">
+                                            <div class="card">
+                                                <div class="card-header p-0">
+                                                    <img class="img-fluid" src="./assets/images/blog-image/blog-5.jpg" alt="" />
+                                                    <div class="card-over-content">
+                                                        <span class="badge badge-success">Pro Athlete</span>
+                                                        <span class="ratings-badge"><i class="fa-solid fa-star"></i>&nbsp;<strong>5.0</strong>&nbsp;(2.0)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="title-line d-flex align-items-center justify-content-between">
+                                                        <h5>Arian</h5>
+                                                    </div>
+                                                    <div class="listing-btm">
+                                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>&nbsp;Grant Park Pickleball Courts (1 mi)</p>
+                                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>&nbsp;&nbsp;81 Hours this week</p>
+                                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>&nbsp;<a href="#">View Price</a></p>
+                                                    </div>
+                                                    <div class="custom-button d-flex align-items-center gap-2">
+                                                        <button type="button" class="btn btn-round btn-fill">View Profile&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="dropdown">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                                        Your Skill Lavel
-                                        </button>
-                                        <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Beginner</a>
-                                        <a class="dropdown-item" href="#">Intermediate</a>
-                                        <a class="dropdown-item" href="#">Expert</a>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                                        Your Age
-                                        </button>
-                                        <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Kid (12 or under)</a>
-                                        <a class="dropdown-item" href="#">Teenager (13 to 17 years old)</a>
-                                        <a class="dropdown-item" href="#">Adult (18 to 64 years old)</a>
-                                        <a class="dropdown-item" href="#">Senior (65 or older)</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- filter-item -->
-                            <!-- filter-item -->
-                            <div class="filter-item">
-                                <div class="custom-button d-flex align-items-center gap-2">
-                                    <button type="button" class="btn btn-round btn-fill">Apply</button>
-                                    <button type="button" class="btn btn-round btn-fill">Reset</button>
-                                </div>
-                            </div>
-                            <!-- filter-item -->
-                        </div>
-                    </div>
-                    <div class="filter-right col-md-3 col-lg-4">
-                        <div class="d-flex align-items-center justify-content-end">
-                            <div class="filter-button">
-                                <button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button>
-                                <button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="listing-main">
-                    <div class="listing-inner">
-                        <div class="row">
-                            <div class="col-md-4 col-lg-4">
-                                <div class="listing-item">
-                                    <div class="card">
-                                        <div class="card-header p-0">
-                                            <img class="img-fluid" src="./assets/images/blog-image/blog-5.jpg" alt="" />
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="title-line d-flex align-items-center justify-content-between">
-                                                <h5>Arian</h5>
-                                                <span><i class="fa-solid fa-star"></i>&nbsp;<strong>5.0</strong>&nbsp;(2.0)</span>
-                                            </div>
-                                            <div class="listing-btm">
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>&nbsp;<strong>Pro Athlete</strong></p>
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>&nbsp;
-                                                <strong>Closest:</strong>&nbsp;Grant Park Pickleball Courts (1 mi)</p>
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>&nbsp;&nbsp;<strong>Great Availability</strong>&nbsp;81 Hours this week</p>
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>&nbsp;<strong>$144 for weekly lessons</strong>&nbsp;<a href="#">View Price</a></p>
-                                            </div>
-                                            <div class="custom-button d-flex align-items-center gap-2">
-                                                <button type="button" class="btn btn-round btn-fill">View Profile&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
+                                    <div class="col-md-4 col-lg-4">
+                                        <div class="listing-item">
+                                            <div class="card">
+                                                <div class="card-header p-0">
+                                                    <img class="img-fluid" src="./assets/images/about/about-one.jpg" alt="" />
+                                                    <div class="card-over-content">
+                                                        <span class="badge badge-success">Pro Athlete</span>
+                                                        <span class="ratings-badge"><i class="fa-solid fa-star"></i>&nbsp;<strong>5.0</strong>&nbsp;(2.0)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="title-line d-flex align-items-center justify-content-between">
+                                                        <h5>Janalia D'souza</h5>
+                                                    </div>
+                                                    <div class="listing-btm">
+                                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>&nbsp;Grant Park Pickleball Courts (1 mi)</p>
+                                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>&nbsp;&nbsp;81 Hours this week</p>
+                                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>&nbsp;<a href="#">View Price</a></p>
+                                                    </div>
+                                                    <div class="custom-button d-flex align-items-center gap-2">
+                                                        <button type="button" class="btn btn-round btn-fill">View Profile&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-lg-4">
-                                <div class="listing-item">
-                                    <div class="card">
-                                        <div class="card-header p-0">
-                                            <img class="img-fluid" src="./assets/images/about/about-one.jpg" alt="" />
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="title-line d-flex align-items-center justify-content-between">
-                                                <h5>Arian</h5>
-                                                <span><i class="fa-solid fa-star"></i>&nbsp;<strong>5.0</strong>&nbsp;(2.0)</span>
-                                            </div>
-                                            <div class="listing-btm">
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>&nbsp;<strong>Pro Athlete</strong></p>
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>&nbsp;
-                                                <strong>Closest:</strong>&nbsp;Grant Park Pickleball Courts (1 mi)</p>
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>&nbsp;&nbsp;<strong>Great Availability</strong>&nbsp;81 Hours this week</p>
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>&nbsp;<strong>$144 for weekly lessons</strong>&nbsp;<a href="#">View Price</a></p>
-                                            </div>
-                                            <div class="custom-button d-flex align-items-center gap-2">
-                                                <button type="button" class="btn btn-round btn-fill">View Profile&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-lg-4">
-                                <div class="listing-item">
-                                    <div class="card">
-                                        <div class="card-header p-0">
-                                            <img class="img-fluid" src="./assets/images/about/about-two.jpg" alt="" />
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="title-line d-flex align-items-center justify-content-between">
-                                                <h5>Arian</h5>
-                                                <span><i class="fa-solid fa-star"></i>&nbsp;<strong>5.0</strong>&nbsp;(2.0)</span>
-                                            </div>
-                                            <div class="listing-btm">
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>&nbsp;<strong>Pro Athlete</strong></p>
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>&nbsp;
-                                                <strong>Closest:</strong>&nbsp;Grant Park Pickleball Courts (1 mi)</p>
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>&nbsp;&nbsp;<strong>Great Availability</strong>&nbsp;81 Hours this week</p>
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>&nbsp;<strong>$144 for weekly lessons</strong>&nbsp;<a href="#">View Price</a></p>
-                                            </div>
-                                            <div class="custom-button d-flex align-items-center gap-2">
-                                                <button type="button" class="btn btn-round btn-fill">View Profile&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
+                                    <div class="col-md-4 col-lg-4">
+                                        <div class="listing-item">
+                                            <div class="card">
+                                                <div class="card-header p-0">
+                                                    <img class="img-fluid" src="./assets/images/about/about-two.jpg" alt="" />
+                                                    <div class="card-over-content">
+                                                        <span class="badge badge-success">Pro Athlete</span>
+                                                        <span class="ratings-badge"><i class="fa-solid fa-star"></i>&nbsp;<strong>5.0</strong>&nbsp;(2.0)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="title-line d-flex align-items-center justify-content-between">
+                                                        <h5>Marie</h5>
+                                                    </div>
+                                                    <div class="listing-btm">
+                                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>&nbsp;Grant Park Pickleball Courts (1 mi)</p>
+                                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>&nbsp;&nbsp;81 Hours this week</p>
+                                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>&nbsp;<a href="#">View Price</a></p>
+                                                    </div>
+                                                    <div class="custom-button d-flex align-items-center gap-2">
+                                                        <button type="button" class="btn btn-round btn-fill">View Profile&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-lg-4">
-                                <div class="listing-item">
-                                    <div class="card">
-                                        <div class="card-header p-0">
-                                            <img class="img-fluid" src="./assets/images/blog-image/blog-1.jpg" alt="" />
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="title-line d-flex align-items-center justify-content-between">
-                                                <h5>Arian</h5>
-                                                <span><i class="fa-solid fa-star"></i>&nbsp;<strong>5.0</strong>&nbsp;(2.0)</span>
-                                            </div>
-                                            <div class="listing-btm">
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>&nbsp;<strong>Pro Athlete</strong></p>
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>&nbsp;
-                                                <strong>Closest:</strong>&nbsp;Grant Park Pickleball Courts (1 mi)</p>
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>&nbsp;&nbsp;<strong>Great Availability</strong>&nbsp;81 Hours this week</p>
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>&nbsp;<strong>$144 for weekly lessons</strong>&nbsp;<a href="#">View Price</a></p>
-                                            </div>
-                                            <div class="custom-button d-flex align-items-center gap-2">
-                                                <button type="button" class="btn btn-round btn-fill">View Profile&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-lg-4">
-                                <div class="listing-item">
-                                    <div class="card">
-                                        <div class="card-header p-0">
-                                            <img class="img-fluid" src="./assets/images/blog-image/blog-2.jpg" alt="" />
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="title-line d-flex align-items-center justify-content-between">
-                                                <h5>Arian</h5>
-                                                <span><i class="fa-solid fa-star"></i>&nbsp;<strong>5.0</strong>&nbsp;(2.0)</span>
-                                            </div>
-                                            <div class="listing-btm">
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>&nbsp;<strong>Pro Athlete</strong></p>
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>&nbsp;
-                                                <strong>Closest:</strong>&nbsp;Grant Park Pickleball Courts (1 mi)</p>
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>&nbsp;&nbsp;<strong>Great Availability</strong>&nbsp;81 Hours this week</p>
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>&nbsp;<strong>$144 for weekly lessons</strong>&nbsp;<a href="#">View Price</a></p>
-                                            </div>
-                                            <div class="custom-button d-flex align-items-center gap-2">
-                                                <button type="button" class="btn btn-round btn-fill">View Profile&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
+                                    <div class="col-md-4 col-lg-4">
+                                        <div class="listing-item">
+                                            <div class="card">
+                                                <div class="card-header p-0">
+                                                    <img class="img-fluid" src="./assets/images/blog-image/blog-1.jpg" alt="" />
+                                                    <div class="card-over-content">
+                                                        <span class="badge badge-success">Pro Athlete</span>
+                                                        <span class="ratings-badge"><i class="fa-solid fa-star"></i>&nbsp;<strong>5.0</strong>&nbsp;(2.0)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="title-line d-flex align-items-center justify-content-between">
+                                                        <h5>Coros Copr</h5>
+                                                    </div>
+                                                    <div class="listing-btm">
+                                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>&nbsp;Grant Park Pickleball Courts (1 mi)</p>
+                                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>&nbsp;&nbsp;81 Hours this week</p>
+                                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>&nbsp;<a href="#">View Price</a></p>
+                                                    </div>
+                                                    <div class="custom-button d-flex align-items-center gap-2">
+                                                        <button type="button" class="btn btn-round btn-fill">View Profile&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-lg-4">
-                                <div class="listing-item">
-                                    <div class="card">
-                                        <div class="card-header p-0">
-                                            <img class="img-fluid" src="./assets/images/blog-image/blog-3.jpg" alt="" />
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="title-line d-flex align-items-center justify-content-between">
-                                                <h5>Arian</h5>
-                                                <span><i class="fa-solid fa-star"></i>&nbsp;<strong>5.0</strong>&nbsp;(2.0)</span>
-                                            </div>
-                                            <div class="listing-btm">
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>&nbsp;<strong>Pro Athlete</strong></p>
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>&nbsp;
-                                                <strong>Closest:</strong>&nbsp;Grant Park Pickleball Courts (1 mi)</p>
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>&nbsp;&nbsp;<strong>Great Availability</strong>&nbsp;81 Hours this week</p>
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>&nbsp;<strong>$144 for weekly lessons</strong>&nbsp;<a href="#">View Price</a></p>
-                                            </div>
-                                            <div class="custom-button d-flex align-items-center gap-2">
-                                                <button type="button" class="btn btn-round btn-fill">View Profile&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
+                                    <div class="col-md-4 col-lg-4">
+                                        <div class="listing-item">
+                                            <div class="card">
+                                                <div class="card-header p-0">
+                                                    <img class="img-fluid" src="./assets/images/blog-image/blog-2.jpg" alt="" />
+                                                    <div class="card-over-content">
+                                                        <span class="badge badge-success">Pro Athlete</span>
+                                                        <span class="ratings-badge"><i class="fa-solid fa-star"></i>&nbsp;<strong>5.0</strong>&nbsp;(2.0)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="title-line d-flex align-items-center justify-content-between">
+                                                        <h5>Arian</h5>
+                                                    </div>
+                                                    <div class="listing-btm">
+                                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>&nbsp;Grant Park Pickleball Courts (1 mi)</p>
+                                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>&nbsp;&nbsp;81 Hours this week</p>
+                                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>&nbsp;<a href="#">View Price</a></p>
+                                                    </div>
+                                                    <div class="custom-button d-flex align-items-center gap-2">
+                                                        <button type="button" class="btn btn-round btn-fill">View Profile&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-lg-4">
-                                <div class="listing-item">
-                                    <div class="card">
-                                        <div class="card-header p-0">
-                                            <img class="img-fluid" src="./assets/images/about/about-one.jpg" alt="" />
+                                    <div class="col-md-4 col-lg-4">
+                                        <div class="listing-item">
+                                            <div class="card">
+                                                <div class="card-header p-0">
+                                                    <img class="img-fluid" src="./assets/images/blog-image/blog-3.jpg" alt="" />
+                                                    <div class="card-over-content">
+                                                        <span class="badge badge-success">Pro Athlete</span>
+                                                        <span class="ratings-badge"><i class="fa-solid fa-star"></i>&nbsp;<strong>5.0</strong>&nbsp;(2.0)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="title-line d-flex align-items-center justify-content-between">
+                                                        <h5>Arian</h5>
+                                                    </div>
+                                                    <div class="listing-btm">
+                                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>&nbsp;Grant Park Pickleball Courts (1 mi)</p>
+                                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>&nbsp;&nbsp;81 Hours this week</p>
+                                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>&nbsp;<a href="#">View Price</a></p>
+                                                    </div>
+                                                    <div class="custom-button d-flex align-items-center gap-2">
+                                                        <button type="button" class="btn btn-round btn-fill">View Profile&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="card-body">
-                                            <div class="title-line d-flex align-items-center justify-content-between">
-                                                <h5>Arian</h5>
-                                                <span><i class="fa-solid fa-star"></i>&nbsp;<strong>5.0</strong>&nbsp;(2.0)</span>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4">
+                                        <div class="listing-item">
+                                            <div class="card">
+                                                <div class="card-header p-0">
+                                                    <img class="img-fluid" src="./assets/images/about/about-one.jpg" alt="" />
+                                                    <div class="card-over-content">
+                                                        <span class="badge badge-success">Pro Athlete</span>
+                                                        <span class="ratings-badge"><i class="fa-solid fa-star"></i>&nbsp;<strong>5.0</strong>&nbsp;(2.0)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="title-line d-flex align-items-center justify-content-between">
+                                                        <h5>Arian</h5>
+                                                    </div>
+                                                    <div class="listing-btm">
+                                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>&nbsp;Grant Park Pickleball Courts (1 mi)</p>
+                                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>&nbsp;&nbsp;81 Hours this week</p>
+                                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>&nbsp;<a href="#">View Price</a></p>
+                                                    </div>
+                                                    <div class="custom-button d-flex align-items-center gap-2">
+                                                        <button type="button" class="btn btn-round btn-fill">View Profile&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="listing-btm">
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>&nbsp;<strong>Pro Athlete</strong></p>
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>&nbsp;
-                                                <strong>Closest:</strong>&nbsp;Grant Park Pickleball Courts (1 mi)</p>
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>&nbsp;&nbsp;<strong>Great Availability</strong>&nbsp;81 Hours this week</p>
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>&nbsp;<strong>$144 for weekly lessons</strong>&nbsp;<a href="#">View Price</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4">
+                                        <div class="listing-item">
+                                            <div class="card">
+                                                <div class="card-header p-0">
+                                                    <img class="img-fluid" src="./assets/images/blog-image/blog-4.jpg" alt="" />
+                                                    <div class="card-over-content">
+                                                        <span class="badge badge-success">Pro Athlete</span>
+                                                        <span class="ratings-badge"><i class="fa-solid fa-star"></i>&nbsp;<strong>5.0</strong>&nbsp;(2.0)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="title-line d-flex align-items-center justify-content-between">
+                                                        <h5>Arian</h5>
+                                                    </div>
+                                                    <div class="listing-btm">
+                                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>&nbsp;Grant Park Pickleball Courts (1 mi)</p>
+                                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>&nbsp;&nbsp;81 Hours this week</p>
+                                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>&nbsp;<a href="#">View Price</a></p>
+                                                    </div>
+                                                    <div class="custom-button d-flex align-items-center gap-2">
+                                                        <button type="button" class="btn btn-round btn-fill">View Profile&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="custom-button d-flex align-items-center gap-2">
-                                                <button type="button" class="btn btn-round btn-fill">View Profile&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4">
+                                        <div class="listing-item">
+                                            <div class="card">
+                                                <div class="card-header p-0">
+                                                    <img class="img-fluid" src="./assets/images/blog-image/blog-5.jpg" alt="" />
+                                                    <div class="card-over-content">
+                                                        <span class="badge badge-success">Pro Athlete</span>
+                                                        <span class="ratings-badge"><i class="fa-solid fa-star"></i>&nbsp;<strong>5.0</strong>&nbsp;(2.0)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="title-line d-flex align-items-center justify-content-between">
+                                                        <h5>Arian</h5>
+                                                    </div>
+                                                    <div class="listing-btm">
+                                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>&nbsp;Grant Park Pickleball Courts (1 mi)</p>
+                                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>&nbsp;&nbsp;81 Hours this week</p>
+                                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>&nbsp;<a href="#">View Price</a></p>
+                                                    </div>
+                                                    <div class="custom-button d-flex align-items-center gap-2">
+                                                        <button type="button" class="btn btn-round btn-fill">View Profile&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-4">
-                                <div class="listing-item">
-                                    <div class="card">
-                                        <div class="card-header p-0">
-                                            <img class="img-fluid" src="./assets/images/blog-image/blog-4.jpg" alt="" />
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="title-line d-flex align-items-center justify-content-between">
-                                                <h5>Arian</h5>
-                                                <span><i class="fa-solid fa-star"></i>&nbsp;<strong>5.0</strong>&nbsp;(2.0)</span>
-                                            </div>
-                                            <div class="listing-btm">
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>&nbsp;<strong>Pro Athlete</strong></p>
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>&nbsp;
-                                                <strong>Closest:</strong>&nbsp;Grant Park Pickleball Courts (1 mi)</p>
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>&nbsp;&nbsp;<strong>Great Availability</strong>&nbsp;81 Hours this week</p>
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>&nbsp;<strong>$144 for weekly lessons</strong>&nbsp;<a href="#">View Price</a></p>
-                                            </div>
-                                            <div class="custom-button d-flex align-items-center gap-2">
-                                                <button type="button" class="btn btn-round btn-fill">View Profile&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-lg-4">
-                                <div class="listing-item">
-                                    <div class="card">
-                                        <div class="card-header p-0">
-                                            <img class="img-fluid" src="./assets/images/blog-image/blog-5.jpg" alt="" />
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="title-line d-flex align-items-center justify-content-between">
-                                                <h5>Arian</h5>
-                                                <span><i class="fa-solid fa-star"></i>&nbsp;<strong>5.0</strong>&nbsp;(2.0)</span>
-                                            </div>
-                                            <div class="listing-btm">
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>&nbsp;<strong>Pro Athlete</strong></p>
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>&nbsp;
-                                                <strong>Closest:</strong>&nbsp;Grant Park Pickleball Courts (1 mi)</p>
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>&nbsp;&nbsp;<strong>Great Availability</strong>&nbsp;81 Hours this week</p>
-                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>&nbsp;<strong>$144 for weekly lessons</strong>&nbsp;<a href="#">View Price</a></p>
-                                            </div>
-                                            <div class="custom-button d-flex align-items-center gap-2">
-                                                <button type="button" class="btn btn-round btn-fill">View Profile&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="custom-button d-flex align-items-center gap-2 justify-content-center mt-3 mb-3">
+                                <button type="button" class="btn btn-round btn-fill">Load More&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
                             </div>
                         </div>
                     </div>
-                    <div class="custom-button d-flex align-items-center gap-2 justify-content-center mt-3 mb-3">
-                        <button type="button" class="btn btn-round btn-fill">Load More&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
-                    </div>
-                </div>
+                 </div>
             </div>
              
         </div>
