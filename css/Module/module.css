@@ -97,7 +97,7 @@
   src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-ro-1UA.ttf) format('truetype');
 }
 :root {
-  --body-color: #ffffff;
+  --body-bg: #000000;
   --body-accent-color: #f7f7f7;
   --primary-color: #ffffff;
   --secondary-color: #181818;
@@ -131,6 +131,7 @@
   --f3-font-size: 1.75rem;
   --light-border: #f4f4f4;
   --d-dark-bg: #14171F;
+  --card-dark-bg: #2b2b35;
 }
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
@@ -8993,6 +8994,9 @@ body {
   box-sizing: border-box;
   font-family: var(--body-font);
 }
+body.module-template {
+  background: linear-gradient(45deg, #29323c, #29323c);
+}
 body section {
   width: 100%;
 }
@@ -9041,12 +9045,20 @@ h2 {
   font-size: var(--f2-font-size);
 }
 /* 1 */
+div#inner-template {
+  height: 100%;
+  display: inline-block;
+  width: 100%;
+}
+div#inner-template .dashbaord-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
 div#inner-template .dashbaord-header .navbar {
-  width: calc(100% - 220px);
+  width: calc(100% - 250px);
   left: inherit;
   right: 0;
-  padding-top: 25px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 div#inner-template .dashbaord-header .navbar ul li.active a {
   color: var(--primary-color);
@@ -9057,7 +9069,7 @@ div#inner-template .dashbaord-header .navbar ul li a {
   background: var(--aceent5-color);
   font-weight: 500;
   border-radius: 25px;
-  padding: 10px 20px;
+  padding: 8px 20px;
   font-size: 15px;
   margin-right: 10px;
   transition: 0.3s all ease-in;
@@ -9071,8 +9083,8 @@ div#inner-template .dashbaord-header .navbar .navbar-action ul li {
   display: inline-block;
 }
 div#inner-template .dashbaord-header .navbar .navbar-action ul li span {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   display: flex;
   margin-right: 10px;
   background: #f7f7f7;
@@ -9096,8 +9108,11 @@ div#inner-template .sidebar {
   top: 0;
   bottom: 0;
   left: 0;
-  background: var(--d-dark-bg);
-  width: 220px;
+  background: rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  z-index: 11;
+  box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.12) !important;
+  width: 250px;
   font-size: 14px;
 }
 div#inner-template .sidebar a.navbar-brand {
@@ -9111,11 +9126,20 @@ div#inner-template .sidebar .nav {
   list-style: none;
 }
 div#inner-template .sidebar .nav li a {
-  color: #889099;
-  -moz-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  text-transform: capitalize;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 8px 16px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+  outline-width: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  letter-spacing: 0.5px;
+  border: 1px solid #ffffff00;
+  transition: all 0.3s ease-out;
 }
 div#inner-template .sidebar .nav li a:hover {
   transition-duration: 0.6s;
@@ -9128,7 +9152,7 @@ div#inner-template .sidebar .nav li a:focus {
 div#inner-template .sidebar .nav li a i {
   float: left;
   margin-right: 15px;
-  margin-top: 4px;
+  font-size: 20px;
 }
 div#inner-template .sidebar .nav li.nav-profile {
   width: 100%;
@@ -9145,6 +9169,9 @@ div#inner-template .sidebar .nav li.nav-profile .image {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+}
+div#inner-template .sidebar .nav li.nav-profile .image a {
+  padding: 0;
 }
 div#inner-template .sidebar .nav li.nav-profile .image img {
   width: 100%;
@@ -9233,6 +9260,81 @@ div#inner-template .sidebar .has-sub a.nav-link[aria-expanded=true]:before {
   -webkit-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
+}
+div#inner-template .content-wrapper {
+  width: calc(100% - 250px);
+  display: inline-block;
+  float: right;
+}
+div#inner-template .content-wrapper .dashboard-main {
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+div#inner-template .content-wrapper .dashboard-main .card {
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.12);
+  margin-bottom: 1.5rem;
+  border: 0 solid transparent;
+}
+div#inner-template .content-wrapper .dashboard-main .card .card-body {
+  flex: 1 1 auto;
+  padding: 1rem;
+}
+div#inner-template .content-wrapper .dashboard-main .card .card-body h5 {
+  color: var(--primary-color);
+}
+div#inner-template .content-wrapper .dashboard-main .card .card-body .widgets-icons {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.15);
+  font-size: 26px;
+  border-radius: 10px;
+}
+div#inner-template .content-wrapper .dashboard-main .card .card-body .calendar {
+  overflow: hidden;
+  border-radius: 15px;
+}
+div#inner-template .content-wrapper .dashboard-main .card .card-body .notification-main {
+  padding: 0.5rem 1.3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+div#inner-template .content-wrapper .dashboard-main .card .card-body .notification-main .notification-item .user-online {
+  position: relative;
+}
+div#inner-template .content-wrapper .dashboard-main .card .card-body .notification-main .notification-item .user-online img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+div#inner-template .content-wrapper .dashboard-main .card .card-body .notification-main .notification-item .user-online:after {
+  content: '';
+  position: absolute;
+  bottom: 1px;
+  right: 17px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #fff;
+  background: #16e15e;
+}
+div#inner-template .content-wrapper .dashboard-main .card .card-body .notification-main .notification-item .msg-name {
+  font-size: 14px;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.75);
+}
+div#inner-template .content-wrapper .dashboard-main .card .card-body .notification-main .notification-item .msg-name .msg-time {
+  font-size: 12px;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+div#inner-template .content-wrapper .dashboard-main .card .card-body .notification-main .notification-item .msg-info {
+  font-size: 13px;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.5);
 }
 .sidebar .nav > li.nav-item:hover:not(.nav-header) {
   background: #232a2f;

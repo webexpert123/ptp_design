@@ -8,7 +8,9 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: var(--body-font);
-
+    &.module-template {
+      background: linear-gradient(45deg, #29323c, #29323c);
+    }
     section {
         width: 100%;
     }
@@ -73,13 +75,17 @@ h2 {
 
 /* 1 */
 div#inner-template {
+    height: 100%;
+    display: inline-block;
+    width: 100%;
   & .dashbaord-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     & .navbar {
-      width: calc(100% - 220px);
+      width: calc(100% - 250px);
       left: inherit;
       right: 0;
-      padding-top: 25px;
-      padding-bottom: 20px;
+      padding-top: 15px;
+      padding-bottom: 15px;
       ul {
         li {
           &.active {
@@ -93,7 +99,7 @@ div#inner-template {
             background:var(--aceent5-color);
             font-weight: 500;
             border-radius: 25px;
-            padding: 10px 20px;
+            padding: 8px 20px;
             font-size: 15px;
             margin-right: 10px;
             transition: 0.3s all ease-in;
@@ -110,8 +116,8 @@ div#inner-template {
           li {
             display: inline-block;
             span {
-              width: 50px;
-              height: 50px;
+              width: 40px;
+              height: 40px;
               display: flex;
               margin-right: 10px;
               background: #f7f7f7;
@@ -142,8 +148,11 @@ div#inner-template {
     top: 0;
     bottom: 0;
     left: 0;
-    background: var(--d-dark-bg);
-    width: 220px;
+    background: rgb(0 0 0 / 20%);
+    border-right: 1px solid rgb(255 255 255 / 15%);
+    z-index: 11;
+    box-shadow: 0 .3rem .8rem rgba(0, 0, 0, .12) !important;
+    width: 250px;
     font-size: 14px;
     & a.navbar-brand {
       width: 100%;
@@ -156,11 +165,20 @@ div#inner-template {
       list-style: none;
       li {
         a {
-          color: #889099;
-          -moz-transition: all 0.5s ease;
-          -webkit-transition: all 0.5s ease;
-          -o-transition: all 0.5s ease;
-          transition: all 0.5s ease;
+          text-transform: capitalize;
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: left;
+          padding: 8px 16px;
+          font-size: 15px;
+          color: rgb(255 255 255 / 75%);
+          outline-width: 0;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          letter-spacing: .5px;
+          border: 1px solid #ffffff00;
+          transition: all .3s ease-out;
           &:hover {
             transition-duration: 0.6s;
             color: #fff;
@@ -172,7 +190,7 @@ div#inner-template {
           i {
             float: left;
             margin-right: 15px;
-            margin-top: 4px;
+            font-size: 20px;
           }
         }
         &.nav-profile {
@@ -189,6 +207,9 @@ div#inner-template {
             -webkit-border-radius: 50%;
             -moz-border-radius: 50%;
             border-radius: 50%;
+            a {
+              padding: 0;
+            }
             img {
               width: 100%;
               height: 100%;
@@ -283,6 +304,83 @@ div#inner-template {
             -webkit-transition: all 1s ease;
             -o-transition: all 1s ease;
             transition: all 1s ease;
+          }
+        }
+      }
+    }
+  }
+  .content-wrapper {
+    width: calc(100% - 250px);
+    display: inline-block;
+    float: right;
+    & .dashboard-main {
+      padding: 1.5rem 1.5rem 0 1.5rem;
+      & .card {
+        background-color: rgb(0 0 0 / 20%);
+        box-shadow: 0 .3rem .8rem rgba(0, 0, 0, .12);
+        margin-bottom: 1.5rem;
+        border: 0 solid transparent;
+        & .card-body {
+          flex: 1 1 auto;
+          padding: 1rem;
+          h5 {
+            color: var(--primary-color);
+          }
+          & .widgets-icons {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            background-color: rgb(255 255 255 / 15%);
+            font-size: 26px;
+            border-radius: 10px;
+        }
+        & .calendar {
+          overflow: hidden;
+          border-radius: 15px;
+        }
+        & .notification-main {
+          padding: .5rem 1.3rem;
+          border-bottom: 1px solid rgb(255 255 255 / 15%);
+          & .notification-item {
+            & .user-online {
+              position: relative;
+              img {
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                margin-right: 15px;
+              }
+              &:after {
+                content: '';
+                position: absolute;
+                bottom: 1px;
+                right: 17px;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                box-shadow: 0 0 0 2px #fff;
+                background: #16e15e;
+              }
+            }
+            & .msg-name {
+              font-size: 14px;
+              margin-bottom: 0;
+              color: rgb(255 255 255 / 75%);
+                & .msg-time {
+                  font-size: 12px;
+                  margin-bottom: 0;
+                  color: rgb(255 255 255 / 50%);
+                }
+              }
+             & .msg-info {
+                font-size: 13px;
+                margin-bottom: 0;
+                color: rgb(255 255 255 / 50%);
+            }
+            }
           }
         }
       }
