@@ -9288,16 +9288,19 @@ div#inner-template .content-wrapper .dashboard-main .card .card-body .widgets-ic
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: var(--aceent0-color);
   background-color: rgba(255, 255, 255, 0.15);
   font-size: 26px;
   border-radius: 10px;
+}
+div#inner-template .content-wrapper .dashboard-main .card .card-body .widgets-icons i {
+  color: var(--aceent0-color);
 }
 div#inner-template .content-wrapper .dashboard-main .card .card-body .calendar {
   overflow: hidden;
   border-radius: 15px;
 }
-div#inner-template .content-wrapper .dashboard-main .card .card-body .notification-main {
+div#inner-template .content-wrapper .dashboard-main .card .card-body .notification-main .notification-item {
   padding: 0.5rem 1.3rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
@@ -9325,6 +9328,8 @@ div#inner-template .content-wrapper .dashboard-main .card .card-body .notificati
   font-size: 14px;
   margin-bottom: 0;
   color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  justify-content: space-between;
 }
 div#inner-template .content-wrapper .dashboard-main .card .card-body .notification-main .notification-item .msg-name .msg-time {
   font-size: 12px;
