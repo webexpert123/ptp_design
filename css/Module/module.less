@@ -323,6 +323,11 @@ div#inner-template {
         & .card-body {
           flex: 1 1 auto;
           padding: 1rem;
+          & .card-title {
+            a {
+              color: var(--primary-color);
+            }
+          }
           h5 {
             color: var(--primary-color);
           }
@@ -348,6 +353,9 @@ div#inner-template {
           & .notification-item {
             padding: .5rem 1.3rem;
             border-bottom: 1px solid rgb(255 255 255 / 15%);
+            &:last-child {
+              border: none;
+            }
             & .user-online {
               position: relative;
               img {
