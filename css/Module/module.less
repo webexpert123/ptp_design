@@ -996,6 +996,30 @@ div#inner-template {
             }
           }
         }
+        & .custom-plan {
+          background: var(--aceent0-color);
+          & .custom-plan-content {
+            h3 {
+              
+            }
+            button {
+              background-color: #000;
+              color: var(--primary-color);
+              min-height: 48px;
+              min-width: 120px;
+              border-radius: 25px;
+              border: 1px solid transparent;
+              box-shadow: none;
+              transition: 0.3s ease-in;
+              &:hover {
+                border-color: var(--secondary-color);
+                background: transparent;
+                color: var(--secondary-color);
+                transition: 0.3s ease-in;
+              }
+            }
+          }
+        }
       }
       .single-chat-tab {
         /* width */
@@ -1260,6 +1284,7 @@ div#inner-template {
                 }
             }
         }
+        
     }
       & .chat-main {
         & .chat-list {

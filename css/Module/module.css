@@ -9162,7 +9162,7 @@ div#inner-template .dashbaord-header .navbar .navbar-action .notification_dropdo
 }
 div#inner-template .dashbaord-header .navbar .navbar-action .notification_dropdown .header-notifications-list {
   position: relative;
-  height: 360px;
+  height: 372px;
   overflow: auto;
   /* width */
   /* Track */
@@ -9885,6 +9885,25 @@ div#inner-template .content-wrapper .dashboard-main .profile-page .subscription-
 }
 div#inner-template .content-wrapper .dashboard-main .profile-page .subscription-plans .subscription-list .subscription-start .subscription-action.ms-auto {
   margin-left: auto;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .custom-plan {
+  background: var(--aceent0-color);
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .custom-plan .custom-plan-content button {
+  background-color: #000;
+  color: var(--primary-color);
+  min-height: 48px;
+  min-width: 120px;
+  border-radius: 25px;
+  border: 1px solid transparent;
+  box-shadow: none;
+  transition: 0.3s ease-in;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .custom-plan .custom-plan-content button:hover {
+  border-color: var(--secondary-color);
+  background: transparent;
+  color: var(--secondary-color);
+  transition: 0.3s ease-in;
 }
 div#inner-template .content-wrapper .dashboard-main .single-chat-tab {
   /* width */
