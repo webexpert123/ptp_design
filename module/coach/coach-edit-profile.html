@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PTP-Coach Edit Profile</title>
+    <link rel="icon" type="image/png" href="./assets/images/logo.png">
+    <link href="../../css/module/module.css?v=12345678" rel="stylesheet" />
+    <link href="../../css/module/box-icon.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <!-- animation library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body class="module-template">
+    <!-- container open -->
+        <div id="inner-template">
+            <div class="container-fluid">
+                <div class="dashbaord-header d-flex justify-content-end">
+                    <nav class="navbar navbar-expand-sm navbar-light justify-content-end bg-faded">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                            <ul class="navbar-nav mr-auto nav-pills">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="javascript:;">Dashboard<span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="javascript:;">Inbox</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="javascript:;">Booking</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="javascript:;">Calendar</a>
+                                </li>
+                            </ul>
+                    
+                            <div class="navbar-action">
+                                <ul>
+                                    <li><span><a href="javascript:void(0);"><img src="../../assets/images/dashboard/bell.svg" alt=""></a></span></li>
+                                    <li><span><a href="javascript:void(0);"><img src="../../assets/images/dashboard/search.svg" alt=""></a></span></li>
+                                    <li><a href="my-account.html">My Account</a></li>
+                                    <li><a href="javascript:void(0);">Sign Out</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        <div class="inner-layout">
+            <!-- sidebar start -->
+            <nav class="sidebar">
+                <a class="navbar-brand" href="javascript:;">
+                    <img src="../../assets/images/logo_white.png" class="align-top" alt="">
+                </a>
+                <ul class="nav">
+                    <li class="nav-profile">
+                        <div class="image">
+                            <a href="javascript:;"><img src="../../assets/images/avatars/avatar-1.png" alt=""></a>
+                        </div>
+                        <div class="info">
+                            Andrio Rechard <small>Football Coach</small>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="dashboard.html"><i class="bx bx-home-alt"></i>Dashboard<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="training-plans.html"><i class="bx bx-diamond"></i>Training Plans</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="messages.html"><i class="bx bx-chat"></i>Messages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="student-info.html"><i class="bx bx-book-reader"></i>Students Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="coach-profile.html"><i class="bx bx-user-circle"></i>My Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="manage-subscription.html"><i class="bx bx-money"></i>Manage Subscription</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:;"><i class="bx bx-power-off"></i>Logout</a>
+                    </li>
+                </ul>
+            </nav>
+             <!-- sidebar End -->
+              <!-- content col start -->
+            <div class="content-wrapper">
+                <div class="dashboard-main">
+                    <div class="row">
+                        <div class="col page-title">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h2 class="m-0">Edit Profile</h2>
+                                <div class="d-flex align-items-center pd-3">
+                                    <ul class="breadcrumbs">
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Profile</a></li>
+                                        <li>Edit Profile</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- top cols of dashboard -->
+                    <div class="profile-page">
+                        <div class="row">
+							<div class="col-lg-4">
+								<div class="card profile-block">
+									<div class="card-body">
+										<div class="d-flex flex-xl-row flex-lg-column flex-md-column align-items-xl-start text-center">
+											<img src="../../assets/images/avatars/avatar-1.png" alt="Admin" class="avatar_img rounded-circle p-1" width="110">
+											<div class="text-xl-left mx-3">
+												<h5 class="m-0">Andrio Rechard</h5>
+												<small class="mb-0 d-inline-block w-100">Football Coach</small>
+												<small class="mb-2 font-size-sm d-inline-block w-100">Bay Area, San Francisco, CA</small>
+												<div class="upload-image">
+                                                    <div class="upload-form">
+                                                        <input class="form-control" type="file" id="formFileMultiple" multiple="">
+                                                        <span>Upload Profile Image</span>
+                                                    </div>
+                                                </div>
+											</div>
+                                            <div class="ms-auto profile-rate text-center">
+                                                <h4 class="m-0">$30</h4>
+                                                <span>/Session</span>
+                                            </div>
+										</div>
+										<hr class="my-4">
+										<div class="copy-link">
+                                            <div class="d-flex align-items-center justify-content-between mb-2 px-2">
+                                                <label>Profile Link</label>
+                                                <i class="bx bx-copy"></i>
+                                            </div>
+                                            <a href="#">https://www.ptp.com/coach-profile/eagan</a>
+                                        </div>
+									</div>
+								</div>
+                                <div class="card profile-media-upload">
+									<div class="card-body">
+										<div class="row row-cols-xl-1">
+                                           <div class="col">
+                                            <div class="upload-image">
+                                                <label for="formFileMultiple" class="form-label">Gallery Images</label>
+                                                <div class="upload-form">
+                                                    <input class="form-control" type="file" id="formFileMultiple" multiple="">
+                                                    <span>Upload Media</span>
+                                                </div>
+                                                <small class="mt-2 d-inline-block">You may upload a maximum of 12 images.Add more then one photo at a time.</small>
+                                            </div>
+                                           </div>
+                                        </div>
+									</div>
+								</div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title mb-4 d-flex align-items-center justify-content-between">
+                                            <h5 class="m-0">Add Location</h5>
+                                            <button class="btn btn-light title-btn">Add Location</button>
+                                        </div>
+                                        <div class="row location-from">
+                                            <div class="col-md-12 mb-2">
+												<div class="form-group d-flex align-items-center">
+                                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Location Info">
+                                                    <button type="button" class="add_lcoation_btn"><i class="bx bx-message-square-add"></i></button>
+                                                </div>
+											</div>
+                                            <div class="col-md-12 mb-2">
+												<div class="form-group d-flex align-items-center">
+                                                    <input type="text" class="form-control" id="formGroupExampleInput" value="Bay Area, San Francisco, CA">
+                                                    <button type="button" class="remove_lcoation_btn"><i class="bx bx-trash-alt"></i></button>
+                                                </div>
+											</div>
+                                            <div class="col-md-12">
+                                                <div class="page-save-action">
+                                                    <button type="button">Save</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+							</div>
+							<div class="col-lg-8">
+								<div class="card">
+									<div class="card-body">
+                                        <div class="card-title mb-4">
+                                            <h5 class="">Profile Overview</h5>
+                                        </div>
+										<div class="row mb-3 profile-overview">
+											<div class="col-md-6 mb-2">
+												<div class="form-group">
+                                                    <label for="formGroupExampleInput">Full Name</label>
+                                                    <input type="text" class="form-control" id="formGroupExampleInput" value="Andrio Rechard">
+                                                </div>
+											</div>
+                                            <div class="col-md-6 mb-2">
+												<div class="form-group">
+                                                    <label for="formGroupExampleInput">Email</label>
+                                                    <input type="email" class="form-control" id="formGroupExampleInput" value="Andrio@testmail.com">
+                                                </div>
+											</div>
+                                            <div class="col-md-6 mb-2">
+												<div class="form-group">
+                                                    <label for="formGroupExampleInput">Phone</label>
+                                                    <input type="text" class="form-control" id="formGroupExampleInput" value="(239) 816-9029">
+                                                </div>
+											</div>
+                                            <div class="col-md-6 mb-2">
+												<div class="form-group">
+                                                    <label for="formGroupExampleInput">Mobile</label>
+                                                    <input type="text" class="form-control" id="formGroupExampleInput" value="(320) 380-4539">
+                                                </div>
+											</div>
+                                            <div class="col-md-6 mb-2">
+												<div class="form-group">
+                                                    <label for="formGroupExampleInput">Sports</label>
+                                                    <select class="form-control">
+                                                        <option>Football</option>
+                                                        <option>Hockey</option>
+                                                        <option>Rugby</option>
+                                                        <option>Tennis</option>
+                                                        <option>Table Tennis</option>
+                                                      </select>
+                                                </div>
+											</div>
+                                            <div class="col-md-6 mb-2">
+												<div class="form-group">
+                                                    <label for="formGroupExampleInput">Speciality</label>
+                                                    <select class="form-control">
+                                                        <option>Football</option>
+                                                        <option>Hockey</option>
+                                                        <option>Rugby</option>
+                                                        <option>Tennis</option>
+                                                        <option>Table Tennis</option>
+                                                      </select>
+                                                </div>
+											</div>
+                                            <div class="col-md-6 mb-2">
+												<div class="form-group">
+                                                    <label for="exampleFormControlTextarea1">Tell Us About Yourself!</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Tempor voluptatum qu Tempor voluptatum quTempor voluptatum quTempor voluptatum quTempor voluptatum quTempor voluptatum quTempor voluptatum quTempor voluptatum quTempor voluptatum quTempor voluptatum</textarea>
+                                                </div>
+											</div>
+                                            <div class="col-md-6">
+												<div class="form-group">
+                                                    <label for="exampleFormControlTextarea1">Summary of Career and Accomplishments</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Tempor voluptatum qu Tempor voluptatum quTempor voluptatum quTempor voluptatum quTempor voluptatum quTempor voluptatum quTempor voluptatum quTempor voluptatum quTempor voluptatum quTempor voluptatum</textarea>
+                                                </div>
+											</div>
+                                            <div class="col-md-6 mb-2">
+												<div class="form-group">
+                                                    <label for="exampleFormControlTextarea1">Summary of Coaching Background</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Tempor voluptatum qu Tempor voluptatum quTempor voluptatum quTempor voluptatum quTempor </textarea>
+                                                </div>
+											</div>
+                                            <div class="col-md-6 mb-2">
+												<div class="form-group">
+                                                    <label for="exampleFormControlTextarea1">What does a typical training session look like?</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Tempor voluptatum qu Tempor voluptatum quTempor voluptatum quTempor voluptatum</textarea>
+                                                </div>
+											</div>
+                                            <div class="col-md-12">
+                                                <div class="page-save-action">
+                                                    <button type="button">Save</button>
+                                                </div>
+                                            </div>
+										</div>
+									</div>
+								</div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title mb-4 ">
+                                            <h5 class="">Manage Pricing Plans</h5>
+                                        </div>
+                                        <div class="row manage_pricing">
+                                            <div class="col-md-4 mb-2">
+                                                <div class="form-group">
+                                                    <label for="formGroupExampleInput">Currency</label>
+                                                    <select class="form-control">
+                                                        <option>Dollar</option>
+                                                        <option>Euro</option>
+                                                        <option>INR</option>
+                                                      </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-2">
+                                                <div class="form-group">
+                                                    <label for="formGroupExampleInput">Price</label>
+                                                    <input type="text" class="form-control" id="formGroupExampleInput" value="300">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-2">
+                                                <div class="form-group">
+                                                    <label for="formGroupExampleInput">Session</label>
+                                                    <input type="text" class="form-control" id="formGroupExampleInput" value="5">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="page-save-action">
+                                                    <button type="button">Save</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+							</div>
+						</div>
+                    </div>
+                   
+            </div>
+            </div>
+            <!-- content col End -->
+        </div>
+
+        <!-- container close -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>
+
+</html>

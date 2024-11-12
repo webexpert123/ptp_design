@@ -9269,11 +9269,116 @@ div#inner-template .content-wrapper {
 div#inner-template .content-wrapper .dashboard-main {
   padding: 1.5rem 1.5rem 0 1.5rem;
 }
+div#inner-template .content-wrapper .dashboard-main .page-title {
+  margin-bottom: 20px;
+}
+div#inner-template .content-wrapper .dashboard-main .page-title h2 {
+  color: var(--primary-color);
+  font-size: 30px;
+}
+div#inner-template .content-wrapper .dashboard-main .page-title ul li {
+  display: inline-block;
+  padding: 0 15px;
+  color: var(--primary-color);
+  font-size: 1rem;
+  position: relative;
+}
+div#inner-template .content-wrapper .dashboard-main .page-title ul li:after {
+  content: '/';
+  position: absolute;
+  right: -7px;
+}
+div#inner-template .content-wrapper .dashboard-main .page-title ul li:last-child:after {
+  content: '';
+}
+div#inner-template .content-wrapper .dashboard-main .page-title ul li a {
+  color: var(--aceent0-color);
+}
+div#inner-template .content-wrapper .dashboard-main .page-title .page-edit-action button {
+  transition: 0.3s all ease-in;
+  width: auto;
+  height: 40px;
+  display: flex;
+  margin-right: 10px;
+  background: #000;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  border: none;
+  color: var(--primary-color);
+  padding: 5px 15px;
+}
+div#inner-template .content-wrapper .dashboard-main .page-title .page-edit-action button svg {
+  color: var(--primary-color);
+  width: 20px;
+}
+div#inner-template .content-wrapper .dashboard-main .page-title .page-edit-action button:hover {
+  background: var(--aceent0-color);
+  color: var(--secondary-color);
+}
+div#inner-template .content-wrapper .dashboard-main .page-title .page-edit-action button:hover svg {
+  color: var(--secondary-color);
+}
+div#inner-template .content-wrapper .dashboard-main table {
+  background-color: rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+div#inner-template .content-wrapper .dashboard-main table thead tr {
+  background-color: #2a343e !important;
+}
+div#inner-template .content-wrapper .dashboard-main table tr {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+div#inner-template .content-wrapper .dashboard-main table tr:nth-of-type(odd) {
+  background-color: #000;
+}
+div#inner-template .content-wrapper .dashboard-main table tr th {
+  color: var(--primary-color);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+div#inner-template .content-wrapper .dashboard-main table tr td {
+  color: var(--primary-color);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+div#inner-template .content-wrapper .dashboard-main table tr td:hover {
+  background-color: var(--aceent0-color);
+  color: var(--secondary-color);
+}
+div#inner-template .content-wrapper .dashboard-main nav .pagination li.active a {
+  background-color: var(--aceent0-color);
+  color: var(--secondary-color);
+}
+div#inner-template .content-wrapper .dashboard-main nav .pagination li a {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
 div#inner-template .content-wrapper .dashboard-main .card {
   background-color: rgba(0, 0, 0, 0.2);
   box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.12);
   margin-bottom: 1.5rem;
   border: 0 solid transparent;
+}
+div#inner-template .content-wrapper .dashboard-main .card .card-title button.title-btn {
+  color: var(--secondary-color);
+  background: var(--aceent0-color);
+  border-radius: 25px;
+  font-size: 15px;
+  transition: 0.3s all ease-in;
+  border-color: var(--aceent0-color);
+  font-weight: 600;
+  padding: 5px 20px;
+}
+div#inner-template .content-wrapper .dashboard-main .card .card-title button.title-btn:hover {
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  transition: 0.3s all ease-in;
+  border-color: var(--secondary-color);
+}
+div#inner-template .content-wrapper .dashboard-main .card .card-title span {
+  color: var(--aceent0-color);
+  text-transform: uppercase;
+  font-weight: 600;
 }
 div#inner-template .content-wrapper .dashboard-main .card .card-body {
   flex: 1 1 auto;
@@ -9346,6 +9451,435 @@ div#inner-template .content-wrapper .dashboard-main .card .card-body .notificati
   font-size: 13px;
   margin-bottom: 0;
   color: rgba(255, 255, 255, 0.5);
+}
+div#inner-template .content-wrapper .dashboard-main .card .card-body .student-list .customers-list-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+div#inner-template .content-wrapper .dashboard-main .card .card-body .student-list .customers-list-item .student-thumb {
+  position: relative;
+}
+div#inner-template .content-wrapper .dashboard-main .card .card-body .student-list .customers-list-item .student-thumb .user-online {
+  width: 12px;
+  height: 11px;
+  background: #31B112 0% 0% no-repeat padding-box;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+div#inner-template .content-wrapper .dashboard-main .card .card-body .student-list .customers-list-item .ms-2 {
+  margin-left: 0.5rem;
+}
+div#inner-template .content-wrapper .dashboard-main .card .card-body .student-list .customers-list-item .ms-2 h6 {
+  color: var(--primary-color);
+}
+div#inner-template .content-wrapper .dashboard-main .card .card-body .student-list .customers-list-item .ms-2 p {
+  color: rgba(255, 255, 255, 0.7);
+}
+div#inner-template .content-wrapper .dashboard-main .card .card-body .student-list .customers-list-item .customers-contacts a {
+  font-size: 16px;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+  border-radius: 50%;
+  color: var(--primary-color);
+}
+div#inner-template .content-wrapper .dashboard-main .card .card-body .student-list .customers-list-item .list-inline {
+  margin-left: auto;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block h5 {
+  color: var(--primary-color);
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block small {
+  color: var(--primary-color);
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block .avatar_img {
+  background-color: var(--aceent0-color);
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block .profile-rate {
+  margin-left: auto;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block .profile-rate h4 {
+  color: var(--aceent0-color);
+  font-size: 32px;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block .profile-rate span {
+  color: var(--primary-color);
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block button {
+  color: var(--secondary-color);
+  background: var(--aceent0-color);
+  border-radius: 25px;
+  font-size: 15px;
+  margin-right: 10px;
+  transition: 0.3s all ease-in;
+  border-color: var(--aceent0-color);
+  font-weight: 600;
+  padding: 5px 20px;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block button:hover {
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  transition: 0.3s all ease-in;
+  border-color: var(--secondary-color);
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block .copy-link label {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block .copy-link i {
+  color: var(--aceent0-color);
+  font-size: 18px;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block .copy-link a {
+  color: var(--primary-color);
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 25px;
+  width: 100%;
+  padding: 8px;
+  display: inline-block;
+  text-align: center;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block .list-group-item {
+  color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block .list-group-item h6 {
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+  column-gap: 10px;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block .list-group-item h6 svg {
+  color: var(--primary-color);
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block .list-group-item span {
+  color: var(--primary-color);
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block hr {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page label {
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page input {
+  color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  min-height: 46px;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page select {
+  color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  min-height: 46px;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page select option {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page textarea {
+  color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .profile-media .col {
+  height: 90px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .profile-media .col img {
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 8px;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .profile-availability {
+  border-radius: 20px;
+  overflow: hidden;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .profile-media-upload .upload-image .upload-form {
+  position: relative;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .profile-media-upload .upload-image .upload-form input {
+  border-radius: 25px;
+  opacity: 0;
+  position: relative;
+  z-index: 22;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .profile-media-upload .upload-image .upload-form span {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary-color);
+  font-weight: 600;
+  background: var(--aceent0-color);
+  border-radius: 25px;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .profile-media-upload .upload-image small {
+  color: var(--primary-color);
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .page-save-action button {
+  transition: 0.3s all ease-in;
+  width: auto;
+  height: 45px;
+  display: flex;
+  margin-right: 10px;
+  background: #28a745;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  border: none;
+  color: var(--primary-color);
+  padding: 5px 15px;
+  min-width: 100px;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .page-save-action button.udpate_btn {
+  background: #218838;
+  color: var(--secondary-color);
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .page-save-action button:hover {
+  background: #218838;
+  color: var(--primary-color);
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .location-from button.add_lcoation_btn {
+  height: 45px;
+  width: 63px;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 27px;
+  line-height: 46px;
+  background: #28a745;
+  color: var(--primary-color);
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .location-from button.remove_lcoation_btn {
+  height: 45px;
+  width: 63px;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 27px;
+  line-height: 46px;
+  background: #fb4d4d;
+  color: var(--primary-color);
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .upload-image .upload-form {
+  position: relative;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .upload-image .upload-form input {
+  border-radius: 25px;
+  opacity: 0;
+  position: relative;
+  z-index: 22;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .upload-image .upload-form span {
+  position: absolute;
+  top: 0;
+  width: auto;
+  padding: 0 20px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary-color);
+  font-weight: 600;
+  background: var(--aceent0-color);
+  border-radius: 25px;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .upload-image small {
+  color: var(--primary-color);
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .my-account-tabs ul {
+  border-color: var(--secondary-color);
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .my-account-tabs ul li button {
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  color: var(--primary-color);
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .my-account-tabs ul li button.active {
+  border-bottom: 3px solid var(--aceent0-color);
+  color: var(--aceent0-color);
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .my-account-tabs .tab-content .tabs-inner .subscription-plans .subscription-list {
+  border: 1px solid #29323c;
+  background: #29323c;
+  border-radius: 8px;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .my-account-tabs .tab-content .tabs-inner .subscription-plans .subscription-list .subscription-start .subscription-icon {
+  padding: 0 20px;
+  border: 1px solid var(--aceent0-color);
+  border-radius: 10px;
+  height: 68px;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .my-account-tabs .tab-content .tabs-inner .subscription-plans .subscription-list .subscription-start .subscription-icon i {
+  font-size: 44px;
+  color: var(--aceent0-color);
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .my-account-tabs .tab-content .tabs-inner .subscription-plans .subscription-list .subscription-start .subscription-info h3 {
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 500;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .my-account-tabs .tab-content .tabs-inner .subscription-plans .subscription-list .subscription-start .subscription-info span {
+  color: var(--primary-color);
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .my-account-tabs .tab-content .tabs-inner .subscription-plans .subscription-list .subscription-start .subscription-action.ms-auto {
+  margin-left: auto;
+}
+div#inner-template .content-wrapper .dashboard-main .single-chat-tab {
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+div#inner-template .content-wrapper .dashboard-main .single-chat-tab ::-webkit-scrollbar {
+  width: 10px;
+}
+div#inner-template .content-wrapper .dashboard-main .single-chat-tab ::-webkit-scrollbar-track {
+  background: #29323c;
+}
+div#inner-template .content-wrapper .dashboard-main .single-chat-tab ::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 8px;
+}
+div#inner-template .content-wrapper .dashboard-main .single-chat-tab ::-webkit-scrollbar-thumb:hover {
+  background: #000;
+  border-radius: 8px;
+}
+div#inner-template .content-wrapper .dashboard-main .single-chat-tab .chat-header {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 0px 0px 10px 0;
+}
+div#inner-template .content-wrapper .dashboard-main .single-chat-tab .chat-header .media {
+  align-items: center;
+}
+div#inner-template .content-wrapper .dashboard-main .single-chat-tab .chat-header .media .user-dp {
+  margin-right: 20px;
+}
+div#inner-template .content-wrapper .dashboard-main .single-chat-tab .chat-header .media .user-dp img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+div#inner-template .content-wrapper .dashboard-main .single-chat-tab .chat-header .media .user-dp span.user-online {
+  width: 12px;
+  height: 11px;
+  background: #31B112 0% 0% no-repeat padding-box;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+div#inner-template .content-wrapper .dashboard-main .single-chat-tab .chat-header .media .media-body h5 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+div#inner-template .content-wrapper .dashboard-main .single-chat-tab .chat-body {
+  padding: 30px 5px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 64vh;
+  overflow: auto;
+}
+div#inner-template .content-wrapper .dashboard-main .single-chat-tab .chat-body .message-content {
+  max-width: 328px;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+div#inner-template .content-wrapper .dashboard-main .single-chat-tab .chat-body .message-content.sender {
+  text-align: right;
+  align-self: flex-end;
+}
+div#inner-template .content-wrapper .dashboard-main .single-chat-tab .chat-body .message-content.sender .msg-block {
+  background-color: #071629;
+  text-align: left;
+}
+div#inner-template .content-wrapper .dashboard-main .single-chat-tab .chat-body .message-content.receiver label {
+  text-align: left;
+}
+div#inner-template .content-wrapper .dashboard-main .single-chat-tab .chat-body .message-content.receiver .msg-block {
+  background-color: #9d7a10;
+  text-align: left;
+}
+div#inner-template .content-wrapper .dashboard-main .single-chat-tab .chat-body .message-content label {
+  font-size: 14px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #B5B5B5;
+  margin-bottom: 5px;
+}
+div#inner-template .content-wrapper .dashboard-main .single-chat-tab .chat-body .message-content .msg-block {
+  padding: 15px 8px;
+  border-radius: 5px;
+}
+div#inner-template .content-wrapper .dashboard-main .single-chat-tab .chat-body .message-content .msg-block p {
+  color: #fff;
+  font-size: 15px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+}
+div#inner-template .content-wrapper .dashboard-main .single-chat-tab .chat-footer {
+  padding: 10px 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+div#inner-template .content-wrapper .dashboard-main .single-chat-tab .chat-footer input {
+  border: none;
+}
+div#inner-template .content-wrapper .dashboard-main .single-chat-tab .chat-footer .send_btn .btn {
+  background: var(--aceent0-color);
+  color: var(--secondary-color);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+div#inner-template .content-wrapper .dashboard-main .single-chat-tab .chat-footer .send_btn .btn i {
+  font-size: 20px;
+}
+div#inner-template .content-wrapper .dashboard-main .chat-main .chat-list {
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.12);
+  margin-bottom: 1.5rem;
+  border: 0 solid transparent;
+  height: 100%;
+}
+div#inner-template .content-wrapper .dashboard-main .chat-main .chat-list .card {
+  box-shadow: none;
+  background-color: transparent;
+}
+div#inner-template .content-wrapper .dashboard-main .chat-main .chat-list .card .student-list h6 {
+  font-weight: 500;
+}
+div#inner-template .content-wrapper .dashboard-main .chat-main .chat-list .card .student-list p {
+  font-weight: 300;
+  font-size: 14px;
+}
+div#inner-template .content-wrapper .dashboard-main .student-info table tr td img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 15px;
 }
 .sidebar .nav > li.nav-item:hover:not(.nav-header) {
   background: #232a2f;

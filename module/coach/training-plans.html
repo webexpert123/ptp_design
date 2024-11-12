@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PTP-My Account</title>
+    <link rel="icon" type="image/png" href="./assets/images/logo.png">
+    <link href="../../css/module/module.css?v=12345678" rel="stylesheet" />
+    <link href="../../css/module/box-icon.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <!-- animation library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body class="module-template">
+    <!-- container open -->
+    <div id="inner-template">
+        <div class="container-fluid">
+            <div class="dashbaord-header d-flex justify-content-end">
+                <nav class="navbar navbar-expand-sm navbar-light justify-content-end bg-faded">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                        <ul class="navbar-nav mr-auto nav-pills">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="javascript:;">Dashboard<span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:;">Inbox</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:;">Booking</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:;">Calendar</a>
+                            </li>
+                        </ul>
+
+                        <div class="navbar-action">
+                            <ul>
+                                <li><span><a href="javascript:void(0);"><img
+                                                src="../../assets/images/dashboard/bell.svg" alt=""></a></span></li>
+                                <li><span><a href="javascript:void(0);"><img
+                                                src="../../assets/images/dashboard/search.svg" alt=""></a></span></li>
+                                <li><a href="my-account.html">My Account</a></li>
+                                <li><a href="javascript:void(0);">Sign Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="inner-layout">
+            <!-- sidebar start -->
+            <nav class="sidebar">
+                <a class="navbar-brand" href="javascript:;">
+                    <img src="../../assets/images/logo_white.png" class="align-top" alt="">
+                </a>
+                <ul class="nav">
+                    <li class="nav-profile">
+                        <div class="image">
+                            <a href="javascript:;"><img src="../../assets/images/avatars/avatar-1.png" alt=""></a>
+                        </div>
+                        <div class="info">
+                            Andrio Rechard <small>Football Coach</small>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="dashboard.html"><i class="bx bx-home-alt"></i>Dashboard<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="training-plans.html"><i class="bx bx-diamond"></i>Training Plans</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="messages.html"><i class="bx bx-chat"></i>Messages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="student-info.html"><i class="bx bx-book-reader"></i>Students Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="coach-profile.html"><i class="bx bx-user-circle"></i>My Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="manage-subscription.html"><i class="bx bx-money"></i>Manage Subscription</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:;"><i class="bx bx-power-off"></i>Logout</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- sidebar End -->
+            <!-- content col start -->
+            <div class="content-wrapper">
+                <div class="dashboard-main">
+                    <div class="row">
+                        <div class="col page-title">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h2 class="m-0">My Account</h2>
+                                <div class="d-flex align-items-center pd-3">
+                                    <ul class="breadcrumbs">
+                                        <li><a href="#">Home</a></li>
+                                        <li>My Account</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- top cols of dashboard -->
+                    <div class="profile-page">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title mb-4">
+                                            <h5 class="">Account Information</h5>
+                                        </div>
+                                        <div class="my-account-tabs">
+                                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="payment-tab" data-toggle="tab"
+                                                        data-target="#payment" type="button" role="tab"
+                                                        aria-controls="payment" aria-selected="true">Payment Info</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="subscription-tab" data-toggle="tab"
+                                                        data-target="#subscription" type="button" role="tab"
+                                                        aria-controls="subscription" aria-selected="false">My
+                                                        Subscriptions</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="auth-tab" data-toggle="tab"
+                                                        data-target="#auth" type="button" role="tab"
+                                                        aria-controls="auth" aria-selected="false">Update Password</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="order-tab" data-toggle="tab"
+                                                        data-target="#order" type="button" role="tab"
+                                                        aria-controls="order" aria-selected="false">Order
+                                                        History</button>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content" id="myTabContent">
+                                                <div class="tab-pane fade show active" id="payment" role="tabpanel"
+                                                    aria-labelledby="payment-tab">
+                                                    <div class="tabs-inner p-4">
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <div class="card-title mb-4">
+                                                                    <h5 class="">Add Country/Region</h5>
+                                                                </div>
+                                                                <div class="row mb-3 profile-overview">
+                                                                    <div class="col-md-12 mb-2">
+                                                                        <div class="form-group">
+                                                                            <label for="formGroupExampleInput">Select
+                                                                                Country</label>
+                                                                            <select class="form-control">
+                                                                                <option>United States of America
+                                                                                </option>
+                                                                                <option>Afghanistan</option>
+                                                                                <option>Åland Islands</option>
+                                                                                <option>Albania</option>
+                                                                                <option>Andorra</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="page-save-action d-flex align-items-center ms-2">
+                                                                            <button type="button">Save</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <div class="card-title mb-4">
+                                                                    <h5 class="">Payment Method</h5>
+                                                                    <span>Add New Card</span>
+                                                                </div>
+                                                                <div class="row mb-3 profile-overview">
+                                                                    <div class="col-md-12 mb-2">
+                                                                        <div class="form-group">
+                                                                            <label for="formGroupExampleInput">Card
+                                                                                Number</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="formGroupExampleInput"
+                                                                                value="1234 1234 1234">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6 mb-2">
+                                                                        <div class="form-group">
+                                                                            <label for="formGroupExampleInput">Expiry
+                                                                                Date</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="formGroupExampleInput"
+                                                                                value="Andrio Rechard">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6 mb-2">
+                                                                        <div class="form-group">
+                                                                            <label for="formGroupExampleInput">CVV
+                                                                                Number</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="formGroupExampleInput"
+                                                                                value="Andrio Rechard">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div
+                                                                            class="page-save-action d-flex align-items-center ms-2">
+                                                                            <button type="button">Add Card</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="subscription" role="tabpanel"
+                                                    aria-labelledby="subscription-tab">
+                                                    <div class="tabs-inner p-4">
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <div class="card-title mb-4">
+                                                                    <h5 class="">My Subscription Plan</h5>
+                                                                </div>
+                                                                <div class="subscription-plans">
+                                                                    <div class="subscription-list px-4 py-4 mb-3">
+                                                                        <div class="subscription-start d-flex align-items-center">
+                                                                            <div class="subscription-icon col-auto mr-4">
+                                                                                <i class="bx bx-credit-card-front"></i>
+                                                                            </div>
+                                                                            <div class="subscription-info">
+                                                                                <h3 class="mb-0">Air 1 Subscription</h3>
+                                                                                <span>Coach - Starter (1 - 5 Athletes)</span>
+                                                                                <div class="d-flex align-items-center">
+                                                                                    <div class="badge badge-danger mr-2">
+                                                                                        Expired
+                                                                                    </div>
+                                                                                    <span>Expired on October 28, 2024.</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="subscription-action ms-auto">
+                                                                                <div class="page-save-action">
+                                                                                    <button type="button">Manage Subscription</button>
+                                                                                </div>
+                                                                            </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="subscription-plans">
+                                                                <div class="subscription-list px-4 py-4 mb-3">
+                                                                    <div class="subscription-start d-flex align-items-center">
+                                                                        <div class="subscription-icon col-auto mr-4">
+                                                                            <i class="bx bx-credit-card-front"></i>
+                                                                        </div>
+                                                                        <div class="subscription-info">
+                                                                            <h3 class="mb-0">Air 1 Subscription</h3>
+                                                                            <span>Coach - Starter (1 - 5 Athletes)</span>
+                                                                            <div class="d-flex align-items-center">
+                                                                                <div class="badge badge-danger mr-2">
+                                                                                    Expired
+                                                                                </div>
+                                                                                <span>Expired on October 28, 2024.</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="subscription-action ms-auto">
+                                                                            <div class="page-save-action">
+                                                                                <button type="button">Manage Subscription</button>
+                                                                            </div>
+                                                                        </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="contact" role="tabpanel"
+                                                    aria-labelledby="contact-tab">...</div>
+                                                </div>
+                                                <div class="tab-pane fade" id="auth" role="tabpanel"
+                                                    aria-labelledby="auth-tab">
+                                                    <div class="tabs-inner p-4">
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <div class="card-title mb-4">
+                                                                    <h5 class="">Update Password</h5>
+                                                                </div>
+                                                                <div class="row mb-3 profile-overview">
+                                                                    <div class="col-md-12 mb-2">
+                                                                        <div class="form-group">
+                                                                            <label for="formGroupExampleInput">
+                                                                                New Password</label>
+                                                                            <input type="password" class="form-control" id="formGroupExampleInput"
+                                                                                value="*************">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12 mb-2">
+                                                                        <div class="form-group">
+                                                                            <label for="formGroupExampleInput">
+                                                                                Re-Enter Password</label>
+                                                                            <input type="password" class="form-control" id="formGroupExampleInput"
+                                                                                value="*************">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div
+                                                                            class="page-save-action d-flex align-items-center ms-2">
+                                                                            <button type="button" class="update_btn">Update Password</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="order" role="tabpanel"
+                                                aria-labelledby="order-tab">
+                                                <div class="tabs-inner p-4">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <div class="card-title mb-4">
+                                                                <h5 class="">Order History</h5>
+                                                            </div>
+                                                           <div class="order-history">
+                                                            <table class="table table-striped table-dark">
+                                                                <thead>
+                                                                  <tr>
+                                                                    <th scope="col">#</th>
+                                                                    <th scope="col">First</th>
+                                                                    <th scope="col">Last</th>
+                                                                    <th scope="col">Handle</th>
+                                                                  </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                  <tr>
+                                                                    <th scope="row">1</th>
+                                                                    <td>Mark</td>
+                                                                    <td>Otto</td>
+                                                                    <td>@mdo</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row">2</th>
+                                                                    <td>Jacob</td>
+                                                                    <td>Thornton</td>
+                                                                    <td>@fat</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row">3</th>
+                                                                    <td>Larry</td>
+                                                                    <td>the Bird</td>
+                                                                    <td>@twitter</td>
+                                                                  </tr>
+                                                                </tbody>
+                                                              </table>
+                                                           </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- content col End -->
+        </div>
+
+        <!-- container close -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>
+
+</html>
