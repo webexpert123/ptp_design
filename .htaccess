@@ -1,0 +1,55 @@
+# Enable rewrite engine (for clean URLs, redirects, etc.)
+RewriteEngine On
+
+# Set default file to index.html
+DirectoryIndex index.html
+
+# Enable caching for static resources (CSS, JS, images) to improve performance
+# These cache headers instruct the browser to store these resources for a period of time
+<FilesMatch "\.(css|js|jpg|jpeg|png|gif|webp|svg|ico|woff|woff2|ttf|eot)$">
+  Header set Cache-Control "max-age=31536000, public"
+</FilesMatch>
+
+# MIME type configuration for JavaScript and CSS (optional but helpful for cross-browser compatibility)
+AddType application/javascript .js
+AddType text/css .css
+
+# Prevent directory browsing (security)
+Options -Indexes
+
+# Redirect all HTTP traffic to HTTPS (optional, if you have SSL)
+# Uncomment the following lines if you want to force HTTPS
+# RewriteCond %{HTTPS} off
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Deny access to hidden files (files starting with .)
+<FilesMatch "^\.">
+  Order Deny,Allow
+  Deny from all
+</FilesMatch>
+
+# Set custom error pages (optional)
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
+
+# Add security headers to improve site security
+Header set X-Content-Type-Options "nosniff"
+Header set X-XSS-Protection "1; mode=block"
+Header set X-Frame-Options "SAMEORIGIN"
+Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+# Prevent access to .htaccess itself
+<Files .htaccess>
+  Order Deny,Allow
+  Deny from all
+</Files>
+
+# Ensure no caching for HTML files (so changes are reflected immediately)
+<FilesMatch "\.html$">
+  Header set Cache-Control "no-store, no-cache, must-revalidate, proxy-revalidate"
+</FilesMatch>
+
+# Prevent hotlinking of images (optional)
+# Replace with your actual domain name
+RewriteCond %{HTTP_REFERER} !^https://(www\.)?yourdomain.com [NC]
+RewriteRule \.(jpg|jpeg|png|gif|bmp|webp)$ - [F,NC]

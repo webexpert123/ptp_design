@@ -27,24 +27,164 @@
                     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                         <ul class="navbar-nav mr-auto nav-pills">
                             <li class="nav-item active">
-                                <a class="nav-link" href="javascript:;">Dashboard<span
-                                        class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="javascript:;">Dashboard<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="javascript:;">Inbox</a>
+                                <a class="nav-link" href="booking.html">Booking</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="javascript:;">Booking</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="javascript:;">Calendar</a>
+                                <a class="nav-link" href="calendar.html">Calendar</a>
                             </li>
                         </ul>
 
                         <div class="navbar-action">
                             <ul>
-                                <li><span><a href="javascript:void(0);"><img
-                                                src="../../assets/images/dashboard/bell.svg" alt=""></a></span></li>
+                                <li class="dropdown">
+                                    <span>
+                                        <a class="dropdown-toggle" href="" id="dropdownMenuButton"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                                                src="../../assets/images/dashboard/bell.svg" alt=""></a>
+                                        <div class="dropdown-menu notification_dropdown"
+                                            aria-labelledby="dropdownMenuButton">
+                                            <a href="javascript:;">
+                                                <div class="msg-header">
+                                                    <p class="msg-header-title">Notifications</p>
+                                                    <p class="msg-header-badge">8 New</p>
+                                                </div>
+                                            </a>
+                                            <div class="header-notifications-list ps">
+                                                <a class="dropdown-item" href="javascript:;">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="user-online">
+                                                            <img src="../../assets/images/avatars/avatar-1.png"
+                                                                class="msg-avatar" alt="user avatar">
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <h6 class="msg-name">Daisy Anderson<span
+                                                                    class="msg-time float-end">5 sec
+                                                                    ago</span></h6>
+                                                            <p class="msg-info">The standard chunk of lorem</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="dropdown-item" href="javascript:;">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="notify bg-light-danger text-danger">dc
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <h6 class="msg-name">New Orders <span
+                                                                    class="msg-time float-end">2 min
+                                                                    ago</span></h6>
+                                                            <p class="msg-info">You have recived new orders</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="dropdown-item" href="javascript:;">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="user-online">
+                                                            <img src="../../assets/images/avatars/avatar-2.png"
+                                                                class="msg-avatar" alt="user avatar">
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <h6 class="msg-name">Althea Cabardo <span
+                                                                    class="msg-time float-end">14
+                                                                    sec ago</span></h6>
+                                                            <p class="msg-info">Many desktop publishing packages</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="dropdown-item" href="javascript:;">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="notify bg-light-success text-success">
+                                                            <img src="../../assets/images/avatars/avatar-4.png" width="25"
+                                                                alt="user avatar">
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <h6 class="msg-name">Account Created<span
+                                                                    class="msg-time float-end">28 min
+                                                                    ago</span></h6>
+                                                            <p class="msg-info">Successfully created new email</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="dropdown-item" href="javascript:;">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="notify bg-light-info text-info">Ss
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <h6 class="msg-name">New Product Approved <span
+                                                                    class="msg-time float-end">2 hrs ago</span></h6>
+                                                            <p class="msg-info">Your new product has approved</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="dropdown-item" href="javascript:;">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="user-online">
+                                                            <img src="../../assets/images/avatars/avatar-1.png"
+                                                                class="msg-avatar" alt="user avatar">
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <h6 class="msg-name">Katherine Pechon <span
+                                                                    class="msg-time float-end">15
+                                                                    min ago</span></h6>
+                                                            <p class="msg-info">Making this the first true generator</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="dropdown-item" href="javascript:;">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="notify bg-light-success text-success"><i
+                                                                class="bx bx-check-square"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <h6 class="msg-name">Your item is shipped <span
+                                                                    class="msg-time float-end">5 hrs
+                                                                    ago</span></h6>
+                                                            <p class="msg-info">Successfully shipped your item</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="dropdown-item" href="javascript:;">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="notify bg-light-primary">
+                                                            <img src="assets/images/app/github.png" width="25"
+                                                                alt="user avatar">
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <h6 class="msg-name">New 24 authors<span
+                                                                    class="msg-time float-end">1 day
+                                                                    ago</span></h6>
+                                                            <p class="msg-info">24 new authors joined last week</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="dropdown-item" href="javascript:;">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="user-online">
+                                                            <img src="../../assets/images/avatars/avatar-2.png"
+                                                                class="msg-avatar" alt="user avatar">
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <h6 class="msg-name">Peter Costanzo <span
+                                                                    class="msg-time float-end">6 hrs
+                                                                    ago</span></h6>
+                                                            <p class="msg-info">It was popularised in the 1960s</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                                                    <div class="ps__thumb-x" tabindex="0"
+                                                        style="left: 0px; width: 0px;"></div>
+                                                </div>
+                                                <div class="ps__rail-y" style="top: 0px; right: 0px;">
+                                                    <div class="ps__thumb-y" tabindex="0"
+                                                        style="top: 0px; height: 0px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </span>
+                                </li>
                                 <li><span><a href="javascript:void(0);"><img
                                                 src="../../assets/images/dashboard/search.svg" alt=""></a></span></li>
                                 <li><a href="my-account.html">My Account</a></li>
@@ -103,11 +243,11 @@
                     <div class="row">
                         <div class="col page-title">
                             <div class="d-flex align-items-center justify-content-between">
-                                <h2 class="m-0">My Account</h2>
+                                <h2 class="m-0">Manage Subscription</h2>
                                 <div class="d-flex align-items-center pd-3">
                                     <ul class="breadcrumbs">
                                         <li><a href="#">Home</a></li>
-                                        <li>My Account</li>
+                                        <li>Manage Subscription</li>
                                     </ul>
                                 </div>
                             </div>
@@ -118,260 +258,145 @@
                     <div class="profile-page">
                         <div class="row">
                             <div class="col-lg-12">
+                                <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title mb-4">
+                                                <h5 class="">Current Plan</h5>
+                                            </div>
+                                            <div class="subscription-plans">
+                                                    <div class="subscription-list px-4 py-4 mb-3">
+                                                        <div class="subscription-start d-flex flex-column">
+                                                            <div class="plans-new d-flex">
+                                                            <div class="subscription-icon col-auto mr-4">
+                                                                <i class="bx bx-credit-card-front"></i>
+                                                            </div>
+                                                            <div class="subscription-info">
+                                                                <h3 class="mb-0">Basic Tier Subscription</h3>
+                                                                <span>Coach - Starter (1 - 5 Athletes)</span>
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="badge badge-success mr-2">
+                                                                        Active
+                                                                    </div>
+                                                                    <span>Expired on October 28, 2024.</span>
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="subscription-action mt-4">
+                                                                <div class="page-save-action">
+                                                                    <button type="button" class="cancel_btn">Cancel Subscription</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title mb-4">
+                                                <h5 class="">Last Subscribed Plan</h5>
+                                            </div>
+                                            <div class="subscription-plans">
+                                                <div class="subscription-list px-4 py-4 mb-3">
+                                                    <div class="subscription-start d-flex flex-column">
+                                                        <div class="plans-new d-flex">
+                                                        <div class="subscription-icon col-auto mr-4">
+                                                            <i class="bx bx-credit-card-front"></i>
+                                                        </div>
+                                                        <div class="subscription-info">
+                                                            <h3 class="mb-0">Pro Tier Subscription</h3>
+                                                            <span>Coach - Starter (1 - 5 Athletes)</span>
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="badge badge-danger mr-2">
+                                                                    Expired
+                                                                </div>
+                                                                <span>Expired on October 28, 2024.</span>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                        <div class="subscription-action mt-4">
+                                                            <div class="page-save-action">
+                                                                <button type="button" class="udpate_btn">Re-Activate</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="card-title mb-4">
-                                            <h5 class="">Account Information</h5>
+                                            <h5 class="">Pick your package</h5>
                                         </div>
-                                        <div class="my-account-tabs">
-                                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link active" id="payment-tab" data-toggle="tab"
-                                                        data-target="#payment" type="button" role="tab"
-                                                        aria-controls="payment" aria-selected="true">Payment Info</button>
-                                                </li>
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link" id="subscription-tab" data-toggle="tab"
-                                                        data-target="#subscription" type="button" role="tab"
-                                                        aria-controls="subscription" aria-selected="false">My
-                                                        Subscriptions</button>
-                                                </li>
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link" id="auth-tab" data-toggle="tab"
-                                                        data-target="#auth" type="button" role="tab"
-                                                        aria-controls="auth" aria-selected="false">Update Password</button>
-                                                </li>
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link" id="order-tab" data-toggle="tab"
-                                                        data-target="#order" type="button" role="tab"
-                                                        aria-controls="order" aria-selected="false">Order
-                                                        History</button>
-                                                </li>
-                                            </ul>
-                                            <div class="tab-content" id="myTabContent">
-                                                <div class="tab-pane fade show active" id="payment" role="tabpanel"
-                                                    aria-labelledby="payment-tab">
-                                                    <div class="tabs-inner p-4">
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                <div class="card-title mb-4">
-                                                                    <h5 class="">Add Country/Region</h5>
-                                                                </div>
-                                                                <div class="row mb-3 profile-overview">
-                                                                    <div class="col-md-12 mb-2">
-                                                                        <div class="form-group">
-                                                                            <label for="formGroupExampleInput">Select
-                                                                                Country</label>
-                                                                            <select class="form-control">
-                                                                                <option>United States of America
-                                                                                </option>
-                                                                                <option>Afghanistan</option>
-                                                                                <option>Åland Islands</option>
-                                                                                <option>Albania</option>
-                                                                                <option>Andorra</option>
-                                                                            </select>
-                                                                        </div>
+                                        <div class="second-step">
+                                            <section class="pricing-section">
+                                                <div class="container">
+                                                    <div class="outer-box">
+                                                        <div class="row">
+                                                            <!-- Pricing Block -->
+                                                            <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                                                                <div class="inner-box">
+                                                                    <div class="icon-box">
+                                                                        <div class="icon-outer"><i class="fas fa-paper-plane"></i></div>
                                                                     </div>
-                                                                    <div class="col-md-12">
-                                                                        <div class="page-save-action d-flex align-items-center ms-2">
-                                                                            <button type="button">Save</button>
-                                                                        </div>
+                                                                    <div class="price-box">
+                                                                        <div class="title">Basic Tier</div>
+                                                                        <h4 class="price">$155/Lesson</h4>
+                                                                    </div>
+                                                                    <div class="btn-box">
+                                                                        <a href="https://codepen.io/anupkumar92" class="theme-btn">SUBSCRIBE</a>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                <div class="card-title mb-4">
-                                                                    <h5 class="">Payment Method</h5>
-                                                                    <span>Add New Card</span>
+                                        
+                                                            <!-- Pricing Block -->
+                                                            <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                                                                <div class="inner-box">
+                                                                    <div class="icon-box">
+                                                                        <div class="icon-outer"><i class="fas fa-gem"></i></div>
+                                                                    </div>
+                                                                    <div class="price-box">
+                                                                        <div class="title">Pro Tier</div>
+                                                                        <h4 class="price">$101/Lesson</h4>
+                                                                    </div>
+                                                                    <div class="btn-box">
+                                                                        <a href="https://codepen.io/anupkumar92" class="theme-btn">SUBSCRIBE</a>
+                                                                    </div>
                                                                 </div>
-                                                                <div class="row mb-3 profile-overview">
-                                                                    <div class="col-md-12 mb-2">
-                                                                        <div class="form-group">
-                                                                            <label for="formGroupExampleInput">Card
-                                                                                Number</label>
-                                                                            <input type="text" class="form-control"
-                                                                                id="formGroupExampleInput"
-                                                                                value="1234 1234 1234">
-                                                                        </div>
+                                                            </div>
+                                        
+                                                            <!-- Pricing Block -->
+                                                            <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
+                                                                <div class="inner-box">
+                                                                    <div class="icon-box">
+                                                                        <div class="icon-outer"><i class="fas fa-rocket"></i></div>
                                                                     </div>
-                                                                    <div class="col-md-6 mb-2">
-                                                                        <div class="form-group">
-                                                                            <label for="formGroupExampleInput">Expiry
-                                                                                Date</label>
-                                                                            <input type="text" class="form-control"
-                                                                                id="formGroupExampleInput"
-                                                                                value="Andrio Rechard">
-                                                                        </div>
+                                                                    <div class="price-box">
+                                                                        <div class="title">Elite Tier</div>
+                                                                        <h4 class="price">$83/Lesson</h4>
                                                                     </div>
-                                                                    <div class="col-md-6 mb-2">
-                                                                        <div class="form-group">
-                                                                            <label for="formGroupExampleInput">CVV
-                                                                                Number</label>
-                                                                            <input type="text" class="form-control"
-                                                                                id="formGroupExampleInput"
-                                                                                value="Andrio Rechard">
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-12">
-                                                                        <div
-                                                                            class="page-save-action d-flex align-items-center ms-2">
-                                                                            <button type="button">Add Card</button>
-                                                                        </div>
+                                                                    <div class="btn-box">
+                                                                        <a href="https://codepen.io/anupkumar92" class="theme-btn">SUBSCRIBE</a>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="tab-pane fade" id="subscription" role="tabpanel"
-                                                    aria-labelledby="subscription-tab">
-                                                    <div class="tabs-inner p-4">
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                <div class="card-title mb-4">
-                                                                    <h5 class="">My Subscription Plan</h5>
-                                                                </div>
-                                                                <div class="subscription-plans">
-                                                                    <div class="subscription-list px-4 py-4 mb-3">
-                                                                        <div class="subscription-start d-flex align-items-center">
-                                                                            <div class="subscription-icon col-auto mr-4">
-                                                                                <i class="bx bx-credit-card-front"></i>
-                                                                            </div>
-                                                                            <div class="subscription-info">
-                                                                                <h3 class="mb-0">Air 1 Subscription</h3>
-                                                                                <span>Coach - Starter (1 - 5 Athletes)</span>
-                                                                                <div class="d-flex align-items-center">
-                                                                                    <div class="badge badge-danger mr-2">
-                                                                                        Expired
-                                                                                    </div>
-                                                                                    <span>Expired on October 28, 2024.</span>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="subscription-action ms-auto">
-                                                                                <div class="page-save-action">
-                                                                                    <button type="button">Manage Subscription</button>
-                                                                                </div>
-                                                                            </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="subscription-plans">
-                                                                <div class="subscription-list px-4 py-4 mb-3">
-                                                                    <div class="subscription-start d-flex align-items-center">
-                                                                        <div class="subscription-icon col-auto mr-4">
-                                                                            <i class="bx bx-credit-card-front"></i>
-                                                                        </div>
-                                                                        <div class="subscription-info">
-                                                                            <h3 class="mb-0">Air 1 Subscription</h3>
-                                                                            <span>Coach - Starter (1 - 5 Athletes)</span>
-                                                                            <div class="d-flex align-items-center">
-                                                                                <div class="badge badge-danger mr-2">
-                                                                                    Expired
-                                                                                </div>
-                                                                                <span>Expired on October 28, 2024.</span>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="subscription-action ms-auto">
-                                                                            <div class="page-save-action">
-                                                                                <button type="button">Manage Subscription</button>
-                                                                            </div>
-                                                                        </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-pane fade" id="contact" role="tabpanel"
-                                                    aria-labelledby="contact-tab">...</div>
-                                                </div>
-                                                <div class="tab-pane fade" id="auth" role="tabpanel"
-                                                    aria-labelledby="auth-tab">
-                                                    <div class="tabs-inner p-4">
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                <div class="card-title mb-4">
-                                                                    <h5 class="">Update Password</h5>
-                                                                </div>
-                                                                <div class="row mb-3 profile-overview">
-                                                                    <div class="col-md-12 mb-2">
-                                                                        <div class="form-group">
-                                                                            <label for="formGroupExampleInput">
-                                                                                New Password</label>
-                                                                            <input type="password" class="form-control" id="formGroupExampleInput"
-                                                                                value="*************">
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-12 mb-2">
-                                                                        <div class="form-group">
-                                                                            <label for="formGroupExampleInput">
-                                                                                Re-Enter Password</label>
-                                                                            <input type="password" class="form-control" id="formGroupExampleInput"
-                                                                                value="*************">
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-12">
-                                                                        <div
-                                                                            class="page-save-action d-flex align-items-center ms-2">
-                                                                            <button type="button" class="update_btn">Update Password</button>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-pane fade" id="order" role="tabpanel"
-                                                aria-labelledby="order-tab">
-                                                <div class="tabs-inner p-4">
-                                                    <div class="card">
-                                                        <div class="card-body">
-                                                            <div class="card-title mb-4">
-                                                                <h5 class="">Order History</h5>
-                                                            </div>
-                                                           <div class="order-history">
-                                                            <table class="table table-striped table-dark">
-                                                                <thead>
-                                                                  <tr>
-                                                                    <th scope="col">#</th>
-                                                                    <th scope="col">First</th>
-                                                                    <th scope="col">Last</th>
-                                                                    <th scope="col">Handle</th>
-                                                                  </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                  <tr>
-                                                                    <th scope="row">1</th>
-                                                                    <td>Mark</td>
-                                                                    <td>Otto</td>
-                                                                    <td>@mdo</td>
-                                                                  </tr>
-                                                                  <tr>
-                                                                    <th scope="row">2</th>
-                                                                    <td>Jacob</td>
-                                                                    <td>Thornton</td>
-                                                                    <td>@fat</td>
-                                                                  </tr>
-                                                                  <tr>
-                                                                    <th scope="row">3</th>
-                                                                    <td>Larry</td>
-                                                                    <td>the Bird</td>
-                                                                    <td>@twitter</td>
-                                                                  </tr>
-                                                                </tbody>
-                                                              </table>
-                                                           </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            </section>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
 
                 </div>
