@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PTP-My Account</title>
+    <title>PTP-Event</title>
     <link rel="icon" type="image/png" href="./assets/images/logo.png">
     <link href="../../css/Module/module.css" rel="stylesheet" />
     <link href="../../css/Module/box-icon.css" rel="stylesheet" />
@@ -243,14 +243,14 @@
                     <div class="row">
                         <div class="col page-title">
                             <div class="d-flex align-items-center justify-content-between">
-                                <h2 class="m-0">Training Plan</h2>
+                                <h2 class="m-0">Events</h2>
                                 <div class="d-flex align-items-center pd-3">
                                     <ul class="breadcrumbs">
                                         <li><a href="#">Home</a></li>
-                                        <li>My Account</li>
+                                        <li>Events</li>
                                     </ul>
                                     <div class="page-edit-action">
-                                        <button type="button" data-toggle="modal" data-target="#add_t-plans"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>&nbsp;Add Plan</button>
+                                        <button type="button" data-toggle="modal" data-target="#add_t-plans"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>&nbsp;Create Events</button>
                                     </div>
                                 </div>
                             </div>
@@ -260,106 +260,119 @@
                     <!-- top cols of dashboard -->
                     <div class="profile-page">
                         <div class="row">
-                            <div class="col-lg-4">
-                                <div class="card custom-plan">
-                                    <div class="card-body">
-                                        <div class="custom-plan-content d-flex align-items-center flex-column text-center py-4">
-                                            <h3>Need to create a custom pricing package?</h3>
-                                            <button type="button" class="mt-4">Click Here!</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        <div class="col-lg-8">
+                        <div class="col-lg-12 event_listing">
                             <div class="card">
                                 <div class="card-body">
-                                    <div class="card-title mb-4">
-                                        <h5 class="">Created Plans</h5>
-                                    </div>
                                     <div class="row">
-                                        <div class="col-md-6 col-lg-4 created-plans-item">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <div class="plan-heading">
-                                                        <h1>$30<span> / Session</span></h1>
-                                                        <p>It includes only 4 session in month</p>
-                                                        <div class="t-plans-action page-save-action d-flex align-items-center">
-                                                            <button type="button" class="published_btn">Active</button>
-                                                            <button type="button" class="cancel_btn">Delete</button>
-                                                        </div>
+                                        <div class="col-md-12 col-lg-12 event_listing_items">
+                                            <div class="event-item p-4 d-flex align-items-start mb-3">
+                                                    <div class="event-heading">
+                                                        <h3>Boston Marathon Level 1 (Nov.) - 12wks</h3>
+                                                        <div class="d-flex align-items-center"><span><i class="bx bx-pin"></i>&nbsp; W 13th St, New York, NY 10011, USA&nbsp;</span><span><i class="bx bx-calendar"></i>&nbsp; 28/10/2024 to 01/11/2024&nbsp;</span></div>
                                                     </div>
+                                                    <div class="event-pricing">
+                                                        <h4>$30<span>/ Session</span></h4>
+                                                    </div>
+                                                    <div class="event-amenities">
+                                                        <span>Gymnasium</span>
+                                                        <span>Badminton</span>
+                                                        <span>Indoor Stadium</span>
+                                                    </div>
+                                                <div class="event-action">
+                                                    <a href="#" class="edit_action"><i class="bx bx-edit-alt"></i></a>
+                                                    <a href="#" class="delete_action"><i class="bx bx-trash-alt"></i></a>
                                                 </div>
+                                            </div>
+                                            <div class="event-item p-4 d-flex align-items-start mb-3">
+                                                <div class="event-heading">
+                                                    <h3>10K - 12 Weeks - 65 Miles Per Week</h3>
+                                                    <div class="d-flex align-items-center"><span><i class="bx bx-pin"></i>&nbsp; W 13th St, New York, NY 10011, USA&nbsp;</span><span><i class="bx bx-calendar"></i>&nbsp; 28/10/2024 to 01/11/2024&nbsp;</span></div>
+                                                </div>
+                                                <div class="event-pricing">
+                                                    <h4>$30<span>/ Session</span></h4>
+                                                </div>
+                                                <div class="event-amenities">
+                                                    <span>Gymnasium</span>
+                                                    <span>Badminton</span>
+                                                    <span>Indoor Stadium</span>
+                                                </div>
+                                                <div class="event-action">
+                                                    <a href="#" class="edit_action"><i class="bx bx-edit-alt"></i></a>
+                                                    <a href="#" class="delete_action"><i class="bx bx-trash-alt"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="event-item p-4 d-flex align-items-start mb-3">
+                                                <div class="event-heading">
+                                                    <h3>2 weeks Post Marathon Recover to Return to Training</h3>
+                                                    <div class="d-flex align-items-center"><span><i class="bx bx-pin"></i>&nbsp; W 13th St, New York, NY 10011, USA&nbsp;</span><span><i class="bx bx-calendar"></i>&nbsp; 28/10/2024 to 01/11/2024&nbsp;</span></div>
+                                                </div>
+                                                <div class="event-pricing">
+                                                    <h4>$30<span>/ Session</span></h4>
+                                                </div>
+                                                <div class="event-amenities">
+                                                    <span>Gymnasium</span>
+                                                    <span>Badminton</span>
+                                                    <span>Indoor Stadium</span>
+                                                </div>
+                                                <div class="event-action">
+                                                    <a href="#" class="edit_action"><i class="bx bx-edit-alt"></i></a>
+                                                    <a href="#" class="delete_action"><i class="bx bx-trash-alt"></i></a>
+                                                </div>
+                                            </div>
+                                        <div class="event-item p-4 d-flex align-items-start mb-3">
+                                            <div class="event-heading">
+                                                <h3>Basic Marathon Plan</h3>
+                                                <div class="d-flex align-items-center"><span><i class="bx bx-pin"></i>&nbsp; W 13th St, New York, NY 10011, USA&nbsp;</span><span><i class="bx bx-calendar"></i>&nbsp; 28/10/2024 to 01/11/2024&nbsp;</span></div>
+                                            </div>
+                                            <div class="event-pricing">
+                                                <h4>$30<span>/ Session</span></h4>
+                                            </div>
+                                            <div class="event-amenities">
+                                                <span>Gymnasium</span>
+                                                <span>Badminton</span>
+                                                <span>Indoor Stadium</span>
+                                            </div>
+                                            <div class="event-action">
+                                                <a href="#" class="edit_action"><i class="bx bx-edit-alt"></i></a>
+                                                <a href="#" class="delete_action"><i class="bx bx-trash-alt"></i></a>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-lg-4 created-plans-item">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <div class="plan-heading">
-                                                        <h1>$10<span> / Session</span></h1>
-                                                        <p>It includes only 2 session in month</p>
-                                                        <div class="t-plans-action page-save-action d-flex align-items-center">
-                                                            <button type="button" class="deactive_btn">Deactive</button>
-                                                            <button type="button" class="cancel_btn">Delete</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    <div class="event-item p-4 d-flex align-items-start mb-3">
+                                        <div class="event-heading">
+                                            <h3>HM Level 3.1 | 16 weeks in km | sub 1:25 h</h3>
+                                            <div class="d-flex align-items-center"><span><i class="bx bx-pin"></i>&nbsp; W 13th St, New York, NY 10011, USA&nbsp;</span><span><i class="bx bx-calendar"></i>&nbsp; 28/10/2024 to 01/11/2024&nbsp;</span></div>
                                         </div>
-                                        <div class="col-md-6 col-lg-4 created-plans-item">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <div class="plan-heading">
-                                                        <h1>$100<span> / Session</span></h1>
-                                                        <p>It includes only 12 session in month</p>
-                                                        <div class="t-plans-action page-save-action d-flex align-items-center">
-                                                            <button type="button" class="deactive_btn">Deactive</button>
-                                                            <button type="button" class="cancel_btn">Delete</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="event-pricing">
+                                            <h4>$30<span>/ Session</span></h4>
                                         </div>
-                                        <div class="col-md-6 col-lg-4 created-plans-item">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <div class="plan-heading">
-                                                        <h1>$30<span> / Session</span></h1>
-                                                        <p>It includes only 4 session in month</p>
-                                                        <div class="t-plans-action page-save-action d-flex align-items-center">
-                                                            <button type="button" class="published_btn">Active</button>
-                                                            <button type="button" class="cancel_btn">Delete</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="event-amenities">
+                                            <span>Gymnasium</span>
+                                            <span>Badminton</span>
+                                            <span>Indoor Stadium</span>
                                         </div>
-                                        <div class="col-md-6 col-lg-4 created-plans-item">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <div class="plan-heading">
-                                                        <h1>$60<span> / Session</span></h1>
-                                                        <p>It includes only 8 session in month</p>
-                                                        <div class="t-plans-action page-save-action d-flex align-items-center">
-                                                            <button type="button" class="deactive_btn">Deactive</button>
-                                                            <button type="button" class="cancel_btn">Delete</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="event-action">
+                                            <a href="#" class="edit_action"><i class="bx bx-edit-alt"></i></a>
+                                            <a href="#" class="delete_action"><i class="bx bx-trash-alt"></i></a>
                                         </div>
-                                        <div class="col-md-6 col-lg-4 created-plans-item">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <div class="plan-heading">
-                                                        <h1>$25<span> / Session</span></h1>
-                                                        <p>It includes only 5 session in month</p>
-                                                        <div class="t-plans-action page-save-action d-flex align-items-center">
-                                                            <button type="button" class="deactive_btn">Deactive</button>
-                                                            <button type="button" class="cancel_btn">Delete</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    </div>
+                                    <div class="event-item p-4 d-flex align-items-start mb-3">
+                                        <div class="event-heading">
+                                            <h3>Boston Marathon Level 1 (Nov.) - 12wks</h3>
+                                            <div class="d-flex align-items-center"><span><i class="bx bx-pin"></i>&nbsp; W 13th St, New York, NY 10011, USA&nbsp;</span><span><i class="bx bx-calendar"></i>&nbsp; 28/10/2024 to 01/11/2024&nbsp;</span></div>
+                                        </div>
+                                        <div class="event-pricing">
+                                            <h4>$30<span>/ Session</span></h4>
+                                        </div>
+                                        <div class="event-amenities">
+                                            <span>Gymnasium</span>
+                                            <span>Badminton</span>
+                                            <span>Indoor Stadium</span>
+                                        </div>
+                                        <div class="event-action">
+                                            <a href="#" class="edit_action"><i class="bx bx-edit-alt"></i></a>
+                                            <a href="#" class="delete_action"><i class="bx bx-trash-alt"></i></a>
+                                        </div>
+                                    </div>
                                         </div>
                                     </div>
                                 </div>
@@ -367,10 +380,10 @@
                         </div>
                     </div>
                     <div class="modal fade" id="add_t-plans" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">Add Training Plan</h5>
+                              <h5 class="modal-title" id="exampleModalLabel">Create Event</h5>
                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                               </button>
@@ -381,28 +394,59 @@
                                         <div class="row mb-3 profile-overview">
                                             <div class="col-md-6 mb-2">
                                                 <div class="form-group">
-                                                    <label for="formGroupExampleInput">Session Rate</label>
+                                                    <label for="formGroupExampleInput">Event Title</label>
                                                     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Price">
                                                 </div>
                                             </div>
                                             <div class="col-md-6 mb-2">
                                                 <div class="form-group">
-                                                    <label for="formGroupExampleInput">Per Additional Athlete</label>
+                                                    <label for="formGroupExampleInput">Pricing</label>
                                                     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Price">
                                                 </div>
                                             </div>
-                                            <div class="col-md-12">
-                                                <div class="page-save-action d-flex align-items-center ms-2">
-                                                    <button type="button">Save</button>
+                                            <div class="col-md-3 mb-2">
+                                                <div class="form-group">
+                                                    <label for="formGroupExampleInput">Event From</label>
+                                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Sessions Quantity">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mb-2">
+                                                <div class="form-group">
+                                                    <label for="formGroupExampleInput">Event To</label>
+                                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Sessions Quantity">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mb-2">
+                                                <div class="form-group">
+                                                    <label for="formGroupExampleInput">Time From</label>
+                                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Sessions Quantity">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mb-2">
+                                                <div class="form-group">
+                                                    <label for="formGroupExampleInput">Time To</label>
+                                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Sessions Quantity">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 mb-2">
+                                                <div class="form-group">
+                                                    <label for="formGroupExampleInput">Location</label>
+                                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Price">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 mb-2">
+                                                <div class="form-group">
+                                                    <label for="formGroupExampleInput">Description</label>
+                                                    <textarea type="text" class="form-control" placeholder="Description"></textarea>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                              <button type="button" class="btn btn-success">Save changes</button>
+                            <div class="modal-footer page-save-action">
+                              <button type="button" class="cancel_btn" data-dismiss="modal">Close</button>
+                              <button type="button">Create Event</button>
                             </div>
                           </div>
                         </div>
