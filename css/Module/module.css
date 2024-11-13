@@ -9458,6 +9458,21 @@ div#inner-template .content-wrapper .dashboard-main .page-title .page-edit-actio
 div#inner-template .content-wrapper .dashboard-main .page-title .page-edit-action button:hover svg {
   color: var(--secondary-color);
 }
+div#inner-template .content-wrapper .dashboard-main .modal .modal-dialog .modal-content {
+  background: #29323c;
+}
+div#inner-template .content-wrapper .dashboard-main .modal .modal-dialog .modal-content .modal-header {
+  border-bottom-color: #29323c;
+}
+div#inner-template .content-wrapper .dashboard-main .modal .modal-dialog .modal-content .modal-header h5 {
+  color: var(--primary-color);
+}
+div#inner-template .content-wrapper .dashboard-main .modal .modal-dialog .modal-content .modal-header button span {
+  color: var(--primary-color);
+}
+div#inner-template .content-wrapper .dashboard-main .modal .modal-dialog .modal-content .modal-footer {
+  border-top-color: #29323c;
+}
 div#inner-template .content-wrapper .dashboard-main table {
   background-color: rgba(0, 0, 0, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -9904,6 +9919,26 @@ div#inner-template .content-wrapper .dashboard-main .profile-page .custom-plan .
   background: transparent;
   color: var(--secondary-color);
   transition: 0.3s ease-in;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .created-plans-item .plan-heading h1 {
+  color: var(--aceent0-color);
+  font-size: 40px;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .created-plans-item .plan-heading h1 span {
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 500;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .created-plans-item .plan-heading p {
+  color: var(--primary-color);
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .created-plans-item .plan-heading button.deactive_btn {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .created-plans-item .plan-heading button.deactive_btn:hover {
+  background: var(--secondary-color);
+  color: var(--primary-color);
 }
 div#inner-template .content-wrapper .dashboard-main .single-chat-tab {
   /* width */
