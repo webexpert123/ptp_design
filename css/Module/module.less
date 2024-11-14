@@ -1014,7 +1014,9 @@ div#inner-template {
                 padding: 0 20px;
                 border: 1px solid var(--aceent0-color);
                 border-radius: 10px;
-                height: 68px;
+                height: 78px;
+                display: flex;
+                align-items: center;
                 i { 
                 font-size: 44px;
                 color: var(--aceent0-color);
@@ -1034,35 +1036,26 @@ div#inner-template {
                 &.ms-auto {
                   margin-left: auto;
                 }
+                button {
+                  &.update_btn {
+                  background: var(--aceent0-color);
+                  color:var(--secondary-color);
+                  }
+                }
               }
             }
           }
         }
-        & .custom-plan {
-          background: var(--aceent0-color);
-          & .custom-plan-content {
-            h3 {
-              
-            }
-            button {
-              background-color: #000;
+        & .session-rate {
+          padding: 20px;
+          & .card-title {
+            h5 {
               color: var(--primary-color);
-              min-height: 48px;
-              min-width: 120px;
-              border-radius: 25px;
-              border: 1px solid transparent;
-              box-shadow: none;
-              transition: 0.3s ease-in;
-              &:hover {
-                border-color: var(--secondary-color);
-                background: transparent;
-                color: var(--secondary-color);
-                transition: 0.3s ease-in;
-              }
             }
           }
-        }
-        & .created-plans-item {
+          & .card-body {
+            padding: 0;
+          }
           & .plan-heading {
             h1 {
               color: var(--aceent0-color);
@@ -1083,6 +1076,90 @@ div#inner-template {
                 &:hover {
                 background: var(--secondary-color);
                 color: var(--primary-color);
+                }
+              }
+            }
+          }
+          & .t-plan-fees {
+            h6 {
+              color: var(--primary-color);
+              span {
+                color: var(--aceent0-color);
+                font-size: 40px;
+              }
+            }
+          }
+          ul {
+            background: #f9cc0b;
+            padding: 20px;
+            color: #000;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: inline-block;
+            width: 100%;
+            li {
+              color: var(--primary-color);
+              font-size: 22px;
+              line-height: 39px;
+              font-weight: 400;
+              background: #c5a002;
+              margin-bottom: 10px;
+              padding: 5px 20px;
+              border-radius: 5px;
+            }
+          }
+        }
+        & .profile-overview {
+          & .card-saved-area {
+            & .card-list-header {
+              background: var(--aceent0-color);
+              padding: 5px 15px;
+              border-top-left-radius: 5px;
+              border-top-right-radius: 5px;
+              h3 {
+                font-size: 20px;
+                font-weight: 500;
+                color: var(--secondary-color);
+                margin-bottom: 0;
+              }
+            }
+            & .card-list {
+              background-color: rgba(0, 0, 0, 0.2);
+              box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.12);
+              margin-bottom: 1.5rem;
+              gap: 6%;
+              & .list-grid {
+                label {
+                  color: var(--primary-color);
+                  margin-bottom: 0;
+                  font-size: 15px;
+                  font-weight: 600;
+                }
+                img {
+                  width: 50px;
+                }
+                p {
+                  color: var(--primary-color);
+                  font-size: 14px;
+                  margin-bottom: 0;
+                }
+                a {
+                  color: var(--aceent0-color);
+                  font-size: 18px;
+                }
+              }
+              & .list-action {
+                margin-left: auto;
+                a {
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 5px;
+                  text-align: center;
+                  line-height: 39px;
+                  font-size: 26px;
+                  color: #fff;
+                  background: #dc3545;
+                  display: inline-block;
                 }
               }
             }
@@ -1291,144 +1368,7 @@ div#inner-template {
          }
         }
       }
-      & .pricing-section {
-        position: relative;
-        overflow: hidden;
-        & .outer-box {
-            & .pricing-block {
-                position: relative;
-                margin-bottom: 40px;
-                &:nth-child(2) {
-                    & .icon-box {
-                        i {
-                            border-color: #1d95d2;
-                        }
-                        a {
-                            background-color: #1d95d2;
-                        }
-                    }
-                } 
-                &:nth-child(2) {
-                    & .inner-box {
-                        border-color: var(--aceent0-color);
-                    }
-                }
-               
-                & .inner-box{
-                    position: relative;
-                    background-color: #2c2b3c;
-                    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-                    padding: 0 0 30px;
-                    max-width: 370px;
-                    margin: 0 auto;
-                    border-bottom: 20px solid #000000;
-                    &:hover {
-                        & .icon-box {
-                            i {
-                                transform:rotate(360deg);
-                            }
-                        }
-                    }
-                    &:hover {
-                        & .btn-box {
-                            a {
-                                color: var(--aceent0-color);
-                                background:none;
-                                border-radius:0px;
-                                border-color: var(--aceent0-color);
-                            }
-                        }
-                    }
-                    & .icon-box {
-                        position: relative;
-                        padding: 50px 30px 0;
-                        background-color: #000;
-                        text-align: center;
-                            &:before {
-                                position: absolute;
-                                left: 0;
-                                bottom: 0;
-                                height: 75px;
-                                width: 100%;
-                                border-radius: 50% 50% 0 0;
-                                background-color: #2c2b3c;
-                                content: "";
-                            }
-                            & .icon-outer {
-                                position: relative;
-                                height: 150px;
-                                width: 150px;
-                                background-color:var(--primary-color);
-                                border-radius: 50%;
-                                margin: 0 auto;
-                                padding: 10px;
-                                i {
-                                    position: relative;
-                                    display: block;
-                                    height: 130px;
-                                    width: 130px;
-                                    line-height: 120px;
-                                    border: 5px solid var(--aceent0-color);
-                                    border-radius: 50%;
-                                    font-size: 50px;
-                                    color: var(--aceent0-color);
-                                    -webkit-transition:all 600ms ease;
-                                    -ms-transition:all 600ms ease;
-                                    -o-transition:all 600ms ease;
-                                    -moz-transition:all 600ms ease;
-                                    transition:all 600ms ease;
-                                }
-                            }
-                        }
-                        & .price-box {
-                            position: relative;
-                            text-align: center;
-                            padding: 10px 20px;
-                            & .title {
-                                position: relative;
-                                display: block;
-                                font-size: 24px;
-                                line-height: 1.2em;
-                                color: var(--primary-color);
-                                font-weight: 600;
-                            }
-                            h4 {
-                                display: block;
-                                font-size: 30px;
-                                color: var(--aceent0-color);
-                                font-weight: 700;
-                            }
-                        }
-                        & .btn-box {
-                            position: relative;
-                            text-align: center;
-                            a {
-                                position: relative;
-                                display: inline-block;
-                                font-size: 14px;
-                                line-height: 25px;
-                                color: var(--primary-color);
-                                font-weight: 500;
-                                padding: 8px 30px;
-                                background-color: var(--aceent0-color);
-                                border-radius: 10px;
-                                border-top:2px solid transparent;
-                                border-bottom:2px solid transparent;
-                                -webkit-transition: all 400ms ease;
-                                -moz-transition: all 400ms ease;
-                                -ms-transition: all 400ms ease;
-                                -o-transition: all 400ms ease;
-                                transition: all 300ms ease;
-                                &:hover {
-                                    color: var(--primary-color);
-                                }
-                            }
-                        }
-                }
-            }
-        }
-        
-    }
+      
       & .chat-main {
         & .chat-list {
           background-color: rgba(0, 0, 0, 0.2);

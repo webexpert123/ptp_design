@@ -10485,6 +10485,9 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main .review-sec
   border-radius: 50%;
   width: 150px;
 }
+section#profile-layout .profile-bottom .profile-tab-start .tabs-main .review-section .review-inner .tab-inside .review-item h5 {
+  color: var(--secondary-color);
+}
 section#profile-layout .profile-bottom .profile-tab-start .tabs-main .review-section .review-inner .tab-inside .review-item .review-meta span {
   font-size: 14px;
   color: var(--secondary-color);
@@ -10525,7 +10528,7 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main .review-sec
   margin: 20px;
 }
 section#profile-layout .profile-bottom .profile-tab-start .tabs-main #location .tab-inside {
-  background: #2b2b35;
+  background: var(--secondary-color);
   padding: 30px;
   border-radius: 20px;
   margin-top: 30px;
@@ -10542,10 +10545,10 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #location .
 }
 section#profile-layout .profile-bottom .profile-tab-start .tabs-main #location .tab-inside #location-slider .location-item {
   margin-right: 15px;
-  border: 2px solid var(--secondary-color);
+  border: 2px solid #333333;
   border-radius: 15px;
   padding: 15px;
-  background: var(--secondary-color);
+  background: #333333;
   min-height: 131px;
 }
 section#profile-layout .profile-bottom .profile-tab-start .tabs-main #location .tab-inside #location-slider .location-item .loc-top-content {
@@ -10568,7 +10571,7 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #location .
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: var(--secondary-color);
+  background: #333333;
   opacity: 1;
 }
 section#profile-layout .profile-bottom .profile-tab-start .tabs-main #location .tab-inside #location-slider .owl-controls .owl-buttons div:hover {
@@ -10591,7 +10594,7 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #available 
   color: var(--primary-color);
 }
 section#profile-layout .profile-bottom .profile-tab-start .tabs-main #faq .tab-inside {
-  background: #2b2b35;
+  background: var(--body-bg);
   padding: 30px;
   border-radius: 20px;
   margin-top: 30px;
@@ -10606,7 +10609,7 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #faq .tab-i
 }
 section#profile-layout .profile-bottom .profile-tab-start .tabs-main #faq .tab-inside #faqs-main .faq-block .accordion .card .card-header {
   padding: 5px 20px;
-  background-color: var(--secondary-color);
+  background-color: #333333;
 }
 section#profile-layout .profile-bottom .profile-tab-start .tabs-main #faq .tab-inside #faqs-main .faq-block .accordion .card .card-header button {
   font-size: 18px;
@@ -10618,7 +10621,7 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #faq .tab-i
   outline: none;
 }
 section#profile-layout .profile-bottom .profile-tab-start .tabs-main #faq .tab-inside #faqs-main .faq-block .accordion .card .collapse .card-body {
-  background: #151526 !important;
+  background: #18181a !important;
   color: var(--primary-color);
 }
 section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .tab-inside {
@@ -11596,6 +11599,7 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
 }
 .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .nav li a.active {
   background: var(--aceent0-color);
+  color: var(--secondary-color);
 }
 .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .form-group label {
   color: var(--primary-color);
@@ -11617,6 +11621,74 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
 }
 .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .form-group .input-group input {
   width: 48%;
+}
+.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .form-group .card-number {
+  position: relative;
+}
+.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .form-group .card-number .input-group-append {
+  position: absolute;
+  right: 20px;
+  top: 13px;
+}
+.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .form-group .card-number .input-group-append span {
+  background: transparent;
+  border: none;
+  padding: 0;
+  align-items: center;
+}
+.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .form-group .card-number .input-group-append span i {
+  font-size: 20px;
+  color: var(--aceent0-color);
+}
+.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list-header {
+  background: var(--aceent0-color);
+  padding: 5px 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list-header h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--secondary-color);
+  margin-bottom: 0;
+}
+.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list {
+  background-color: #333333;
+  box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.12);
+  margin-bottom: 1.5rem;
+  gap: 6%;
+}
+.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list .list-grid label {
+  color: var(--primary-color);
+  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list .list-grid img {
+  width: 50px;
+}
+.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list .list-grid p {
+  color: var(--primary-color);
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list .list-grid a {
+  color: var(--aceent0-color);
+  font-size: 18px;
+}
+.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list .list-action {
+  margin-left: auto;
+}
+.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list .list-action a {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 39px;
+  font-size: 26px;
+  color: #fff;
+  background: #dc3545;
+  display: inline-block;
 }
 .booking-page .pricing-widget {
   background: rgba(255, 255, 255, 0.2);
