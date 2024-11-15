@@ -10344,7 +10344,7 @@ div#inner-template .content-wrapper .dashboard-main .chat-main .col-md-3 .chat-l
   background-color: transparent;
 }
 div#inner-template .content-wrapper .dashboard-main .chat-main .col-md-3 .chat-list .card .student-list {
-  max-height: 72vh;
+  max-height: 75vh;
   overflow: auto;
   background-color: #212830;
   /* Track */
