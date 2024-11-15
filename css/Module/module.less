@@ -706,7 +706,14 @@ div#inner-template {
           }
           & .student-list {
             & .customers-list-item {
-              border-bottom: 1px solid rgb(255 255 255 / 15%);
+              border-bottom: 1px solid rgb(131 113 113 / 15%);
+              cursor: pointer;
+              padding-left: 15px;
+              padding-right: 15px;
+              width: 100%;
+              &:hover {
+                background: #36393f;
+              }
               & .student-thumb {
                 position: relative;
                 & .user-online {
@@ -728,21 +735,7 @@ div#inner-template {
                   color: rgba(255, 255, 255, 0.70);
                 }
               }
-              & .customers-contacts {
-                a {
-                  font-size: 16px;
-                  width: 34px;
-                  height: 34px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  background: rgb(255 255 255 / 15%);
-                  border: 1px solid rgb(255 255 255 / 15%);
-                  text-align: center;
-                  border-radius: 50%;
-                  color: var(--primary-color);
-                }
-              }
+              
               & .list-inline {
                   margin-left: auto;
               }
@@ -1243,13 +1236,14 @@ div#inner-template {
       }
       .single-chat-tab {
         /* width */
+        background-color: #212830;
         ::-webkit-scrollbar {
-          width: 10px;
+          width: 7px;
         }
       
         /* Track */
         ::-webkit-scrollbar-track {
-          background: #29323c;
+          background: #36393f;
         }
       
         /* Handle */
@@ -1264,12 +1258,12 @@ div#inner-template {
           border-radius: 8px;
         }
         .chat-header {
-          border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-          padding:0px 0px 10px 0;
+          background: #36393f;
           .media {
             align-items: center;
+            padding: 10px 15px;
             .user-dp {
-              margin-right: 20px;
+              margin-right: 15px;
               img {
                 width: 50px;
                 height: 50px;
@@ -1287,77 +1281,190 @@ div#inner-template {
             }
             .media-body {
               h5 {
-                font-size: 20px;
+                font-size: 16px;
                 font-weight: 500;
                 letter-spacing: 0;
                 color: var(--primary-color);
-                margin-bottom: 10px;
+                margin-bottom: 0px;
+              }
+              p {
+                color: rgba(255, 255, 255, 0.7);
+                font-size: 13px;
+              }
+            }
+            & .customers-contacts {
+              a {
+              &.dropdown-toggle {
+                  font-size: 16px;
+                  width: 34px;
+                  height: 34px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: rgb(255 255 255 / 15%);
+                  border: 1px solid rgb(255 255 255 / 15%);
+                  text-align: center;
+                  border-radius: 50%;
+                  color: var(--primary-color);
+                  &:before {
+                    border: none;
+                    margin: 0;
+                  }
+                }
+              }
+              & .dropdown-menu {
+                background: #191d23;
+                a {
+                  color:rgba(255, 255, 255, 0.8);
+                  font-size: 15px;
+                }
               }
             }
           }
         }
         .chat-body {
-          padding: 30px 5px;
+          padding: 20px;
           border-bottom: 2px solid rgba(0, 0, 0, 0.1);
           display: flex;
           flex-direction: column;
           flex-wrap: nowrap;
-          height: 64vh;
+          height: 72vh;
           overflow: auto;
-      
+          overflow-x: hidden;
           .message-content {
-            max-width: 328px;
+            max-width: 100%;
             width: 100%;
-            margin-bottom: 15px;
             margin-right: 15px;
+            position: relative;
+            padding: 15px;
+            margin-bottom: 8px;
+            border-radius: 8px;
             &.sender {
-                text-align: right;
-                align-self: flex-end;
+              background-color: #191d23;
+              box-shadow: 1px 1px 34px -17px #000;
               .msg-block {
-                background-color: #071629;
                 text-align: left;
               }
             }
             &.receiver {
+              background: #242d36;
+              box-shadow: 1px 1px 34px -17px #000;
               label {
                 text-align: left;
               }
               .msg-block {
-                background-color: #9d7a10 ;
+                // background-color: #9d7a10 ;
                 text-align: left;
               }
             }
             label {
               font-size: 14px;
-              font-family: 'Fira Sans', sans-serif;
               font-weight: 400;
               letter-spacing: 0;
               color: #B5B5B5;
               margin-bottom: 5px;
             }
             .msg-block {
-              padding: 15px 8px;
+              padding: 0px 0px 15px 0px;
               border-radius: 5px;
               p{
-                color: #fff;
-                font-size: 15px;
-                font-family: 'Fira Sans', sans-serif;
+                color: rgb(255 255 255 / 80%);
+                font-size: 14px;
                 font-weight: 400;
+                margin-bottom: 10px;
+              }
+            }
+          }
+          & .messsage-date {
+            text-align: center;
+            width: 100%;
+            position: relative;
+            margin: 1.8rem 0rem;
+            &:after {
+              content: '';
+              position: absolute;
+              width: 100%;
+              height: 1px;
+              background: #36393f;
+              left: 0;
+              top: 13px;
+            }
+            span {
+              background: #36393f;
+              color: rgba(161, 161, 161, 0.7);
+              font-size: 12px;
+              padding: 5px 10px;
+              line-height: 10px;
+              border-radius: 5px;
+              position: relative;
+              z-index: 2;
+            }
+          }
+          & .customers-list-item {
+            border-bottom: 1px solid transparent;
+            cursor: pointer;
+            width: 100%;
+            & .student-thumb {
+              position: relative;
+              & .user-online {
+                width: 12px;
+                height: 11px;
+                background: #31B112 0% 0% no-repeat padding-box;
+                border-radius: 50%;
+                position: absolute;
+                top: 0;
+                right: 0;
+              }
+            }
+            & .ms-2 {
+              margin-left: .5rem;
+              h6 {
+                color: var(--primary-color);
+                font-size: 13px;
+                font-weight: 500;
+              }
+              p {
+                color: rgba(255, 255, 255, 0.70);
+                font-weight: 300;
+                font-size: 13px;
+              } 
+            }
+            & .customers-contacts {
+              span {
+                font-size: 10px;
+                color: rgba(161, 161, 161, 0.7);
               }
             }
           }
         }
         .chat-footer {
-          padding: 10px 0;
+          padding: 10px 15px;
           border-bottom: 2px solid rgba(0, 0, 0, 0.1);
           input {
             border: none;
+          }
+          & .add_attachment {
+            button {
+              border-top-left-radius: 5px !important;
+              border-bottom-left-radius: 5px !important;
+              font-size: 27px;
+              min-height: 39px;
+              padding: 0 10px;
+              background: #36393f;
+              color: rgba(161, 161, 161, 0.7);
+              border: none;
+              &:focus {
+                outline: none;
+                box-shadow: none;
+              }
+            }
           }
           & .send_btn {
           .btn {
             background: var(--aceent0-color);
             color: var(--secondary-color);
-            border-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
             display: flex;
             align-items: center;
             border: none;
@@ -1370,25 +1477,72 @@ div#inner-template {
       }
       
       & .chat-main {
-        & .chat-list {
-          background-color: rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.12);
-          margin-bottom: 1.5rem;
-          border: 0 solid transparent;
-          height: 100%;
-          & .card {
-            box-shadow: none;
-            background-color: transparent;
-            & .student-list {
-              h6 {
-                font-weight: 500;
+        .col-md-3 {
+          max-width: 22%;
+          & .chat-list {
+            background-color: rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.12);
+            margin-bottom: 1.5rem;
+            border: 0 solid transparent;
+            height: 100%;
+            & .card-title {
+              & .form-group {
+                width: 100%;
+                background: #36393f;
+                padding: 15px;
+                input {
+                  border-radius: 25px;
+                  min-height: 40px;
+                  background: #1a2026;
+                }            
               }
-              p {
-                font-weight: 300;
-                font-size: 14px;
-              }
-            } 
+            }
+            & .card {
+              box-shadow: none;
+              background-color: transparent;
+              & .student-list {
+                max-height: 72vh;
+                overflow: auto;
+                background-color: #212830;
+                &::-webkit-scrollbar {
+                  width: 7px;
+                }
+              
+                /* Track */
+                &::-webkit-scrollbar-track {
+                  background: #36393f;
+                }
+              
+                /* Handle */
+                &::-webkit-scrollbar-thumb {
+                  background: #000;
+                  border-radius: 8px;
+                }
+              
+                /* Handle on hover */
+                &::-webkit-scrollbar-thumb:hover {
+                  background: #000;
+                  border-radius: 8px;
+                }
+                h6 {
+                  font-weight: 500;
+                  font-size: 13px;
+                }
+                p {
+                  font-weight: 300;
+                  font-size: 13px;
+                }
+                & .chat-time {
+                  font-size: 10px;
+                  color: rgb(161 161 161 / 70%);
+                }
+              } 
+            }
           }
+        }
+        & .col-md-9 {
+          max-width: 78%;
+          flex: 0 0 78%;
         }
       }
       & .student-info {
