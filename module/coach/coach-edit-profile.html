@@ -330,6 +330,35 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="card">
+                                    <div class="card-body card-block">
+                                        <div class="card-title mb-4 d-flex align-items-center justify-content-between">
+                                            <h5 class="m-0">Upload Document</h5>
+                                            <!-- <button class="btn btn-light title-btn">Add Location</button> -->
+                                        </div>
+                                        <form action="" method="post" enctype="multipart/form-data" class="form-horizontal location-from">
+                                            <div class="row form-group">
+                                                <div class="col-12 col-md-12">
+                                                    <div class="control-group" id="fields">
+                                                        <div class="controls">
+                                                            <div class="entry input-group upload-input-group mb-4">
+                                                                <input class="form-control" name="fields[]" type="file">
+                                                                <button class="btn-upload btn-success btn-add add_lcoation_btn" type="button">
+                                                                    <i class="bx bx-message-square-add"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div class="page-save-action">
+                                                                <button type="button">Save</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
 							</div>
 							<div class="col-lg-8">
 								<div class="card">
@@ -441,5 +470,26 @@
     integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
     crossorigin="anonymous"></script>
 <script src="./js/main.js"></script>
+<script>
+    $(function () {
+$(document).on('click', '.btn-add', function (e) {
+   e.preventDefault();
 
+   var controlForm = $('.controls:first'),
+       currentEntry = $(this).parents('.entry:first'),
+       newEntry = $(currentEntry.clone()).appendTo(controlForm);
+
+   newEntry.find('input').val('');
+   controlForm.find('.entry:not(:last) .btn-add')
+       .removeClass('btn-add').addClass('remove_lcoation_btn')
+       .removeClass('btn-success').addClass('btn-danger')
+       .html('<i class="bx bx-trash-alt"></i>');
+}).on('click', '.remove_lcoation_btn', function (e) {
+   $(this).parents('.entry:first').remove();
+
+   e.preventDefault();
+   return false;
+});
+});
+</script>
 </html>

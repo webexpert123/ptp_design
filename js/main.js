@@ -94,3 +94,11 @@ function toggleScrolled() {
     value--;
     document.getElementById('number').value = value;
   }
+
+
+
+  // file upload js
+
+  
+ 
+

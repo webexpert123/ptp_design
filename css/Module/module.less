@@ -1317,6 +1317,10 @@ div#inner-template {
                 a {
                   color:rgba(255, 255, 255, 0.8);
                   font-size: 15px;
+                  &:hover {
+                    background: #242d36;
+                    color: rgba(255, 255, 255, 0.8);
+                  }
                 }
               }
             }
@@ -1402,7 +1406,6 @@ div#inner-template {
           }
           & .customers-list-item {
             border-bottom: 1px solid transparent;
-            cursor: pointer;
             width: 100%;
             & .student-thumb {
               position: relative;
@@ -1442,8 +1445,20 @@ div#inner-template {
           border-bottom: 2px solid rgba(0, 0, 0, 0.1);
           input {
             border: none;
+            &:focus {
+              outline: none;
+              box-shadow: none;
+            }
           }
           & .add_attachment {
+            position: relative;
+            input {
+              position: absolute;
+              z-index: 22;
+              width: 47px;
+              height: 40px;
+              opacity: 0;
+            }
             button {
               border-top-left-radius: 5px !important;
               border-bottom-left-radius: 5px !important;

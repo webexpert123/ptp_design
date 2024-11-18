@@ -10174,6 +10174,10 @@ div#inner-template .content-wrapper .dashboard-main .single-chat-tab .chat-heade
   color: rgba(255, 255, 255, 0.8);
   font-size: 15px;
 }
+div#inner-template .content-wrapper .dashboard-main .single-chat-tab .chat-header .media .customers-contacts .dropdown-menu a:hover {
+  background: #242d36;
+  color: rgba(255, 255, 255, 0.8);
+}
 div#inner-template .content-wrapper .dashboard-main .single-chat-tab .chat-body {
   padding: 20px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
@@ -10254,7 +10258,6 @@ div#inner-template .content-wrapper .dashboard-main .single-chat-tab .chat-body 
 }
 div#inner-template .content-wrapper .dashboard-main .single-chat-tab .chat-body .customers-list-item {
   border-bottom: 1px solid transparent;
-  cursor: pointer;
   width: 100%;
 }
 div#inner-template .content-wrapper .dashboard-main .single-chat-tab .chat-body .customers-list-item .student-thumb {
@@ -10292,6 +10295,20 @@ div#inner-template .content-wrapper .dashboard-main .single-chat-tab .chat-foote
 }
 div#inner-template .content-wrapper .dashboard-main .single-chat-tab .chat-footer input {
   border: none;
+}
+div#inner-template .content-wrapper .dashboard-main .single-chat-tab .chat-footer input:focus {
+  outline: none;
+  box-shadow: none;
+}
+div#inner-template .content-wrapper .dashboard-main .single-chat-tab .chat-footer .add_attachment {
+  position: relative;
+}
+div#inner-template .content-wrapper .dashboard-main .single-chat-tab .chat-footer .add_attachment input {
+  position: absolute;
+  z-index: 22;
+  width: 47px;
+  height: 40px;
+  opacity: 0;
 }
 div#inner-template .content-wrapper .dashboard-main .single-chat-tab .chat-footer .add_attachment button {
   border-top-left-radius: 5px !important;
