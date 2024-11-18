@@ -9677,21 +9677,21 @@ div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block
   color: var(--primary-color);
 }
 div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block button {
-  color: var(--secondary-color);
-  background: var(--aceent0-color);
+  color: var(--primary-color);
+  background: #28a745;
   border-radius: 25px;
   font-size: 15px;
   margin-right: 10px;
   transition: 0.3s all ease-in;
-  border-color: var(--aceent0-color);
+  border-color: #28a745;
   font-weight: 600;
   padding: 5px 20px;
 }
 div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block button:hover {
   color: var(--primary-color);
-  background: var(--secondary-color);
+  background: #218838;
   transition: 0.3s all ease-in;
-  border-color: var(--secondary-color);
+  border-color: #218838;
 }
 div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block .copy-link label {
   color: var(--primary-color);
