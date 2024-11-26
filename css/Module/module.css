@@ -9052,6 +9052,7 @@ body .popover .close {
   color: #fff;
   opacity: 1;
   font-size: 16px;
+  cursor: pointer;
 }
 body .popover.tour {
   background: #212830;

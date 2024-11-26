@@ -475,7 +475,7 @@
     placement: "right",
     backdropPadding: 5,    
     content: "Click on a category above to open the latest blog posts on that subject.",
-    template: "<div class='popover tour hca-tooltip--left-nav'><div class='arrow'></div><div class='row'><div class='col-sm-12'><div data-role='next' class='close'>X</div></div></div><div class='row'><div class='col-sm-12'><p class='popover-content'>Click on a category above to open the latest blog posts on that subject.</p><a id='hca-left-nav--tooltip-ok' href='#' data-role='next' class='btn hca-tooltip--okay-btn'>Next</a></div></div></div>"
+    template: "<div class='popover tour hca-tooltip--left-nav'><div class='arrow'></div><div class='row'><div class='col-sm-12'><div data-role='close' class='close'>X</div></div></div><div class='row'><div class='col-sm-12'><p class='popover-content'>Click on a category above to open the latest blog posts on that subject.</p><a id='hca-left-nav--tooltip-ok' href='#' data-role='next' class='btn hca-tooltip--okay-btn'>Next</a></div></div></div>"
   },
   {
     element: "#profile-overview-main",
@@ -515,6 +515,10 @@
 tour.start(true);
 // Initialize the tour
 tour.init();
+// Bind click event for the cancel (close) button in each step to stop the tour
+$(document).on('click', '.tour .close', function() {
+  tour.end();  // This will stop the entire tour
+});
 </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
