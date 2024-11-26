@@ -9,6 +9,8 @@
     <link href="../../css/Module/module.css" rel="stylesheet" />
     <link href="../../css/Module/box-icon.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.11.0/css/bootstrap-tour.min.css" rel="stylesheet">
     <!-- animation library -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
@@ -257,7 +259,7 @@
                     <div class="profile-page">
                         <div class="row">
 							<div class="col-lg-4">
-								<div class="card profile-block">
+								<div class="card profile-block" id="profile-image">
 									<div class="card-body">
 										<div class="d-flex flex-xl-row flex-lg-column flex-md-column align-items-xl-start text-center">
 											<img src="../../assets/images/avatars/avatar-1.png" alt="Admin" class="avatar_img rounded-circle p-1" width="110">
@@ -287,7 +289,7 @@
                                         </div>
 									</div>
 								</div>
-                                <div class="card profile-media-upload">
+                                <div class="card profile-media-upload" id="add-gallery">
 									<div class="card-body">
 										<div class="row row-cols-xl-1">
                                            <div class="col">
@@ -303,7 +305,7 @@
                                         </div>
 									</div>
 								</div>
-                                <div class="card">
+                                <div class="card" id="add-location">
                                     <div class="card-body">
                                         <div class="card-title mb-4 d-flex align-items-center justify-content-between">
                                             <h5 class="m-0">Add Location</h5>
@@ -330,7 +332,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card">
+                                <div class="card" id="upload-document">
                                     <div class="card-body card-block">
                                         <div class="card-title mb-4 d-flex align-items-center justify-content-between">
                                             <h5 class="m-0">Upload Document</h5>
@@ -359,7 +361,7 @@
                                 </div>
 							</div>
 							<div class="col-lg-8">
-								<div class="card">
+								<div class="card" id="profile-overview-main">
 									<div class="card-body">
                                         <div class="card-title mb-4">
                                             <h5 class="">Profile Overview</h5>
@@ -460,14 +462,64 @@
         AOS.init();
     </script>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.11.0/js/bootstrap-tour.min.js"></script>
+<script>
+    // Instance the tour
+ var tour = new Tour({
+  steps: [
+  {
+    element: "#profile-image",
+    placement: "right",
+    backdropPadding: 5,    
+    content: "Click on a category above to open the latest blog posts on that subject.",
+    template: "<div class='popover tour hca-tooltip--left-nav'><div class='arrow'></div><div class='row'><div class='col-sm-12'><div data-role='next' class='close'>X</div></div></div><div class='row'><div class='col-sm-12'><p class='popover-content'>Click on a category above to open the latest blog posts on that subject.</p><a id='hca-left-nav--tooltip-ok' href='#' data-role='next' class='btn hca-tooltip--okay-btn'>Step 1</a></div></div></div>"
+  },
+  {
+    element: "#profile-overview-main",
+    placement: "left", 
+    backdropPadding: 5,   
+    content: "Can't find the post you're looking for?  Use our search engine to find it.",
+    template: "<div class='popover tour hca-tooltip--left-nav'><div class='arrow'></div><div class='row'><div class='col-sm-12'><div data-role='next' class='close'>X</div></div></div><div class='row'><div class='col-sm-12'><p class='popover-content'></p><a id='hca-left-nav--tooltip-ok' href='#' data-role='next' class='btn hca-tooltip--okay-btn'>Step 2</a></div></div></div>"
+  },
+  {
+    element: "#add-gallery",
+    placement: "top",
+    backdropPadding: 20,    
+    content: "Have something to say? Leave a new comment by click the textarea below.",
+    template: "<div class='popover tour hca-tooltip--left-nav'><div class='arrow'></div><div class='row'><div class='col-sm-12'><div data-role='next' class='close'>X</div></div></div><div class='row'><div class='col-sm-12'><p class='popover-content'></p><a id='hca-left-nav--tooltip-ok' href='#' data-role='next' class='btn hca-tooltip--okay-btn'>Step 3</a></div></div></div>"
+  }, 
+  {
+    element: "#add-location",
+    placement: "top",
+    backdropPadding: 20,    
+    content: "Have something to say? Leave a new comment by click the textarea below.",
+    template: "<div class='popover tour hca-tooltip--left-nav'><div class='arrow'></div><div class='row'><div class='col-sm-12'><div data-role='next' class='close'>X</div></div></div><div class='row'><div class='col-sm-12'><p class='popover-content'></p><a id='hca-left-nav--tooltip-ok' href='#' data-role='next' class='btn hca-tooltip--okay-btn'>Step 4</a></div></div></div>"
+  }, 
+  {
+    element: "#upload-document",
+    placement: "top",
+    backdropPadding: 20,    
+    content: "Have something to say? Leave a new comment by click the textarea below.",
+    template: "<div class='popover tour hca-tooltip--left-nav'><div class='arrow'></div><div class='row'><div class='col-sm-12'><div data-role='next' class='close'>X</div></div></div><div class='row'><div class='col-sm-12'><p class='popover-content'></p><a id='hca-left-nav--tooltip-ok' href='#' data-role='next' class='btn hca-tooltip--okay-btn'>Finish</a></div></div></div>"
+  }],
+    animation: true,
+    backdrop: true,  
+    storage: false,
+    smartPlacement: true,
+    
+});
+// Start the tour
+tour.start(true);
+// Initialize the tour
+tour.init();
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
     crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-    crossorigin="anonymous"></script>
-<script src="./js/main.js"></script>
+<script src="../coach/js/main.js"></script>
 <script>
     $(function () {
 $(document).on('click', '.btn-add', function (e) {

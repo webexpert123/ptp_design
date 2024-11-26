@@ -72,7 +72,49 @@ h2 {
 }
 
 // module css start
+body {
+.popover {
+  .arrow {
+    &::after {
+      border-right-color: #212830 !important;
+    }
+  }
+  .close {
+    margin: 10px;
+    color: #fff;
+    opacity: 1;
+    font-size: 16px;
+  }
+  &.tour {
+    background: #212830;
+    color: #fff;
+    opacity: 1;
+    &.right {
+      margin-left: 15px;
+    }
+    &.left {
+      margin-right: 15px;
+    }
+    &.top {
+      margin-top: -30px;
+    }
+    a {
+      color: #000;
+      background-color: var(--aceent0-color);
+      border-radius: 25px;
+      font-size: 13px;
+      margin: 10px;
+    }
+  }
+  .popover-content {
+    padding: 0 15px;
+  }
+}
+}
 
+.bs-popover-right, .bs-popover-auto[x-placement^="right"] {
+  margin-left: 15px !important;
+}
 /* 1 */
 div#inner-template {
     height: 100%;

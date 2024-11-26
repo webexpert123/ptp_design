@@ -97,39 +97,3 @@ function toggleScrolled() {
 
 
 
-  // file upload js
-
-  
-//  tour js
-
- // Instance the tour
- var tour = new Tour({
-  steps: [
-  {
-    element: "#profile-image",
-    placement: "auto",
-    backdropPadding: 5,    
-    content: "Click on a category above to open the latest blog posts on that subject.",
-    template: "<div class='popover tour hca-tooltip--left-nav'><div class='arrow'></div><div class='row'><div class='col-sm-12'><div data-role='next' class='close'>X</div></div></div><div class='row'><div class='col-sm-2'><i class='fa fa-hand-pointer-o fa-3x' aria-hidden='true'></i></div><div class='col-sm-10'><p class='popover-content'></p><a id='hca-left-nav--tooltip-ok' href='#' data-role='next' class='btn hca-tooltip--okay-btn'>Okay</a></div></div></div>"
-  },
-  {
-    element: "#search",
-    placement: "auto", 
-    backdropPadding: 5,   
-    content: "Can't find the post you're looking for?  Use our search engine to find it.",
-    template: "<div class='popover tour hca-tooltip--left-nav'><div class='arrow'></div><div class='row'><div class='col-sm-12'><div data-role='next' class='close'>X</div></div></div><div class='row'><div class='col-sm-2'><i class='fa fa-search fa-3x' aria-hidden='true'></i></div><div class='col-sm-10'><p class='popover-content'></p><a id='hca-left-nav--tooltip-ok' href='#' data-role='next' class='btn hca-tooltip--okay-btn'>Okay</a></div></div></div>"
-  },
-  {
-    element: "#comment",
-    placement: "top",
-    backdropPadding: 20,    
-    content: "Have something to say? Leave a new comment by click the textarea below.",
-    template: "<div class='popover tour hca-tooltip--left-nav'><div class='arrow'></div><div class='row'><div class='col-sm-12'><div data-role='next' class='close'>X</div></div></div><div class='row'><div class='col-sm-2'><i class='fa fa-paper-plane fa-3x' aria-hidden='true'></i></div><div class='col-sm-10'><p class='popover-content'></p><a id='hca-left-nav--tooltip-ok' href='#' data-role='next' class='btn hca-tooltip--okay-btn'>Okay</a></div></div></div>"
-  }],
-    animation: true,
-    backdrop: true,  
-    storage: false,
-    smartPlacement: true,
-    
-});
-

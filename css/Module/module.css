@@ -9044,6 +9044,44 @@ h1 {
 h2 {
   font-size: var(--f2-font-size);
 }
+body .popover .arrow::after {
+  border-right-color: #212830 !important;
+}
+body .popover .close {
+  margin: 10px;
+  color: #fff;
+  opacity: 1;
+  font-size: 16px;
+}
+body .popover.tour {
+  background: #212830;
+  color: #fff;
+  opacity: 1;
+}
+body .popover.tour.right {
+  margin-left: 15px;
+}
+body .popover.tour.left {
+  margin-right: 15px;
+}
+body .popover.tour.top {
+  margin-top: -30px;
+}
+body .popover.tour a {
+  color: #000;
+  background-color: var(--aceent0-color);
+  border-radius: 25px;
+  font-size: 13px;
+  margin: 10px;
+}
+body .popover .popover-content {
+  padding: 0 15px;
+}
+.bs-popover-right,
+.bs-popover-auto[x-placement^="right"],
+.bs-popover-auto[x-placement^="right"] {
+  margin-left: 15px !important;
+}
 /* 1 */
 div#inner-template {
   height: 100%;
