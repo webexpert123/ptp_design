@@ -9260,7 +9260,6 @@ body header section.header-main {
   z-index: 5555;
   transition: 0.3s all ease-in-out;
   position: relative;
-  border-bottom: 1px solid #000;
 }
 body header section.header-main .container .header-blocks {
   display: flex;
@@ -10393,72 +10392,6 @@ section#profile-layout .profile-top .profile-risk p {
   color: var(--primary-color);
   margin-bottom: 0;
 }
-section#profile-layout .profile-top .summer-camp .card {
-  background-color: #000000;
-  border-radius: 20px;
-}
-section#profile-layout .profile-top .summer-camp .card .card-body .summer-camp-carousel .camp-item {
-  margin-right: 15px;
-  border: 2px solid #333333;
-  border-radius: 15px;
-  padding: 15px;
-  background: #333333;
-  min-height: 131px;
-}
-section#profile-layout .profile-top .summer-camp .card .card-body .summer-camp-carousel .camp-item .loc-top-content .camp-image {
-  max-width: 120px;
-  border-radius: 10px;
-  overflow: hidden;
-  height: 120px;
-}
-section#profile-layout .profile-top .summer-camp .card .card-body .summer-camp-carousel .camp-item .loc-top-content .camp-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-section#profile-layout .profile-top .summer-camp .card .card-body .summer-camp-carousel .camp-item .loc-top-content .loc-title h4 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: var(--aceent0-color);
-}
-section#profile-layout .profile-top .summer-camp .card .card-body .summer-camp-carousel .camp-item .loc-top-content .loc-title p {
-  font-size: 13px;
-  color: var(--primary-color);
-  margin-bottom: 5px;
-  font-weight: 300;
-}
-section#profile-layout .profile-top .summer-camp .card .card-body .summer-camp-carousel .camp-item .loc-top-content .d-flex {
-  gap: 20px;
-}
-section#profile-layout .profile-top .summer-camp .card .card-body .summer-camp-carousel .camp-item .loc-top-content .loc-btm-content .badge-dark {
-  background: var(--secondary-color);
-}
-section#profile-layout .profile-top .summer-camp .card .card-body .summer-camp-carousel .camp-item .loc-top-content .custom-button button {
-  width: 100%;
-  border-radius: 25px;
-  padding: 7px 20px;
-  margin-top: 15px;
-  font-size: 14px;
-  background-color: #000;
-  border-width: 1px;
-}
-section#profile-layout .profile-top .summer-camp .card .owl-controls .owl-buttons div {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #333333;
-  opacity: 1;
-}
-section#profile-layout .profile-top .summer-camp .card .owl-controls .owl-buttons div:hover {
-  background: var(--aceent0-color);
-}
-section#profile-layout .profile-top .summer-camp .card .owl-controls .owl-buttons div svg {
-  position: relative;
-  top: 5px;
-}
-section#profile-layout .profile-top .summer-camp .card .owl-controls .owl-buttons div.owl-prev svg {
-  right: 2px;
-}
 section#profile-layout .profile-bottom .profile-tab-start {
   padding: 50px 30px;
   background: rgba(255, 255, 255, 0.2);
@@ -10712,8 +10645,11 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
     Listing page Design
 =============================================
 ***/
+.listing-page .hero-inner-wrapper {
+  margin-top: -100px;
+}
 .listing-page .hero-inner-wrapper #hero-inner .bloc-inner-video {
-  height: 35vh;
+  height: 50vh;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -10730,14 +10666,35 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
 }
 .listing-page .hero-inner-wrapper #hero-inner .bloc-inner-video .content-video {
   position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
+  bottom: 4rem;
+  left: inherit;
+  padding: 0;
+  max-width: 30%;
+}
+.listing-page .hero-inner-wrapper #hero-inner .bloc-inner-video .content-video p {
+  color: var(--primary-color);
+  font-size: 17px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.listing-page .hero-inner-wrapper #hero-inner .bloc-inner-video .content-video span {
+  font-size: 18px;
+  color: var(--primary-color);
+  margin-right: 30px;
+  padding: 8px 15px;
+  border-radius: 10px;
+  border: 1px solid var(--primary-color);
+}
+.listing-page .hero-inner-wrapper #hero-inner .bloc-inner-video .content-video span svg {
+  color: var(--aceent0-color);
+}
+.listing-page .hero-inner-wrapper #hero-inner .bloc-inner-video .content-video span i {
+  color: var(--aceent0-color);
 }
 .listing-page .hero-inner-wrapper #hero-inner .bloc-inner-video .content-video h1 {
-  font-size: 60px;
-  font-weight: 800;
-  line-height: 67px;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 52px;
   color: var(--primary-color);
 }
 .listing-page .listing-filter {
@@ -10748,6 +10705,8 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   border-radius: 25px;
   padding: 30px;
   margin: 50px 0px 30px 0px;
+  position: relative;
+  z-index: 2;
 }
 .listing-page .listing-filter .filter-left .filter-item {
   gap: 15px;
@@ -10760,6 +10719,9 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   color: var(--primary-color);
   font-size: 15px;
 }
+.listing-page .listing-filter .filter-left .filter-item .dropdown.schedule-filter .custom-dropdown {
+  min-width: 285px;
+}
 .listing-page .listing-filter .filter-left .filter-item .dropdown button {
   border-radius: 25px;
   min-height: 45px;
@@ -10768,7 +10730,6 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   border: none;
   width: 100%;
   text-align: left;
-  margin-bottom: 20px;
 }
 .listing-page .listing-filter .filter-left .filter-item .dropdown button::after {
   position: absolute;
@@ -10778,13 +10739,12 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
 .listing-page .listing-filter .filter-left .filter-item .dropdown .dropdown-menu {
   background: var(--body-bg);
   border-radius: 15px;
-  position: inherit !important;
-  transform: inherit !important;
   width: 100%;
   margin-bottom: 20px;
 }
 .listing-page .listing-filter .filter-left .filter-item .dropdown .dropdown-menu a {
   color: var(--primary-color);
+  white-space: inherit;
 }
 .listing-page .listing-filter .filter-left .filter-item .dropdown .dropdown-menu a.dropdown-item:hover {
   background: #000;
@@ -10814,9 +10774,12 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
 .listing-page .listing-filter .filter-left .filter-item .multiple-filter {
   gap: 15px;
 }
+.listing-page .listing-filter .filter-left .filter-item .multiple-filter .dropdown {
+  max-width: 33.3%;
+  width: 100%;
+}
 .listing-page .listing-filter .filter-left .filter-item .multiple-filter .dropdown button.dropdown-toggle {
   width: 100%;
-  margin-bottom: 20px;
   text-align: left;
   position: relative;
 }
@@ -10827,6 +10790,11 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
 }
 .listing-page .listing-filter .filter-left .filter-item .custom-button button {
   width: 100%;
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: var(--primary-color);
+  min-height: 45px;
+  padding: 5px 25px;
 }
 .listing-page .listing-filter .filter-left .filter-item .custom-button button:first-child {
   background-color: var(--aceent0-color);
@@ -10849,7 +10817,9 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   -webkit-backdrop-filter: blur(5px);
   border-radius: 25px;
   padding: 30px;
-  margin: 50px 0px 30px 0px;
+  margin: 0px 0px 30px 0px;
+  z-index: 1;
+  position: relative;
 }
 .listing-page .listing-main .listing-inner .listing-item {
   margin-bottom: 30px;
@@ -10861,7 +10831,7 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   overflow: hidden;
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-header {
-  height: 215px;
+  height: 275px;
   overflow: hidden;
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-header img {
@@ -10876,6 +10846,16 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   right: 10px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.listing-page .listing-main .listing-inner .listing-item .card .card-header .card-over-content .variefied-icon {
+  min-height: 40px;
+}
+.listing-page .listing-main .listing-inner .listing-item .card .card-header .card-over-content .variefied-icon svg {
+  width: 40px;
+}
+.listing-page .listing-main .listing-inner .listing-item .card .card-header .card-over-content .variefied-icon svg path {
+  fill: #06cb1e;
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-header .card-over-content span {
   font-size: 14px;
@@ -10887,6 +10867,7 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   background: var(--secondary-color);
   color: var(--primary-color);
   border-radius: 3px;
+  height: 23px;
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-header .card-over-content span strong {
   font-weight: 500;
@@ -10896,6 +10877,16 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-body {
   color: var(--primary-color);
+}
+.listing-page .listing-main .listing-inner .listing-item .card .card-body .title-line p {
+  margin-bottom: 8px;
+  font-size: 16px !important;
+  font-weight: 600;
+}
+.listing-page .listing-main .listing-inner .listing-item .card .card-body .title-line p span {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--aceent0-color);
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-body .title-line h5 {
   color: var(--primary-color);
@@ -10917,6 +10908,21 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   background: #000000;
   border-radius: 15px;
   margin: 15px 0px;
+}
+.listing-page .listing-main .listing-inner .listing-item .card .card-body .listing-btm.pd-left h4 {
+  color: var(--primary-color);
+}
+.listing-page .listing-main .listing-inner .listing-item .card .card-body .listing-btm.pd-left ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.listing-page .listing-main .listing-inner .listing-item .card .card-body .listing-btm.pd-left ul li a {
+  display: flex;
+  align-items: center;
+}
+.listing-page .listing-main .listing-inner .listing-item .card .card-body .listing-btm.pd-left ul li a svg {
+  width: 20px;
+  margin-right: 5px;
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-body .custom-button button {
   background-color: var(--aceent0-color);
@@ -11921,6 +11927,192 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
 #msform .action-button-previous:hover,
 #msform .action-button-previous:focus {
   box-shadow: none;
+}
+#frontend-main .summer-camp .card {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 20px;
+}
+#frontend-main .summer-camp .card .card-body .summer-camp-carousel .camp-item {
+  margin-right: 15px;
+  border: 2px solid #333333;
+  border-radius: 15px;
+  padding: 15px;
+  background: #000;
+  min-height: 131px;
+}
+#frontend-main .summer-camp .card .card-body .summer-camp-carousel .camp-item .loc-top-content .camp-image {
+  max-width: 120px;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 120px;
+}
+#frontend-main .summer-camp .card .card-body .summer-camp-carousel .camp-item .loc-top-content .camp-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#frontend-main .summer-camp .card .card-body .summer-camp-carousel .camp-item .loc-top-content .loc-title h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--aceent0-color);
+}
+#frontend-main .summer-camp .card .card-body .summer-camp-carousel .camp-item .loc-top-content .loc-title p {
+  font-size: 13px;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+  font-weight: 300;
+}
+#frontend-main .summer-camp .card .card-body .summer-camp-carousel .camp-item .loc-top-content .d-flex {
+  gap: 20px;
+}
+#frontend-main .summer-camp .card .card-body .summer-camp-carousel .camp-item .loc-top-content .loc-btm-content .badge-dark {
+  background: var(--secondary-color);
+}
+#frontend-main .summer-camp .card .card-body .summer-camp-carousel .camp-item .loc-top-content .custom-button button {
+  width: 100%;
+  border-radius: 25px;
+  padding: 7px 20px;
+  margin-top: 15px;
+  font-size: 14px;
+  background-color: #000;
+  border-width: 1px;
+}
+#frontend-main .summer-camp .card .owl-controls .owl-buttons div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #000;
+  opacity: 1;
+}
+#frontend-main .summer-camp .card .owl-controls .owl-buttons div:hover {
+  background: var(--aceent0-color);
+}
+#frontend-main .summer-camp .card .owl-controls .owl-buttons div svg {
+  position: relative;
+  top: 5px;
+}
+#frontend-main .summer-camp .card .owl-controls .owl-buttons div.owl-prev svg {
+  right: 2px;
+}
+#frontend-main .video-coach .social_item {
+  height: 300px;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+#frontend-main .video-coach .social_item .feed_single {
+  position: relative;
+}
+#frontend-main .video-coach .social_item .feed_single .feed-image {
+  height: 355px;
+}
+#frontend-main .video-coach .social_item .feed_single .feed-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#frontend-main .video-coach .social_item .feed_single .feed_content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+#frontend-main .video-coach .social_item .feed_single .feed_content .top-content i {
+  font-size: 40px;
+  color: var(--primary-color);
+}
+#frontend-main .video-coach .social_item .feed_single .feed_content .bottom-content .feed_user .feed-user-img {
+  background: var(--primary-color);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#frontend-main .video-coach .social_item .feed_single .feed_content .bottom-content .feed_user .feed-user-img img {
+  object-fit: cover;
+  width: 100%;
+}
+#frontend-main .video-coach .social_item .feed_single .feed_content .bottom-content .feed_user span {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+#frontend-main .summer-camp.review-profile .card {
+  background-color: #000000;
+  border-radius: 20px;
+}
+#frontend-main .summer-camp.review-profile .card .card-body {
+  padding: 0;
+}
+#frontend-main .summer-camp.review-profile .card .card-body .review-main-carousel .camp-item {
+  margin-right: 15px;
+  border: 2px solid #333333;
+  border-radius: 15px;
+  padding: 15px;
+  background: #333333;
+  min-height: 131px;
+}
+#frontend-main .summer-camp.review-profile .card .card-body .review-main-carousel .camp-item .loc-top-content .camp-image {
+  max-width: 80px;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 80px;
+}
+#frontend-main .summer-camp.review-profile .card .card-body .review-main-carousel .camp-item .loc-top-content .camp-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#frontend-main .summer-camp.review-profile .card .card-body .review-main-carousel .camp-item .loc-top-content .loc-title h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--aceent0-color);
+}
+#frontend-main .summer-camp.review-profile .card .card-body .review-main-carousel .camp-item .loc-top-content .loc-title p {
+  font-size: 13px;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+  margin-top: 0;
+  font-weight: 300;
+}
+#frontend-main .summer-camp.review-profile .card .card-body .review-main-carousel .camp-item .loc-top-content .loc-title .rating-strars {
+  color: var(--aceent0-color);
+}
+#frontend-main .summer-camp.review-profile .card .card-body .review-main-carousel .camp-item .loc-top-content .d-flex {
+  gap: 20px;
+}
+#frontend-main .summer-camp.review-profile .card .card-body .review-main-carousel .camp-item p {
+  color: var(--primary-color);
+  font-weight: 300;
+  margin: 15px 0px;
+}
+#frontend-main .summer-camp.review-profile .card .owl-controls .owl-buttons div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #333333;
+  opacity: 1;
+}
+#frontend-main .summer-camp.review-profile .card .owl-controls .owl-buttons div:hover {
+  background: var(--aceent0-color);
+}
+#frontend-main .summer-camp.review-profile .card .owl-controls .owl-buttons div svg {
+  position: relative;
+  top: 5px;
+}
+#frontend-main .summer-camp.review-profile .card .owl-controls .owl-buttons div.owl-prev svg {
+  right: 2px;
 }
 body {
   overflow-x: hidden;

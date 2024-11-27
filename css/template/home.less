@@ -1013,92 +1013,7 @@ section#profile-layout {
                 margin-bottom: 0;
             }
         }
-        & .summer-camp {
-            & .card {
-                background-color: #000000;
-                border-radius: 20px;
-                & .card-body {
-            & .summer-camp-carousel {
-                & .camp-item {
-                    margin-right: 15px;
-                    border: 2px solid #333333;
-                    border-radius: 15px;
-                    padding: 15px;
-                    background: #333333;
-                    min-height: 131px;
-                    & .loc-top-content{
-                        & .camp-image {
-                            max-width: 120px;
-                            border-radius: 10px;
-                            overflow: hidden;
-                            height: 120px;
-                            img {
-                                width: 100%;
-                                height: 100%;
-                                object-fit: cover;
-                            }
-                        }
-                        & .loc-title {
-                            h4 {
-                                font-size: 18px;
-                                margin-bottom: 10px;
-                                color: var(--aceent0-color);
-                            }
-                            p {
-                                font-size: 13px;
-                                color:var(--primary-color);
-                                margin-bottom: 5px;
-                                font-weight: 300;
-                            }
-                        }
-                        & .d-flex {
-                            gap: 20px;
-                        }
-                        & .loc-btm-content {
-                            & .badge-dark {
-                                background: var(--secondary-color);
-                            }
-                        }
-                        & .custom-button {
-                            button {
-                                width: 100%;
-                                border-radius: 25px;
-                                padding: 7px 20px;
-                                margin-top: 15px;
-                                font-size: 14px;
-                                background-color: #000;
-                                border-width: 1px;
-                            }
-                        }
-                    }
-                    }
-                }
-                }
-                & .owl-controls {
-                    & .owl-buttons {
-                        div {
-                            width: 40px;
-                            height: 40px;
-                            border-radius: 50%;
-                            background: #333333;
-                            opacity: 1;
-                            &:hover {
-                                background: var(--aceent0-color);
-                            }
-                            svg {
-                                position: relative;
-                                top: 5px;
-                            }
-                            &.owl-prev {
-                                svg {
-                                    right: 2px;
-                                }
-                            }
-                        }
-                    }
-                } 
-            }
-        }
+       
     }
     & .profile-bottom {
         & .profile-tab-start {
@@ -1433,9 +1348,10 @@ section#profile-layout {
 
 .listing-page {
     & .hero-inner-wrapper {
+        margin-top: -100px;
         & #hero-inner {
             & .bloc-inner-video {
-                height: 35vh;
+                height: 50vh;
                 width: 100%;
                 overflow: hidden;
                 position: relative;
@@ -1453,13 +1369,34 @@ section#profile-layout {
                 }
                 & .content-video {
                     position: absolute;
-                    transform: translate(-50%, -50%);
-                    top: 50%;
-                    left: 50%;
+                    bottom: 4rem;
+                    left: inherit;
+                    padding: 0;
+                    max-width: 30%;
+                    p {
+                        color: var(--primary-color);
+                        font-size: 17px;
+                        font-weight: 300;
+                        margin-bottom: 30px;
+                    }
+                    span {
+                        font-size: 18px;
+                        color: var(--primary-color);
+                        margin-right: 30px;
+                        padding: 8px 15px;
+                        border-radius: 10px;
+                        border: 1px solid var(--primary-color);
+                        svg {
+                            color: var(--aceent0-color);
+                        }
+                        i {
+                            color: var(--aceent0-color);
+                        }
+                    }
                     h1 {
-                        font-size: 60px;
-                        font-weight: 800;
-                        line-height: 67px;
+                        font-size: 50px;
+                        font-weight: 600;
+                        line-height: 52px;
                         color: var(--primary-color);
                     }
                 }
@@ -1474,6 +1411,8 @@ section#profile-layout {
         border-radius: 25px;
         padding: 30px;
         margin: 50px 0px 30px 0px;
+        position: relative;
+        z-index: 2;
         & .filter-left {
             & .filter-item {
                 gap: 15px;
@@ -1486,6 +1425,11 @@ section#profile-layout {
                     font-size: 15px;
                 }
                 & .dropdown {
+                    &.schedule-filter {
+                        & .custom-dropdown {
+                            min-width: 285px;
+                        }
+                    }
                     button {
                         border-radius: 25px;
                         min-height: 45px;
@@ -1494,7 +1438,6 @@ section#profile-layout {
                         border: none;
                         width: 100%;
                         text-align: left;
-                        margin-bottom: 20px;
                         &::after {
                             position: absolute;
                             right: 20px;
@@ -1504,12 +1447,11 @@ section#profile-layout {
                     & .dropdown-menu {
                         background: var(--body-bg);
                         border-radius: 15px;
-                        position: inherit !important;
-                        transform: inherit !important;
                         width: 100%;
                         margin-bottom: 20px;
                         a {
                             color: var(--primary-color);
+                            white-space: inherit;
                             &.dropdown-item {
                                 &:hover {
                                     background: #000;
@@ -1546,10 +1488,11 @@ section#profile-layout {
                 & .multiple-filter {
                     gap: 15px;
                     & .dropdown {
+                        max-width: 33.3%;
+                        width: 100%;
                         button {
                             &.dropdown-toggle{
                             width: 100%;
-                            margin-bottom: 20px;
                             text-align: left;
                             position: relative;
                             &::after {
@@ -1564,6 +1507,11 @@ section#profile-layout {
                 & .custom-button {
                     button {
                         width: 100%;
+                        background-color: var(--secondary-color);
+                        border-color: var(--secondary-color);
+                        color: var(--primary-color);
+                        min-height: 45px;
+                        padding: 5px 25px;
                         &:first-child {
                             background-color: var(--aceent0-color);
                             border-color: var(--aceent0-color);
@@ -1593,7 +1541,9 @@ section#profile-layout {
         -webkit-backdrop-filter: blur(5px);
         border-radius: 25px;
         padding: 30px;
-        margin: 50px 0px 30px 0px;
+        margin: 0px 0px 30px 0px;
+        z-index: 1;
+        position: relative;
         & .listing-inner {
             & .listing-item {
                 margin-bottom: 30px;
@@ -1603,7 +1553,7 @@ section#profile-layout {
                     background: var(--body-bg);
                     overflow: hidden;
                     & .card-header {
-                        height: 215px;
+                        height: 275px;
                         overflow: hidden;
                         img {
                             height: 100%;
@@ -1617,6 +1567,16 @@ section#profile-layout {
                             right: 10px;
                             display: flex;
                             justify-content: space-between;
+                            align-items: center;
+                            & .variefied-icon {
+                                min-height: 40px;
+                                svg {
+                                    width: 40px;
+                                    path {
+                                        fill: #06cb1e;
+                                    }
+                                }
+                            }
                             span {
                                 font-size: 14px;
                                 font-weight: 300;
@@ -1626,6 +1586,7 @@ section#profile-layout {
                                     background: var(--secondary-color);
                                     color: var(--primary-color);
                                     border-radius: 3px;
+                                    height: 23px;
                                 }
                             strong {
                                 font-weight: 500;
@@ -1639,6 +1600,16 @@ section#profile-layout {
                     & .card-body {
                         color: var(--primary-color);
                         & .title-line {
+                            p {
+                                margin-bottom: 8px;
+                                font-size: 16px !important;
+                                font-weight: 600;
+                                span {
+                                    font-size: 22px;
+                                    font-weight: 800;
+                                    color: var(--aceent0-color);
+                                }
+                            }
                             h5 {
                                 color: var(--primary-color);
                             } 
@@ -1660,6 +1631,25 @@ section#profile-layout {
                             background: #000000;
                             border-radius: 15px;
                             margin: 15px 0px;
+                            &.pd-left {
+                                h4 {
+                                    color: var(--primary-color);
+                                }
+                                ul {
+                                    li {
+                                        display: inline-block;
+                                        margin-right: 10px;
+                                        a {
+                                            display: flex;
+                                            align-items: center;
+                                            svg {
+                                                width: 20px;
+                                                margin-right: 5px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                         & .custom-button {
                             button {
@@ -2781,7 +2771,242 @@ section#profile-layout {
     box-shadow: none;
 }
 
+// common section 
 
+#frontend-main {
+    & .summer-camp {
+        & .card {
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border-radius: 20px;
+            & .card-body {
+        & .summer-camp-carousel {
+            & .camp-item {
+                margin-right: 15px;
+                border: 2px solid #333333;
+                border-radius: 15px;
+                padding: 15px;
+                background: #000;
+                min-height: 131px;
+                & .loc-top-content{
+                    & .camp-image {
+                        max-width: 120px;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        height: 120px;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    & .loc-title {
+                        h4 {
+                            font-size: 18px;
+                            margin-bottom: 10px;
+                            color: var(--aceent0-color);
+                        }
+                        p {
+                            font-size: 13px;
+                            color:var(--primary-color);
+                            margin-bottom: 5px;
+                            font-weight: 300;
+                        }
+                    }
+                    & .d-flex {
+                        gap: 20px;
+                    }
+                    & .loc-btm-content {
+                        & .badge-dark {
+                            background: var(--secondary-color);
+                        }
+                    }
+                    & .custom-button {
+                        button {
+                            width: 100%;
+                            border-radius: 25px;
+                            padding: 7px 20px;
+                            margin-top: 15px;
+                            font-size: 14px;
+                            background-color: #000;
+                            border-width: 1px;
+                        }
+                    }
+                }
+                }
+            }
+            }
+            & .owl-controls {
+                & .owl-buttons {
+                    div {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background: #000;
+                        opacity: 1;
+                        &:hover {
+                            background: var(--aceent0-color);
+                        }
+                        svg {
+                            position: relative;
+                            top: 5px;
+                        }
+                        &.owl-prev {
+                            svg {
+                                right: 2px;
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }
+    & .video-coach {
+        & .social_item {
+            height: 300px;
+            overflow: hidden;
+            border-radius: 20px;
+            margin-right: 10px;
+            margin-left: 10px;
+            & .feed_single {
+                position: relative;
+                & .feed_overlay {
 
+                }
+                & .feed-image{
+                    height: 355px;
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+                & .feed_content {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding: 20px;
+                    & .top-content {
+                        i {
+                            font-size: 40px;
+                            color: var(--primary-color);
+                        }
+                    }
+                    & .bottom-content {
+                        & .feed_user {
+                            & .feed-user-img {
+                                    background: var(--primary-color);
+                                    border-radius: 50%;
+                                    width: 60px;
+                                    height: 60px;
+                                    padding: 8px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                img {
+                                    object-fit: cover;
+                                    width: 100%;
+                                }
+                            }
+                            
+                            span {
+                                font-size: 18px;
+                                font-weight: 600;
+                                color: var(--primary-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
-
+        & .summer-camp {
+            &.review-profile {
+            & .card {
+                background-color: #000000;
+                border-radius: 20px;
+                & .card-body {
+                    padding: 0;
+                & .review-main-carousel {
+                    & .camp-item {
+                        margin-right: 15px;
+                        border: 2px solid #333333;
+                        border-radius: 15px;
+                        padding: 15px;
+                        background: #333333;
+                        min-height: 131px;
+                        & .loc-top-content{
+                            & .camp-image {
+                                max-width: 80px;
+                                border-radius: 10px;
+                                overflow: hidden;
+                                height: 80px;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                            & .loc-title {
+                                h4 {
+                                    font-size: 18px;
+                                    margin-bottom: 10px;
+                                    color: var(--aceent0-color);
+                                }
+                                p {
+                                    font-size: 13px;
+                                    color:var(--primary-color);
+                                    margin-bottom: 5px;
+                                    margin-top: 0;
+                                    font-weight: 300;
+                                }
+                                & .rating-strars {
+                                    color: var(--aceent0-color);
+                                }
+                            }
+                            & .d-flex {
+                                gap: 20px;
+                            }
+                        }
+                        p {
+                            color: var(--primary-color);
+                            font-weight: 300;
+                            margin: 15px 0px;
+                        }
+                        }
+                }
+                }
+                & .owl-controls {
+                    & .owl-buttons {
+                        div {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            background: #333333;
+                            opacity: 1;
+                            &:hover {
+                                background: var(--aceent0-color);
+                            }
+                            svg {
+                                position: relative;
+                                top: 5px;
+                            }
+                            &.owl-prev {
+                                svg {
+                                    right: 2px;
+                                }
+                            }
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}
