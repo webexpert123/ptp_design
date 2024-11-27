@@ -10661,6 +10661,9 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   height: 100%;
   background: linear-gradient(359deg, rgba(0, 0, 0, 0.7) -6%, transparent, rgba(0, 0, 0, 0.7));
 }
+.listing-page .hero-inner-wrapper #hero-inner .bloc-inner-video .banner-image img {
+  width: 100%;
+}
 .listing-page .hero-inner-wrapper #hero-inner .bloc-inner-video video {
   width: 100%;
 }
