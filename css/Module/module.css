@@ -10149,6 +10149,42 @@ div#inner-template .content-wrapper .dashboard-main .profile-page .event_listing
 div#inner-template .content-wrapper .dashboard-main .profile-page .event_listing .event_listing_items .event-item .event-action a i {
   line-height: 36px;
 }
+div#inner-template .content-wrapper .dashboard-main .profile-page .video-inner {
+  height: 85vh;
+  overflow: auto;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .video-inner::-webkit-scrollbar {
+  width: 7px;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .video-inner::-webkit-scrollbar-track {
+  background: #36393f;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .video-inner::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 8px;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .video-inner::-webkit-scrollbar-thumb:hover {
+  background: #000;
+  border-radius: 8px;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .video-listing .video-thumbnail {
+  cursor: pointer;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .video-listing .video-thumbnail .video-full-mode video {
+  width: 100%;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .video-listing .video-thumbnail h3 {
+  color: var(--primary-color);
+  font-size: 18px;
+  margin-top: 10px;
+}
+div#inner-template .content-wrapper .dashboard-main .profile-page .video-listing .video-thumbnail p {
+  color: var(--primary-color);
+  margin: 0;
+}
 div#inner-template .content-wrapper .dashboard-main .single-chat-tab {
   /* width */
   background-color: #212830;

@@ -1298,6 +1298,50 @@ div#inner-template {
             }
           }
         }
+        & .video-inner {
+            height: 85vh;
+            overflow: auto;
+            &::-webkit-scrollbar {
+              width: 7px;
+            }
+          
+            /* Track */
+            &::-webkit-scrollbar-track {
+              background: #36393f;
+            }
+          
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+              background: #000;
+              border-radius: 8px;
+            }
+          
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+              background: #000;
+              border-radius: 8px;
+            }
+          }
+          & .video-listing {
+            & .video-thumbnail {
+              cursor: pointer;
+              & .video-full-mode video {
+                width: 100%;
+              }
+              img {
+
+              }
+              h3 {
+                color: var(--primary-color);
+                font-size: 18px;
+                margin-top: 10px;
+              }
+              p {
+                color: var(--primary-color);
+                margin: 0;
+              }
+            }
+          }
       }
       .single-chat-tab {
         /* width */
