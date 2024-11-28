@@ -10181,6 +10181,11 @@ div#inner-template .content-wrapper .dashboard-main .profile-page .video-listing
   font-size: 18px;
   margin-top: 10px;
 }
+div#inner-template .content-wrapper .dashboard-main .profile-page .video-listing .video-thumbnail h2 {
+  color: var(--primary-color);
+  font-size: 26px;
+  margin-top: 10px;
+}
 div#inner-template .content-wrapper .dashboard-main .profile-page .video-listing .video-thumbnail p {
   color: var(--primary-color);
   margin: 0;
