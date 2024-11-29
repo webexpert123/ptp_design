@@ -96,6 +96,132 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-ro-1UA.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v21/pxiAyp8kv8JHgFVrJJLmE3tF.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v21/pxiDyp8kv8JHgFVrJJLmv1plEA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v21/pxiDyp8kv8JHgFVrJJLm21llEA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v21/pxiGyp8kv8JHgFVrJJLedw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v21/pxiDyp8kv8JHgFVrJJLmg1hlEA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v21/pxiDyp8kv8JHgFVrJJLmr19lEA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v21/pxiDyp8kv8JHgFVrJJLmy15lEA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v21/pxiDyp8kv8JHgFVrJJLm111lEA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v21/pxiDyp8kv8JHgFVrJJLm81xlEA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v21/pxiGyp8kv8JHgFVrLPTedw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLFj_V1s.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLDz8V1s.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v21/pxiEyp8kv8JHgFVrFJA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLGT9V1s.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLEj6V1s.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLCz7V1s.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLDD4V1s.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLBT5V1s.ttf) format('truetype');
+}
 :root {
   --body-bg: #000000;
   --body-accent-color: #f7f7f7;
@@ -11223,17 +11349,17 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
     Booking page CSS
 =============================================
 ***/
-.booking-page .booking-wizard .booking-form-inner #msform {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform {
   position: relative;
   margin-top: 50px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform #progressbar {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform #progressbar {
   margin: 0 auto;
   overflow: hidden;
   counter-reset: step;
   display: flex;
 }
-.booking-page .booking-wizard .booking-form-inner #msform #progressbar li {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform #progressbar li {
   list-style-type: none;
   color: var(--primary-color);
   text-transform: capitalize;
@@ -11247,7 +11373,7 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   gap: 15px;
   align-items: center;
 }
-.booking-page .booking-wizard .booking-form-inner #msform #progressbar li:before {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform #progressbar li:before {
   content: counter(step);
   counter-increment: step;
   width: 45px;
@@ -11264,7 +11390,7 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   font-weight: 800;
   margin-bottom: 10px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform #progressbar li:after {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform #progressbar li:after {
   content: '';
   width: 100%;
   height: 2px;
@@ -11274,21 +11400,21 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   bottom: 0;
   z-index: -1;
 }
-.booking-page .booking-wizard .booking-form-inner #msform #progressbar li.active:before {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform #progressbar li.active:before {
   background: var(--aceent0-color);
   color: var(--primary-color);
 }
-.booking-page .booking-wizard .booking-form-inner #msform #progressbar li.active:after {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform #progressbar li.active:after {
   background: var(--aceent0-color);
   color: var(--primary-color);
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset {
   min-width: 100%;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset:not(:first-of-type) {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset:not(:first-of-type) {
   display: none;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step {
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
@@ -11303,59 +11429,59 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   margin: 4rem 0 2rem 0;
   position: relative;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step h4 {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step h4 {
   text-transform: capitalize;
   color: var(--primary-color);
   margin-bottom: 10px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step h3 {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step h3 {
   font-weight: normal;
   font-size: 13px;
   color: var(--primary-color);
   margin-bottom: 20px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item {
   display: inline-block;
   width: 100%;
   padding: 20px 0px;
   border-bottom: 1px solid #000;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-detail {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-detail {
   color: var(--primary-color);
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-detail label {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-detail label {
   font-weight: 600;
   text-transform: uppercase;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-quanity {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-quanity {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-quanity .switch {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-quanity .switch {
   position: relative;
   display: inline-block;
   width: 60px;
   height: 34px;
   margin: 9px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-quanity .switch input {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-quanity .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-quanity .switch input:checked + .slider {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-quanity .switch input:checked + .slider {
   background-color: #52c944;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-quanity .switch input:focus + .slider {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-quanity .switch input:focus + .slider {
   box-shadow: 0 0 4px #7efa70;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-quanity .switch input:checked + .slider:before {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-quanity .switch input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-quanity .switch .slider {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-quanity .switch .slider {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -11367,7 +11493,7 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   transition: 0.4s cubic-bezier(0, 1, 0.5, 1);
   border-radius: 4px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-quanity .switch .slider:before {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-quanity .switch .slider:before {
   position: absolute;
   content: "";
   height: 26px;
@@ -11379,79 +11505,79 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   transition: 0.4s cubic-bezier(0, 1, 0.5, 1);
   border-radius: 3px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-quanity .switch .slider.round {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-quanity .switch .slider.round {
   border-radius: 34px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-quanity .switch .slider.round:before {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-quanity .switch .slider.round:before {
   border-radius: 50%;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson {
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   padding: 30px;
   border-radius: 25px !important;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson h4 {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson h4 {
   text-transform: capitalize;
   color: var(--primary-color);
   margin-bottom: 10px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson h3 {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson h3 {
   font-weight: normal;
   font-size: 13px;
   color: var(--primary-color);
   margin-bottom: 20px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson #booking-slider {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson #booking-slider {
   margin-top: 30px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson #booking-slider .location-item {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson #booking-slider .location-item {
   border: 2px solid var(--secondary-color);
   border-radius: 15px;
   padding: 15px;
   background: var(--secondary-color);
   min-height: 87px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson #booking-slider .location-item .loc-top-content {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson #booking-slider .location-item .loc-top-content {
   display: flex;
   justify-content: space-between;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson #booking-slider .location-item .loc-top-content .loc-title h5 {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson #booking-slider .location-item .loc-top-content .loc-title h5 {
   font-size: 14px;
   margin-bottom: 0;
   color: var(--primary-color);
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson #booking-slider .location-item .loc-top-content .loc-title p {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson #booking-slider .location-item .loc-top-content .loc-title p {
   font-size: 13px;
   color: var(--primary-color);
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson #booking-slider .location-item .loc-btm-content .badge-dark {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson #booking-slider .location-item .loc-btm-content .badge-dark {
   background: var(--secondary-color);
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson #booking-slider .owl-controls .owl-buttons div {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson #booking-slider .owl-controls .owl-buttons div {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background: var(--secondary-color);
   opacity: 1;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson #booking-slider .owl-controls .owl-buttons div:hover {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson #booking-slider .owl-controls .owl-buttons div:hover {
   background: var(--aceent0-color);
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson #booking-slider .owl-controls .owl-buttons div svg {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson #booking-slider .owl-controls .owl-buttons div svg {
   position: relative;
   top: 5px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson #booking-slider .owl-controls .owl-buttons div.owl-prev svg {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson #booking-slider .owl-controls .owl-buttons div.owl-prev svg {
   right: 2px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .navigation-buttons {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .navigation-buttons {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step {
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
@@ -11466,36 +11592,36 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   margin: 4rem 0 2rem 0;
   position: relative;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step h4 {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step h4 {
   text-transform: capitalize;
   color: var(--primary-color);
   margin-bottom: 10px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step h3 {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step h3 {
   font-weight: normal;
   font-size: 13px;
   color: var(--primary-color);
   margin-bottom: 20px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section {
   position: relative;
   padding: 40px 0 0 0;
   overflow: hidden;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block {
   position: relative;
   margin-bottom: 40px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block:nth-child(2) .icon-box i {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block:nth-child(2) .icon-box i {
   border-color: #1d95d2;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block:nth-child(2) .icon-box a {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block:nth-child(2) .icon-box a {
   background-color: #1d95d2;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block:nth-child(2) .inner-box {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block:nth-child(2) .inner-box {
   border-color: var(--aceent0-color);
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box {
   position: relative;
   background-color: #2c2b3c;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
@@ -11504,22 +11630,22 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   margin: 0 auto;
   border-bottom: 20px solid #000000;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box:hover .icon-box i {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box:hover .icon-box i {
   transform: rotate(360deg);
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box:hover .btn-box a {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box:hover .btn-box a {
   color: var(--aceent0-color);
   background: none;
   border-radius: 0px;
   border-color: var(--aceent0-color);
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box .icon-box {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box .icon-box {
   position: relative;
   padding: 50px 30px 0;
   background-color: #000;
   text-align: center;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box .icon-box:before {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box .icon-box:before {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -11529,7 +11655,7 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   background-color: #2c2b3c;
   content: "";
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box .icon-box .icon-outer {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box .icon-box .icon-outer {
   position: relative;
   height: 150px;
   width: 150px;
@@ -11538,7 +11664,7 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   margin: 0 auto;
   padding: 10px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box .icon-box .icon-outer i {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box .icon-box .icon-outer i {
   position: relative;
   display: block;
   height: 130px;
@@ -11554,12 +11680,12 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   -moz-transition: all 600ms ease;
   transition: all 600ms ease;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box .price-box {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box .price-box {
   position: relative;
   text-align: center;
   padding: 10px 20px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box .price-box .title {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box .price-box .title {
   position: relative;
   display: block;
   font-size: 24px;
@@ -11567,17 +11693,17 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   color: var(--primary-color);
   font-weight: 600;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box .price-box h4 {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box .price-box h4 {
   display: block;
   font-size: 30px;
   color: var(--aceent0-color);
   font-weight: 700;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box .btn-box {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box .btn-box {
   position: relative;
   text-align: center;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box .btn-box a {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box .btn-box a {
   position: relative;
   display: inline-block;
   font-size: 14px;
@@ -11595,10 +11721,10 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   -o-transition: all 400ms ease;
   transition: all 300ms ease;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box .btn-box a:hover {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box .btn-box a:hover {
   color: var(--primary-color);
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-first {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-first {
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
@@ -11613,21 +11739,21 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   margin: 4rem 0 2rem 0;
   position: relative;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-first h4 {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-first h4 {
   text-transform: capitalize;
   color: var(--primary-color);
   margin-bottom: 10px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-first h3 {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-first h3 {
   font-weight: normal;
   font-size: 13px;
   color: var(--primary-color);
   margin-bottom: 20px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-first .personal-info .form-group label {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-first .personal-info .form-group label {
   color: var(--primary-color);
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-first .personal-info .form-group input {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-first .personal-info .form-group input {
   min-height: 48px;
   background-color: #000;
   border: none;
@@ -11637,7 +11763,7 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   font-size: 16px;
   padding: 0 20px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second {
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
@@ -11652,38 +11778,38 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   margin: 0rem 0 2rem 0;
   position: relative;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second h4 {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second h4 {
   text-transform: capitalize;
   color: var(--primary-color);
   margin-bottom: 10px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second h3 {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second h3 {
   font-weight: normal;
   font-size: 13px;
   color: var(--primary-color);
   margin-bottom: 20px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article {
   background-color: #000;
   border-radius: 25px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .nav {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .nav {
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .nav li a {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .nav li a {
   color: var(--primary-color);
   padding: 14px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .nav li a.active {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .nav li a.active {
   background: var(--aceent0-color);
   color: var(--secondary-color);
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .form-group label {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .form-group label {
   color: var(--primary-color);
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .form-group input {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .form-group input {
   min-height: 48px;
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -11695,70 +11821,70 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   font-size: 16px;
   padding: 0 20px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .form-group .input-group {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .form-group .input-group {
   gap: 15px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .form-group .input-group input {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .form-group .input-group input {
   width: 48%;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .form-group .card-number {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .form-group .card-number {
   position: relative;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .form-group .card-number .input-group-append {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .form-group .card-number .input-group-append {
   position: absolute;
   right: 20px;
   top: 13px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .form-group .card-number .input-group-append span {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .form-group .card-number .input-group-append span {
   background: transparent;
   border: none;
   padding: 0;
   align-items: center;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .form-group .card-number .input-group-append span i {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .form-group .card-number .input-group-append span i {
   font-size: 20px;
   color: var(--aceent0-color);
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list-header {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list-header {
   background: var(--aceent0-color);
   padding: 5px 15px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list-header h3 {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list-header h3 {
   font-size: 20px;
   font-weight: 500;
   color: var(--secondary-color);
   margin-bottom: 0;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list {
   background-color: #333333;
   box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.12);
   margin-bottom: 1.5rem;
   gap: 6%;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list .list-grid label {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list .list-grid label {
   color: var(--primary-color);
   margin-bottom: 0;
   font-size: 15px;
   font-weight: 600;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list .list-grid img {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list .list-grid img {
   width: 50px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list .list-grid p {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list .list-grid p {
   color: var(--primary-color);
   font-size: 14px;
   margin-bottom: 0;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list .list-grid a {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list .list-grid a {
   color: var(--aceent0-color);
   font-size: 18px;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list .list-action {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list .list-action {
   margin-left: auto;
 }
-.booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list .list-action a {
+body.dark-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list .list-action a {
   width: 40px;
   height: 40px;
   border-radius: 5px;
@@ -11769,7 +11895,7 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   background: #dc3545;
   display: inline-block;
 }
-.booking-page .pricing-widget {
+body.dark-theme .booking-page .pricing-widget {
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
@@ -11777,28 +11903,28 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   border-radius: 25px !important;
   margin-top: 10.625rem;
 }
-.booking-page .pricing-widget h4 {
+body.dark-theme .booking-page .pricing-widget h4 {
   text-transform: capitalize;
   color: var(--primary-color);
   margin-bottom: 10px;
 }
-.booking-page .pricing-widget .price-details p {
+body.dark-theme .booking-page .pricing-widget .price-details p {
   color: var(--primary-color);
   font-weight: 400;
   font-size: 14px;
 }
-.booking-page .pricing-widget .seprator {
+body.dark-theme .booking-page .pricing-widget .seprator {
   margin: 20px 0px;
   border: 1px solid #000;
 }
-.booking-page .pricing-widget .total-price h5 {
+body.dark-theme .booking-page .pricing-widget .total-price h5 {
   color: var(--aceent0-color);
 }
-.booking-page .pricing-widget .total-price span {
+body.dark-theme .booking-page .pricing-widget .total-price span {
   color: var(--primary-color);
   font-size: 14px;
 }
-.booking-page .risk-widget .profile-risk {
+body.dark-theme .booking-page .risk-widget .profile-risk {
   padding: 30px;
   margin-top: 30px;
   border: 2px solid var(--primary-color);
@@ -11807,14 +11933,656 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   align-items: center;
   gap: 20px;
 }
-.booking-page .risk-widget .profile-risk svg {
+body.dark-theme .booking-page .risk-widget .profile-risk svg {
   height: 60px;
   color: var(--primary-color);
 }
-.booking-page .risk-widget .profile-risk p {
+body.dark-theme .booking-page .risk-widget .profile-risk p {
   color: var(--primary-color);
   margin-bottom: 0;
   width: 100%;
+}
+body.light-theme {
+  font-family: "Poppins", sans-serif;
+  background: var(--primary-color);
+}
+body.light-theme header section.header-main .container .header-blocks .action-block .auth-action button.btn-fill:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+body.light-theme header section.header-main .container .header-blocks .action-block .auth-action button.outliner {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+body.light-theme header section.header-main .container .header-blocks .action-block .auth-action button.outliner:after {
+  background-color: var(--primary-color);
+}
+body.light-theme header section.header-main .container .header-blocks .action-block .auth-action button.outliner:hover {
+  border-color: var(--aceent0-color);
+  color: var(--aceent0-color);
+}
+body.light-theme header section.header-main {
+  background: #161616;
+}
+body.light-theme footer .footer-cta {
+  background-color: #f5f5f5;
+  padding: 0 30px;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform {
+  position: relative;
+  margin-top: 50px;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform #progressbar {
+  margin: 0 auto;
+  overflow: hidden;
+  counter-reset: step;
+  display: flex;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform #progressbar li {
+  list-style-type: none;
+  color: var(--secondary-color);
+  text-transform: capitalize;
+  font-size: 16px;
+  width: 32.33%;
+  float: left;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-family: 'Poppins';
+  font-weight: 600;
+  line-height: 21px;
+  padding-bottom: 15px;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform #progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 45px;
+  height: 45px;
+  line-height: 26px;
+  display: block;
+  font-size: 20px;
+  color: #333;
+  background: #ebebeb;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform #progressbar li:after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: #ebebeb;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform #progressbar li.active:before {
+  background: var(--aceent0-color);
+  color: var(--primary-color);
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform #progressbar li.active:after {
+  background: var(--aceent0-color);
+  color: var(--primary-color);
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset {
+  min-width: 100%;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset:not(:first-of-type) {
+  display: none;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step {
+  background: #f7f7f7;
+  padding: 30px;
+  border-radius: 25px !important;
+  margin-top: 30px;
+  border: 0 none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 4rem 0 2rem 0;
+  position: relative;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step h4 {
+  text-transform: capitalize;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step h3 {
+  font-weight: normal;
+  font-size: 16px;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item {
+  display: inline-block;
+  width: 100%;
+  padding: 20px 0px;
+  border-bottom: 1px solid #000;
+  font-family: "Poppins", sans-serif;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-detail {
+  color: var(--primary-color);
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-detail label {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-detail p {
+  color: var(--secondary-color);
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-quanity {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-quanity .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin: 9px;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-quanity .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-quanity .switch input:checked + .slider {
+  background-color: #52c944;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-quanity .switch input:focus + .slider {
+  box-shadow: 0 0 4px #7efa70;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-quanity .switch input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-quanity .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s cubic-bezier(0, 1, 0.5, 1);
+  border-radius: 4px;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-quanity .switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s cubic-bezier(0, 1, 0.5, 1);
+  border-radius: 3px;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-quanity .switch .slider.round {
+  border-radius: 34px;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step .lesson-item .lesson-quanity .switch .slider.round:before {
+  border-radius: 50%;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson {
+  background: #f7f7f7;
+  backdrop-filter: blur(5px);
+  padding: 30px;
+  border-radius: 25px !important;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson h4 {
+  text-transform: capitalize;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson h3 {
+  font-weight: normal;
+  font-size: 16px;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson #booking-slider {
+  margin-top: 30px;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson #booking-slider .location-item {
+  border: 2px solid #252525;
+  border-radius: 15px;
+  padding: 15px;
+  background: #252525;
+  min-height: 87px;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson #booking-slider .location-item .loc-top-content {
+  display: flex;
+  justify-content: space-between;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson #booking-slider .location-item .loc-top-content .loc-title h5 {
+  font-size: 14px;
+  margin-bottom: 0;
+  color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson #booking-slider .location-item .loc-top-content .loc-title p {
+  font-size: 13px;
+  color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson #booking-slider .location-item .loc-btm-content .badge-dark {
+  background: var(--secondary-color);
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson #booking-slider .owl-controls .owl-buttons div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--secondary-color);
+  opacity: 1;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson #booking-slider .owl-controls .owl-buttons div:hover {
+  background: var(--aceent0-color);
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson #booking-slider .owl-controls .owl-buttons div svg {
+  position: relative;
+  top: 5px;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson #booking-slider .owl-controls .owl-buttons div.owl-prev svg {
+  right: 2px;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .navigation-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step {
+  background: #f7f7f7;
+  backdrop-filter: blur(5px);
+  padding: 30px;
+  border-radius: 25px !important;
+  margin-top: 30px;
+  border: 0 none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 4rem 0 2rem 0;
+  position: relative;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step h4 {
+  text-transform: capitalize;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step h3 {
+  font-weight: normal;
+  font-size: 16px;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section {
+  position: relative;
+  padding: 40px 0 0 0;
+  overflow: hidden;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block {
+  position: relative;
+  margin-bottom: 40px;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block:nth-child(2) .icon-box i {
+  border-color: #1d95d2;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block:nth-child(2) .icon-box a {
+  background-color: #1d95d2;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block:nth-child(2) .inner-box {
+  border-color: var(--aceent0-color);
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box {
+  position: relative;
+  background-color: var(--primary-color);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  padding: 0 0 30px;
+  max-width: 370px;
+  margin: 0 auto;
+  border-bottom: 20px solid #000000;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box:hover .icon-box i {
+  transform: rotate(360deg);
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box:hover .btn-box a {
+  color: var(--aceent0-color);
+  background: none;
+  border-radius: 0px;
+  border-color: var(--aceent0-color);
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box .icon-box {
+  position: relative;
+  padding: 50px 30px 0;
+  background-color: #000;
+  text-align: center;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box .icon-box:before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 75px;
+  width: 100%;
+  border-radius: 50% 50% 0 0;
+  background-color: var(--primary-color);
+  content: "";
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box .icon-box .icon-outer {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  margin: 0 auto;
+  padding: 10px;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box .icon-box .icon-outer:hover i {
+  border: 5px solid var(--aceent0-color);
+  color: var(--aceent0-color);
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box .icon-box .icon-outer i {
+  position: relative;
+  display: block;
+  height: 130px;
+  width: 130px;
+  line-height: 120px;
+  border: 5px solid #c1c1c1;
+  border-radius: 50%;
+  font-size: 50px;
+  color: #c1c1c1;
+  -webkit-transition: all 600ms ease;
+  -ms-transition: all 600ms ease;
+  -o-transition: all 600ms ease;
+  -moz-transition: all 600ms ease;
+  transition: all 600ms ease;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box .price-box {
+  position: relative;
+  text-align: center;
+  padding: 10px 20px;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box .price-box .title {
+  position: relative;
+  display: block;
+  font-size: 24px;
+  line-height: 1.2em;
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box .price-box h4 {
+  display: block;
+  font-size: 30px;
+  color: var(--aceent0-color);
+  font-weight: 700;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box .btn-box {
+  position: relative;
+  text-align: center;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box .btn-box a {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 25px;
+  color: var(--primary-color);
+  font-weight: 500;
+  padding: 8px 30px;
+  background-color: var(--aceent0-color);
+  border-radius: 10px;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -ms-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+  transition: all 300ms ease;
+  font-family: "Poppins", sans-serif;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step .pricing-section .outer-box .pricing-block .inner-box .btn-box a:hover {
+  color: var(--aceent0-color);
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-first {
+  background: #f7f7f7;
+  padding: 30px;
+  border-radius: 25px !important;
+  margin-top: 30px;
+  border: 0 none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 4rem 0 2rem 0;
+  position: relative;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-first h4 {
+  text-transform: capitalize;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-first h3 {
+  font-weight: normal;
+  font-size: 16px;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-first .personal-info .form-group label {
+  color: var(--secondary-color);
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-first .personal-info .form-group input {
+  min-height: 48px;
+  background-color: #fff;
+  border: none;
+  color: var(--secondary-color);
+  border-radius: 25px;
+  font-size: 16px;
+  padding: 0 20px;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #dfdfdf;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second {
+  background: #f7f7f7;
+  padding: 30px;
+  border-radius: 25px !important;
+  margin-top: 30px;
+  border: 0 none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0rem 0 2rem 0;
+  position: relative;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second h4 {
+  text-transform: capitalize;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second h3 {
+  font-weight: normal;
+  font-size: 16px;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article {
+  background-color: var(--primary-color);
+  border-radius: 25px;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .nav {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .nav li a {
+  color: var(--secondary-color);
+  padding: 14px;
+  font-family: "Poppins", sans-serif;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .nav li a.active {
+  background: var(--aceent0-color);
+  color: var(--secondary-color);
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .form-group label {
+  color: var(--secondary-color);
+  font-family: "Poppins", sans-serif;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .form-group input {
+  min-height: 48px;
+  background: #fff;
+  border: none;
+  color: #000;
+  border-radius: 25px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  padding: 0 20px;
+  border: 1px solid #dfdfdf;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .form-group .input-group {
+  gap: 15px;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .form-group .input-group input {
+  width: 48%;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .form-group .card-number {
+  position: relative;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .form-group .card-number .input-group-append {
+  position: absolute;
+  right: 20px;
+  top: 13px;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .form-group .card-number .input-group-append span {
+  background: transparent;
+  border: none;
+  padding: 0;
+  align-items: center;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second article .form-group .card-number .input-group-append span i {
+  font-size: 20px;
+  color: #8f8f8f;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list-header {
+  background: #252525;
+  padding: 5px 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list-header h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin-bottom: 0;
+  font-family: "Poppins", sans-serif;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list {
+  background-color: #f7f7f7;
+  margin-bottom: 1.5rem;
+  gap: 6%;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list .list-grid label {
+  color: var(--secondary-color);
+  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list .list-grid img {
+  width: 50px;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list .list-grid p {
+  color: var(--secondary-color);
+  font-size: 14px;
+  margin-bottom: 0;
+  font-family: "Poppins", sans-serif;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list .list-grid a {
+  color: var(--aceent0-color);
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list .list-action {
+  margin-left: auto;
+}
+body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list .list-action a {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 39px;
+  font-size: 26px;
+  color: var(--primary-color);
+  background: #000;
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+}
+body.light-theme .booking-page .pricing-widget {
+  background: #252525;
+  padding: 30px;
+  border-radius: 25px !important;
+  margin-top: 10.625rem;
+}
+body.light-theme .booking-page .pricing-widget h4 {
+  text-transform: capitalize;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+body.light-theme .booking-page .pricing-widget .price-details p {
+  color: var(--primary-color);
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+body.light-theme .booking-page .pricing-widget .seprator {
+  margin: 20px 0px;
+  border: 1px solid var(--primary-color);
+}
+body.light-theme .booking-page .pricing-widget .total-label {
+  color: var(--primary-color);
+}
+body.light-theme .booking-page .pricing-widget .total-price h5 {
+  color: var(--aceent0-color);
+  font-family: "Poppins", sans-serif;
+}
+body.light-theme .booking-page .pricing-widget .total-price span {
+  color: var(--primary-color);
+  font-size: 14px;
+}
+body.light-theme .booking-page .risk-widget .profile-risk {
+  padding: 30px;
+  margin-top: 30px;
+  border: 2px solid #b3b3b3;
+  border-radius: 25px;
+  background: #f7f7f7;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+body.light-theme .booking-page .risk-widget .profile-risk svg {
+  height: 60px;
+  color: var(--secondary-color);
+}
+body.light-theme .booking-page .risk-widget .profile-risk p {
+  color: var(--secondary-color);
+  margin-bottom: 0;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
 }
 .sec-title {
   position: relative;
