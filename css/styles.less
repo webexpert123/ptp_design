@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--body-font);
+    font-family: var(--body-font-color);
     background-color: var(--body-bg);
     section {
         width: 100%;
@@ -51,9 +51,10 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--light-font-color);
+    color: var(--dark-font-color);
     font-family: var(--heading-font);
-    font-weight: 800;
+    font-weight: 700;
+    letter-spacing: -.05em;
 }
 
 h1 {
@@ -64,7 +65,9 @@ h1 {
 h2 {
     font-size: var(--f2-font-size);
 }
-
+ p {
+    color: var(--body-font-color);
+ }
 // animated button module
 .custom-button {
     & button {
@@ -78,19 +81,19 @@ h2 {
         overflow: hidden;
         
         &.btn-round {
-            border-radius: 25px;
+            border-radius: 8px;
         }
 
         &.btn-outliner {
-            border: 2px solid var(--aceent0-color);
-            color:var(--light-font-color);
+            border: 2px solid var(--primary-color);
+            color:var(--primary-color);
             &:hover{
-                background: var(--secondary-color);
-                color:var(--light-font-color);
+                background: var(--aceent0-color);
+                color:var(--primary-color);
                 border: 2px solid var(--aceent0-color);
             }
             &:after{
-                background: var(--aceent0-color);
+                background: var(--secondary-color);
             }
         }
 
@@ -101,8 +104,8 @@ h2 {
         }
         &:hover{
             background: var(--primary-color);
-            color:var(--dark-font-color);
-            border: 2px solid var(--secondary-color);
+            color:var(--secondary-color);
+            border: 2px solid var(--primary-color);
         }
         &:after {
             content: '';
@@ -140,11 +143,11 @@ h2 {
 
 }
 
-@media (min-width:1200px) {
-    .container {
-        max-width: 1400px;
-    }
-}
+// @media (min-width:1200px) {
+//     .container {
+//         max-width: 1400px;
+//     }
+// }
 
 
 /*** 
