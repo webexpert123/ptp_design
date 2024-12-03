@@ -16,10 +16,10 @@ section#auth-section {
               flex-wrap: wrap;
               position: relative;
               background: rgb(0 0 0 / 50%);
-              max-width: 50%;
+              max-width: 43%;
               margin: 0 auto;
               border-radius: 20px;
-              padding: 40px;
+              padding: 30px;
               & .auth-logo {
                 padding: 20px 40px 0px 40px;
                 width: 100%;
@@ -32,8 +32,7 @@ section#auth-section {
               & .auth-form-block-header {
                   margin-bottom: 35px;
                   width: 100%;
-                  h1 {
-                      font-size: 3.0rem;
+                  h2 {
                       margin-bottom: 20px;
                       color: var(--light-font-color);
                       text-align: center;
@@ -250,6 +249,12 @@ section#auth-section {
                     }
                   & .pass-block {
                       position: relative;
+                      select {
+                        option {
+                          color: #000000;
+                          padding-left: 10px;
+                        }
+                      }
                       span {
                           &.error{
                               right: 77px !important;
@@ -365,8 +370,8 @@ section#auth-section {
                       display: block;
                       width: 100%;
                       border-radius: 5px;
-                      height: 60px;
-                      font-size: 1.5rem;
+                      height: 50px;
+                      font-size: 18px;
                       font-weight: 700;
                       color: var(--dark-font-color);
                       background: var(--aceent0-color);
@@ -375,7 +380,8 @@ section#auth-section {
                       box-shadow: none;
                       &:hover {
                           background: var(--secondary-color);
-                          color: var(--light-font-color);
+                          color: var(--dark-font-color);
+                          border-color: var(--secondary-color);
                       }
                     }
                     & .suggestion{
@@ -446,7 +452,7 @@ section#auth-section {
                 button {
                   background-color: var(--aceent0-color);
                   border-color: var(--aceent0-color);
-                  color: var(--secondary-color);
+                  color: var(--primary-color);
                 }
               }
               & .auth-link{
@@ -456,9 +462,9 @@ section#auth-section {
                   right: 40px;
                   z-index: 2;
                    p {
-                    color: var(--primary-color);
+                    color: var(--secondary-color);
                     a {
-                      color: var(--primary-color);
+                      color: var(--secondary-color);
                     }
                    }
                 }
