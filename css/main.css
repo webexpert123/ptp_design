@@ -10693,8 +10693,13 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   height: 100%;
   background: linear-gradient(359deg, rgba(0, 0, 0, 0.7) -6%, transparent, rgba(0, 0, 0, 0.7));
 }
+.listing-page .hero-inner-wrapper #hero-inner .bloc-inner-video .banner-image {
+  height: 100%;
+}
 .listing-page .hero-inner-wrapper #hero-inner .bloc-inner-video .banner-image img {
   width: 100%;
+  object-fit: cover;
+  height: 100%;
 }
 .listing-page .hero-inner-wrapper #hero-inner .bloc-inner-video video {
   width: 100%;
@@ -10703,7 +10708,7 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   position: absolute;
   left: inherit;
   padding: 0;
-  max-width: 30%;
+  max-width: 25%;
   top: 8rem;
 }
 .listing-page .hero-inner-wrapper #hero-inner .bloc-inner-video .content-video p {
@@ -10775,17 +10780,17 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
 }
 .listing-page .listing-filter .filter-left .filter-item .dropdown .dropdown-menu {
   background: var(--body-bg);
-  border-radius: 15px;
+  border-radius: 8px;
   width: 100%;
   margin-bottom: 20px;
 }
 .listing-page .listing-filter .filter-left .filter-item .dropdown .dropdown-menu a {
   color: var(--primary-color);
   white-space: inherit;
+  font-size: 14px;
 }
 .listing-page .listing-filter .filter-left .filter-item .dropdown .dropdown-menu a.dropdown-item:hover {
-  background: #000;
-  border-radius: 15px;
+  background: #f7f7f7;
 }
 .listing-page .listing-filter .filter-left .filter-item .dropdown .dropdown-menu.custom-dropdown {
   font-size: 13px !important;
@@ -10797,7 +10802,7 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   margin-bottom: 0;
 }
 .listing-page .listing-filter .filter-left .filter-item .dropdown .dropdown-menu .time-box .form-group select {
-  background: #f7f7f7;
+  background: var(--aceent5-color);
   border: none;
   color: #7c7c7c;
   border-radius: 25px;
@@ -10858,23 +10863,40 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
 .listing-page .listing-main .listing-inner .listing-item .card {
   border: none;
   border-radius: 10px;
-  background: var(--body-bg);
   overflow: hidden;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+.listing-page .listing-main .listing-inner .listing-item .card .card-body {
+  padding: 10px 15px;
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-header {
-  height: 275px;
+  height: 255px;
   overflow: hidden;
+  position: relative;
+  border: none;
+  cursor: pointer;
+}
+.listing-page .listing-main .listing-inner .listing-item .card .card-header:hover .card-over-bottom {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition: opacity 0.1s, -webkit-transform 0.4s;
+  transition: opacity 0.1s, -webkit-transform 0.4s;
+  transition: transform 0.4s, opacity 0.1s;
+  transition: transform 0.4s, opacity 0.1s, -webkit-transform 0.4s;
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-header img {
   height: 100%;
   object-fit: cover;
   object-position: top;
+  border-radius: 10px;
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-header .card-over-content {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  right: 10px;
+  top: 20px;
+  left: 0px;
+  right: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10882,8 +10904,19 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
 .listing-page .listing-main .listing-inner .listing-item .card .card-header .card-over-content .variefied-icon {
   min-height: 40px;
 }
+.listing-page .listing-main .listing-inner .listing-item .card .card-header .card-over-content .variefied-icon span {
+  background: #06cb1e;
+  color: #fff;
+  font-weight: 600;
+  padding: 3px 23px;
+  transform: rotate(-50deg);
+  display: inline-block;
+  left: -25px;
+  position: relative;
+  top: -8px;
+}
 .listing-page .listing-main .listing-inner .listing-item .card .card-header .card-over-content .variefied-icon svg {
-  width: 40px;
+  width: 30px;
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-header .card-over-content .variefied-icon svg path {
   fill: #06cb1e;
@@ -10895,8 +10928,8 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-header .card-over-content span.ratings-badge {
   padding: 3px 5px;
-  background: var(--secondary-color);
-  color: var(--primary-color);
+  background: var(--primary-color);
+  color: var(--secondary-color);
   border-radius: 3px;
   height: 23px;
 }
@@ -10905,6 +10938,52 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-header .card-over-content span i {
   color: var(--aceent0-color);
+}
+.listing-page .listing-main .listing-inner .listing-item .card .card-header .card-over-bottom {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: auto;
+  bottom: 0;
+  opacity: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transform: translateY(80%);
+  transform: translateY(80%);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: opacity 0.1s 0.3s, -webkit-transform 0.4s;
+  transition: opacity 0.1s 0.3s, -webkit-transform 0.4s;
+  transition: transform 0.4s, opacity 0.1s 0.3s;
+  transition: transform 0.4s, opacity 0.1s 0.3s, -webkit-transform 0.4s;
+  background: rgba(0, 0, 0, 0.5);
+}
+.listing-page .listing-main .listing-inner .listing-item .card .card-header .card-over-bottom .card-btm-content {
+  width: 100%;
+}
+.listing-page .listing-main .listing-inner .listing-item .card .card-header .card-over-bottom .card-btm-content ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.listing-page .listing-main .listing-inner .listing-item .card .card-header .card-over-bottom .card-btm-content ul li {
+  color: #fff;
+  width: 33.3%;
+  text-align: center;
+  font-size: 24px;
+}
+.listing-page .listing-main .listing-inner .listing-item .card .card-header .card-over-bottom .card-rank {
+  background: #f9cc0b;
+  text-align: center;
+  width: 30%;
+  padding: 5px;
+}
+.listing-page .listing-main .listing-inner .listing-item .card .card-header .card-over-bottom .card-rank h3 {
+  font-size: 22px;
+  margin: 0;
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-body {
   color: var(--primary-color);
@@ -10924,8 +11003,6 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-body p {
   font-size: 14px;
-  position: relative;
-  left: -5px;
   font-weight: 300;
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-body p strong {
@@ -10936,7 +11013,10 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   color: var(--aceent0-color);
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-body .listing-btm {
-  margin: 15px 0px;
+  background: #f7f7f7;
+  padding: 15px;
+  margin: 0;
+  margin-bottom: 15px;
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-body .listing-btm.pd-left h4 {
   color: var(--primary-color);
@@ -11936,7 +12016,7 @@ body.light-theme .booking-page .booking-wizard .booking-form-inner #msform field
   display: none;
 }
 body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-step {
-  background: #f7f7f7;
+  background: var(--aceent5-color);
   padding: 30px;
   border-radius: 25px !important;
   margin-top: 30px;
@@ -12037,7 +12117,7 @@ body.light-theme .booking-page .booking-wizard .booking-form-inner #msform field
   border-radius: 50%;
 }
 body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .first-lesson {
-  background: #f7f7f7;
+  background: var(--aceent5-color);
   backdrop-filter: blur(5px);
   padding: 30px;
   border-radius: 25px !important;
@@ -12106,7 +12186,7 @@ body.light-theme .booking-page .booking-wizard .booking-form-inner #msform field
   gap: 20px;
 }
 body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .second-step {
-  background: #f7f7f7;
+  background: var(--aceent5-color);
   backdrop-filter: blur(5px);
   padding: 30px;
   border-radius: 25px !important;
@@ -12258,7 +12338,7 @@ body.light-theme .booking-page .booking-wizard .booking-form-inner #msform field
   color: var(--aceent0-color);
 }
 body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-first {
-  background: #f7f7f7;
+  background: var(--aceent5-color);
   padding: 30px;
   border-radius: 25px !important;
   margin-top: 30px;
@@ -12297,7 +12377,7 @@ body.light-theme .booking-page .booking-wizard .booking-form-inner #msform field
   border: 1px solid #dfdfdf;
 }
 body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second {
-  background: #f7f7f7;
+  background: var(--aceent5-color);
   padding: 30px;
   border-radius: 25px !important;
   margin-top: 30px;
@@ -12392,7 +12472,7 @@ body.light-theme .booking-page .booking-wizard .booking-form-inner #msform field
   font-family: "Poppins", sans-serif;
 }
 body.light-theme .booking-page .booking-wizard .booking-form-inner #msform fieldset .third-step .third-second .card-saved-area .card-list {
-  background-color: #f7f7f7;
+  background-color: var(--aceent5-color);
   margin-bottom: 1.5rem;
   gap: 6%;
 }
@@ -12469,7 +12549,7 @@ body.light-theme .booking-page .risk-widget .profile-risk {
   margin-top: 30px;
   border: 2px solid #b3b3b3;
   border-radius: 25px;
-  background: #f7f7f7;
+  background: var(--aceent5-color);
   display: flex;
   align-items: center;
   gap: 20px;
@@ -12600,18 +12680,15 @@ body.light-theme .booking-page .risk-widget .profile-risk p {
   box-shadow: none;
 }
 #frontend-main .summer-camp .card {
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border-radius: 20px;
+  background: #ebebeb;
+  border-radius: 10px;
+  border: none;
 }
 #frontend-main .summer-camp .card .card-body .summer-camp-carousel .camp-item {
   margin-right: 15px;
-  border: 2px solid #333333;
   border-radius: 15px;
   padding: 15px;
-  background: #000;
+  background: #161616;
   min-height: 131px;
 }
 #frontend-main .summer-camp .card .card-body .summer-camp-carousel .camp-item .loc-top-content .camp-image {
@@ -12632,15 +12709,12 @@ body.light-theme .booking-page .risk-widget .profile-risk p {
 }
 #frontend-main .summer-camp .card .card-body .summer-camp-carousel .camp-item .loc-top-content .loc-title p {
   font-size: 13px;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   margin-bottom: 5px;
   font-weight: 300;
 }
 #frontend-main .summer-camp .card .card-body .summer-camp-carousel .camp-item .loc-top-content .d-flex {
   gap: 20px;
-}
-#frontend-main .summer-camp .card .card-body .summer-camp-carousel .camp-item .loc-top-content .loc-btm-content .badge-dark {
-  background: var(--secondary-color);
 }
 #frontend-main .summer-camp .card .card-body .summer-camp-carousel .camp-item .loc-top-content .custom-button button {
   width: 100%;
@@ -12648,8 +12722,12 @@ body.light-theme .booking-page .risk-widget .profile-risk p {
   padding: 7px 20px;
   margin-top: 15px;
   font-size: 14px;
-  background-color: #000;
+  background-color: var(--secondary-color);
   border-width: 1px;
+  color: var(--primary-color);
+}
+#frontend-main .summer-camp .card .card-body .summer-camp-carousel .camp-item .loc-top-content .custom-button button:hover {
+  border: none;
 }
 #frontend-main .summer-camp .card .owl-controls .owl-buttons div {
   width: 40px;
@@ -12669,9 +12747,9 @@ body.light-theme .booking-page .risk-widget .profile-risk p {
   right: 2px;
 }
 #frontend-main .video-coach .social_item {
-  height: 300px;
+  height: 252px;
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 10px;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -12679,7 +12757,12 @@ body.light-theme .booking-page .risk-widget .profile-risk p {
   position: relative;
 }
 #frontend-main .video-coach .social_item .feed_single .feed-image {
-  height: 355px;
+  height: 252px;
+  background: #fff;
+}
+#frontend-main .video-coach .social_item .feed_single .feed-image video {
+  height: 252px;
+  width: 100%;
 }
 #frontend-main .video-coach .social_item .feed_single .feed-image img {
   height: 100%;
