@@ -970,20 +970,16 @@ $(".video-coach").owlCarousel({
     autoPlay: false
 });
 const videos = document.querySelectorAll(".video-intro");
-
 videos.forEach(video => {
   video.addEventListener("mouseover", function () {
     this.play();
   });
-  
   video.addEventListener("mouseout", function () {
     this.pause();
   });
-  
   video.addEventListener("touchstart", function () {
     this.play();
   });
-  
   video.addEventListener("touchend", function () {
     this.pause();
   });

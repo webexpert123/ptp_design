@@ -537,18 +537,14 @@ section#coach-find-area {
         & .coach-find-content {
             & .coach-find-box {
                 & .coach-find-image {
-                    border-radius: 20px;
+                    border-radius: 10px;
                     overflow: hidden;
-                    margin-bottom: 20px;
+                    margin-bottom: 10px;
                 }
                 & .coach-find-item{
                     padding: 30px 15px;
-                    background: rgba(255, 255, 255, 0.2);
-                    border-radius: 16px;
-                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-                    backdrop-filter: blur(5px);
-                    -webkit-backdrop-filter: blur(5px);
-                    border-radius: 15px;
+                    background:var(--aceent5-color);
+                    border-radius: 10px;
                     margin-bottom: 30px;
                     cursor: pointer;
                     transition: 0.3s all ease-in-out;
@@ -559,14 +555,14 @@ section#coach-find-area {
                     h5 {
                         font-size: 18px;
                         font-weight: 600;
-                        color: var(--light-font-color);
+                        color: var(--dark-font-color);
                     }
                     span {
                         font-size: 13px;
-                        color: var(--light-font-color);
+                        color: var(--dark-font-color);
                         i{
                             margin-right: 5px;
-                            color: var(--light-font-color);
+                            color: var(--dark-font-color);
                         }
                     }
                     div {
@@ -856,11 +852,6 @@ section#risk-block {
 
 section#profile-layout {
     & .profile-top {
-        background: rgba(255, 255, 255, 0.2);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
-        padding: 30px;
         border-radius: 25px;
         & .profile-header {
             h2 {
@@ -875,7 +866,7 @@ section#profile-layout {
                     text-align: center;
                     span {
                         color: var(--primary-color);
-                        font-weight: 400;
+                        font-weight: 600;
                         line-height: 27px;
                         font-size: 16px;
                     }
@@ -891,8 +882,11 @@ section#profile-layout {
                     border-radius: 10px;
                     overflow: hidden;
                     & .card-header {
-                        height: 250px;
+                        height: 298px;
                         overflow: hidden;
+                        video {
+                            width: 100%;
+                        }
                     }
                     & .card-body {
                         color: var(--primary-color);
@@ -901,6 +895,26 @@ section#profile-layout {
                             border-color: var(--aceent0-color);
                             color: var(--secondary-color);
                             width: 100%;
+                        }
+                        & .coach-content {
+                            ul {
+                                display: flex;
+                                justify-content: center;
+                                li {
+                                    padding: 8px 15px;
+                                    color: #ffffff;
+                                    font-size: 20px;
+                                    background: #505050;
+                                    margin-right: 5px;
+                                    border-radius: 5px;
+                                    &:last-child {
+                                        margin: 0;
+                                    }                                
+                                }
+                            }
+                            button {
+                                color: var(--primary-color);
+                            }
                         }
                     }
                 }
@@ -973,8 +987,8 @@ section#profile-layout {
         & .profile-risk {
             padding: 10px 20px;
             margin-top: 30px;
-            border-top:1px solid var(--secondary-color);
-            border-bottom:1px solid var(--secondary-color);
+            border-top:1px solid var(--primary-color);
+            border-bottom:1px solid var(--primary-color);
             svg {
                 height: 60px;
                 color: var(--primary-color);
@@ -991,33 +1005,30 @@ section#profile-layout {
     }
     & .profile-bottom {
         & .profile-tab-start {
-            padding: 50px 30px;
-            background: rgba(255, 255, 255, 0.2);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(5px);
-            border-radius: 20px;
-            padding-top: 30px;
             ul {
                 border: none;
                 li {
                     button {
-                        color: var(--secondary-color);
+                        color: var(--primary-color);
                         background: var(--aceent5-color);
-                        padding: 6px 20px;
-                        border-radius: 25px;
-                        border: none;
+                        padding: 12px 25px;
+                        border:  1px solid var(--aceent0-color);
                         margin-right: 10px;
-                        border: 1px solid var(--aceent3-color);
+                        border: 1px solid var(--aceent5-color);
+                        border-radius: 10px 10px 0 0;
+                        box-shadow: -2px -6px 0px -2px #f1f1f1;
+                        font-weight: 600;
                         &:hover {
                             color: var(--secondary-color);
                             background: var(--aceent0-color);
                             border: 1px solid var(--aceent0-color);
+                            box-shadow: -2px -6px 0px -2px #e9be08;
                         }
                         &.active {
                             color: var(--secondary-color);
                             background: var(--aceent0-color);
                             border: 1px solid var(--aceent0-color);
+                            box-shadow: -2px -6px 0px -2px #e9be08;
                         }
                     }
                 }
@@ -1025,17 +1036,17 @@ section#profile-layout {
             & .tabs-main {
                 & #gallery {
                     & .tab-inside {
-                        background:var(--body-bg);
+                        margin-top: 0;
                         padding: 30px;
-                        border-radius: 20px;
-                        margin-top: 30px;
+                        background: var(--aceent5-color);
+                        border-radius: 10px;
+                        border-top-left-radius: 0;
                         & .gallery-block {
                             & .card {
                                 border: none;
-                                border-radius: 20px;
+                                border-radius: 10px;
                                 overflow: hidden;
                                 height: 270px;
-                                margin-right: 10px;
                                 img {
                                     width: 100%;
                                     height: 100%;
@@ -1045,11 +1056,26 @@ section#profile-layout {
                             }
                             & .owl-controls {
                                 & .owl-buttons {
+                                    position: absolute;
+                                    transform: translate(-50%, -50%);
+                                    top: 50%;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    width: 100%;
+                                    left: 50%;
+                                    & .owl-prev {
+                                        left: -10px;
+                                        position: relative;
+                                    }
+                                    & .owl-next {
+                                        right: -10px;
+                                        position: relative;
+                                    }
                                     div {
                                         width: 40px;
                                         height: 40px;
                                         border-radius: 50%;
-                                        background: var(--secondary-color);
+                                        background: var(--primary-color);
                                         opacity: 1;
                                         &:hover {
                                             background: var(--aceent0-color);
@@ -1074,7 +1100,8 @@ section#profile-layout {
                         & .tab-inside {
                             background: var(--body-bg);
                             padding: 30px;
-                            border-radius: 20px;
+                            border-radius: 10px;
+                            border-top-left-radius: 0;
                             margin-top: 30px;
                             & .section-title {
                                 h2 {
@@ -1162,10 +1189,11 @@ section#profile-layout {
                 }
                 & #location {
                     & .tab-inside{
-                            background: var(--secondary-color);
+                            margin-top: 0;
                             padding: 30px;
-                            border-radius: 20px;
-                            margin-top: 30px;
+                            background: var(--aceent5-color);
+                            border-radius: 10px;
+                            border-top-left-radius: 0;
                             & .section-title {
                                 h2 {
                                     color: var(--primary-color);
@@ -1178,11 +1206,10 @@ section#profile-layout {
                             & #location-slider {
                                 margin-top: 30px;
                                 & .location-item {
-                                    margin-right: 15px;
-                                    border: 2px solid #333333;
+                                    border: 2px solid var(--primary-color);
                                     border-radius: 15px;
                                     padding: 15px;
-                                    background: #333333;
+                                    background: var(--primary-color);
                                     min-height: 131px;
                                     & .loc-top-content{
                                         display: flex;
@@ -1191,17 +1218,18 @@ section#profile-layout {
                                             h4 {
                                                 font-size: 16px;
                                                 margin-bottom: 0;
-                                                color: var(--primary-color);
+                                                color: var(--secondary-color);
                                             }
                                             p {
                                                 font-size: 14px;
-                                                color:var(--primary-color);
+                                                color:var(--secondary-color);
                                             }
                                         }
                                     }
                                     & .loc-btm-content {
                                         & .badge-dark {
                                             background: var(--secondary-color);
+                                            color: var(--primary-color);
                                         }
                                     }
                                 }
@@ -1233,10 +1261,11 @@ section#profile-layout {
                 }
                 & #available {
                     & .tab-inside {
-                        background: var(--body-bg);
+                        margin-top: 0;
                         padding: 30px;
-                        border-radius: 20px;
-                        margin-top: 30px;
+                        background: var(--aceent5-color);
+                        border-radius: 10px;
+                        border-top-left-radius: 0;
                         & .section-title {
                             h2 {
                                 color: var(--primary-color);
@@ -1249,10 +1278,11 @@ section#profile-layout {
                 }
                 & #faq {
                     & .tab-inside {
-                        background: var(--body-bg);
+                        margin-top: 0;
                         padding: 30px;
-                        border-radius: 20px;
-                        margin-top: 30px;
+                        background: var(--aceent5-color);
+                        border-radius: 10px;
+                        border-top-left-radius: 0;
                         & #faqs-main {
                             & .section-title {
                                 h2 {
@@ -1267,7 +1297,7 @@ section#profile-layout {
                                             background-color: transparent;
                                             & .card-header {
                                                 padding: 5px 20px;
-                                                background-color: #333333;
+                                                background-color: #e9e9e9;
                                                 button {
                                                     font-size: 18px;
                                                     font-weight: 600;
@@ -1280,7 +1310,7 @@ section#profile-layout {
                                             }
                                             & .collapse {
                                                 & .card-body {
-                                                    background: #18181a !important;
+                                                    background: var(--secondary-color) !important;
                                                     color: var(--primary-color);
                                                 }
                                             }
@@ -1292,14 +1322,14 @@ section#profile-layout {
                 }
                 & #policy {
                     & .tab-inside {
-                        background: var(--body-bg);
+                        margin-top: 0;
                         padding: 30px;
-                        border-radius: 20px;
-                        margin-top: 30px;
+                        background: var(--aceent5-color);
+                        border-radius: 10px;
+                        border-top-left-radius: 0;
                         & .section-title {
                             h2 {
                                 color: var(--primary-color);
-                                margin-bottom: 50px;
                             }
                         }
                         & .policy-main {
@@ -1725,16 +1755,16 @@ section#profile-layout {
 =============================================
 ***/
 .blog-default-area{
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     & .blog-post {
         & .single-blog-item{ 
             margin-bottom: 40px;
             position: relative;
             overflow: hidden;
             display: block;
-            min-height: 456px;
             border-bottom: 1px solid var(--secondary-color);
+            border-radius: 10px;
             &:hover {
                 & .img-holder {
                     img {
@@ -1756,13 +1786,11 @@ section#profile-layout {
                     position: absolute;
                     bottom: 15px;
                     left: 15px;
-                    width: 110px;
-                    height: 35px; 
                     transform: translate3d(0px, 0%, 0px);
                     transition: all 500ms ease;
                     a {
-                        text-align: center;
-                        padding: 6px 0;
+                        text-align: left;
+                        padding: 5px 20px;
                         color: var(--primary-color);
                         font-size: 14px;
                         font-weight: 700;
@@ -1778,19 +1806,17 @@ section#profile-layout {
                 padding-left: 20px;
                 padding-right: 20px;
                 padding-bottom: 22px;
-                text-align: center;
+                text-align: left;
                 transition: all 500ms ease;
                 width: 100%;
                 left: 0;
                 background: rgba(255, 255, 255, 0.2);
-                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-                backdrop-filter: blur(5px);
                 z-index: 3;
                 transition: all 500ms ease;
                 & .meta-info {
                     overflow: hidden;
                     padding-top: 25px;
-                    text-align: center;
+                    text-align: left;
                     li {
                         display: inline-block;
                         float: none;
@@ -1818,8 +1844,8 @@ section#profile-layout {
                     color: var(--primary-color);
                     font-size: 18px;
                     font-weight: 600;
-                    line-height: 28px;
-                    padding: 10px 0 10px;
+                    line-height: 25px;
+                    padding: 10px 0 0px;
                     display: block;
                     transition: all 500ms ease;
                     :hover{
@@ -1859,6 +1885,7 @@ section#profile-layout {
                 overflow: hidden;
                 padding-bottom: 25px;
                 margin-top: 0;
+                margin-bottom: 0;
                 h3 {
                     color: var(--primary-color);
                     font-size: 18px;
@@ -1871,7 +1898,7 @@ section#profile-layout {
                 &.search-form {
                     position: relative;
                         input[type="text"] {
-                            background: #fff;
+                            background: var(--aceent5-color);
                             border: 1px solid #f4f4f4;
                             color: #ababab;
                             display: block;
@@ -1892,8 +1919,8 @@ section#profile-layout {
                             }
                         }
                         button {
-                            background: var(--secondary-color) none repeat scroll 0 0;
-                            color: var(--primary-color);
+                            background: var(--primary-color) none repeat scroll 0 0;
+                            color: var(--secondary-color);
                             display: block;
                             height: 50px;
                             padding: 12px 0;
@@ -1916,14 +1943,11 @@ section#profile-layout {
                 }
             }
             & .categories {
-                background: rgba(255, 255, 255, 0.2);
-                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-                backdrop-filter: blur(5px);
+                background: var(--aceent5-color);
                 display: block;
-                border: 1px solid var(--secondary-color);
                 padding: 24px 30px 24px;
                     li {
-                        border-bottom: 1px solid var(--light-background);
+                        border-bottom: 1px solid #d5d5d5;
                         margin-bottom: 12px;
                         padding-bottom: 9px;
                         a {
@@ -1948,8 +1972,8 @@ section#profile-layout {
                         margin-bottom: 25px;
                         padding-left: 70px;
                         position: relative;
-                        border-bottom: 1px solid var(--light-border);
-                        padding-bottom: 25px;
+                        border-bottom: 1px solid #d5d5d5;
+                        padding-bottom: 15px;
                         &:hover {
                             & .img-holder {
                                     img {
@@ -1974,7 +1998,9 @@ section#profile-layout {
                             img {
                                 -webkit-transition: all 0.7s ease;
                                 transition: all 0.7s ease;
-                                width: auto;         
+                                object-fit: cover;
+                                height: 100%;
+                                width: 100%;    
                             }
                             & .overlay-style-one{
                                 opacity: 1;
@@ -3536,13 +3562,13 @@ body {
 #frontend-main {
     & .summer-camp {
         & .card {
-            background: #ebebeb;
-            border-radius: 10px;
+            background: transparent;
             border: none;
             & .card-body {
+                background:transparent;
+                padding: 0;
         & .summer-camp-carousel {
             & .camp-item {
-                margin-right: 15px;
                 border-radius: 15px;
                 padding: 15px;
                 background:#161616;
@@ -3583,7 +3609,7 @@ body {
                             margin-top: 15px;
                             font-size: 14px;
                             background-color: var(--secondary-color);
-                            border-width: 1px;
+                            border-width: 0;
                             color: var(--primary-color);
                             &:hover {
                                 border: none;
@@ -3691,17 +3717,41 @@ body {
         & .summer-camp {
             &.review-profile {
             & .card {
-                background-color: #000000;
+                background-color: transparent;
                 border-radius: 20px;
                 & .card-body {
                     padding: 0;
+                    & .coach-rating {
+                        padding: 20px 0px;
+                        margin-bottom: 50px;
+                        border-bottom: 1px solid #ccc;
+                        & .rating-box {
+                            span {
+                                &.large-font {
+                                    font-size: 48px;
+                                    font-weight: 800;
+                                    color: var(--primary-color);
+                                    line-height: 48px;
+                                    margin-top: 5px;
+                                    display: block;
+                                }
+                                color: var(--primary-color);
+                                font-weight: 600;
+                            }
+                            & .rating-stars {
+                                i {
+                                    color: var(--aceent0-color);
+                                }
+                            }
+                        }
+                    }
                 & .review-main-carousel {
                     & .camp-item {
                         margin-right: 15px;
-                        border: 2px solid #333333;
+                        border: 2px solid #161616;
                         border-radius: 15px;
                         padding: 15px;
-                        background: #333333;
+                        background: #161616;
                         min-height: 131px;
                         & .loc-top-content{
                             & .camp-image {
@@ -3723,7 +3773,7 @@ body {
                                 }
                                 p {
                                     font-size: 13px;
-                                    color:var(--primary-color);
+                                    color:var(--secondary-color);
                                     margin-bottom: 5px;
                                     margin-top: 0;
                                     font-weight: 300;
@@ -3737,7 +3787,7 @@ body {
                             }
                         }
                         p {
-                            color: var(--primary-color);
+                            color: var(--secondary-color);
                             font-weight: 300;
                             margin: 15px 0px;
                         }
@@ -3767,6 +3817,63 @@ body {
                         }
                     }
                 } 
+            }
+        }
+    }
+    & .owl-carousel 
+        {
+        .owl-item {
+            padding: 0 10px;
+        }
+    }
+    & div#fixed-booking {
+        bottom: 20px;
+        max-width: 300px;
+        width: 100%;
+        padding: 30px;
+        background:var(--aceent5-color);
+        border-radius: 15px;
+        right: 20px;
+        left: inherit;
+        opacity: 0;
+        transition: 0.5s ease-in;
+        &.scrolled-top {
+            opacity: 1;
+            transition: 0.5s ease-in;
+        }
+        & .f-booking {
+            gap: 15px;
+            img {
+                width: 75px;
+                height: 75px;
+                object-fit: cover;
+                border-radius: 50%;
+                margin-bottom: 10px;
+            }
+            & .f-content {
+                h5 {
+                    font-size: 18px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        & .custom-button {
+            button {
+                width: 100%;
+                padding: 9px 20px;
+                margin-bottom: 15px;
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+    & .breadcrumb-bottom-area {
+        & .right {
+            a {
+                span {
+                    color: var(--primary-color);
+                }
             }
         }
     }
