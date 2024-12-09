@@ -125,7 +125,7 @@
   src: url(https://fonts.gstatic.com/s/poppins/v22/pxiByp8kv8JHgFVrLBT5V1s.ttf) format('truetype');
 }
 :root {
-  --body-bg: #ffffff;
+  --body-bg: linear-gradient(301deg, #FFF9F2, #fff);
   --body-accent-color: #f7f7f7;
   --primary-color: #212529;
   --secondary-color: #ffffff;
@@ -9484,6 +9484,9 @@ body.scrolled header section.header-main .auth-action button.btn-fill {
 /*--------------------------------------------------------------
 # footer Section Start
 --------------------------------------------------------------*/
+footer {
+  background: linear-gradient(167deg, #FFF9F2, #fff);
+}
 footer .footer-cta {
   max-width: 980px;
   margin: 0 auto;
@@ -9833,7 +9836,7 @@ footer .copyright-area p {
 # Feed Section Start
 --------------------------------------------------------------*/
 section#feed_block {
-  background: #f4f4f4;
+  background: linear-gradient(284deg, #ffffff00, #f4fbff 8%, #fff2e6 22%, #fff7ed 64%, #f8fbff 92%, #ffffff00);
 }
 section#feed_block .section-title .sub-heading {
   color: var(--aceent0-color);
@@ -10754,12 +10757,13 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   color: var(--secondary-color);
 }
 .listing-page .listing-filter {
-  background: #ebebeb;
+  background: linear-gradient(284deg, #ffffff00, #f4fbff 8%, #fff2e6 22%, #fff7ed 64%, #f8fbff 92%, #ffffff00);
   border-radius: 10px;
   padding: 30px;
   margin: 50px 0px 30px 0px;
   position: relative;
   z-index: 2;
+  border: 1px solid #d3efff;
 }
 .listing-page .listing-filter .filter-left .filter-item {
   gap: 15px;
@@ -10783,7 +10787,9 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   border: none;
   width: 100%;
   text-align: left;
-  color: #7c7c7c;
+  color: #676767;
+  border: 1px solid #e7e7e7;
+  font-size: 15px;
 }
 .listing-page .listing-filter .filter-left .filter-item .dropdown button:focus {
   outline: none;
@@ -10833,8 +10839,7 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   gap: 15px;
 }
 .listing-page .listing-filter .filter-left .filter-item .multiple-filter .dropdown {
-  max-width: 33.3%;
-  width: 100%;
+  width: 22.3%;
 }
 .listing-page .listing-filter .filter-left .filter-item .multiple-filter .dropdown button.dropdown-toggle {
   width: 100%;
@@ -10849,14 +10854,14 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
 .listing-page .listing-filter .filter-left .filter-item .custom-button button {
   width: 100%;
   background-color: var(--secondary-color);
-  border-color: var(--secondary-color);
+  border-color: var(--primary-color);
   color: var(--primary-color);
   min-height: 45px;
   padding: 5px 25px;
 }
 .listing-page .listing-filter .filter-left .filter-item .custom-button button:first-child {
-  background-color: var(--aceent0-color);
-  border-color: var(--aceent0-color);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
   color: var(--secondary-color);
 }
 .listing-page .filter-right .filter-button {
@@ -10922,14 +10927,14 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-header .card-over-content .variefied-icon span {
   background: #06cb1e;
-  color: #fff;
+  color: var(--secondary-color);
   font-weight: 600;
-  padding: 3px 23px;
+  padding: 3px 33px;
   transform: rotate(-50deg);
   display: inline-block;
-  left: -25px;
+  left: -33px;
   position: relative;
-  top: -8px;
+  top: 4px;
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-header .card-over-content .variefied-icon svg {
   width: 30px;
@@ -10994,11 +10999,16 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
 .listing-page .listing-main .listing-inner .listing-item .card .card-header .card-over-bottom .card-rank {
   background: #f9cc0b;
   text-align: center;
-  width: 30%;
-  padding: 5px;
+  width: 25%;
+  padding: 3px;
+  line-height: 18px;
+}
+.listing-page .listing-main .listing-inner .listing-item .card .card-header .card-over-bottom .card-rank span {
+  font-size: 13px;
+  line-height: 13px;
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-header .card-over-bottom .card-rank h3 {
-  font-size: 22px;
+  font-size: 18px;
   margin: 0;
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-body {
@@ -11029,25 +11039,29 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   color: var(--aceent0-color);
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-body .listing-btm {
-  background: #f7f7f7;
-  padding: 15px;
+  background: linear-gradient(284deg, #ffffff00, #f4fbff 8%, #fff2e6 22%, #fff7ed 64%, #f8fbff 92%, #ffffff00);
+  padding: 15px 10px 8px 10px;
   margin: 0;
   margin-bottom: 15px;
+  border: 1px solid #d3efff;
+  border-radius: 10px;
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-body .listing-btm.pd-left h4 {
   color: var(--primary-color);
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-body .listing-btm.pd-left ul li {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 5px;
+  font-size: 13px;
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-body .listing-btm.pd-left ul li a {
   display: flex;
   align-items: center;
+  color: #565656;
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-body .listing-btm.pd-left ul li a svg {
-  width: 20px;
-  margin-right: 5px;
+  width: 18px;
+  margin-right: 2px;
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-body .custom-button button {
   background-color: var(--aceent0-color);
@@ -12051,6 +12065,9 @@ body.dark-theme .booking-page .risk-widget .profile-risk p {
 #msform .action-button-previous:hover,
 #msform .action-button-previous:focus {
   box-shadow: none;
+}
+#frontend-main {
+  background: linear-gradient(301deg, #FFF9F2, #fff);
 }
 #frontend-main .summer-camp .card {
   background: transparent;
