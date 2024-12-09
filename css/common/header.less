@@ -13,6 +13,9 @@ body {
         z-index: 5555;
         transition: .3s all ease-in-out;
         position: relative;
+        & .container-fluid {
+          padding: 0 3rem;
+        }
           .header-blocks {
             display: flex;
             justify-content: space-between;
@@ -32,7 +35,6 @@ body {
               }
             }
             .menu-block {
-              width: 100%;
               display: flex;
               justify-content: center;
               ul {
@@ -58,12 +60,13 @@ body {
             .brand {
               display: flex;
               justify-content: start;
+              width: 20%;
               img {
                 max-width: 120px;
               }
             }
             .action-block {
-              width: 33.3%;
+              width: 20%;
               display: flex;
               justify-content: end;
               .auth-action {

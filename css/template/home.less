@@ -149,12 +149,10 @@
             & .about-image {
             & .about-box-image{
                 object-fit: cover;
-                overflow: hidden;
-                min-height: 355px;
                 & img{
-                    height: 355px;
                     object-fit: cover;
                     border-radius: 20px;
+                    box-shadow: -12px -12px 1px var(--primary-color);
                 }
                 }
                 & .star_box {
@@ -320,14 +318,11 @@ section#feed_block{
         }
         & .social-feeds {
             & #social-slider {
-                width: 80vw;
+                width: 90vw;
                 & .social_item {
                     height: 350px;
                     overflow: hidden;
                     border-radius: 15px;
-                    margin-right: 10px;
-                    margin-left: 10px;
-                    clip-path: polygon(0 0, 87% 0%, 100% 18%, 100% 100%, 13% 100%, 0 83%);
                     & .feed_single {
                         position: relative;
                         & .feed_overlay {
@@ -358,7 +353,7 @@ section#feed_block{
                             }
                             & .bottom-content {
                                 position: relative;
-                                left:65px;
+                                left:0px;
                                 & .feed_user {
                                     & .feed-user-img {
                                         background: var(--secondary-color);
@@ -511,7 +506,7 @@ section#reward-block {
                 padding: 25px;
                 background: var(--aceent0-color);
                 border-radius: 20px;
-                min-height: 200px;
+                min-height: 164px;
                 h3 {
                     font-size: 25px;
                     font-weight: 700;
@@ -521,6 +516,7 @@ section#reward-block {
                     font-size: 16px;
                     font-weight: 500;
                     color: var(--dark-font-color);
+                    margin: 0;
                 }
              }
            }
@@ -1442,7 +1438,7 @@ section#profile-layout {
                         border-radius: 5px;
                         min-height: 45px;
                         padding: 0 20px;
-                        background: var(--body-bg);
+                        background: var(--secondary-color);
                         border: none;
                         width: 100%;
                         text-align: left;
@@ -1565,7 +1561,7 @@ section#profile-layout {
                         padding: 10px 15px;
                     }
                     & .card-header {
-                        height: 255px;
+                        height: 290px;
                         overflow: hidden;
                         position: relative;
                         border: none;
@@ -1621,7 +1617,7 @@ section#profile-layout {
                                 line-height: normal;
                                 &.ratings-badge {
                                     padding: 3px 5px;
-                                    background: var(--primary-color);
+                                    background: #000;
                                     color: var(--secondary-color);
                                     border-radius: 3px;
                                     height: 23px;
@@ -1693,6 +1689,7 @@ section#profile-layout {
                                 margin-bottom: 8px;
                                 font-size: 16px !important;
                                 font-weight: 600;
+                                color: #000;
                                 span {
                                     font-size: 22px;
                                     font-weight: 800;
@@ -1733,7 +1730,7 @@ section#profile-layout {
                                         a {
                                             display: flex;
                                             align-items: center;
-                                            color: #565656;
+                                            color: #000;
                                             svg {
                                                 width: 18px;
                                                 margin-right: 2px;
@@ -3579,7 +3576,6 @@ body {
 // common section 
 
 #frontend-main {
-    background: linear-gradient(301deg, #FFF9F2, #fff);
     & .summer-camp {
         & .card {
             background: transparent;
@@ -3667,22 +3663,26 @@ body {
     }
     & .video-coach {
         & .social_item {
-            height: 252px;
             overflow: hidden;
             border-radius: 10px;
             margin-right: 10px;
             margin-left: 10px;
             & .feed_single {
                 position: relative;
+                max-width: 740px;
+                margin: 0 auto;
                 & .feed_overlay {
 
                 }
                 & .feed-image{
-                    height: 252px;
-                    background: #fff;
+                    background: var(--secondary-color);
+                    height: 450px;
+                    overflow: hidden;
+                    border-radius: 15px;
                     video {
-                        height: 252px;
+                        height: auto;
                         width: 100%;
+                        margin-top: -70px;
                     }
                     img {
                         height: 100%;

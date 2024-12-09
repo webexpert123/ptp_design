@@ -9021,7 +9021,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: var(--body-font-color);
-  background-color: var(--body-bg);
+  background: var(--body-bg);
 }
 body section {
   width: 100%;
@@ -9271,6 +9271,13 @@ body header section.header-main {
   transition: 0.3s all ease-in-out;
   position: relative;
 }
+body header section.header-main .container-fluid,
+body header section.header-main .container-sm,
+body header section.header-main .container-md,
+body header section.header-main .container-lg,
+body header section.header-main .container-xl {
+  padding: 0 3rem;
+}
 body header section.header-main .header-blocks {
   display: flex;
   justify-content: space-between;
@@ -9289,7 +9296,6 @@ body header section.header-main .header-blocks ul li a {
   font-family: var(--heading-font);
 }
 body header section.header-main .header-blocks .menu-block {
-  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -9309,12 +9315,13 @@ body header section.header-main .header-blocks .menu-block ul li span img {
 body header section.header-main .header-blocks .brand {
   display: flex;
   justify-content: start;
+  width: 20%;
 }
 body header section.header-main .header-blocks .brand img {
   max-width: 120px;
 }
 body header section.header-main .header-blocks .action-block {
-  width: 33.3%;
+  width: 20%;
   display: flex;
   justify-content: end;
 }
@@ -9484,19 +9491,17 @@ body.scrolled header section.header-main .auth-action button.btn-fill {
 /*--------------------------------------------------------------
 # footer Section Start
 --------------------------------------------------------------*/
-footer {
-  background: linear-gradient(167deg, #FFF9F2, #fff);
-}
 footer .footer-cta {
   max-width: 980px;
   margin: 0 auto;
-  background-color: #f7f7f7;
+  background: linear-gradient(284deg, #ffffff, #f4fbff 10%, #fff2e6 22%, #fff7ed 64%, #f8fbff 92%, #ffffff);
   border-radius: 25px;
   overflow: hidden;
   padding: 0 1.25rem 0 1.25rem;
   position: relative;
   top: 8rem;
   z-index: 222;
+  box-shadow: -2px -2px 5px -4px #d9c1ab;
 }
 footer .footer-cta .cta-content h2 {
   color: var(--dark-font-color);
@@ -9696,13 +9701,11 @@ footer .copyright-area p {
 --------------------------------------------------------------*/
 #about-block .container .row .about-image .about-box-image {
   object-fit: cover;
-  overflow: hidden;
-  min-height: 355px;
 }
 #about-block .container .row .about-image .about-box-image img {
-  height: 355px;
   object-fit: cover;
   border-radius: 20px;
+  box-shadow: -12px -12px 1px var(--primary-color);
 }
 #about-block .container .row .about-image .star_box {
   border-radius: 15px;
@@ -9849,15 +9852,12 @@ section#feed_block .section-title p {
   color: var(--body-font-color);
 }
 section#feed_block .social-feeds #social-slider {
-  width: 80vw;
+  width: 90vw;
 }
 section#feed_block .social-feeds #social-slider .social_item {
   height: 350px;
   overflow: hidden;
   border-radius: 15px;
-  margin-right: 10px;
-  margin-left: 10px;
-  clip-path: polygon(0 0, 87% 0%, 100% 18%, 100% 100%, 13% 100%, 0 83%);
 }
 section#feed_block .social-feeds #social-slider .social_item .feed_single {
   position: relative;
@@ -9886,7 +9886,7 @@ section#feed_block .social-feeds #social-slider .social_item .feed_single .feed_
 }
 section#feed_block .social-feeds #social-slider .social_item .feed_single .feed_content .bottom-content {
   position: relative;
-  left: 65px;
+  left: 0px;
 }
 section#feed_block .social-feeds #social-slider .social_item .feed_single .feed_content .bottom-content .feed_user .feed-user-img {
   background: var(--secondary-color);
@@ -10021,7 +10021,7 @@ section#reward-block .reward-main .reward-inner .reward-step .reward-box {
   padding: 25px;
   background: var(--aceent0-color);
   border-radius: 20px;
-  min-height: 200px;
+  min-height: 164px;
 }
 section#reward-block .reward-main .reward-inner .reward-step .reward-box h3 {
   font-size: 25px;
@@ -10032,6 +10032,7 @@ section#reward-block .reward-main .reward-inner .reward-step .reward-box p {
   font-size: 16px;
   font-weight: 500;
   color: var(--dark-font-color);
+  margin: 0;
 }
 /*--------------------------------------------------------------
 # Our Coach find Section Start
@@ -10783,7 +10784,7 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   border-radius: 5px;
   min-height: 45px;
   padding: 0 20px;
-  background: var(--body-bg);
+  background: var(--secondary-color);
   border: none;
   width: 100%;
   text-align: left;
@@ -10892,7 +10893,7 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   padding: 10px 15px;
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-header {
-  height: 255px;
+  height: 290px;
   overflow: hidden;
   position: relative;
   border: none;
@@ -10949,7 +10950,7 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-header .card-over-content span.ratings-badge {
   padding: 3px 5px;
-  background: var(--primary-color);
+  background: #000;
   color: var(--secondary-color);
   border-radius: 3px;
   height: 23px;
@@ -11018,6 +11019,7 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   margin-bottom: 8px;
   font-size: 16px !important;
   font-weight: 600;
+  color: #000;
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-body .title-line p span {
   font-size: 22px;
@@ -11057,7 +11059,7 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
 .listing-page .listing-main .listing-inner .listing-item .card .card-body .listing-btm.pd-left ul li a {
   display: flex;
   align-items: center;
-  color: #565656;
+  color: #000;
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-body .listing-btm.pd-left ul li a svg {
   width: 18px;
@@ -12066,9 +12068,6 @@ body.dark-theme .booking-page .risk-widget .profile-risk p {
 #msform .action-button-previous:focus {
   box-shadow: none;
 }
-#frontend-main {
-  background: linear-gradient(301deg, #FFF9F2, #fff);
-}
 #frontend-main .summer-camp .card {
   background: transparent;
   border: none;
@@ -12139,7 +12138,6 @@ body.dark-theme .booking-page .risk-widget .profile-risk p {
   right: 2px;
 }
 #frontend-main .video-coach .social_item {
-  height: 252px;
   overflow: hidden;
   border-radius: 10px;
   margin-right: 10px;
@@ -12147,14 +12145,19 @@ body.dark-theme .booking-page .risk-widget .profile-risk p {
 }
 #frontend-main .video-coach .social_item .feed_single {
   position: relative;
+  max-width: 740px;
+  margin: 0 auto;
 }
 #frontend-main .video-coach .social_item .feed_single .feed-image {
-  height: 252px;
-  background: #fff;
+  background: var(--secondary-color);
+  height: 450px;
+  overflow: hidden;
+  border-radius: 15px;
 }
 #frontend-main .video-coach .social_item .feed_single .feed-image video {
-  height: 252px;
+  height: auto;
   width: 100%;
+  margin-top: -70px;
 }
 #frontend-main .video-coach .social_item .feed_single .feed-image img {
   height: 100%;
