@@ -10371,10 +10371,11 @@ section#profile-layout .profile-top .profile-top-content {
   color: var(--primary-color);
 }
 section#profile-layout .profile-top .profile-top-content .about-profiler {
-  background: var(--aceent5-color);
+  background: linear-gradient(284deg, #ffffff00, #f4fbff 8%, #fff2e6 22%, #fff7ed 64%, #f8fbff 92%, #ffffff00);
   padding: 30px;
   border-radius: 10px;
   margin-top: 30px;
+  border: 1px solid #d3efff;
 }
 section#profile-layout .profile-top .profile-top-content .about-profiler .profiler-detail .pd-left h4 {
   color: var(--primary-color);
@@ -10390,6 +10391,16 @@ section#profile-layout .profile-top .profile-top-content .about-profiler .profil
 section#profile-layout .profile-top .profile-top-content .about-profiler .profiler-detail .pd-left ul li a svg {
   width: 20px;
   margin-right: 5px;
+}
+section#profile-layout .profile-top .profile-top-content .about-profiler .profiler-detail .pd-right.custom-button button {
+  background: var(--primary-color);
+  color: var(--light-font-color);
+  border: 2px solid var(--primary-color);
+}
+section#profile-layout .profile-top .profile-top-content .about-profiler .profiler-detail .pd-right.custom-button button:hover {
+  background: var(--aceent0-color);
+  color: var(--dark-font-color);
+  border: 2px solid var(--aceent0-color);
 }
 section#profile-layout .profile-top .profile-top-content .about-profiler .profiler-detail .profile-meta .meta-category {
   margin-right: 20px;
@@ -12291,7 +12302,7 @@ body.dark-theme .booking-page .risk-widget .profile-risk p {
   max-width: 300px;
   width: 100%;
   padding: 30px;
-  background: var(--aceent5-color);
+  background: linear-gradient(284deg, #ffffff, #f4fbff 8%, #fff2e6 22%, #fff7ed 64%, #f8fbff 92%, #ffffff);
   border-radius: 15px;
   right: 20px;
   left: inherit;

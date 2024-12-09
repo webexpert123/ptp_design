@@ -919,10 +919,11 @@ section#profile-layout {
             padding-left: 3%;
             color: var(--primary-color);
             & .about-profiler {
-                background: var(--aceent5-color);
+                background: linear-gradient(284deg, #ffffff00, #f4fbff 8%, #fff2e6 22%, #fff7ed 64%, #f8fbff 92%, #ffffff00);
                 padding: 30px;
                 border-radius: 10px;
                 margin-top: 30px;
+                border: 1px solid #d3efff;
                 & .profiler-detail {
                     & .pd-left {
                         h4 {
@@ -944,6 +945,18 @@ section#profile-layout {
                         }
                     }
                     & .pd-right {
+                        &.custom-button {
+                            button {
+                                background: var(--primary-color);
+                                color: var(--light-font-color);
+                                border: 2px solid var(--primary-color);
+                                &:hover {
+                                    background: var(--aceent0-color);
+                                    color: var(--dark-font-color);
+                                    border: 2px solid var(--aceent0-color);
+                                }
+                            }
+                        }
                     }
                     & .profile-meta {
                         & .meta-category {
@@ -3851,7 +3864,7 @@ body {
         max-width: 300px;
         width: 100%;
         padding: 30px;
-        background:var(--aceent5-color);
+        background:linear-gradient(284deg, #ffffff, #f4fbff 8%, #fff2e6 22%, #fff7ed 64%, #f8fbff 92%, #ffffff);
         border-radius: 15px;
         right: 20px;
         left: inherit;
