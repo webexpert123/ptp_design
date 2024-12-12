@@ -136,7 +136,13 @@
 
 #client-logos {
     padding: 2rem 0rem;
-    background: #f3f3f3;
+    background-color: var(--secondary-color);
+    & .section-title {
+        margin-bottom: 30px;
+    }
+    img {
+        width: 100px;
+    }
 }
 
 /*--------------------------------------------------------------
@@ -144,6 +150,7 @@
 --------------------------------------------------------------*/
 
 #about-block {
+    padding: 4rem 0rem;
     & .container{
         & .row{
             & .about-image {
@@ -151,17 +158,20 @@
                 object-fit: cover;
                 & img{
                     object-fit: cover;
-                    border-radius: 20px;
-                    box-shadow: -12px -12px 1px var(--primary-color);
+                    border-radius: 50%;
+                    box-shadow: -12px -12px 1px var(--aceent0-color);
+                    height: 283px;
                 }
                 }
                 & .star_box {
                     border-radius: 15px;
-                    background-color: var(--primary-color);
+                    background: linear-gradient(284deg, #ffffff, #f4fbff 8%, #fff2e6 22%, #fff7ed 64%, #f8fbff 92%, #ffffff);
                     padding: 10px;
                     position: absolute;
                     bottom: 30px;
                     right: -15px;
+                    max-width: 177px;
+                    border: 1px solid #d3efff;
                     & .star_icon {
                         border-radius: 50%;
                         margin:10px auto;
@@ -169,70 +179,63 @@
                         align-items: center;
                         justify-content: center;
                         i {
-                            color: var(--aceent0-color);
+                            color: var(--primary-color);
                             font-size: 32px;
                         }
                     }
                     & .star_content {
                         h5 {
-                            font-size: 20px;
-                            font-weight: 800;
-                            color: var(--secondary-color);
+                            font-size: 16px;
+                            font-weight: 600;
+                            color: var(--primary-color);
                             margin-top: 10px;
                             margin-bottom: 0;
-                        }
-                        p {
-                            margin-bottom: 0;
-                            font-size: 13px;
-                            color: var(--secondary-color);
                         }
                     }
                 }
             }
             & .about-content {
-                padding-left: 5%;
+                padding-left: 6%;
                 & .about-inner{
-                // padding:;
-                padding-left: 10%;
                 & .sub-title {
                     text-transform: uppercase;
                     font-weight: 600;
-                    color: var(--aceent0-color);
-                    font-size: 1rem;
+                    color: #000;
+                    font-size: 14px;
+                    background: var(--aceent0-color);
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    display: inline-block;
+                    margin-bottom: 20px;
                 }
                 & .quote-text {
                     p {
                         font-size: 17px;
                         position: relative;
-                        margin-top: 58px;
-                        margin-bottom: 35px;
-                        &:before {
-                            content: '';
-                            background: url(../assets/images/quote_about.png) no-repeat;
-                            width: 35px;
-                            height: 35px;
-                            background-position: center center;
-                            position: absolute;
-                            left: -6px;
-                            top: -46px;
-                            background-size: 35px;
-                        }
-                        &:after {
-                            content: '';
-                            background: url(../assets/images/quote_about.png) no-repeat;
-                            width: 35px;
-                            height: 35px;
-                            background-position: center center;
-                            position: absolute;
-                            right: 0;
-                            transform: rotate(-180deg);
-                            bottom: -29px;
-                            background-size: 35px;
+                        margin-bottom: 0;
+                    }
+                }
+                & .star-bt {
+                    img {
+                        width: 60px;
+                        height: 60px;
+                        object-fit: cover;
+                        border-radius: 50%;
+                        margin-right: 20px;
+                        border: 3px solid #241f20;
+                    }
+                    p {
+                        color: var(--dark-font-color);
+                        font-weight: 600;
+                        margin-bottom: 0;
+                        span {
+                            font-size: 14px;
+                            font-weight: normal;
                         }
                     }
                 }
                 & h2{
-                    margin-bottom: 30px;
+                    margin-bottom: 20px;
                     color: var(--dark-font-color);
                 }
                 & ul{
@@ -258,7 +261,99 @@
         } 
     }
 }
-
+/*--------------------------------------------------------------
+# Why PTP Section Start
+--------------------------------------------------------------*/
+#why-section {
+    .container{
+        & .section-title{
+            & h2 {
+                font-weight: 800;
+                span{
+                    color: var(--aceent0-color);
+                }
+            }
+        }
+        & .row {
+            & .why-block-grid {
+                & .box-item {
+                    background: linear-gradient(284deg, #ffffff, #f4fbff 8%, #f0f5ff 22%, #f0f5ff 64%, #f8fbff 92%, #ffffff);
+                    border-radius: 16px;
+                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                    backdrop-filter: blur(5px);
+                    -webkit-backdrop-filter: blur(5px);
+                    padding: 30px;
+                    border-radius: 15px;
+                    border: 1px solid #858FA133;
+                    & .box-header{
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                            h4 {
+                                color: var(--dark-font-color);
+                            }
+                            & .box-icon {
+                                width: 100px;
+                                height: 100px;
+                                background: linear-gradient(284deg, #ffffff00, #f4fbff 8%, #fff2e6 22%, #fff7ed 64%, #f8fbff 92%, #ffffff00);
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border-radius: 50%;
+                                transition: 0.5s all ease-in-out;
+                                box-shadow: -5px -3px 0px var(--aceent0-color);
+                                img {
+                                    width: 50px;
+                                }
+                                 svg{
+                                    width: 65px;
+                                }
+                            }
+                    }
+                    p {
+                        color: var(--dark-font-color);
+                    }
+                    ul {
+                        min-height: 60px;
+                        li {
+                            padding-left: 30px;
+                            padding-bottom: 5px;
+                            display: inline-block;
+                            p{
+                                position: relative;
+                                color: var(--dark-font-color) ;
+                                font-size: 14px;
+                                margin-bottom: 0;
+                                    &:before {
+                                        content: '';
+                                        position: absolute;
+                                        width: 22px;
+                                        height: 22px;
+                                        background: url(../assets/images/check_ic.svg) no-repeat;
+                                        background-size: 22px;
+                                        left: -30px;
+                                    
+                                }
+                            }
+                        }
+                    }
+                    &:hover {
+                        & .box-icon {
+                            background: var(--aceent0-color);
+                            transition: 0.5s all ease;
+                            box-shadow: -5px -3px 0px var(--primary-color);
+                            & svg {
+                                & path {
+                                    stroke: var(--primary-color);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 /*--------------------------------------------------------------
 # Brand Ambassedor Section Start
 --------------------------------------------------------------*/
@@ -303,17 +398,17 @@
 # Feed Section Start
 --------------------------------------------------------------*/
 section#feed_block{
-        background:linear-gradient(284deg, #ffffff00, #f4fbff 8%, #fff2e6 22%, #fff7ed 64%, #f8fbff 92%, #ffffff00);
+        background:var(--primary-color);
         & .section-title {
             & .sub-heading {
                 color: var(--aceent0-color);
                 font-weight: 600;
             }
             h2 {
-                color: var(--primary-color);
+                color: var(--secondary-color);
             }
             p {
-                color: var(--body-font-color);
+                color: var(--secondary-color);
             }
         }
         & .social-feeds {
@@ -439,8 +534,67 @@ section#case_studies {
     }
     & .case-study-item {
         padding: 15px;
-        background: #f4f4f4;
         border-radius: 10px;
+        & .detail-review-person {
+            box-shadow: 0px 24px 20px 0px #212E4405;
+            border: 1px solid #858FA133;
+            border-radius: 16px;
+            padding: 28px 30px;
+            width: 100%;
+            background: linear-gradient(284deg, #ffffff, #f4fbff 8%, #f0f5ff 22%, #f0f5ff 64%, #f8fbff 92%, #ffffff);
+            & .author-review {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+                align-items: center;
+                figure {
+                    width: 56px;
+                    height: 56px;
+                    min-width: 56px;
+                    border-radius: 100px;
+                    position: relative;
+                    margin: 0 15px 0 0;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        border-radius: 50%;
+                    }
+                }
+                & .review-name {
+                    display: block;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 30px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: #212E44;
+                }
+                   & .review-position {
+                    display: block;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: #212E44;
+                }
+            }
+            & .detail-review-item {
+                p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    color: #5D6A82;
+                    margin-bottom: 0;
+                }
+            }
+
+            }
         h2 {
             color: var(--secondary-color);
             font-weight: 500;
@@ -455,6 +609,14 @@ section#case_studies {
                 li {
                     color: var(--secondary-color);
                 }
+            }
+        }
+        & .case-bottom {
+            p {
+                font-size: 18px;
+                text-align: center;
+                padding: 20px 10px;
+                margin: 0;
             }
         }
     }
@@ -642,7 +804,7 @@ section#blog-block {
             & .blog-card {
                 border-radius: 20px;
                 overflow: hidden;
-                background: #212529;
+                background: var(--primary-color);
                     & .blog-image {
                         min-height: 225px;
                         overflow: hidden;
@@ -752,7 +914,7 @@ div#testimonial-slider {
 # Risk Free Section Start
 --------------------------------------------------------------*/
 section#risk-block {
-    background-color: #161616;
+    background-color: var(--primary-color);
     & .risk-main {
         & .risk-image {
             height: 100%;
@@ -761,10 +923,15 @@ section#risk-block {
         }
         & .risk-content {
             & .sub-heading {
-                color: var(--aceent0-color);
-                font-weight: 600;
-                margin-bottom: 10px;
                 text-transform: uppercase;
+                font-weight: 600;
+                color: #000;
+                font-size: 14px;
+                background: var(--aceent0-color);
+                padding: 5px 10px;
+                border-radius: 5px;
+                display: inline-block;
+                margin-bottom: 20px;
             }
             h2 {
                 margin-bottom: 30px;
