@@ -97,10 +97,10 @@
   src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-ro-1UA.ttf) format('truetype');
 }
 :root {
-  --body-bg: #000000;
+  --body-bg: linear-gradient(301deg, #FFF9F2, #fff);
   --body-accent-color: #f7f7f7;
-  --primary-color: #ffffff;
-  --secondary-color: #181818;
+  --primary-color: #241f20;
+  --secondary-color: #ffffff;
   --tertiary-color: #636363;
   --dark80-color: #181818;
   --color-light: #ffffff;
@@ -113,21 +113,21 @@
   --aceent5-color: #f7f7f7;
   --aceent6-color: #f9f9f9;
   --aceent7-color: #b5b5b5;
-  --aceent0-color: #f9cc0b;
-  --body-font-color: #181818;
-  --dark-border-color: #181818;
+  --aceent0-color: #ffca10;
+  --body-font-color: #212e44;
+  --dark-border-color: #212529;
   --heading-color: #181818;
   --sub-heading-color: #717171;
   --mid-light-font: #888888;
   --hightlight-font-color: #d8573f;
   --dark-font-color: #181818;
   --light-font-color: #ffffff;
-  --body-font: "Rubik", sans-serif;
-  --heading-font: "Rubik", sans-serif;
+  --body-font: "Poppins", sans-serif;
+  --heading-font: "Poppins", sans-serif;
   --button-primary-bg: #f9cc0b;
   --button-secondary-bg: #0c1d36;
   --f1-font-size: 3.5rem;
-  --f2-font-size: 2.4rem;
+  --f2-font-size: 2rem;
   --f3-font-size: 1.75rem;
   --light-border: #f4f4f4;
   --d-dark-bg: #14171F;
@@ -171,8 +171,8 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Montserrat", sans-serif;
-  --font-family-monospace: "Montserrat", sans-serif;
+  --font-family-sans-serif: "Poppins", sans-serif;
+  --font-family-monospace: "Poppins", sans-serif;
 }
 *,
 *::before,
@@ -199,7 +199,7 @@ section {
 }
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -304,7 +304,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1em;
 }
 pre {
@@ -5419,7 +5419,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5527,7 +5527,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -8720,7 +8720,7 @@ button.bg-dark:focus {
   background-color: rgba(0, 0, 0, 0);
 }
 .text-monospace {
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
 }
 .text-justify {
   text-align: justify !important;
@@ -8995,7 +8995,7 @@ body {
   font-family: var(--body-font);
 }
 body.module-template {
-  background: linear-gradient(45deg, #29323c, #29323c);
+  background: #000;
 }
 body section {
   width: 100%;
@@ -9104,7 +9104,7 @@ div#inner-template .dashbaord-header .navbar ul li.active a {
   background: var(--secondary-color);
 }
 div#inner-template .dashbaord-header .navbar ul li a {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   background: var(--aceent5-color);
   font-weight: 500;
   border-radius: 25px;
@@ -9336,7 +9336,7 @@ div#inner-template .sidebar .nav li.nav-profile {
   width: 100%;
   padding: 20px;
   color: #fff;
-  background: var(--secondary-color);
+  background: rgba(255, 255, 255, 0.2);
 }
 div#inner-template .sidebar .nav li.nav-profile .image {
   float: left;
@@ -9443,7 +9443,7 @@ div#inner-template .content-wrapper .dashboard-main .page-title {
   margin-bottom: 20px;
 }
 div#inner-template .content-wrapper .dashboard-main .page-title h2 {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 30px;
 }
 div#inner-template .content-wrapper .dashboard-main .page-title ul li {
@@ -9556,13 +9556,13 @@ div#inner-template .content-wrapper .dashboard-main nav .pagination li a {
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
 div#inner-template .content-wrapper .dashboard-main .card {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.12);
   margin-bottom: 1.5rem;
   border: 0 solid transparent;
 }
 div#inner-template .content-wrapper .dashboard-main .card .card-title button.title-btn {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   background: var(--aceent0-color);
   border-radius: 25px;
   font-size: 15px;
@@ -9572,7 +9572,7 @@ div#inner-template .content-wrapper .dashboard-main .card .card-title button.tit
   padding: 5px 20px;
 }
 div#inner-template .content-wrapper .dashboard-main .card .card-title button.title-btn:hover {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   background: var(--secondary-color);
   transition: 0.3s all ease-in;
   border-color: var(--secondary-color);
@@ -9587,10 +9587,10 @@ div#inner-template .content-wrapper .dashboard-main .card .card-body {
   padding: 1rem;
 }
 div#inner-template .content-wrapper .dashboard-main .card .card-body .card-title a {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 div#inner-template .content-wrapper .dashboard-main .card .card-body h5 {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 div#inner-template .content-wrapper .dashboard-main .card .card-body .widgets-icons {
   width: 50px;
@@ -9693,7 +9693,7 @@ div#inner-template .content-wrapper .dashboard-main .card .card-body .student-li
   margin-left: 0.5rem;
 }
 div#inner-template .content-wrapper .dashboard-main .card .card-body .student-list .customers-list-item .ms-2 h6 {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 div#inner-template .content-wrapper .dashboard-main .card .card-body .student-list .customers-list-item .ms-2 p {
   color: rgba(255, 255, 255, 0.7);

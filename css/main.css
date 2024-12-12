@@ -127,7 +127,7 @@
 :root {
   --body-bg: linear-gradient(301deg, #FFF9F2, #fff);
   --body-accent-color: #f7f7f7;
-  --primary-color: #241f20;
+  --primary-color: #000;
   --secondary-color: #ffffff;
   --tertiary-color: #636363;
   --dark80-color: #181818;
@@ -9263,7 +9263,7 @@ p {
   border-radius: 50%;
 }
 body header .top-header {
-  padding: 10px 0px;
+  padding: 8px 0px;
   background-color: var(--aceent0-color);
   position: relative;
 }
@@ -9272,11 +9272,11 @@ body header .top-header .cancel-btn {
   position: absolute;
   right: 20px;
   top: 5px;
-  font-size: 25px;
+  font-size: 20px;
 }
 body header .top-header p {
   color: var(--primary-color);
-  font-size: 18px;
+  font-size: 15px;
   margin-bottom: 0;
 }
 body header .top-header p a {
@@ -9287,7 +9287,7 @@ body header section.header-main {
   width: 100%;
   padding: 1.2rem 0rem;
   display: inherit;
-  background: #241f20;
+  background: var(--primary-color);
   z-index: 5555;
   transition: 0.3s all ease-in-out;
   position: relative;
@@ -9593,7 +9593,7 @@ footer section#footer .social-widget ul li a i:hover {
   color: var(--aceent0-color);
 }
 footer .copyright-area {
-  background-color: #000000;
+  background-color: #121212;
 }
 footer .copyright-area p {
   margin-bottom: 0;
@@ -9772,9 +9772,9 @@ footer .copyright-area p {
 #about-block .container .row .about-content .about-inner .sub-title {
   text-transform: uppercase;
   font-weight: 600;
-  color: #000;
+  color: var(--aceent0-color);
   font-size: 14px;
-  background: var(--aceent0-color);
+  background: var(--primary-color);
   padding: 5px 10px;
   border-radius: 5px;
   display: inline-block;
@@ -10181,21 +10181,16 @@ section#reward-block .reward-main .reward-inner .reward-top-title p {
   margin-bottom: 60px;
 }
 section#reward-block .reward-main .reward-inner .reward-step .reward-box {
-  padding: 25px;
+  padding: 15px;
   background: var(--aceent0-color);
-  border-radius: 20px;
-  min-height: 164px;
+  border-radius: 10px;
+  text-align: center;
 }
 section#reward-block .reward-main .reward-inner .reward-step .reward-box h3 {
   font-size: 25px;
   font-weight: 700;
   color: var(--dark-font-color);
-}
-section#reward-block .reward-main .reward-inner .reward-step .reward-box p {
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--dark-font-color);
-  margin: 0;
+  margin-bottom: 0;
 }
 /*--------------------------------------------------------------
 # Our Coach find Section Start
@@ -10390,9 +10385,9 @@ section#risk-block .risk-main .risk-image {
 section#risk-block .risk-main .risk-content .sub-heading {
   text-transform: uppercase;
   font-weight: 600;
-  color: #000;
+  color: var(--aceent0-color);
   font-size: 14px;
-  background: var(--aceent0-color);
+  background: var(--primary-color);
   padding: 5px 10px;
   border-radius: 5px;
   display: inline-block;
@@ -10501,7 +10496,7 @@ section#profile-layout .profile-top .profile-sidebar .coach-card .card {
   overflow: hidden;
 }
 section#profile-layout .profile-top .profile-sidebar .coach-card .card .card-header {
-  height: 298px;
+  height: 368px;
   overflow: hidden;
 }
 section#profile-layout .profile-top .profile-sidebar .coach-card .card .card-header video {
@@ -10619,29 +10614,31 @@ section#profile-layout .profile-bottom .profile-tab-start ul li button {
   padding: 12px 25px;
   border: 1px solid var(--aceent0-color);
   margin-right: 10px;
-  border: 1px solid var(--aceent5-color);
+  border: 1px solid #d3efff;
   border-radius: 10px 10px 0 0;
   box-shadow: -2px -6px 0px -2px #f1f1f1;
   font-weight: 600;
+  border-bottom: transparent;
 }
 section#profile-layout .profile-bottom .profile-tab-start ul li button:hover {
   color: var(--secondary-color);
-  background: var(--aceent0-color);
-  border: 1px solid var(--aceent0-color);
-  box-shadow: -2px -6px 0px -2px #e9be08;
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  box-shadow: -2px -6px 0px -2px #f1f1f1;
 }
 section#profile-layout .profile-bottom .profile-tab-start ul li button.active {
   color: var(--secondary-color);
-  background: var(--aceent0-color);
-  border: 1px solid var(--aceent0-color);
-  box-shadow: -2px -6px 0px -2px #e9be08;
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  box-shadow: -2px -6px 0px -2px #f1f1f1;
 }
 section#profile-layout .profile-bottom .profile-tab-start .tabs-main #gallery .tab-inside {
   margin-top: 0;
   padding: 30px;
-  background: var(--aceent5-color);
+  background: linear-gradient(284deg, #ffffff00, #f4fbff 8%, #fff2e6 22%, #fff7ed 64%, #f8fbff 92%, #ffffff00);
   border-radius: 10px;
   border-top-left-radius: 0;
+  border: 1px solid #d3efff;
 }
 section#profile-layout .profile-bottom .profile-tab-start .tabs-main #gallery .tab-inside .gallery-block .card {
   border: none;
@@ -10690,11 +10687,12 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #gallery .t
   right: 2px;
 }
 section#profile-layout .profile-bottom .profile-tab-start .tabs-main .review-section .review-inner .tab-inside {
-  background: var(--body-bg);
+  margin-top: 0;
   padding: 30px;
+  background: linear-gradient(284deg, #ffffff00, #f4fbff 8%, #fff2e6 22%, #fff7ed 64%, #f8fbff 92%, #ffffff00);
   border-radius: 10px;
   border-top-left-radius: 0;
-  margin-top: 30px;
+  border: 1px solid #d3efff;
 }
 section#profile-layout .profile-bottom .profile-tab-start .tabs-main .review-section .review-inner .tab-inside .section-title h2 {
   color: var(--primary-color);
@@ -10764,9 +10762,10 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main .review-sec
 section#profile-layout .profile-bottom .profile-tab-start .tabs-main #location .tab-inside {
   margin-top: 0;
   padding: 30px;
-  background: var(--aceent5-color);
+  background: linear-gradient(284deg, #ffffff00, #f4fbff 8%, #fff2e6 22%, #fff7ed 64%, #f8fbff 92%, #ffffff00);
   border-radius: 10px;
   border-top-left-radius: 0;
+  border: 1px solid #d3efff;
 }
 section#profile-layout .profile-bottom .profile-tab-start .tabs-main #location .tab-inside .section-title h2 {
   color: var(--primary-color);
@@ -10822,9 +10821,10 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #location .
 section#profile-layout .profile-bottom .profile-tab-start .tabs-main #available .tab-inside {
   margin-top: 0;
   padding: 30px;
-  background: var(--aceent5-color);
+  background: linear-gradient(284deg, #ffffff00, #f4fbff 8%, #fff2e6 22%, #fff7ed 64%, #f8fbff 92%, #ffffff00);
   border-radius: 10px;
   border-top-left-radius: 0;
+  border: 1px solid #d3efff;
 }
 section#profile-layout .profile-bottom .profile-tab-start .tabs-main #available .tab-inside .section-title h2 {
   color: var(--primary-color);
@@ -10832,9 +10832,10 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #available 
 section#profile-layout .profile-bottom .profile-tab-start .tabs-main #faq .tab-inside {
   margin-top: 0;
   padding: 30px;
-  background: var(--aceent5-color);
+  background: linear-gradient(284deg, #ffffff00, #f4fbff 8%, #fff2e6 22%, #fff7ed 64%, #f8fbff 92%, #ffffff00);
   border-radius: 10px;
   border-top-left-radius: 0;
+  border: 1px solid #d3efff;
 }
 section#profile-layout .profile-bottom .profile-tab-start .tabs-main #faq .tab-inside #faqs-main .section-title h2 {
   color: var(--primary-color);
@@ -10864,9 +10865,10 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #faq .tab-i
 section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .tab-inside {
   margin-top: 0;
   padding: 30px;
-  background: var(--aceent5-color);
+  background: linear-gradient(284deg, #ffffff00, #f4fbff 8%, #fff2e6 22%, #fff7ed 64%, #f8fbff 92%, #ffffff00);
   border-radius: 10px;
   border-top-left-radius: 0;
+  border: 1px solid #d3efff;
 }
 section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .tab-inside .section-title h2 {
   color: var(--primary-color);
@@ -10937,7 +10939,7 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   color: var(--secondary-color);
 }
 .listing-page .listing-filter {
-  background: linear-gradient(284deg, #ffffff00, #f4fbff 8%, #fff2e6 22%, #fff7ed 64%, #f8fbff 92%, #ffffff00);
+  background: var(--secondary-color);
   border-radius: 10px;
   padding: 30px;
   margin: 50px 0px 30px 0px;
@@ -12332,6 +12334,8 @@ body.dark-theme .booking-page .risk-widget .profile-risk p {
   height: 450px;
   overflow: hidden;
   border-radius: 15px;
+  border: 5px solid #adadad;
+  box-shadow: 0px 0px 18px -8px #ccc;
 }
 #frontend-main .video-coach .social_item .feed_single .feed-image video {
   height: auto;
