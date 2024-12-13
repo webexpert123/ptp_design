@@ -135,8 +135,8 @@
 --------------------------------------------------------------*/
 
 #client-logos {
-    padding: 2rem 0rem;
     background-color: var(--secondary-color);
+    padding: 2rem 0rem;
     & .section-title {
         margin-bottom: 30px;
     }
@@ -397,18 +397,137 @@
 /*--------------------------------------------------------------
 # Feed Section Start
 --------------------------------------------------------------*/
+.collarge .grid-column img {
+    height: 100%;
+    object-fit: cover;
+}
+.collarge .grid-column:nth-of-type(1){
+    grid-area: 1 / 1 / span 6 / span 6;
+    height: 175px;
+}
+
+.collarge .grid-column:nth-of-type(2){
+    grid-area: 7 / 1 / span 1 / span 2;
+}
+
+.collarge .grid-column:nth-of-type(3){
+    grid-area: 7 / 3 / span 1 / span 2;
+}
+
+.collarge .grid-column:nth-of-type(4){
+    grid-area: 8 / 1 / span 2 / span 4;
+    height: 175px;
+}
+
+.collarge .grid-column:nth-of-type(5){
+    grid-area: 7 / 5 / span 3 / span 2;
+}
 section#feed_block{
         background:var(--primary-color);
+
         & .section-title {
             & .sub-heading {
-                color: var(--aceent0-color);
+                color: var(--primary-color);
                 font-weight: 600;
+                background-color: var(--secondary-color);
+                border-radius: 5px;
+                padding: 5px 10px;
+                margin-bottom: 20px;
+                font-size: 14px;
             }
             h2 {
                 color: var(--secondary-color);
             }
             p {
                 color: var(--secondary-color);
+            }
+            button {
+                &:hover {
+                    background: var(--secondary-color);
+                    color: var(--primary-color);
+                }
+            }
+        }
+        .collarge{
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: auto auto auto auto auto auto;
+            padding: 10px;
+            & .grid-column{
+                position: relative;
+                box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0;
+                min-height: 157px;
+                background-color: var(--secondary-color);
+                border-radius: 15px;
+                overflow: hidden;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(358deg, rgb(0 0 0 / 60%), transparent);
+                    top: 0;
+                    left: 0;
+                }
+                & .feed_content {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding: 20px;
+                    & .top-content {
+                        display: flex;
+                        justify-content: end;
+                        i {
+                            font-size: 20px;
+                            color: var(--primary-color);
+                            background: var(--aceent0-color);
+                            width: 32px;
+                            height: 32px;
+                            border-radius: 50%;
+                            text-align: center;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            position: relative;
+                            z-index: 1;
+                        }
+                    }
+                    & .bottom-content {
+                        position: relative;
+                        left:0px;
+                        z-index: 22;
+                        & .feed_user {
+                            & .feed-user-img {
+                                background: var(--secondary-color);
+                                border-radius: 50%;
+                                width: 35px;
+                                height: 35px;
+                                padding: 3px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                img {
+                                    object-fit: cover;
+                                    width: 100%;
+                                 }
+                            }
+                             p {
+                                font-size: 15px;
+                                color: var(--secondary-color);
+                                margin-bottom: 0;
+                             }
+                             span {
+                                font-size: 15px;
+                                font-weight: 600;
+                                color: var(--secondary-color);
+                             }
+                        }
+                    }
+                }
             }
         }
         & .social-feeds {
@@ -669,6 +788,10 @@ section#reward-block {
                 background: var(--aceent0-color);
                 border-radius: 10px;
                 text-align: center;
+                img {
+                    margin-bottom: 15px;
+                    width: 80px;
+                }
                 h3 {
                     font-size: 25px;
                     font-weight: 700;
@@ -909,7 +1032,7 @@ div#testimonial-slider {
 # Risk Free Section Start
 --------------------------------------------------------------*/
 section#risk-block {
-    background-color: var(--primary-color);
+    background: linear-gradient(284deg, #ffffff00, #f4fbff 8%, #fff2e6 22%, #fff7ed 64%, #f8fbff 92%, #ffffff00);
     & .risk-main {
         & .risk-image {
             height: 100%;
@@ -920,7 +1043,7 @@ section#risk-block {
             & .sub-heading {
                 text-transform: uppercase;
                 font-weight: 600;
-                color: var(--aceent0-color);
+                color: var(--secondary-color);
                 font-size: 14px;
                 background: var(--primary-color);
                 padding: 5px 10px;
@@ -930,16 +1053,16 @@ section#risk-block {
             }
             h2 {
                 margin-bottom: 30px;
-                color: var(--secondary-color);
+                color: var(--primary-color);
             }
             p {
-                color: var(--secondary-color);
+                color: var(--primary-color);
             }
         }
         & .risk-columns {
             padding-left: 10%;
             & .risk-item {
-                background: rgba(255, 255, 255, 0.2);
+                background: linear-gradient(284deg, #ffffff, #f4fbff 8%, #f0f5ff 22%, #f0f5ff 64%, #f8fbff 92%, #ffffff);
                 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
                 backdrop-filter: blur(5px);
                 -webkit-backdrop-filter: blur(5px);
@@ -947,11 +1070,11 @@ section#risk-block {
                 border-radius: 10px;
                 padding: 15px 20px;
                 margin-bottom: 30px;
-                min-height: 229px;
+                min-height: 140px;
                 transition: 0.5s ease;
                 &:after {
-                    width: 35px;
-                    height: 35px;
+                    width: 45px;
+                    height: 45px;
                     border-radius: 50%;
                     background: var(--aceent0-color);
                     content: '';
@@ -961,12 +1084,12 @@ section#risk-block {
                     z-index: -1;
                 }
                 svg {
-                    width: 45px;
+                    width: 80px;
                     margin-bottom: 18px;
-                    color:var(--secondary-color);
-                    height: 45px;
+                    color:var(--primary-color);
+                    height: 80px;
                     path {
-                        fill: var(--secondary-color);
+                        fill: var(--primary-color);
                     }
                 }
                 &:hover {
@@ -982,19 +1105,13 @@ section#risk-block {
                         path {
                             fill: var(--secondary-color);
                         }
-                    }
-                    h4 {
-                        color: var(--primary-color);
-                    }
-                    p {
-                        color: var(--primary-color);
-                    }
+                    } 
                 }
                 h4 {
-                    color: var(--secondary-color);
+                    color: var(--primary-color);
                 }
                 p {
-                    color: var(--secondary-color);
+                    color: var(--primary-color);
                 }
             }
         }
@@ -2334,16 +2451,15 @@ body {
                                     display: none;
                                 }
                                 & .first-step {
-                                background: var(--aceent5-color);
+                                background: linear-gradient(284deg, #ffffff00, #f4fbff 8%, #fff2e6 22%, #fff7ed 64%, #f8fbff 92%, #ffffff00);
+                                border: 1px solid #d3efff;
                                 padding: 30px;
                                 margin-top: 30px;
-                                border: 0 none;
                                 border-radius: 10px;
                                 box-sizing: border-box;
                                 width: 100%;
                                 margin: 4rem 0 2rem 0;
                                 position: relative;
-                                
                                 h4 {
                                     text-transform: capitalize;
                                     color: var(--primary-color);
@@ -2506,16 +2622,12 @@ body {
                                 gap: 20px;
                             }
                             & .second-step {
-                                background: rgba(255, 255, 255, 0.2);
-                                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-                                backdrop-filter: blur(5px);
+                                background: linear-gradient(284deg, #ffffff00, #f4fbff 8%, #fff2e6 22%, #fff7ed 64%, #f8fbff 92%, #ffffff00);
+                                border: 1px solid #d3efff;
                                 padding: 30px;
                                 border-radius: 25px !important;
                                 margin-top: 30px;
-                                border: 0 none;
                                 border-radius: 8px;
-                                box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
-                                box-sizing: border-box;
                                 width: 100%;
                                 margin: 4rem 0 2rem 0;
                                 position: relative;
@@ -2671,15 +2783,11 @@ body {
                             }
                             & .third-step {
                                 & .third-first {
-                                background: rgba(255, 255, 255, 0.2);
-                                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-                                backdrop-filter: blur(5px);
+                                background: linear-gradient(284deg, #ffffff00, #f4fbff 8%, #fff2e6 22%, #fff7ed 64%, #f8fbff 92%, #ffffff00);
+                                border: 1px solid #d3efff;
                                 padding: 30px;
-                                border-radius: 25px !important;
+                                border-radius: 15px !important;
                                 margin-top: 30px;
-                                border: 0 none;
-                                border-radius: 8px;
-                                box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
                                 box-sizing: border-box;
                                 width: 100%;
                                 margin: 4rem 0 2rem 0;
@@ -2716,12 +2824,11 @@ body {
                                 
                                 }
                                 & .third-second {
-                                background: var(--aceent5-color);
+                                background: linear-gradient(284deg, #ffffff00, #f4fbff 8%, #fff2e6 22%, #fff7ed 64%, #f8fbff 92%, #ffffff00);
+                                border: 1px solid #d3efff;
                                 padding: 30px;
                                 border-radius: 25px !important;
                                 margin-top: 30px;
-                                border: 0 none;
-                                border-radius: 8px;
                                 box-sizing: border-box;
                                 width: 100%;
                                 margin: 0rem 0 2rem 0;

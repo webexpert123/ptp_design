@@ -99,7 +99,7 @@
 :root {
   --body-bg: linear-gradient(301deg, #FFF9F2, #fff);
   --body-accent-color: #f7f7f7;
-  --primary-color: #241f20;
+  --primary-color: #000;
   --secondary-color: #ffffff;
   --tertiary-color: #636363;
   --dark80-color: #181818;
@@ -9150,7 +9150,7 @@ div#inner-template .dashbaord-header .navbar .navbar-action ul li a {
   padding: 10px 20px;
 }
 div#inner-template .dashbaord-header .navbar .navbar-action ul li:last-child a {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   background: var(--aceent0-color);
 }
 div#inner-template .dashbaord-header .navbar .navbar-action .notification_dropdown {
@@ -9298,6 +9298,9 @@ div#inner-template .sidebar a.navbar-brand {
   text-align: center;
   padding: 15px 0px;
 }
+div#inner-template .sidebar a.navbar-brand img {
+  width: 90px;
+}
 div#inner-template .sidebar .nav {
   padding-left: 0;
   margin-bottom: 0;
@@ -9310,7 +9313,7 @@ div#inner-template .sidebar .nav li a {
   align-items: center;
   justify-content: left;
   padding: 8px 16px;
-  font-size: 15px;
+  font-size: 14px;
   color: rgba(255, 255, 255, 0.75);
   outline-width: 0;
   text-overflow: ellipsis;
@@ -9400,7 +9403,7 @@ div#inner-template .sidebar .nav li .sub a:before {
   margin-top: 5px;
 }
 div#inner-template .sidebar .nav li ul li a {
-  padding-left: 50px !important;
+  padding-left: 37px !important;
 }
 div#inner-template .sidebar .has-sub a.nav-link[aria-expanded=false]:before {
   content: "";
@@ -9449,7 +9452,7 @@ div#inner-template .content-wrapper .dashboard-main .page-title h2 {
 div#inner-template .content-wrapper .dashboard-main .page-title ul li {
   display: inline-block;
   padding: 0 15px;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 1rem;
   position: relative;
 }
@@ -9470,7 +9473,7 @@ div#inner-template .content-wrapper .dashboard-main .page-title .page-edit-actio
   height: 40px;
   display: flex;
   margin-right: 10px;
-  background: #000;
+  background: var(--secondary-color);
   align-items: center;
   justify-content: center;
   border-radius: 25px;
@@ -9535,11 +9538,11 @@ div#inner-template .content-wrapper .dashboard-main table tr:nth-of-type(odd) {
   background-color: #000;
 }
 div#inner-template .content-wrapper .dashboard-main table tr th {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
 div#inner-template .content-wrapper .dashboard-main table tr td {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
 div#inner-template .content-wrapper .dashboard-main table tr td:hover {
@@ -9702,10 +9705,10 @@ div#inner-template .content-wrapper .dashboard-main .card .card-body .student-li
   margin-left: auto;
 }
 div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block h5 {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block small {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block .avatar_img {
   background-color: var(--aceent0-color);
@@ -9718,10 +9721,10 @@ div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block
   font-size: 32px;
 }
 div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block .profile-rate span {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block button {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   background: #28a745;
   border-radius: 25px;
   font-size: 15px;
@@ -9732,13 +9735,13 @@ div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block
   padding: 5px 20px;
 }
 div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block button:hover {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   background: #218838;
   transition: 0.3s all ease-in;
   border-color: #218838;
 }
 div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block .copy-link label {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-weight: 500;
 }
 div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block .copy-link i {
@@ -9746,7 +9749,7 @@ div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block
   font-size: 18px;
 }
 div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block .copy-link a {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   background-color: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 25px;
@@ -9776,7 +9779,7 @@ div#inner-template .content-wrapper .dashboard-main .profile-page .profile-block
   background-color: rgba(255, 255, 255, 0.75);
 }
 div#inner-template .content-wrapper .dashboard-main .profile-page label {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 1rem;
 }
 div#inner-template .content-wrapper .dashboard-main .profile-page input {
