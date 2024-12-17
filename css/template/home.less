@@ -424,7 +424,6 @@
 }
 section#feed_block{
         background:var(--primary-color);
-
         & .section-title {
             & .sub-heading {
                 color: var(--primary-color);
@@ -477,7 +476,7 @@ section#feed_block{
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
-                    padding: 20px;
+                    padding: 15px 15px 10px 15px;
                     & .top-content {
                         display: flex;
                         justify-content: end;
@@ -1171,24 +1170,40 @@ section#profile-layout {
                             width: 100%;
                         }
                         & .coach-content {
-                            ul {
-                                display: flex;
-                                justify-content: center;
-                                li {
-                                    padding: 8px 15px;
-                                    color: #ffffff;
-                                    font-size: 20px;
-                                    background: #505050;
+                            & .profile-social {
+                                gap: 30px;
+                                ul {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    li {
+                                        padding: 8px 15px;
+                                        color: #ffffff;
+                                        font-size: 20px;
+                                        background: #505050;
+                                        margin-right: 5px;
+                                        border-radius: 5px;
+                                        &:last-child {
+                                            margin: 0;
+                                        }                                
+                                    }
+                                }
+                                & .chat-btn {
+                                    padding: 11px 15px;
+                                    color: var(--primary-color);
+                                    font-size: 16px;
+                                    background: var(--secondary-color);
                                     margin-right: 5px;
                                     border-radius: 5px;
-                                    &:last-child {
-                                        margin: 0;
-                                    }                                
+                                    border: none;
+                                    font-weight: 600;
+                                    &:hover {
+                                    background: var(--aceent0-color);
+                                    }
                                 }
                             }
-                            button {
-                                color: var(--primary-color);
-                            }
+                                button {
+                                    color: var(--primary-color);
+                                }
                         }
                     }
                 }
@@ -1279,6 +1294,7 @@ section#profile-layout {
             svg {
                 height: 60px;
                 color: var(--primary-color);
+                width: 60px;
             }
             display: flex;
             align-items: center;
@@ -1798,7 +1814,7 @@ section#profile-layout {
                 & .multiple-filter {
                     gap: 15px;
                     & .dropdown {
-                        width: 22.3%;
+                        width: 24.3%;
                         button {
                             &.dropdown-toggle{
                             width: 100%;
@@ -1891,23 +1907,10 @@ section#profile-layout {
                             justify-content: space-between;
                             align-items: center;
                             & .variefied-icon {
-                                span {
-                                    background: #06cb1e;
-                                    color: var(--secondary-color);
-                                    font-weight: 600;
-                                    padding: 3px 33px;
-                                    transform: rotate(-50deg);
-                                    display: inline-block;
-                                    left: -33px;
-                                    position: relative;
-                                    top: 4px;
-                                }
                                 min-height: 40px;
-                                svg {
-                                    width: 30px;
-                                    path {
-                                        fill: #06cb1e;
-                                    }
+                                padding-left: 10px;
+                                img {
+                                    width: 40px;
                                 }
                             }
                             span {

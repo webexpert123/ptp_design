@@ -10014,7 +10014,7 @@ section#feed_block .collarge .grid-column .feed_content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px;
+  padding: 15px 15px 10px 15px;
 }
 section#feed_block .collarge .grid-column .feed_content .top-content {
   display: flex;
@@ -10620,11 +10620,14 @@ section#profile-layout .profile-top .profile-sidebar .coach-card .card .card-bod
   color: var(--secondary-color);
   width: 100%;
 }
-section#profile-layout .profile-top .profile-sidebar .coach-card .card .card-body .coach-content ul {
-  display: flex;
-  justify-content: center;
+section#profile-layout .profile-top .profile-sidebar .coach-card .card .card-body .coach-content .profile-social {
+  gap: 30px;
 }
-section#profile-layout .profile-top .profile-sidebar .coach-card .card .card-body .coach-content ul li {
+section#profile-layout .profile-top .profile-sidebar .coach-card .card .card-body .coach-content .profile-social ul {
+  display: flex;
+  justify-content: space-between;
+}
+section#profile-layout .profile-top .profile-sidebar .coach-card .card .card-body .coach-content .profile-social ul li {
   padding: 8px 15px;
   color: #ffffff;
   font-size: 20px;
@@ -10632,8 +10635,21 @@ section#profile-layout .profile-top .profile-sidebar .coach-card .card .card-bod
   margin-right: 5px;
   border-radius: 5px;
 }
-section#profile-layout .profile-top .profile-sidebar .coach-card .card .card-body .coach-content ul li:last-child {
+section#profile-layout .profile-top .profile-sidebar .coach-card .card .card-body .coach-content .profile-social ul li:last-child {
   margin: 0;
+}
+section#profile-layout .profile-top .profile-sidebar .coach-card .card .card-body .coach-content .profile-social .chat-btn {
+  padding: 11px 15px;
+  color: var(--primary-color);
+  font-size: 16px;
+  background: var(--secondary-color);
+  margin-right: 5px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+}
+section#profile-layout .profile-top .profile-sidebar .coach-card .card .card-body .coach-content .profile-social .chat-btn:hover {
+  background: var(--aceent0-color);
 }
 section#profile-layout .profile-top .profile-sidebar .coach-card .card .card-body .coach-content button {
   color: var(--primary-color);
@@ -10709,6 +10725,7 @@ section#profile-layout .profile-top .profile-risk {
 section#profile-layout .profile-top .profile-risk svg {
   height: 60px;
   color: var(--primary-color);
+  width: 60px;
 }
 section#profile-layout .profile-top .profile-risk p {
   color: var(--primary-color);
@@ -11130,7 +11147,7 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   gap: 15px;
 }
 .listing-page .listing-filter .filter-left .filter-item .multiple-filter .dropdown {
-  width: 22.3%;
+  width: 24.3%;
 }
 .listing-page .listing-filter .filter-left .filter-item .multiple-filter .dropdown button.dropdown-toggle {
   width: 100%;
@@ -11215,23 +11232,10 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-header .card-over-content .variefied-icon {
   min-height: 40px;
+  padding-left: 10px;
 }
-.listing-page .listing-main .listing-inner .listing-item .card .card-header .card-over-content .variefied-icon span {
-  background: #06cb1e;
-  color: var(--secondary-color);
-  font-weight: 600;
-  padding: 3px 33px;
-  transform: rotate(-50deg);
-  display: inline-block;
-  left: -33px;
-  position: relative;
-  top: 4px;
-}
-.listing-page .listing-main .listing-inner .listing-item .card .card-header .card-over-content .variefied-icon svg {
-  width: 30px;
-}
-.listing-page .listing-main .listing-inner .listing-item .card .card-header .card-over-content .variefied-icon svg path {
-  fill: #06cb1e;
+.listing-page .listing-main .listing-inner .listing-item .card .card-header .card-over-content .variefied-icon img {
+  width: 40px;
 }
 .listing-page .listing-main .listing-inner .listing-item .card .card-header .card-over-content span {
   font-size: 14px;
