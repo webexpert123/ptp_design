@@ -9944,9 +9944,8 @@ section#team-coaches .coaches-image img {
 #brand-icon .brand-ic-main .brand-item .brand-contents {
   position: absolute;
   bottom: 0;
-  left: 30px;
   text-align: center;
-  width: 90%;
+  width: 100%;
 }
 #brand-icon .brand-ic-main .brand-item .brand-contents h3 {
   color: var(--secondary-color);
@@ -10677,7 +10676,7 @@ section#profile-layout .profile-top .profile-sidebar .coach-card .card .card-bod
 }
 section#profile-layout .profile-top .profile-sidebar .coach-card .card .card-body .coach-content .profile-social ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 section#profile-layout .profile-top .profile-sidebar .coach-card .card .card-body .coach-content .profile-social ul li {
   padding: 8px 15px;
@@ -10782,6 +10781,21 @@ section#profile-layout .profile-top .profile-risk svg {
 section#profile-layout .profile-top .profile-risk p {
   color: var(--primary-color);
   margin-bottom: 0;
+}
+section#profile-layout .profile-top .lesson-coordinator .lesson-inner {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 3%;
+  background: linear-gradient(185deg, #fff2e600 22%, #fff2e6 8%, #fff2e600 5%, #fff7ed 64%, #f8fbff 92%, #ffffff00);
+}
+section#profile-layout .profile-top .lesson-coordinator .lesson-inner .lesson-img {
+  width: 20%;
+}
+section#profile-layout .profile-top .lesson-coordinator .lesson-inner .lesson-img img {
+  width: 100%;
 }
 section#profile-layout .profile-bottom .profile-tab-start ul {
   border: none;
