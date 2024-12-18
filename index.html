@@ -37,6 +37,7 @@
                             <li><a href="javascript:void(0);">Parents & Athlete</a></li>
                             <li><a href="javascript:void(0);">Apply to Coach</a></li>
                             <li><a href="javascript:void(0);">Summer Camp</a></li>
+                            <li><a href="javascript:void(0);">Our Blog</a></li>
                             <li><a href="javascript:void(0);">Contact Us</a></li>
                         </ul>
                     </div>
@@ -189,7 +190,8 @@
                     </div>
                 </div>
              </section>
-             <section id="team-coaches">
+              <!-- Feature Coaches section Start -->
+             <section id="team-coaches" class="section-spacing bg-white">
                 <div class="container">
                     <div class="section-title mb-5 text-center">
                         <h2>Teaching what team coaches don't</h2>
@@ -522,7 +524,71 @@
               </section>
               <!--Reward Section End-->
               <!-- brand ambassador Start -->
-             <section id="about-block" class="section-spacing brand_eyecon mb-5">
+               <section id="brand-icon" class="section-spacing">
+                        <div class="section-title mb-5 text-center">
+                            <h2>Our PTP Ambassador</h2>
+                            <p>Our brand ambassador plays a key role in connecting with our target audience.</p>
+                        </div>
+                        <div class="brand-ic-main owl-carousel">
+                            <div class="brand-item">
+                                <img class="img-fluid" src="./assets/images/01.jpg">
+                                <div class="brand-contents">
+                                    <h3>Janalia D'Souza</h3>
+                                    <p>Runner</p>
+                                </div>
+                            </div>
+                            <div class="brand-item">
+                                <img class="img-fluid" src="./assets/images/02.jpg">
+                                <div class="brand-contents">
+                                    <h3>Cody Harman</h3>
+                                    <p>Football Player</p>
+                                </div>
+                            </div>
+                            <div class="brand-item">
+                                <img class="img-fluid" src="./assets/images/03.jpg">
+                                <div class="brand-contents">
+                                    <h3>Alexandra Bruin</h3>
+                                    <p>Yoga Specialist</p>
+                                </div>
+                            </div>
+                            <div class="brand-item">
+                                <img class="img-fluid" src="./assets/images/04.jpg">
+                                <div class="brand-contents">
+                                    <h3>Lexie Ward</h3>
+                                    <p>Weight Lifter</p>
+                                </div>
+                            </div>
+                            <div class="brand-item">
+                                <img class="img-fluid" src="./assets/images/01.jpg">
+                                <div class="brand-contents">
+                                    <h3>Janalia D'Souza</h3>
+                                    <p>Runner</p>
+                                </div>
+                            </div>
+                            <div class="brand-item">
+                                <img class="img-fluid" src="./assets/images/02.jpg">
+                                <div class="brand-contents">
+                                    <h3>Michelle Riley</h3>
+                                    <p>Football Player</p>
+                                </div>
+                            </div>
+                            <div class="brand-item">
+                                <img class="img-fluid" src="./assets/images/03.jpg">
+                                <div class="brand-contents">
+                                    <h3>Alexandra Bruin</h3>
+                                    <p>Yoga Specialist</p>
+                                </div>
+                            </div>
+                            <div class="brand-item">
+                                <img class="img-fluid" src="./assets/images/04.jpg">
+                                <div class="brand-contents">
+                                    <h3>Lexie Ward</h3>
+                                    <p>Weight Lifter</p>
+                                </div>
+                            </div>
+                        </div>
+               </section>
+             <!-- <section id="about-block" class="section-spacing brand_eyecon mb-5">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-md-6 col-lg-6">
@@ -558,7 +624,7 @@
                         </div>
                     </div>
                 </div>
-             </section>
+             </section> -->
              <!-- New risk free section -->
              <section id="risk-block" class="section-spacing">
                 <div class="container">
@@ -826,7 +892,7 @@
                 </div>
                 </section> -->
                <!-- Security Section End-->
-                <section id="blog-block" class="section-spacing pb-0">
+                <!-- <section id="blog-block" class="section-spacing pb-0">
                     <div class="container">
                         <div class="blog-main">
                             <div class="section-title mb-5">
@@ -834,7 +900,7 @@
                             </div>
                             <div class="blog-widget">
                                 <div class="row">
-                                    <!-- blog grid -->
+                                    
                                     <div class="col-md-4 col-lg-4">
                                         <div class="blog-card">
                                             <a href="javascript:void(0);">
@@ -849,7 +915,7 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <!-- blog grid -->
+                                    
                                     <div class="col-md-4 col-lg-4">
                                         <div class="blog-card">
                                             <a href="javascript:void(0);">
@@ -864,7 +930,7 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <!-- blog grid -->
+                                    
                                     <div class="col-md-4 col-lg-4">
                                         <div class="blog-card">
                                             <a href="javascript:void(0);">
@@ -883,7 +949,7 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> -->
                
              
         </div>
@@ -1018,7 +1084,20 @@
         navigationText:["",""],
         autoPlay:true
     });
+    $(".brand-ic-main").owlCarousel({
+        items:5,
+        itemsDesktop:[1000,5],
+        itemsDesktopSmall:[979,2],
+        itemsTablet:[768,2],
+        margin:20,
+        stagePadding: 100,
+        pagination:true,
+        navigation:false,
+        navigationText:["",""],
+        autoPlay:true
+    });
 });
+
   </script>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
