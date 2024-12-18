@@ -10368,7 +10368,7 @@ section#coach-find-area .coach-find-main .coach-find-content .coach-find-box .co
 }
 section#coach-find-area .coach-find-main .coach-find-content .coach-find-box .coach-find-item {
   padding: 30px 15px;
-  background: var(--aceent5-color);
+  background: var(--secondary-color);
   border-radius: 10px;
   margin-bottom: 30px;
   cursor: pointer;
