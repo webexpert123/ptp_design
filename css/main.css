@@ -9927,6 +9927,10 @@ section#team-coaches .coaches-image img {
   cursor: pointer;
   color: #715c3f;
 }
+section#team-coaches button:hover {
+  background: var(--secondary-color);
+  border: 2px solid var(--primary-color);
+}
 section#team-coaches button img {
   margin-right: 8px;
   width: 14px;
