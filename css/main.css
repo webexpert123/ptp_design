@@ -9537,9 +9537,9 @@ footer .footer-cta .cta-content .view-more button {
   border: 2px solid var(--aceent0-color);
 }
 footer .footer-cta .cta-content .view-more button:hover {
-  background-color: var(--secondary-color);
-  border-color: var(--secondary-color);
-  color: var(--light-font-color);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--dark-font-color);
 }
 footer .footer-cta img {
   position: relative;
