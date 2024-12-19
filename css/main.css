@@ -9904,6 +9904,20 @@ footer .copyright-area p {
 /*--------------------------------------------------------------
 # Feature Coaches Section Start
 --------------------------------------------------------------*/
+section#team-coaches.why_ptp_area .coaches-image {
+  position: relative;
+}
+section#team-coaches.why_ptp_area .coaches-image img {
+  animation: none;
+}
+section#team-coaches.why_ptp_area .coaches-image span {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+section#team-coaches.why_ptp_area .coaches-image span img {
+  animation: UpDown 4s linear infinite !important;
+}
 section#team-coaches .coaches-image img {
   animation: UpDown 4s linear infinite;
   position: relative;
@@ -9912,6 +9926,12 @@ section#team-coaches .coaches-image img {
   font-size: 4em;
   cursor: pointer;
   color: #715c3f;
+}
+section#team-coaches button img {
+  margin-right: 8px;
+  width: 14px;
+  position: relative;
+  top: -2px;
 }
 @keyframes UpDown {
   0% {
@@ -10784,18 +10804,24 @@ section#profile-layout .profile-top .profile-risk p {
 }
 section#profile-layout .profile-top .lesson-coordinator .lesson-inner {
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--primary-color);
   border-radius: 15px;
   display: flex;
   align-items: center;
   gap: 3%;
-  background: linear-gradient(185deg, #fff2e600 22%, #fff2e6 8%, #fff2e600 5%, #fff7ed 64%, #f8fbff 92%, #ffffff00);
+  background: var(--primary-color);
 }
 section#profile-layout .profile-top .lesson-coordinator .lesson-inner .lesson-img {
-  width: 20%;
+  width: 25%;
 }
 section#profile-layout .profile-top .lesson-coordinator .lesson-inner .lesson-img img {
   width: 100%;
+}
+section#profile-layout .profile-top .lesson-coordinator .lesson-inner .lesson-content h3 {
+  color: var(--secondary-color);
+}
+section#profile-layout .profile-top .lesson-coordinator .lesson-inner .lesson-content p {
+  color: var(--secondary-color);
 }
 section#profile-layout .profile-bottom .profile-tab-start ul {
   border: none;
