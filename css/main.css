@@ -9930,6 +9930,7 @@ section#team-coaches .coaches-image img {
 section#team-coaches button:hover {
   background: var(--secondary-color);
   border: 2px solid var(--primary-color);
+  color: var(--primary-color);
 }
 section#team-coaches button img {
   margin-right: 8px;
