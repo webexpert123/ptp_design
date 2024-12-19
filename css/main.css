@@ -9539,7 +9539,7 @@ footer .footer-cta .cta-content .view-more button {
 footer .footer-cta .cta-content .view-more button:hover {
   background-color: var(--primary-color);
   border-color: var(--primary-color);
-  color: var(--dark-font-color);
+  color: var(--light-font-color);
 }
 footer .footer-cta img {
   position: relative;
