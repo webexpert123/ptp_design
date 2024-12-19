@@ -10828,6 +10828,10 @@ section#profile-layout .profile-top .lesson-coordinator .lesson-inner .lesson-co
 section#profile-layout .profile-top .lesson-coordinator .lesson-inner .lesson-content p {
   color: var(--secondary-color);
 }
+section#profile-layout .profile-top .lesson-coordinator .lesson-inner button {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
 section#profile-layout .profile-bottom .profile-tab-start ul {
   border: none;
 }
