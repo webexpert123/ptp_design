@@ -9904,6 +9904,15 @@ footer .copyright-area p {
 /*--------------------------------------------------------------
 # Feature Coaches Section Start
 --------------------------------------------------------------*/
+section#team-coaches {
+  background-color: var(--primary-color);
+}
+section#team-coaches.why_ptp_area h2 {
+  color: var(--secondary-color);
+}
+section#team-coaches.why_ptp_area p {
+  color: var(--secondary-color);
+}
 section#team-coaches.why_ptp_area .coaches-image {
   position: relative;
 }
@@ -10014,6 +10023,86 @@ section#team-coaches button img {
   font-size: 14px;
 }
 /*--------------------------------------------------------------
+# Offer area Section Start
+--------------------------------------------------------------*/
+section#offer-area .sub-heading {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--aceent0-color);
+  font-size: 14px;
+  background: var(--primary-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+section#offer-area .multi-video {
+  gap: 20px;
+  flex-wrap: wrap;
+}
+section#offer-area .multi-video .story-videos {
+  position: relative;
+  height: 290px;
+  overflow: hidden;
+  border-radius: 15px;
+  width: 48%;
+}
+section#offer-area .multi-video .story-videos:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #000000c2, #0000000d, #00000000);
+  left: 0;
+}
+section#offer-area .multi-video .story-videos img {
+  object-fit: cover;
+  object-position: center;
+}
+section#offer-area .multi-video .story-videos a {
+  position: absolute;
+  z-index: 22;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #FFC107;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transition: 0.5s ease;
+}
+section#offer-area .multi-video .story-videos a:hover {
+  transition: 0.5s ease;
+  scale: 1.1;
+}
+section#offer-area .multi-video .story-videos a img {
+  width: 16px;
+  height: 20px;
+}
+section#offer-area .multi-video .story-videos.full {
+  width: 100% !important;
+  border-radius: 0 !important;
+}
+section#offer-area .multi-video .story-videos.full:after {
+  background: transparent !important;
+}
+section#offer-area .multi-video .story-videos.full-video {
+  width: 100% !important;
+}
+@keyframes anim {
+  from {
+    margin: 0px;
+    opacity: 1;
+  }
+  to {
+    margin: -15px;
+    opacity: 0;
+  }
+}
+/*--------------------------------------------------------------
 # Feed Section Start
 --------------------------------------------------------------*/
 .collarge .grid-column img {
@@ -10022,7 +10111,7 @@ section#team-coaches button img {
 }
 .collarge .grid-column:nth-of-type(1) {
   grid-area: 1 / 1 / span 6 / span 6;
-  height: 175px;
+  height: 215px;
 }
 .collarge .grid-column:nth-of-type(2) {
   grid-area: 7 / 1 / span 1 / span 2;
@@ -10032,7 +10121,7 @@ section#team-coaches button img {
 }
 .collarge .grid-column:nth-of-type(4) {
   grid-area: 8 / 1 / span 2 / span 4;
-  height: 175px;
+  height: 215px;
 }
 .collarge .grid-column:nth-of-type(5) {
   grid-area: 7 / 5 / span 3 / span 2;
@@ -10040,10 +10129,13 @@ section#team-coaches button img {
 section#feed_block {
   background: var(--primary-color);
 }
+section#feed_block .row {
+  margin: 0;
+}
 section#feed_block .section-title .sub-heading {
   color: var(--primary-color);
   font-weight: 600;
-  background-color: var(--secondary-color);
+  background-color: var(--aceent0-color);
   border-radius: 5px;
   padding: 5px 10px;
   margin-bottom: 20px;
@@ -10061,16 +10153,13 @@ section#feed_block .section-title button:hover {
 }
 section#feed_block .collarge {
   display: grid;
-  grid-gap: 10px;
   grid-template-columns: auto auto auto auto auto auto;
-  padding: 10px;
 }
 section#feed_block .collarge .grid-column {
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0;
-  min-height: 157px;
+  min-height: 215px;
   background-color: var(--secondary-color);
-  border-radius: 15px;
   overflow: hidden;
 }
 section#feed_block .collarge .grid-column:after {
@@ -10128,6 +10217,7 @@ section#feed_block .collarge .grid-column .feed_content .bottom-content .feed_us
 section#feed_block .collarge .grid-column .feed_content .bottom-content .feed_user .feed-user-img img {
   object-fit: cover;
   width: 100%;
+  object-position: center;
 }
 section#feed_block .collarge .grid-column .feed_content .bottom-content .feed_user p {
   font-size: 15px;
@@ -10354,7 +10444,8 @@ section#reward-block .reward-main .reward-inner {
   z-index: 2;
 }
 section#reward-block .reward-main .reward-inner .reward-top-title {
-  max-width: 790px;
+  max-width: 70%;
+  margin-bottom: 60px;
 }
 section#reward-block .reward-main .reward-inner .reward-top-title h1 {
   font-size: 50px;
@@ -10365,7 +10456,6 @@ section#reward-block .reward-main .reward-inner .reward-top-title p {
   font-size: 24px;
   font-weight: 400;
   color: var(--secondary-color);
-  margin-bottom: 60px;
 }
 section#reward-block .reward-main .reward-inner .reward-step .reward-box {
   padding: 15px;
@@ -10386,6 +10476,9 @@ section#reward-block .reward-main .reward-inner .reward-step .reward-box h3 {
 /*--------------------------------------------------------------
 # Our Coach find Section Start
 --------------------------------------------------------------*/
+section#coach-find-area {
+  background-color: #fff;
+}
 section#coach-find-area .coach-find-main .coach-find-content .coach-find-box .coach-find-image {
   border-radius: 10px;
   overflow: hidden;
@@ -10393,7 +10486,7 @@ section#coach-find-area .coach-find-main .coach-find-content .coach-find-box .co
 }
 section#coach-find-area .coach-find-main .coach-find-content .coach-find-box .coach-find-item {
   padding: 30px 15px;
-  background: var(--secondary-color);
+  background: var(--aceent5-color);
   border-radius: 10px;
   margin-bottom: 30px;
   cursor: pointer;
@@ -10565,9 +10658,6 @@ section#testimonial-block div#testimonial-slider .testimonial-item .testimonial-
 /*--------------------------------------------------------------
 # Risk Free Section Start
 --------------------------------------------------------------*/
-section#risk-block {
-  background: linear-gradient(284deg, #ffffff00, #f4fbff 8%, #fff2e6 22%, #fff7ed 64%, #f8fbff 92%, #ffffff00);
-}
 section#risk-block .risk-main .risk-image {
   height: 100%;
   overflow: hidden;
@@ -10585,14 +10675,10 @@ section#risk-block .risk-main .risk-content .sub-heading {
   margin-bottom: 20px;
 }
 section#risk-block .risk-main .risk-content h2 {
-  margin-bottom: 30px;
   color: var(--primary-color);
 }
 section#risk-block .risk-main .risk-content p {
   color: var(--primary-color);
-}
-section#risk-block .risk-main .risk-columns {
-  padding-left: 10%;
 }
 section#risk-block .risk-main .risk-columns .risk-item {
   background: linear-gradient(284deg, #ffffff, #f4fbff 8%, #f0f5ff 22%, #f0f5ff 64%, #f8fbff 92%, #ffffff);

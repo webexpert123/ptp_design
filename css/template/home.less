@@ -359,7 +359,14 @@
 --------------------------------------------------------------*/
 
 section#team-coaches {
+    background-color: var(--primary-color);
     &.why_ptp_area {
+        h2 {
+            color: var(--secondary-color);
+        }
+        p {
+            color: var(--secondary-color);
+        }
         & .coaches-image { 
             position: relative;
             img {
@@ -490,15 +497,99 @@ section#team-coaches {
 }
 
 /*--------------------------------------------------------------
+# Offer area Section Start
+--------------------------------------------------------------*/
+section#offer-area {
+    & .sub-heading {
+        text-transform: uppercase;
+        font-weight: 600;
+        color: var(--aceent0-color);
+        font-size: 14px;
+        background: var(--primary-color);
+        padding: 5px 10px;
+        border-radius: 5px;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    & .multi-video {
+        gap: 20px;
+        flex-wrap: wrap;
+        & .story-videos {
+            position: relative;
+            height: 290px;
+            overflow: hidden;
+            border-radius: 15px;
+            width: 48%;
+            &:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(0deg, #000000c2, #0000000d, #00000000);
+                left: 0;
+            }
+            img {
+                object-fit: cover;
+                object-position: center;
+            }
+            a {
+                position: absolute;
+                z-index: 22;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: #FFC107;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform: translate(-50%, -50%);
+                top: 50%;
+                left: 50%;
+                transition: 0.5s ease;
+                &:hover {
+                    transition: 0.5s ease;
+                    scale: 1.1;
+                }
+                img {
+                    width: 16px;
+                    height: 20px;
+                }
+            }
+            &.full {
+                width: 100% !important;
+                border-radius: 0 !important;
+                &:after {
+                    background: transparent !important;
+                }
+            }
+            &.full-video {
+                width: 100% !important;
+            }
+        }
+    }
+}
+@keyframes anim {
+    from {
+        margin: 0px;
+        opacity: 1;
+    }
+
+    to {
+        margin: -15px;
+        opacity: 0;
+    }
+}
+/*--------------------------------------------------------------
 # Feed Section Start
 --------------------------------------------------------------*/
+
 .collarge .grid-column img {
     height: 100%;
     object-fit: cover;
 }
 .collarge .grid-column:nth-of-type(1){
     grid-area: 1 / 1 / span 6 / span 6;
-    height: 175px;
+    height: 215px;
 }
 
 .collarge .grid-column:nth-of-type(2){
@@ -511,7 +602,7 @@ section#team-coaches {
 
 .collarge .grid-column:nth-of-type(4){
     grid-area: 8 / 1 / span 2 / span 4;
-    height: 175px;
+    height: 215px;
 }
 
 .collarge .grid-column:nth-of-type(5){
@@ -519,11 +610,14 @@ section#team-coaches {
 }
 section#feed_block{
         background:var(--primary-color);
+        & .row {
+            margin: 0;
+        }
         & .section-title {
             & .sub-heading {
                 color: var(--primary-color);
                 font-weight: 600;
-                background-color: var(--secondary-color);
+                background-color: var(--aceent0-color);
                 border-radius: 5px;
                 padding: 5px 10px;
                 margin-bottom: 20px;
@@ -544,15 +638,12 @@ section#feed_block{
         }
         .collarge{
             display: grid;
-            grid-gap: 10px;
             grid-template-columns: auto auto auto auto auto auto;
-            padding: 10px;
             & .grid-column{
                 position: relative;
                 box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0;
-                min-height: 157px;
+                min-height: 215px;
                 background-color: var(--secondary-color);
-                border-radius: 15px;
                 overflow: hidden;
                 &:after {
                     content: '';
@@ -607,6 +698,7 @@ section#feed_block{
                                 img {
                                     object-fit: cover;
                                     width: 100%;
+                                    object-position: center;
                                  }
                             }
                              p {
@@ -863,7 +955,8 @@ section#reward-block {
             position: relative;
             z-index: 2;
             & .reward-top-title {
-                max-width: 790px;
+                max-width: 70%;
+                margin-bottom: 60px;
                 h1 {
                     font-size: 50px;
                     font-weight: 700;
@@ -873,7 +966,6 @@ section#reward-block {
                     font-size: 24px;
                     font-weight: 400;
                     color: var(--secondary-color);
-                    margin-bottom: 60px;
                 }
             }
            & .reward-step {
@@ -902,6 +994,7 @@ section#reward-block {
 # Our Coach find Section Start
 --------------------------------------------------------------*/
 section#coach-find-area {
+    background-color: #fff;
     & .coach-find-main {
         & .coach-find-content {
             & .coach-find-box {
@@ -912,7 +1005,7 @@ section#coach-find-area {
                 }
                 & .coach-find-item{
                     padding: 30px 15px;
-                    background:var(--secondary-color);
+                    background:var(--aceent5-color);
                     border-radius: 10px;
                     margin-bottom: 30px;
                     cursor: pointer;
@@ -1126,7 +1219,6 @@ div#testimonial-slider {
 # Risk Free Section Start
 --------------------------------------------------------------*/
 section#risk-block {
-    background: linear-gradient(284deg, #ffffff00, #f4fbff 8%, #fff2e6 22%, #fff7ed 64%, #f8fbff 92%, #ffffff00);
     & .risk-main {
         & .risk-image {
             height: 100%;
@@ -1146,7 +1238,6 @@ section#risk-block {
                 margin-bottom: 20px;
             }
             h2 {
-                margin-bottom: 30px;
                 color: var(--primary-color);
             }
             p {
@@ -1154,7 +1245,6 @@ section#risk-block {
             }
         }
         & .risk-columns {
-            padding-left: 10%;
             & .risk-item {
                 background: linear-gradient(284deg, #ffffff, #f4fbff 8%, #f0f5ff 22%, #f0f5ff 64%, #f8fbff 92%, #ffffff);
                 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
