@@ -10679,6 +10679,7 @@ section#risk-block .risk-main .risk-content h2 {
 }
 section#risk-block .risk-main .risk-content p {
   color: var(--primary-color);
+  margin-bottom: 0;
 }
 section#risk-block .risk-main .risk-columns .risk-item {
   background: linear-gradient(284deg, #ffffff, #f4fbff 8%, #f0f5ff 22%, #f0f5ff 64%, #f8fbff 92%, #ffffff);
