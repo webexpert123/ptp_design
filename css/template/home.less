@@ -934,20 +934,8 @@ section#case_studies {
 # Reward Section Start
 --------------------------------------------------------------*/
 section#reward-block {
-    background: url(../assets/images/reward_bg.jpg) no-repeat center center;
-    background-size: cover;
     padding: 4rem 0rem;
     position: relative;
-     &:after {
-        position: absolute;
-        content: '';
-        background: rgb(0 0 0 / 50%);
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        z-index: 11;
-     }
     & .reward-main {
         position: relative;
         z-index: 22;
@@ -955,28 +943,29 @@ section#reward-block {
             position: relative;
             z-index: 2;
             & .reward-top-title {
-                max-width: 70%;
                 margin-bottom: 60px;
-                h1 {
-                    font-size: 50px;
-                    font-weight: 700;
-                    color: var(--secondary-color);
+                text-align: center;
+                h2 {
+                    color: var(--primary-color);
                 }
                 p {
-                    font-size: 24px;
-                    font-weight: 400;
-                    color: var(--secondary-color);
+                    color: var(--primary-color);
                 }
             }
            & .reward-step {
              & .reward-box {
-                padding: 15px;
-                background: var(--aceent0-color);
+                padding: 30px;
+                background: var(--secondary-color);
                 border-radius: 10px;
                 text-align: center;
+                &.second {
+                    h3 {
+                        margin-top: 9px;
+                    }
+                }
                 img {
                     margin-bottom: 15px;
-                    width: 80px;
+                    width: 100%;
                 }
                 h3 {
                     font-size: 25px;
