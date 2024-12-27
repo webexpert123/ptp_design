@@ -47,6 +47,20 @@ body {
               li {
                 display: inline-block;
                 list-style: none;
+                & .dropdown {
+                  & .dropdown-menu {
+                    min-width: 195px;
+                    a {
+                      color: var(--primary-color);
+                      font-weight: 500;
+                      padding: 5px 15px;
+                      &:hover {
+                        background-color: var(--aceent0-color);
+                        
+                      }
+                    }
+                  }
+                }
                 a {
                   padding: 0 10px;
                   font-size: 16px;

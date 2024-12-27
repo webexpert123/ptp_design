@@ -320,7 +320,7 @@ div#inner-template {
             & .msg-info {
               font-size: 13px;
               margin-bottom: 0;
-              color: rgb(255 255 255 / 50%);
+              color: var(--aceent7-color);
             }
           }
          }
@@ -344,7 +344,7 @@ div#inner-template {
       text-align: center;
       padding: 15px 0px;
       img {
-        width: 90px;
+        width: 60px;
       }
     }
     & .nav {
@@ -499,7 +499,7 @@ div#inner-template {
     float: right;
     & .dashboard-main {
       padding: 1.5rem 1.5rem 0 1.5rem;
-      background: var(--secondary-color);
+      background: #f6f7f9;
       & .page-title {
         margin-bottom: 20px;
         h2 {
@@ -643,10 +643,30 @@ div#inner-template {
         }
       }
       & .card {
-        background-color: rgb(255 255 255 / 20%);
+        &.dark-card {
+          background: var(--primary-color);
+          color:#fff;
+            & .card-title {
+              h5 {
+                color: var(--secondary-color);
+              }
+              a {
+                color: var(--secondary-color) !important;
+              }
+          }
+        }
+        &.top-card {
+          background: var(--primary-color);
+          color:#fff;
+          h4 {
+            color: var(--aceent0-color);
+          }
+        }
+        background-color: var(--secondary-color);
         box-shadow: 0 .3rem .8rem rgba(0, 0, 0, .12);
         margin-bottom: 1.5rem;
         border: 0 solid transparent;
+        border-radius: 12px;
          & .card-title {
            button {
              &.title-btn {
@@ -704,7 +724,7 @@ div#inner-template {
         & .notification-main {
           & .notification-item {
             padding: .5rem 1.3rem;
-            border-bottom: 1px solid rgb(255 255 255 / 15%);
+            border-bottom: 1px solid rgb(0 0 0 / 15%);
             &:last-child {
               border: none;
             }
@@ -731,19 +751,19 @@ div#inner-template {
             & .msg-name {
               font-size: 14px;
               margin-bottom: 0;
-              color: rgb(255 255 255 / 75%);
+              color: var(--primary-color);
               display: flex;
               justify-content: space-between;
                 & .msg-time {
                   font-size: 12px;
                   margin-bottom: 0;
-                  color: rgb(255 255 255 / 50%);
+                  color: var(--aceent7-color);
                 }
               }
              & .msg-info {
                 font-size: 13px;
                 margin-bottom: 0;
-                color: rgb(255 255 255 / 50%);
+                color: var(--aceent7-color);
             }
             }
           }
@@ -761,11 +781,11 @@ div#inner-template {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background: rgb(255 255 255 / 15%);
-                border: 1px solid rgb(255 255 255 / 15%);
+                background: rgb(0 0 0 / 15%);
+                border: 1px solid rgb(0 0 0 / 15%);
                 text-align: center;
                 border-radius: 50%;
-                color: #ffffff;
+                color: var(--primary-color);
               }
               &:hover {
                 background: #f7f7f7;
@@ -789,6 +809,7 @@ div#inner-template {
                 }
                 p {
                   color:var(--aceent7-color);
+                  font-size: 11px;
                 }
               }
               

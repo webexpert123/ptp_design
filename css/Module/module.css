@@ -9279,7 +9279,7 @@ div#inner-template .dashbaord-header .navbar .navbar-action .notification_dropdo
 div#inner-template .dashbaord-header .navbar .navbar-action .notification_dropdown .header-notifications-list .dropdown-item .msg-info {
   font-size: 13px;
   margin-bottom: 0;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--aceent7-color);
 }
 div#inner-template .sidebar {
   position: fixed;
@@ -9299,7 +9299,7 @@ div#inner-template .sidebar a.navbar-brand {
   padding: 15px 0px;
 }
 div#inner-template .sidebar a.navbar-brand img {
-  width: 90px;
+  width: 60px;
 }
 div#inner-template .sidebar .nav {
   padding-left: 0;
@@ -9441,7 +9441,7 @@ div#inner-template .content-wrapper {
 }
 div#inner-template .content-wrapper .dashboard-main {
   padding: 1.5rem 1.5rem 0 1.5rem;
-  background: var(--secondary-color);
+  background: #f6f7f9;
 }
 div#inner-template .content-wrapper .dashboard-main .page-title {
   margin-bottom: 20px;
@@ -9560,10 +9560,28 @@ div#inner-template .content-wrapper .dashboard-main nav .pagination li a {
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
 div#inner-template .content-wrapper .dashboard-main .card {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--secondary-color);
   box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.12);
   margin-bottom: 1.5rem;
   border: 0 solid transparent;
+  border-radius: 12px;
+}
+div#inner-template .content-wrapper .dashboard-main .card.dark-card {
+  background: var(--primary-color);
+  color: #fff;
+}
+div#inner-template .content-wrapper .dashboard-main .card.dark-card .card-title h5 {
+  color: var(--secondary-color);
+}
+div#inner-template .content-wrapper .dashboard-main .card.dark-card .card-title a {
+  color: var(--secondary-color) !important;
+}
+div#inner-template .content-wrapper .dashboard-main .card.top-card {
+  background: var(--primary-color);
+  color: #fff;
+}
+div#inner-template .content-wrapper .dashboard-main .card.top-card h4 {
+  color: var(--aceent0-color);
 }
 div#inner-template .content-wrapper .dashboard-main .card .card-title button.title-btn {
   color: var(--primary-color);
@@ -9616,7 +9634,7 @@ div#inner-template .content-wrapper .dashboard-main .card .card-body .calendar {
 }
 div#inner-template .content-wrapper .dashboard-main .card .card-body .notification-main .notification-item {
   padding: 0.5rem 1.3rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 div#inner-template .content-wrapper .dashboard-main .card .card-body .notification-main .notification-item:last-child {
   border: none;
@@ -9644,19 +9662,19 @@ div#inner-template .content-wrapper .dashboard-main .card .card-body .notificati
 div#inner-template .content-wrapper .dashboard-main .card .card-body .notification-main .notification-item .msg-name {
   font-size: 14px;
   margin-bottom: 0;
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--primary-color);
   display: flex;
   justify-content: space-between;
 }
 div#inner-template .content-wrapper .dashboard-main .card .card-body .notification-main .notification-item .msg-name .msg-time {
   font-size: 12px;
   margin-bottom: 0;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--aceent7-color);
 }
 div#inner-template .content-wrapper .dashboard-main .card .card-body .notification-main .notification-item .msg-info {
   font-size: 13px;
   margin-bottom: 0;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--aceent7-color);
 }
 div#inner-template .content-wrapper .dashboard-main .card .card-body .student-list .customers-list-item {
   border-bottom: 1px solid rgba(131, 113, 113, 0.15);
@@ -9672,11 +9690,11 @@ div#inner-template .content-wrapper .dashboard-main .card .card-body .student-li
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   text-align: center;
   border-radius: 50%;
-  color: #ffffff;
+  color: var(--primary-color);
 }
 div#inner-template .content-wrapper .dashboard-main .card .card-body .student-list .customers-list-item:hover {
   background: #f7f7f7;
@@ -9701,6 +9719,7 @@ div#inner-template .content-wrapper .dashboard-main .card .card-body .student-li
 }
 div#inner-template .content-wrapper .dashboard-main .card .card-body .student-list .customers-list-item .ms-2 p {
   color: var(--aceent7-color);
+  font-size: 11px;
 }
 div#inner-template .content-wrapper .dashboard-main .card .card-body .student-list .customers-list-item .list-inline {
   margin-left: auto;
