@@ -370,7 +370,8 @@ section#team-coaches {
         & .coaches-image { 
             position: relative;
             img {
-                animation: none;
+                animation: LeftRight 4s linear infinite !important;
+                position: relative;
             }
             span {
                 position: absolute;
@@ -419,7 +420,17 @@ section#team-coaches {
       bottom: 0;
     }
   }
-
+  @keyframes LeftRight {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: .5em;
+    }
+    100% {
+      left: 0;
+    }
+  }
 
 /*--------------------------------------------------------------
 # Brand Ambassedor Section Start

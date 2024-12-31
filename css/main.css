@@ -9928,7 +9928,8 @@ section#team-coaches.why_ptp_area .coaches-image {
   position: relative;
 }
 section#team-coaches.why_ptp_area .coaches-image img {
-  animation: none;
+  animation: LeftRight 4s linear infinite !important;
+  position: relative;
 }
 section#team-coaches.why_ptp_area .coaches-image span {
   position: absolute;
@@ -9967,6 +9968,17 @@ section#team-coaches button img {
   }
   100% {
     bottom: 0;
+  }
+}
+@keyframes LeftRight {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 0.5em;
+  }
+  100% {
+    left: 0;
   }
 }
 /*--------------------------------------------------------------
