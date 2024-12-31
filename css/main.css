@@ -155,7 +155,7 @@
   --button-primary-bg: #f9cc0b;
   --button-secondary-bg: #0c1d36;
   --f1-font-size: 3.5rem;
-  --f2-font-size: 2rem;
+  --f2-font-size: 2.5rem;
   --f3-font-size: 1.75rem;
   --light-border: #f4f4f4;
   --d-dark-bg: #14171F;
@@ -10130,13 +10130,13 @@ section#offer-area .multi-video .story-videos.full-video {
   grid-area: 2 / 3 / span 1 / span 2;
 }
 .collarge .grid-column:nth-of-type(4) {
-  grid-area: 2 / 1 / span 2 / span 2;
+  grid-area: 2 / 1 / span 1 / span 2;
 }
 .collarge .grid-column:nth-of-type(5) {
   grid-area: 7 / 5 / span 3 / span 0;
 }
 .collarge .grid-column:nth-of-type(6) {
-  grid-area: 1 / 5 / span 3 / span 1;
+  grid-area: 1 / 5 / span 2 / span 1;
 }
 section#feed_block {
   background: var(--primary-color);
