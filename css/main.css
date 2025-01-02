@@ -10142,13 +10142,19 @@ section#offer-area .multi-video .story-videos.full-video {
   grid-area: 2 / 3 / span 1 / span 2;
 }
 .collarge .grid-column:nth-of-type(4) {
-  grid-area: 2 / 1 / span 1 / span 2;
+  grid-area: 2 / 1 / span 1 / span 1;
 }
 .collarge .grid-column:nth-of-type(5) {
   grid-area: 7 / 5 / span 3 / span 0;
 }
 .collarge .grid-column:nth-of-type(6) {
   grid-area: 1 / 5 / span 2 / span 1;
+}
+.collarge .grid-column:nth-of-type(7) {
+  grid-area: 1 / 6 / span 0 / span 2;
+}
+.collarge .grid-column:nth-of-type(8) {
+  grid-area: 1 / 1 / span 1 / span 2;
 }
 section#feed_block {
   background: var(--primary-color);
@@ -10170,9 +10176,11 @@ section#feed_block .section-title .sub-heading {
 }
 section#feed_block .section-title h2 {
   color: var(--secondary-color);
+  font-size: 50px;
 }
 section#feed_block .section-title p {
   color: var(--secondary-color);
+  font-size: 24px;
 }
 section#feed_block .section-title button:hover {
   background: var(--secondary-color);
