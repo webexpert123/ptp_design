@@ -9651,7 +9651,7 @@ footer .copyright-area p {
   top: 50%;
   left: 50%;
   position: absolute;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   padding: 30px;
   border-radius: 10px;
 }
@@ -12966,6 +12966,406 @@ body.dark-theme .booking-page .risk-widget .profile-risk p {
 }
 #frontend-main .breadcrumb-area .breadcrumbs .filter-form .input-group button svg path {
   fill: var(--primary-color);
+}
+#frontend-main #digital-pro-detail .digital-header {
+  background-color: #fff;
+  padding: 5rem 0 7rem 0;
+}
+#frontend-main #digital-pro-detail .digital-header span {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+  padding-right: 10px;
+  border-right: 1px solid #333;
+}
+#frontend-main #digital-pro-detail .digital-header span:last-child {
+  border-right: transparent;
+}
+#frontend-main #digital-pro-detail .digital-header span strong {
+  color: var(--aceent0-color);
+}
+#frontend-main #digital-pro-detail .content-wrapper {
+  padding-right: 30px;
+}
+#frontend-main #digital-pro-detail .content-wrapper .product-feature .course-curriculum-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+#frontend-main #digital-pro-detail .content-wrapper .product-feature .course-curriculum-info ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+#frontend-main #digital-pro-detail .content-wrapper .product-feature .course-curriculum-info ul li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  color: var(--mid-light-font);
+}
+#frontend-main #digital-pro-detail .content-wrapper .product-feature .course-curriculum-info ul li:last-child:after {
+  width: 0;
+}
+#frontend-main #digital-pro-detail .content-wrapper .product-feature .course-curriculum-info ul li:after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-color: var(--dark-font-color);
+  display: inline-block;
+}
+#frontend-main #digital-pro-detail .content-wrapper .product-feature .product-feature-content .accordion .card {
+  margin-bottom: 15px;
+  border: none;
+  background-color: transparent;
+  border-radius: 10px;
+}
+#frontend-main #digital-pro-detail .content-wrapper .product-feature .product-feature-content .accordion .card .card-body {
+  background-color: var(--secondary-color);
+}
+#frontend-main #digital-pro-detail .content-wrapper .product-feature .product-feature-content .accordion .card .card-body ul {
+  padding: 0;
+  margin: 0;
+}
+#frontend-main #digital-pro-detail .content-wrapper .product-feature .product-feature-content .accordion .card .card-body ul li {
+  list-style: none;
+}
+#frontend-main #digital-pro-detail .content-wrapper .product-feature .product-feature-content .accordion .card .card-body ul li a {
+  padding: 12px 20px;
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid #e3e3e3;
+}
+#frontend-main #digital-pro-detail .content-wrapper .product-feature .product-feature-content .accordion .card .card-body ul li a:before {
+  content: "\f0f6";
+  display: inline-block;
+  font: normal normal normal 14px / 1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  float: left;
+  line-height: 26px;
+  transition: 0.5s ease;
+  margin-right: 15px;
+  position: relative;
+  top: -2px;
+}
+#frontend-main #digital-pro-detail .content-wrapper .product-feature .product-feature-content .accordion .card .card-header {
+  padding: 0;
+  background-color: transparent;
+}
+#frontend-main #digital-pro-detail .content-wrapper .product-feature .product-feature-content .accordion .card .card-header button {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-color);
+  padding: 12px 20px;
+  background: #e9e9e9;
+}
+#frontend-main #digital-pro-detail .content-wrapper .product-feature .product-feature-content .accordion .card .card-header button a:hover {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+#frontend-main #digital-pro-detail .content-wrapper .product-feature .product-feature-content .accordion .card .card-header button:focus {
+  outline: none;
+  box-shadow: none;
+}
+#frontend-main #digital-pro-detail .content-wrapper .product-feature .product-feature-content .accordion .card .card-header button[aria-expanded="true"] {
+  background: var(--aceent0-color);
+}
+#frontend-main #digital-pro-detail .content-wrapper .product-feature .product-feature-content .accordion .card .card-header button[aria-expanded="true"]:after {
+  rotate: 180deg;
+  transition: 0.5s ease;
+}
+#frontend-main #digital-pro-detail .content-wrapper .product-feature .product-feature-content .accordion .card .card-header button:after {
+  content: "\f078";
+  display: inline-block;
+  font: normal normal normal 14px / 1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  float: right;
+  line-height: 26px;
+  transition: 0.5s ease;
+}
+#frontend-main #digital-pro-detail .content-wrapper .related-product {
+  display: inline-block;
+}
+#frontend-main #digital-pro-detail .content-wrapper .related-product .card {
+  border-radius: 15px;
+  overflow: hidden;
+}
+#frontend-main #digital-pro-detail .content-wrapper .related-product .card .card-body .card-title span {
+  color: var(--aceent0-color);
+}
+#frontend-main #digital-pro-detail .content-wrapper .related-product .card .card-body .btn.btn-primary {
+  width: 100%;
+  border-radius: 25px;
+  padding: 10px 30px;
+  border: 1px solid #000;
+  background: transparent;
+  color: #000;
+  margin-top: 10px;
+}
+#frontend-main #digital-pro-detail .content-wrapper .related-product .card .card-body .btn.btn-primary:focus {
+  outline: none;
+  box-shadow: none;
+}
+#frontend-main #digital-pro-detail .content-wrapper .related-product .card .card-body .course-instructor-category {
+  display: flex;
+  gap: 5px;
+}
+#frontend-main #digital-pro-detail .content-wrapper .related-product .card .card-body .course-instructor-category .course-instructor {
+  display: inline;
+  vertical-align: middle;
+}
+#frontend-main #digital-pro-detail .content-wrapper .related-product .card .card-body .course-instructor-category .course-instructor a {
+  font-weight: 600;
+  color: var(--aceent0-color);
+}
+#frontend-main #digital-pro-detail .content-wrapper .related-product .card .card-body .course-wrap-meta {
+  display: flex;
+  padding: 0;
+  margin-bottom: 12px;
+  gap: 20px;
+  flex-wrap: wrap;
+  row-gap: 8px;
+}
+#frontend-main #digital-pro-detail .content-wrapper .related-product .card .card-body .course-wrap-meta .meta-item {
+  text-transform: capitalize;
+  display: flex;
+  gap: 8px;
+}
+#frontend-main #digital-pro-detail .content-wrapper .related-product .card .card-body .course-wrap-meta .meta-item .lp_lesson:before {
+  content: "\f0f6";
+  display: inline-block;
+  font: normal normal normal 14px / 1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  float: left;
+  line-height: 26px;
+  transition: 0.5s ease;
+  margin-right: 10px;
+  position: relative;
+  top: -2px;
+  color: var(--aceent0-color);
+}
+#frontend-main #digital-pro-detail .content-wrapper .related-product .card .card-body .course-wrap-meta .meta-item .course-count-student:before {
+  content: "\f007";
+  display: inline-block;
+  font: normal normal normal 14px / 1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  float: left;
+  line-height: 26px;
+  transition: 0.5s ease;
+  margin-right: 10px;
+  position: relative;
+  top: -2px;
+  color: var(--aceent0-color);
+}
+#frontend-main #digital-pro-detail .stickey-sidebar {
+  margin-top: -250px;
+  position: -webkit-sticky;
+  top: 20px;
+  right: 0;
+  background-color: #ffffff;
+  border-radius: 5px;
+  position: sticky;
+}
+#frontend-main #digital-pro-detail .stickey-sidebar .card {
+  border-radius: 15px;
+  overflow: hidden;
+}
+#frontend-main #digital-pro-detail .stickey-sidebar .card .card-body .card-title span {
+  color: var(--aceent0-color);
+}
+#frontend-main #digital-pro-detail .stickey-sidebar .card .card-body .btn-primary {
+  width: 100%;
+  border-radius: 25px;
+  padding: 10px 30px;
+  border: 1px solid #000;
+  background: transparent;
+  color: #000;
+  margin-top: 10px;
+}
+#frontend-main #digital-pro-detail .stickey-sidebar .card .card-body .btn-primary:focus {
+  outline: none;
+  box-shadow: none;
+}
+#frontend-main #digital-pro-detail .stickey-sidebar .card .card-body .btn-primary:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+#frontend-main #digital-pro-detail .stickey-sidebar .card .card-body .course-instructor-category {
+  display: flex;
+  gap: 5px;
+}
+#frontend-main #digital-pro-detail .stickey-sidebar .card .card-body .course-instructor-category .course-instructor {
+  display: inline;
+  vertical-align: middle;
+}
+#frontend-main #digital-pro-detail .stickey-sidebar .card .card-body .course-instructor-category .course-instructor a {
+  font-weight: 600;
+}
+#frontend-main #digital-pro-detail .stickey-sidebar .card .card-body .course-wrap-meta {
+  display: flex;
+  padding: 0;
+  margin-bottom: 12px;
+  gap: 20px;
+  flex-wrap: wrap;
+  row-gap: 8px;
+}
+#frontend-main #digital-pro-detail .stickey-sidebar .card .card-body .course-wrap-meta .meta-item {
+  text-transform: capitalize;
+  display: flex;
+  gap: 8px;
+}
+#frontend-main #digital-pro-detail .stickey-sidebar .card .card-body .course-wrap-meta .meta-item .lp_lesson:before {
+  content: "\f0f6";
+  display: inline-block;
+  font: normal normal normal 14px / 1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  float: left;
+  line-height: 26px;
+  transition: 0.5s ease;
+  margin-right: 10px;
+  position: relative;
+  top: -2px;
+  color: var(--aceent0-color);
+}
+#frontend-main #digital-pro-detail .stickey-sidebar .card .card-body .course-wrap-meta .meta-item .course-count-student:before {
+  content: "\f007";
+  display: inline-block;
+  font: normal normal normal 14px / 1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  float: left;
+  line-height: 26px;
+  transition: 0.5s ease;
+  margin-right: 10px;
+  position: relative;
+  top: -2px;
+  color: var(--aceent0-color);
+}
+#frontend-main #digital-pro-detail .stickey-sidebar .card .card-body .course-wrap-meta .meta-item .course-count-duration:before {
+  content: "\f017";
+  display: inline-block;
+  font: normal normal normal 14px / 1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  float: left;
+  line-height: 26px;
+  transition: 0.5s ease;
+  margin-right: 10px;
+  position: relative;
+  top: -2px;
+  color: var(--aceent0-color);
+}
+#frontend-main .coach-self .review-main-carousel .camp-item {
+  margin-right: 0 !important;
+}
+#frontend-main .coach-self .owl-carousel .owl-item {
+  padding: 0;
+}
+#frontend-main .breadcrumb-area.product-banner {
+  background: url(../assets/images/product_banner.jpg) no-repeat;
+  background-size: cover;
+}
+#frontend-main #product-listing {
+  padding: 5rem 0rem;
+}
+#frontend-main #product-listing .card {
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+#frontend-main #product-listing .card .card-body .card-title span {
+  color: var(--aceent0-color);
+}
+#frontend-main #product-listing .card .card-body .btn.btn-primary {
+  width: 100%;
+  border-radius: 25px;
+  padding: 10px 30px;
+  border: 1px solid #000;
+  background: transparent;
+  color: #000;
+  margin-top: 10px;
+}
+#frontend-main #product-listing .card .card-body .btn.btn-primary:focus {
+  outline: none;
+  box-shadow: none;
+}
+#frontend-main #product-listing .card .card-body .course-instructor-category {
+  display: flex;
+  gap: 5px;
+}
+#frontend-main #product-listing .card .card-body .course-instructor-category .course-instructor {
+  display: inline;
+  vertical-align: middle;
+}
+#frontend-main #product-listing .card .card-body .course-instructor-category .course-instructor a {
+  font-weight: 600;
+  color: var(--aceent0-color);
+}
+#frontend-main #product-listing .card .card-body .course-wrap-meta {
+  display: flex;
+  padding: 0;
+  margin-bottom: 12px;
+  gap: 20px;
+  flex-wrap: wrap;
+  row-gap: 8px;
+}
+#frontend-main #product-listing .card .card-body .course-wrap-meta .meta-item {
+  text-transform: capitalize;
+  display: flex;
+  gap: 8px;
+}
+#frontend-main #product-listing .card .card-body .course-wrap-meta .meta-item .lp_lesson:before {
+  content: "\f0f6";
+  display: inline-block;
+  font: normal normal normal 14px / 1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  float: left;
+  line-height: 26px;
+  transition: 0.5s ease;
+  margin-right: 10px;
+  position: relative;
+  top: -2px;
+  color: var(--aceent0-color);
+}
+#frontend-main #product-listing .card .card-body .course-wrap-meta .meta-item .course-count-student:before {
+  content: "\f007";
+  display: inline-block;
+  font: normal normal normal 14px / 1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  float: left;
+  line-height: 26px;
+  transition: 0.5s ease;
+  margin-right: 10px;
+  position: relative;
+  top: -2px;
+  color: var(--aceent0-color);
 }
 body.home-new header .header-main {
   background: transparent;
