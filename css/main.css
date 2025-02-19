@@ -13039,7 +13039,7 @@ body.dark-theme .booking-page .risk-widget .profile-risk p {
   border-bottom: 1px solid #e3e3e3;
 }
 #frontend-main #digital-pro-detail .content-wrapper .product-feature .product-feature-content .card .card-body ul li a:before {
-  content: "\f0f6";
+  content: "\f023";
   display: inline-block;
   font: normal normal normal 14px / 1 FontAwesome;
   font-size: inherit;
@@ -13052,6 +13052,7 @@ body.dark-theme .booking-page .risk-widget .profile-risk p {
   margin-right: 15px;
   position: relative;
   top: -2px;
+  color: var(--mid-light-font);
 }
 #frontend-main #digital-pro-detail .content-wrapper .product-feature .product-feature-content .accordion .card {
   margin-bottom: 15px;
