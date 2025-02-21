@@ -12052,8 +12052,8 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   color: var(--primary-color);
 }
 #subscription .subscription-plan .card .card-body .plan-card.popular .custom-button button:hover {
-  background: var(--primary-color);
-  border-color: var(--primary-color);
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
   color: var(--primary-color);
 }
 /*** 
