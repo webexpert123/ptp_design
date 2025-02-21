@@ -11223,6 +11223,10 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   margin-top: 0 !important ;
   height: 100%;
 }
+#profile-layout.camp-main .profile-top .profile-sidebar img {
+  aspect-ratio: 16 / 9;
+  object-position: top;
+}
 #profile-layout.camp-main .profile-top .profile-sidebar .coach-card {
   height: 100%;
 }
@@ -11231,7 +11235,7 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   height: 100%;
 }
 #profile-layout.camp-main .profile-top .profile-sidebar .coach-card .card .card-header {
-  height: 420px;
+  height: 330px;
 }
 #profile-layout.camp-main .profile-top .profile-sidebar img {
   width: 100%;
@@ -11960,6 +11964,97 @@ section#profile-layout .profile-bottom .profile-tab-start .tabs-main #policy .ta
   font-weight: 400;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
+}
+/*** 
+  =============================================
+      Subscription Area style
+  =============================================
+  ***/
+#subscription .subscription-plan .card {
+  background-color: var(--secondary-color);
+  border-radius: 15px;
+  border: none;
+}
+#subscription .subscription-plan .card .card-body {
+  padding: 45px;
+}
+#subscription .subscription-plan .card .card-body .plan-card {
+  border-radius: 20px;
+}
+#subscription .subscription-plan .card .card-body .plan-card .popular-tag {
+  height: 41px;
+}
+#subscription .subscription-plan .card .card-body .plan-card h2 span {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+#subscription .subscription-plan .card .card-body .plan-card .plan-name {
+  font-size: 22px;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+#subscription .subscription-plan .card .card-body .plan-card ul {
+  min-height: 249px;
+}
+#subscription .subscription-plan .card .card-body .plan-card ul li {
+  margin-bottom: 15px;
+  position: relative;
+}
+#subscription .subscription-plan .card .card-body .plan-card ul li:before {
+  display: inline-block;
+  font: normal normal normal 14px / 1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f058";
+  margin-right: 10px;
+}
+#subscription .subscription-plan .card .card-body .plan-card .custom-button button {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+#subscription .subscription-plan .card .card-body .plan-card .custom-button button:hover {
+  background: var(--aceent0-color);
+  border-color: var(--aceent0-color);
+  color: var(--primary-color);
+}
+#subscription .subscription-plan .card .card-body .plan-card.popular {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+#subscription .subscription-plan .card .card-body .plan-card.popular .popular-tag {
+  display: flex;
+  justify-content: flex-end;
+}
+#subscription .subscription-plan .card .card-body .plan-card.popular .popular-tag span {
+  font-size: 12px;
+  color: var(--secondary-color);
+  background-color: #5CB047;
+  border-radius: 25px;
+  padding: 4px 15px;
+  display: inline-block;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+#subscription .subscription-plan .card .card-body .plan-card.popular h2 {
+  color: var(--secondary-color);
+}
+#subscription .subscription-plan .card .card-body .plan-card.popular p {
+  color: var(--secondary-color);
+}
+#subscription .subscription-plan .card .card-body .plan-card.popular .custom-button button {
+  background: var(--aceent0-color);
+  border-color: var(--aceent0-color);
+  color: var(--primary-color);
+}
+#subscription .subscription-plan .card .card-body .plan-card.popular .custom-button button:hover {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
 }
 /*** 
   =============================================

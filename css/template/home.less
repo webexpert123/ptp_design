@@ -1982,13 +1982,17 @@
         & .profile-sidebar {
           margin-top: 0 !important ;
           height: 100%;
+          img {
+            aspect-ratio: 16 / 9;
+            object-position: top;
+          }
           & .coach-card {
             height: 100%;
             & .card {
               background: transparent;
               height: 100%;
               & .card-header {
-                height: 420px;
+                height: 330px;
               }
             }
           }
@@ -2818,7 +2822,110 @@
       }
     }
   }
-  
+
+    /*** 
+  =============================================
+      Subscription Area style
+  =============================================
+  ***/
+  #subscription {
+    & .subscription-plan {
+      & .card {
+        background-color: var(--secondary-color);
+        border-radius: 15px;
+        border: none;
+        & .card-body {
+          padding: 45px;
+          & .plan-card {
+            & .popular-tag {
+              height: 41px;
+            }
+            border-radius: 20px;
+            h2 {
+              span {
+                font-size: 18px;
+                font-weight: 400;
+                letter-spacing: 0;
+              }
+            }
+            & .plan-name {
+              font-size: 22px;
+              font-weight: 500;
+              display: inline-block;
+              margin-bottom: 15px;
+            }
+            ul {
+              min-height: 249px;
+              li {
+                margin-bottom: 15px;
+                position: relative;
+                &:before {
+                  display: inline-block;
+                  font: normal normal normal 14px / 1 FontAwesome;
+                  font-size: inherit;
+                  text-rendering: auto;
+                  -webkit-font-smoothing: antialiased;
+                  -moz-osx-font-smoothing: grayscale;
+                  content: "\f058";
+                  margin-right: 10px;
+                }
+              }
+            }
+              & .custom-button {
+                button {
+                  background: var(--primary-color);
+                  border-color: var(--primary-color);
+                  color: var(--secondary-color);
+                  &:hover {
+                    background: var(--aceent0-color);
+                  border-color: var(--aceent0-color);
+                  color: var(--primary-color);
+                  }
+                }
+              }
+            &.popular {
+              & .popular-tag {
+                display: flex;
+                justify-content: flex-end;
+                span {
+                  font-size: 12px;
+                  color: var(--secondary-color);
+                  background-color: #5CB047;
+                  border-radius: 25px;
+                  padding: 4px 15px;
+                  display: inline-block;
+                  margin-bottom: 15px;
+                  font-weight: 600;
+                }
+              }
+                background: var(--primary-color);
+                color: var(--secondary-color);
+                h2 {
+                  color: var(--secondary-color);
+                }
+                p {
+                  color: var(--secondary-color);
+                }
+                & .custom-button {
+                  button {
+                    background: var(--aceent0-color);
+                    border-color: var(--aceent0-color);
+                    color: var(--primary-color);
+                    &:hover {
+                      background: var(--primary-color);
+                    border-color: var(--primary-color);
+                    color: var(--primary-color);
+                    }
+                  }
+                }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
   /*** 
   =============================================
       Booking page CSS
